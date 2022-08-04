@@ -32,35 +32,35 @@
     - [x] state schools
     - [x] universities
     - [x] childrens centers
-    - [] supermarkets
-- [] Better app structure
-- [] Make all Zoopla/Rightmove requests frontend
-- [] Save last Zoopla/Rightmove request
-- [] User Accounts - free / unlimited
-- [] Loading icon - subtle - in corner?
+    - [ ] supermarkets
+- [ ] Better app structure
+- [ ] Make all Zoopla/Rightmove requests frontend
+- [ ] Save last Zoopla/Rightmove request
+- [ ] User Accounts - free / unlimited
+- [ ] Loading icon - subtle - in corner?
 - [x] Popup modal for clearing custom icon colours
 
 
 # Features
 
-- [] Unified Search?
+- [ ] Unified Search?
     - Zoopla
     - Rightmove
     - OnTheMarket
-- [] OnTheMarket
+- [ ] OnTheMarket
     - [JSON](https://www.onthemarket.com/map/show-pins/?search-type=for-sale&min-bedrooms=1&location-id=se13&max-price=325000&min-price=275000&new-home-flag=F&retirement=false&shared-ownership=false&sort-field=keywords&view=map)
-- [] House Report
-    - [] Prices of surrounding property. 
+- [ ] House Report
+    - [ ] Prices of surrounding property. 
         - Price vs Avg Street price of properties
         - Price vs Avg Area price of properties
         - Price vs National Avg
         - Prices of houses in street
-    - [] Crimes at property
-    - [] any construction near
-    - [] Broadband Services
-    - [] Council tax bands
-    - [] Price Change History 
-    - [] Extra Zoopla / Rightmove Data
+    - [ ] Crimes at property
+    - [ ] any construction near
+    - [ ] Broadband Services
+    - [ ] Council tax bands
+    - [ ] Price Change History 
+    - [ ] Extra Zoopla / Rightmove Data
         - Borough
         - EPC (energy performance certificate)
         - Estate Agent Link
@@ -70,13 +70,13 @@
         - Council Tax
         - Closest Schools
         - Broadband Speed
-- [] Tube / Train stations say which route they're on
-- [] Advanced location filtering. 
+- [ ] Tube / Train stations say which route they're on
+- [ ] Advanced location filtering. 
     - AND / OR / NOT / XOR close to features
     - stations / lines / crimes 
-- [] Changing highlightList colour multiple times keeps adding entries to localStorage array. Just replace current one, don't keep adding.
-- [] favourites always load, no need to query zoopla / rightmove.
-- [] import / export favourites
+- [ ] Changing highlightList colour multiple times keeps adding entries to localStorage array. Just replace current one, don't keep adding.
+- [ ] favourites always load, no need to query zoopla / rightmove.
+- [ ] import / export favourites
 - [x] Highlight properties my changing icon colour (custom colour)
 - [x] Show floorplans
 - [x] Hide crimes toggle
@@ -91,28 +91,28 @@
 
 # Layers to add
 
-- [] Broadband Services
-- [] school catchment radius
-- [] air polution
-- [] Delivery services (deliveroo, uber-eats, just-eat, etc)
-- [] small supermarkets.
-- [] Pollen
-- [] Mobile Phone Towers
-- [] Phone coverage
-- [] Conservation areas
-- [] Flood areas
-- [] planning permission
-- [] waste services
-- [] any construction near
-- [] radioactive materials in the land
-- [] sweage plant / waste plant / recycle center
-- [] Amazon Prime
-- [] Council tax bands
-- [] Bike routes
-- [] Flight paths
-- [] Bars / Pubs / Nightclubs near
-- [] air quality
-- [] Windows / Sunlight / House Orientation
+- [ ] Broadband Services
+- [ ] school catchment radius
+- [ ] air polution
+- [ ] Delivery services (deliveroo, uber-eats, just-eat, etc)
+- [ ] small supermarkets.
+- [ ] Pollen
+- [ ] Mobile Phone Towers
+- [ ] Phone coverage
+- [ ] Conservation areas
+- [ ] Flood areas
+- [ ] planning permission
+- [ ] waste services
+- [ ] any construction near
+- [ ] radioactive materials in the land
+- [ ] sweage plant / waste plant / recycle center
+- [ ] Amazon Prime
+- [ ] Council tax bands
+- [ ] Bike routes
+- [ ] Flight paths
+- [ ] Bars / Pubs / Nightclubs near
+- [ ] air quality
+- [ ] Windows / Sunlight / House Orientation
 - [x] Trains (stations / Routes)
 - [x] Tube (stations / Routes)
 - [x] Buses (Stations / Routes)
