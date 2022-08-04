@@ -1,0 +1,491 @@
+{
+    "__typename": "ListingData",
+    "listingId": "61023550",
+    "publishedOn": "2022-03-18T17:37:51",
+    "category": "residential",
+    "section": "for-sale",
+    "additionalLinks": [],
+    "adTargeting": {
+        "__typename": "ListingAnalyticsTaxonomy",
+        "acorn": 17,
+        "acornType": 17,
+        "areaName": "London",
+        "bedsMax": 1,
+        "bedsMin": 1,
+        "branchId": 63914,
+        "branchLogoUrl": "https://st.zoocdn.com/zoopla_static_agent_logo_(262079).png",
+        "branchName": "Inner City Estates",
+        "brandName": "Inner City Estates",
+        "chainFree": true,
+        "companyId": 33861,
+        "countryCode": "gb",
+        "countyAreaName": "London",
+        "currencyCode": "GBP",
+        "displayAddress": "Cannon Street Road, Shadwell E1",
+        "furnishedState": "",
+        "groupId": null,
+        "hasEpc": true,
+        "hasFloorplan": true,
+        "incode": "0BH",
+        "isRetirementHome": false,
+        "isSharedOwnership": false,
+        "listingCondition": "pre-owned",
+        "listingId": 61023550,
+        "listingsCategory": "residential",
+        "listingStatus": "for_sale",
+        "location": "London",
+        "memberType": "agent",
+        "numBaths": 1,
+        "numBeds": 1,
+        "numImages": 11,
+        "numRecepts": 1,
+        "outcode": "E1",
+        "postalArea": "E",
+        "postTownName": "London",
+        "priceActual": 300000,
+        "price": 300000,
+        "priceMax": 300000,
+        "priceMin": 300000,
+        "priceQualifier": "guide_price",
+        "propertyHighlight": "",
+        "propertyType": "flat",
+        "regionName": "London",
+        "section": "for-sale",
+        "sizeSqFeet": "",
+        "tenure": "leasehold",
+        "zindex": 531148
+    },
+    "branch": {
+        "__typename": "AgentBranch",
+        "branchDetailsUri": "/find-agents/branch/inner-city-estates-london-63914/",
+        "branchId": "63914",
+        "branchResultsUri": "/for-sale/branch/inner-city-estates-london-63914/",
+        "logoUrl": "https://st.zoocdn.com/zoopla_static_agent_logo_(262079).png",
+        "phone": "020 3641 8145",
+        "name": "Inner City Estates",
+        "memberType": "agent",
+        "address": "447 Roman Road, London",
+        "postcode": "E3 5LX"
+    },
+    "pointsOfInterest": [
+        {
+            "__typename": "PointOfInterest",
+            "title": "Green Gables Montessori Primary School",
+            "type": "uk_school_primary",
+            "distanceMiles": 0.1
+        },
+        {
+            "__typename": "PointOfInterest",
+            "title": "Shadwell",
+            "type": "national_rail_station",
+            "distanceMiles": 0.1
+        },
+        {
+            "__typename": "PointOfInterest",
+            "title": "Bigland Green Primary School",
+            "type": "uk_school_primary",
+            "distanceMiles": 0.2
+        },
+        {
+            "__typename": "PointOfInterest",
+            "title": "Shadwell",
+            "type": "london_underground_station",
+            "distanceMiles": 0.2
+        }
+    ],
+    "embeddedContent": {
+        "__typename": "EmbeddedContent",
+        "videos": null,
+        "tours": null,
+        "links": null,
+        "smartViewings": null
+    },
+    "epc": {
+        "__typename": "EPC",
+        "image": [
+            {
+                "__typename": "Media",
+                "caption": null,
+                "filename": "c8559154f1dc4ee2144f29e8a05bff254b3e641d.png",
+                "url": null
+            }
+        ],
+        "links": null,
+        "pdf": null
+    },
+    "detailedDescription": "***video link available***<br>One bedroom second floor apartment set within a period conversion on a residential street with access to communal terrace close to Whitechapel station<br>This lovely apartment comprises an spacious kitchen/ dining area, one bedroom, Lounge and a stylish family bathroom.<br>Also has use of communal terrace<br>The property further benefits from wood flooring throughout and secure phone entry system<br>The location of the property is superb within easy reach of Shadwell overground and DLR Stations, Aldgate and Whitechapel tube station.<br>The apartment is near the beautiful Shadwell Basin, a great place for cyclists or just to stroll around. Rope Walk Gardens is also within walking distance from the property to enjoy some lovely green spaces<br>Property is offered chain free",
+    "features": {
+        "__typename": "Features",
+        "bullets": [
+            "One bedroom flat",
+            "Kitchen/Dining area",
+            "Communal terrace",
+            "Great location near wapping",
+            "Chain free",
+            "Video link available",
+            "Share of freehold"
+        ],
+        "flags": {
+            "__typename": "FeatureFlag",
+            "furnishedState": null,
+            "studentFriendly": false,
+            "tenure": {
+                "__typename": "Label",
+                "name": "leasehold",
+                "label": "Leasehold"
+            },
+            "availableFromDate": null
+        },
+        "highlights": null
+    },
+    "floorPlan": {
+        "__typename": "FloorPlan",
+        "image": [
+            {
+                "__typename": "Media",
+                "filename": "8f2609cab962c3eff3e2a68011eb792febfa2ba7.jpg",
+                "caption": null
+            }
+        ],
+        "links": null,
+        "pdf": null
+    },
+    "propertyImage": [
+        {
+            "__typename": "Media",
+            "filename": "36c266e16174f4ed9a4b22d6c963194396d0f15d.jpg",
+            "caption": null
+        },
+        {
+            "__typename": "Media",
+            "filename": "2a15b915b9fa75d75b1a3eeef1c31b21e00f15b3.jpg",
+            "caption": null
+        },
+        {
+            "__typename": "Media",
+            "filename": "31100c1edfb9497ddc165fe76cc38a3d88e44f12.jpg",
+            "caption": null
+        },
+        {
+            "__typename": "Media",
+            "filename": "dfc25fa0a3888dcf0166ec6fad8cc2b0290842a3.jpg",
+            "caption": null
+        },
+        {
+            "__typename": "Media",
+            "filename": "9bc0dcd129c4a4628b94cc30ca80ce48b15d874e.jpg",
+            "caption": null
+        },
+        {
+            "__typename": "Media",
+            "filename": "9cffc172ae3c1a04d8546e6616b914b11d1ea2cc.jpg",
+            "caption": null
+        },
+        {
+            "__typename": "Media",
+            "filename": "cb07b4e20bc23edb3626809c3f12ac99a9fd8363.jpg",
+            "caption": null
+        },
+        {
+            "__typename": "Media",
+            "filename": "eb2fb23061281a16cc5f2cc5c810698df9d503f0.jpg",
+            "caption": null
+        },
+        {
+            "__typename": "Media",
+            "filename": "8cd5ee6948b45ba2e8bb24cbe789244c7cc64783.jpg",
+            "caption": null
+        },
+        {
+            "__typename": "Media",
+            "filename": "6f82918e31aeb2cf3a35868afe65bb8384f7637b.jpg",
+            "caption": null
+        },
+        {
+            "__typename": "Media",
+            "filename": "f3bb92d6f872e34df37932b5043c3ad82cf6d0d6.jpg",
+            "caption": null
+        }
+    ],
+    "analyticsTaxonomy": {
+        "__typename": "ListingAnalyticsTaxonomy",
+        "location": "London",
+        "regionName": "London",
+        "section": "for-sale",
+        "acorn": 17,
+        "acornType": 17,
+        "areaName": "London",
+        "bedsMax": 1,
+        "bedsMin": 1,
+        "branchId": 63914,
+        "branchLogoUrl": "https://st.zoocdn.com/zoopla_static_agent_logo_(262079).png",
+        "branchName": "Inner City Estates",
+        "brandName": "Inner City Estates",
+        "chainFree": true,
+        "companyId": 33861,
+        "countryCode": "gb",
+        "countyAreaName": "London",
+        "currencyCode": "GBP",
+        "displayAddress": "Cannon Street Road, Shadwell E1",
+        "furnishedState": "",
+        "groupId": null,
+        "hasEpc": true,
+        "hasFloorplan": true,
+        "incode": "0BH",
+        "isRetirementHome": false,
+        "isSharedOwnership": false,
+        "listingCondition": "pre-owned",
+        "listingId": 61023550,
+        "listingsCategory": "residential",
+        "listingStatus": "for_sale",
+        "memberType": "agent",
+        "numBaths": 1,
+        "numBeds": 1,
+        "numImages": 11,
+        "numRecepts": 1,
+        "outcode": "E1",
+        "postalArea": "E",
+        "postTownName": "London",
+        "priceActual": 300000,
+        "price": 300000,
+        "priceMax": 300000,
+        "priceMin": 300000,
+        "priceQualifier": "guide_price",
+        "propertyHighlight": "",
+        "propertyType": "flat",
+        "sizeSqFeet": "",
+        "tenure": "leasehold",
+        "zindex": 531148
+    },
+    "title": "1 bed flat for sale",
+    "metaTitle": "1 bed flat for sale in Cannon Street Road, Shadwell E1 - Zoopla",
+    "metaDescription": "1 bed flat for sale in Cannon Street Road, Shadwell E1, selling for £300,000 from Inner City Estates. See property details on Zoopla or browse all our range of properties in Cannon Street Road, Shadwell E1.",
+    "listingUris": {
+        "__typename": "ListingUris",
+        "detail": "/for-sale/details/61023550/"
+    },
+    "location": {
+        "__typename": "ListingLocation",
+        "coordinates": {
+            "__typename": "LocationCoordinates",
+            "latitude": 51.510553,
+            "longitude": -0.060669,
+            "isApproximate": false
+        }
+    },
+    "displayAddress": "Cannon Street Road, Shadwell E1",
+    "administrationFees": null,
+    "content": {
+        "__typename": "MediaContent",
+        "floorPlan": [
+            {
+                "__typename": "Media",
+                "original": "https://lc.zoocdn.com/8f2609cab962c3eff3e2a68011eb792febfa2ba7.jpg"
+            }
+        ]
+    },
+    "statusSummary": null,
+    "tags": [],
+    "counts": {
+        "__typename": "RoomCount",
+        "numBedrooms": 1,
+        "numBathrooms": 1,
+        "numLivingRooms": 1
+    },
+    "floorArea": null,
+    "pricing": {
+        "__typename": "ListingPricing",
+        "label": "£300,000",
+        "priceQualifierLabel": "Guide price",
+        "rentFrequencyLabel": null,
+        "isAuction": false,
+        "pricePerFloorAreaUnit": null,
+        "alternateRentFrequencyPrice": null,
+        "originalCurrencyPrice": null
+    },
+    "analyticsEcommerce": {
+        "__typename": "ListingAnalyticsEcommerce",
+        "brand": "Inner City Estates",
+        "category": "for-sale/resi/agent/pre-owned/gb",
+        "id": 61023550,
+        "name": "FS_Contact",
+        "price": 1,
+        "quantity": 1,
+        "variant": "standard"
+    },
+    "uuid": "1e081013-ac95-4c80-9884-e790a8632bc7",
+    "marketStats": {
+        "__typename": "MarketStatsResults",
+        "areaName": "E1",
+        "areaNameUri": "london/e1/aldgate-stepney-mile-end-whitechapel",
+        "propertyTypeGroup": "flat",
+        "askingPrices": {
+            "__typename": "AskingPrices",
+            "toRent": {
+                "__typename": "AskingPrice",
+                "meanValue": 2352.3002832861175
+            }
+        },
+        "historicalEstimates": [
+            {
+                "__typename": "HistoricalEstimate",
+                "overMonth": "0",
+                "value": 616589,
+                "pctChangeSince": 0,
+                "date": "2022-07-23",
+                "changeSince": 0
+            },
+            {
+                "__typename": "HistoricalEstimate",
+                "overMonth": "3",
+                "value": 605020,
+                "pctChangeSince": 1.912,
+                "date": "2022-04-23",
+                "changeSince": 11569
+            },
+            {
+                "__typename": "HistoricalEstimate",
+                "overMonth": "6",
+                "value": 601750,
+                "pctChangeSince": 2.466,
+                "date": "2022-01-23",
+                "changeSince": 14839
+            },
+            {
+                "__typename": "HistoricalEstimate",
+                "overMonth": "12",
+                "value": 593730,
+                "pctChangeSince": 3.85,
+                "date": "2021-07-23",
+                "changeSince": 22859
+            },
+            {
+                "__typename": "HistoricalEstimate",
+                "overMonth": "60",
+                "value": 555871,
+                "pctChangeSince": 10.923,
+                "date": "2017-07-23",
+                "changeSince": 60718
+            },
+            {
+                "__typename": "HistoricalEstimate",
+                "overMonth": "120",
+                "value": 367125,
+                "pctChangeSince": 67.951,
+                "date": "2012-07-23",
+                "changeSince": 249464
+            },
+            {
+                "__typename": "HistoricalEstimate",
+                "overMonth": "180",
+                "value": 370110,
+                "pctChangeSince": 66.596,
+                "date": "2007-07-23",
+                "changeSince": 246479
+            },
+            {
+                "__typename": "HistoricalEstimate",
+                "overMonth": "240",
+                "value": 227889,
+                "pctChangeSince": 170.565,
+                "date": "2002-07-23",
+                "changeSince": 388700
+            }
+        ],
+        "sales": [
+            {
+                "__typename": "HistoricalSales",
+                "overYear": "1",
+                "mean": 550478,
+                "newBuilds": 3,
+                "numSales": 213
+            },
+            {
+                "__typename": "HistoricalSales",
+                "overYear": "3",
+                "mean": 549897,
+                "newBuilds": 55,
+                "numSales": 1016
+            },
+            {
+                "__typename": "HistoricalSales",
+                "overYear": "5",
+                "mean": 551203,
+                "newBuilds": 77,
+                "numSales": 1732
+            },
+            {
+                "__typename": "HistoricalSales",
+                "overYear": "7",
+                "mean": 572386,
+                "newBuilds": 262,
+                "numSales": 3054
+            }
+        ],
+        "recentSales": [
+            {
+                "__typename": "RecentSale",
+                "date": "2022-03-17T00:00:00Z",
+                "price": 595000,
+                "propertyId": 7605121,
+                "streetAddress": "56b Cannon Street Road",
+                "uri": "56b-cannon-street-road/london/e1-0bh"
+            },
+            {
+                "__typename": "RecentSale",
+                "date": "2022-04-25T00:00:00Z",
+                "price": 370000,
+                "propertyId": 7606793,
+                "streetAddress": "6 Colet Flats, White Horse Road",
+                "uri": "6-colet-flats/white-horse-road/london/e1-0nj"
+            },
+            {
+                "__typename": "RecentSale",
+                "date": "2022-04-21T00:00:00Z",
+                "price": 580000,
+                "propertyId": 7635502,
+                "streetAddress": "Flat 123, Riverside Mansions, Milk Yard",
+                "uri": "flat-123/riverside-mansions/milk-yard/london/e1w-3sz"
+            },
+            {
+                "__typename": "RecentSale",
+                "date": "2022-04-21T00:00:00Z",
+                "price": 875000,
+                "propertyId": 7618681,
+                "streetAddress": "24 Louisa Street",
+                "uri": "24-louisa-street/london/e1-4nf"
+            },
+            {
+                "__typename": "RecentSale",
+                "date": "2022-04-19T00:00:00Z",
+                "price": 729000,
+                "propertyId": 7616495,
+                "streetAddress": "29 Mile End Place",
+                "uri": "29-mile-end-place/london/e1-4bh"
+            },
+            {
+                "__typename": "RecentSale",
+                "date": "2022-04-11T00:00:00Z",
+                "price": 320000,
+                "propertyId": 7605285,
+                "streetAddress": "Flat 15, Lowood House, Bewley Street",
+                "uri": "flat-15/lowood-house/bewley-street/london/e1-0bt"
+            }
+        ]
+    },
+    "propertyType": "flat",
+    "groundRent": {
+        "__typename": "GroundRent",
+        "label": "£300"
+    },
+    "deposit": {
+        "__typename": "Deposit",
+        "label": null
+    },
+    "leaseExpiry": {
+        "__typename": "LeaseExpiry",
+        "yearsRemaining": "99 years"
+    },
+    "serviceCharge": null,
+    "councilTaxBand": null
+}

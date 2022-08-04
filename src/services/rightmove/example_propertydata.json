@@ -1,0 +1,919 @@
+{
+    "propertyData": {
+        "id": "125262434",
+        "status": { "published": true, "archived": false },
+        "text": {
+            "description": "Guide Price £280,000 - £300.000. Situated on the sought after CO-OP ESTATE is this lovely Ground floor conversion apartment with private courtyard garden. Conveniently situated for local amenities, public transport and Abbey Wood Main Line Station incorporating the Elizabeth Line. Rarely available and with accommodation offering private entrance, lounge, kitchen/breakfast room, double bedroom, modern bathroom with separate w.c., entrance lobby and inner hallway. Features to note include double glazing, gas central heating and a beautiful black limestone designed courtyard garden.",
+            "propertyPhrase": "1 bedroom ground floor flat",
+            "disclaimer": "<b>Disclaimer</b> - Property reference ABBSP212219. The information displayed about this property comprises a property advertisement. Rightmove.co.uk makes no warranty as to the accuracy or completeness of the advertisement or any linked or associated information, and Rightmove has no control over the content. This property advertisement does not constitute property particulars. The information is provided and maintained by <b>Hunters, Abbeywood London</b>.&nbsp,Please contact the selling agent or developer directly to obtain any information which may be available under the terms of The Energy Performance of Buildings (Certificates and Inspections) (England and Wales) Regulations 2007 or the Home Report if in relation to a residential property in Scotland.",
+            "auctionFeesDisclaimer": null,
+            "guidePriceDisclaimer": null,
+            "reservePriceDisclaimer": null,
+            "staticMapDisclaimerText": "Map data ©<a href=\"http://www.openstreetmap.org/copyright\" rel=\"nofollow\" target=\"_blank\" title=\"Open Street Map\">OpenStreetMap</a> contributors.",
+            "newHomesBrochureDisclaimer": "Please note that Rightmove will send the above details to Hunters only. By submitting this form, you confirm that you agree to our website <a href=\"/this-site/terms-of-use.html\">terms of use</a>, our <a href=\"/this-site/privacy-policy.html\">privacy policy</a> and understand how we store <a href=\"/this-site/cookies.html\">cookies</a> on your device.",
+            "shareText": "Check out this 1 bedroom ground floor flat for sale on Rightmove",
+            "shareDescription": "1 bedroom ground floor flat for sale in Abbey Wood Road , Abbey Wood , London, SE2 9NP, SE2 for £280,000. Marketed by Hunters, Abbeywood London",
+            "pageTitle": "1 bedroom ground floor flat for sale in Abbey Wood Road , Abbey Wood , London, SE2 9NP, SE2",
+            "shortDescription": "1 bedroom ground floor flat for sale"
+        },
+        "prices": {
+            "primaryPrice": "£280,000",
+            "secondaryPrice": null,
+            "displayPriceQualifier": "Guide Price",
+            "pricePerSqFt": null,
+            "message": null,
+            "exchangeRate": null
+        },
+        "address": {
+            "displayAddress": "Abbey Wood Road , Abbey Wood , London, SE2 9NP",
+            "countryCode": "GB",
+            "deliveryPointId": 87974785,
+            "ukCountry": "England",
+            "outcode": "SE2",
+            "incode": "9NP"
+        },
+        "keyFeatures": [
+            "SOUGHT AFTER CO-OP ESTATE",
+            "GROUND FLOOR CONVERSION APARTMENT",
+            "LOUNGE AND DOUBLE BEDROOM",
+            "BEAUTIFUL PRIVATE COURTYARD GARDEN",
+            "KITCHEN/BREAKFAST ROOM",
+            "MODERN BATHROOM WITH SEPARATE W.C.",
+            "DOUBLE GLAZING",
+            "GAS CENTRAL HEATING",
+            "CONVENIENT FOR CROSS RAIL/STATION",
+            "MUST BE VIEWED TO FULLY APRECIATE"
+        ],
+        "images": [
+            {
+                "url": "https://media.rightmove.co.uk/8k/7420/125262434/7420_ABBSP212219_IMG_00_0000.jpeg",
+                "caption": "HOUSE FRONT",
+                "resizedImageUrls": {
+                    "size135x100": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_00_0000_max_135x100.jpeg",
+                    "size476x317": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_00_0000_max_476x317.jpeg",
+                    "size656x437": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_00_0000_max_656x437.jpeg"
+                }
+            },
+            {
+                "url": "https://media.rightmove.co.uk/8k/7420/125262434/7420_ABBSP212219_IMG_01_0000.jpeg",
+                "caption": "COURTYARD",
+                "resizedImageUrls": {
+                    "size135x100": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_01_0000_max_135x100.jpeg",
+                    "size476x317": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_01_0000_max_476x317.jpeg",
+                    "size656x437": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_01_0000_max_656x437.jpeg"
+                }
+            },
+            {
+                "url": "https://media.rightmove.co.uk/8k/7420/125262434/7420_ABBSP212219_IMG_02_0000.jpeg",
+                "caption": "VIEW OF PROPERTY FROM ENTRANCE",
+                "resizedImageUrls": {
+                    "size135x100": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_02_0000_max_135x100.jpeg",
+                    "size476x317": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_02_0000_max_476x317.jpeg",
+                    "size656x437": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_02_0000_max_656x437.jpeg"
+                }
+            },
+            {
+                "url": "https://media.rightmove.co.uk/8k/7420/125262434/7420_ABBSP212219_IMG_03_0000.jpeg",
+                "caption": "LOUNGE",
+                "resizedImageUrls": {
+                    "size135x100": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_03_0000_max_135x100.jpeg",
+                    "size476x317": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_03_0000_max_476x317.jpeg",
+                    "size656x437": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_03_0000_max_656x437.jpeg"
+                }
+            },
+            {
+                "url": "https://media.rightmove.co.uk/8k/7420/125262434/7420_ABBSP212219_IMG_04_0000.jpeg",
+                "caption": "KITCHEN/BREAKFAST ROOM",
+                "resizedImageUrls": {
+                    "size135x100": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_04_0000_max_135x100.jpeg",
+                    "size476x317": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_04_0000_max_476x317.jpeg",
+                    "size656x437": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_04_0000_max_656x437.jpeg"
+                }
+            },
+            {
+                "url": "https://media.rightmove.co.uk/8k/7420/125262434/7420_ABBSP212219_IMG_05_0000.jpeg",
+                "caption": "BATHROOM VIEW 2",
+                "resizedImageUrls": {
+                    "size135x100": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_05_0000_max_135x100.jpeg",
+                    "size476x317": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_05_0000_max_476x317.jpeg",
+                    "size656x437": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_05_0000_max_656x437.jpeg"
+                }
+            },
+            {
+                "url": "https://media.rightmove.co.uk/8k/7420/125262434/7420_ABBSP212219_IMG_06_0000.jpeg",
+                "caption": "COURT YARD VIEW",
+                "resizedImageUrls": {
+                    "size135x100": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_06_0000_max_135x100.jpeg",
+                    "size476x317": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_06_0000_max_476x317.jpeg",
+                    "size656x437": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_06_0000_max_656x437.jpeg"
+                }
+            },
+            {
+                "url": "https://media.rightmove.co.uk/8k/7420/125262434/7420_ABBSP212219_IMG_07_0000.jpeg",
+                "caption": "FRONT ENTRANCE TO PROPERTY",
+                "resizedImageUrls": {
+                    "size135x100": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_07_0000_max_135x100.jpeg",
+                    "size476x317": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_07_0000_max_476x317.jpeg",
+                    "size656x437": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_07_0000_max_656x437.jpeg"
+                }
+            },
+            {
+                "url": "https://media.rightmove.co.uk/8k/7420/125262434/7420_ABBSP212219_IMG_08_0000.jpeg",
+                "caption": "LOUNGE VIEW",
+                "resizedImageUrls": {
+                    "size135x100": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_08_0000_max_135x100.jpeg",
+                    "size476x317": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_08_0000_max_476x317.jpeg",
+                    "size656x437": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_08_0000_max_656x437.jpeg"
+                }
+            },
+            {
+                "url": "https://media.rightmove.co.uk/8k/7420/125262434/7420_ABBSP212219_IMG_09_0000.jpeg",
+                "caption": "CLOAKROOM/WC",
+                "resizedImageUrls": {
+                    "size135x100": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_09_0000_max_135x100.jpeg",
+                    "size476x317": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_09_0000_max_476x317.jpeg",
+                    "size656x437": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_09_0000_max_656x437.jpeg"
+                }
+            },
+            {
+                "url": "https://media.rightmove.co.uk/8k/7420/125262434/7420_ABBSP212219_IMG_10_0000.jpeg",
+                "caption": "BATHROOM",
+                "resizedImageUrls": {
+                    "size135x100": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_10_0000_max_135x100.jpeg",
+                    "size476x317": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_10_0000_max_476x317.jpeg",
+                    "size656x437": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_10_0000_max_656x437.jpeg"
+                }
+            },
+            {
+                "url": "https://media.rightmove.co.uk/8k/7420/125262434/7420_ABBSP212219_IMG_11_0000.jpeg",
+                "caption": "GARDEN VIEW",
+                "resizedImageUrls": {
+                    "size135x100": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_11_0000_max_135x100.jpeg",
+                    "size476x317": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_11_0000_max_476x317.jpeg",
+                    "size656x437": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_11_0000_max_656x437.jpeg"
+                }
+            },
+            {
+                "url": "https://media.rightmove.co.uk/8k/7420/125262434/7420_ABBSP212219_IMG_12_0000.jpeg",
+                "caption": "GARDEN VIEW ",
+                "resizedImageUrls": {
+                    "size135x100": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_12_0000_max_135x100.jpeg",
+                    "size476x317": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_12_0000_max_476x317.jpeg",
+                    "size656x437": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_12_0000_max_656x437.jpeg"
+                }
+            },
+            {
+                "url": "https://media.rightmove.co.uk/8k/7420/125262434/7420_ABBSP212219_IMG_13_0000.jpeg",
+                "caption": "GARDEN VIEW",
+                "resizedImageUrls": {
+                    "size135x100": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_13_0000_max_135x100.jpeg",
+                    "size476x317": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_13_0000_max_476x317.jpeg",
+                    "size656x437": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_13_0000_max_656x437.jpeg"
+                }
+            },
+            {
+                "url": "https://media.rightmove.co.uk/8k/7420/125262434/7420_ABBSP212219_IMG_14_0000.jpeg",
+                "caption": "GARDEN VIEW",
+                "resizedImageUrls": {
+                    "size135x100": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_14_0000_max_135x100.jpeg",
+                    "size476x317": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_14_0000_max_476x317.jpeg",
+                    "size656x437": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_14_0000_max_656x437.jpeg"
+                }
+            },
+            {
+                "url": "https://media.rightmove.co.uk/8k/7420/125262434/7420_ABBSP212219_IMG_15_0000.jpeg",
+                "caption": "ENTRANCE HALL",
+                "resizedImageUrls": {
+                    "size135x100": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_15_0000_max_135x100.jpeg",
+                    "size476x317": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_15_0000_max_476x317.jpeg",
+                    "size656x437": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_15_0000_max_656x437.jpeg"
+                }
+            },
+            {
+                "url": "https://media.rightmove.co.uk/8k/7420/125262434/7420_ABBSP212219_IMG_16_0000.jpeg",
+                "caption": "BEDROOM ",
+                "resizedImageUrls": {
+                    "size135x100": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_16_0000_max_135x100.jpeg",
+                    "size476x317": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_16_0000_max_476x317.jpeg",
+                    "size656x437": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_16_0000_max_656x437.jpeg"
+                }
+            },
+            {
+                "url": "https://media.rightmove.co.uk/8k/7420/125262434/7420_ABBSP212219_IMG_17_0000.jpeg",
+                "caption": "INNER HALLWAY",
+                "resizedImageUrls": {
+                    "size135x100": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_17_0000_max_135x100.jpeg",
+                    "size476x317": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_17_0000_max_476x317.jpeg",
+                    "size656x437": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_17_0000_max_656x437.jpeg"
+                }
+            },
+            {
+                "url": "https://media.rightmove.co.uk/8k/7420/125262434/7420_ABBSP212219_IMG_18_0000.jpeg",
+                "caption": "VIEW FROM WINDOW",
+                "resizedImageUrls": {
+                    "size135x100": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_18_0000_max_135x100.jpeg",
+                    "size476x317": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_18_0000_max_476x317.jpeg",
+                    "size656x437": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_18_0000_max_656x437.jpeg"
+                }
+            },
+            {
+                "url": "https://media.rightmove.co.uk/8k/7420/125262434/7420_ABBSP212219_IMG_19_0000.jpeg",
+                "caption": "KITCHEN/BREAKFAST ROOM VIEW",
+                "resizedImageUrls": {
+                    "size135x100": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_19_0000_max_135x100.jpeg",
+                    "size476x317": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_19_0000_max_476x317.jpeg",
+                    "size656x437": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_IMG_19_0000_max_656x437.jpeg"
+                }
+            }
+        ],
+        "floorplans": [
+            {
+                "url": "https://media.rightmove.co.uk/8k/7420/125262434/7420_ABBSP212219_FLP_00_0000.jpeg",
+                "caption": "FLOOR PLAN",
+                "type": "IMAGE",
+                "resizedFloorplanUrls": {
+                    "size296x197": "https://media.rightmove.co.uk/dir/8k/7420/125262434/7420_ABBSP212219_FLP_00_0000_max_296x197.jpeg"
+                }
+            }
+        ],
+        "virtualTours": [],
+        "customer": {
+            "branchId": 7420,
+            "branchName": "Abbeywood London",
+            "branchDisplayName": "Hunters, Abbeywood London",
+            "companyName": "Hunters Property Group Ltd",
+            "companyTradingName": "Hunters",
+            "displayAddress": "19 - 21 Wilton Road\r\nLondon\r\nSE2 9RH ",
+            "logoPath": "https://media.rightmove.co.uk/brand/brand_logo_5736_0003.jpeg",
+            "customerDescription": {
+                "truncatedDescriptionHTML": "<p>Hunters Estate Agents Abbey Wood specialises in property sales and lettings in SE2, SE28, SE18, DA17, DA18 and DA16. Abbey Wood is in the London Borough of Bexley and Royal Borough of Greenwich. Abbey Wood borders our neighbouring offices at Bexleyheath, Blackfen, Dartford and Greenwich and covers many other areas for property sales and lettings such as Barnehurst, Crayford, Slade Green, Erith, Upper Belvedere, South Bexleyheath, Woolwich, Bexley and parts of Sidcup.</p><p>Have you got proper</p>",
+                "isTruncated": true
+            },
+            "bannerAd": null,
+            "mpuAd": null,
+            "customerProfileUrl": "/estate-agents/agent/Hunters/Abbeywood-London-7420.html",
+            "customerBannerAdProfileUrl": "/estate-agents/agent/Hunters/Abbeywood-London-7420.html#ram_about_us",
+            "customerMpuAdProfileUrl": "/estate-agents/agent/Hunters/Abbeywood-London-7420.html#ram_about_us",
+            "customerPropertiesUrl": "/property-for-sale/find/Hunters/Abbeywood-London.html?locationIdentifier=BRANCH%5E7420&includeSSTC=true&_includeSSTC=on",
+            "isNewHomeDeveloper": false,
+            "spotlight": null,
+            "showBrochureLeadModal": false,
+            "developmentInfo": { "sitePlanUri": null, "micrositeFeatures": [] },
+            "buildToRent": false,
+            "commercial": false,
+            "buildToRentBenefits": []
+        },
+        "industryAffiliations": [
+            {
+                "name": "Association of Residential Letting Agents",
+                "imagePath": "https://media.rightmove.co.uk/dir/customer/industry-affiliation/association-of-residential-lettings-agent_max_135x100.png"
+            },
+            {
+                "name": "National Association of Estate Agents",
+                "imagePath": "https://media.rightmove.co.uk/dir/customer/industry-affiliation/national-association-of-estate-agents_max_135x100.png"
+            },
+            {
+                "name": "Ombudsman for REsale Estate Agents (no OFT logo)",
+                "imagePath": "https://media.rightmove.co.uk/dir/customer/industry-affiliation/ombudsman-for-resale-estate-agent_max_135x100.png"
+            }
+        ],
+        "rooms": [
+            {
+                "name": "VIEW OF PROPERTY FROM ENTRANCE",
+                "description": null,
+                "width": null,
+                "length": null,
+                "unit": null,
+                "dimension": null
+            },
+            {
+                "name": "VIEW OF PROPERTY ",
+                "description": null,
+                "width": null,
+                "length": null,
+                "unit": null,
+                "dimension": null
+            },
+            {
+                "name": "ENTRANCE HALL",
+                "description": null,
+                "width": null,
+                "length": null,
+                "unit": null,
+                "dimension": null
+            },
+            {
+                "name": "LOUNGE",
+                "description": "Double glazed bay window to front, radiator, carpet.",
+                "width": null,
+                "length": null,
+                "unit": null,
+                "dimension": "4.32m (14' 2\") max x 4.09m (13' 5\")"
+            },
+            {
+                "name": "DOUBLE BEDROOM ",
+                "description": "Double glazed window to rear, carpet, radiator.",
+                "width": null,
+                "length": null,
+                "unit": null,
+                "dimension": "3.63m (11' 11\") x 3.51m (11' 6\")"
+            },
+            {
+                "name": "INNER HALLWAY",
+                "description": "Carpet, storage cupboards.",
+                "width": null,
+                "length": null,
+                "unit": null,
+                "dimension": null
+            },
+            {
+                "name": "KITCHEN/BREAKFAST ROOM",
+                "description": "Double glazed bay window to side incorporating sink unit, wall and base units with complimenting work surfaces, built in feature units, space for appliances.",
+                "width": null,
+                "length": null,
+                "unit": null,
+                "dimension": "3.45m (11' 4\") x 3.38m (11' 1\")"
+            },
+            {
+                "name": "KITCHEN/BREAKFAST ROOM VIEW",
+                "description": null,
+                "width": null,
+                "length": null,
+                "unit": null,
+                "dimension": null
+            },
+            {
+                "name": "VIEW FROM KITCHEN WINDOW",
+                "description": null,
+                "width": null,
+                "length": null,
+                "unit": null,
+                "dimension": null
+            },
+            {
+                "name": "BATHROOM",
+                "description": null,
+                "width": null,
+                "length": null,
+                "unit": null,
+                "dimension": null
+            },
+            {
+                "name": "COURTYARD/GARDEN",
+                "description": null,
+                "width": null,
+                "length": null,
+                "unit": null,
+                "dimension": null
+            },
+            {
+                "name": "COURTYARD/GARDEN VIEW 1",
+                "description": null,
+                "width": null,
+                "length": null,
+                "unit": null,
+                "dimension": null
+            },
+            {
+                "name": "COURTYARD/GARDEN VIEW 2",
+                "description": null,
+                "width": null,
+                "length": null,
+                "unit": null,
+                "dimension": null
+            },
+            {
+                "name": "COURTYARD GARDEN VIEW 3",
+                "description": null,
+                "width": null,
+                "length": null,
+                "unit": null,
+                "dimension": null
+            },
+            {
+                "name": "COURTYARD/GARDEN VIEW 4",
+                "description": null,
+                "width": null,
+                "length": null,
+                "unit": null,
+                "dimension": null
+            }
+        ],
+        "location": {
+            "latitude": 51.48916,
+            "longitude": 0.11477,
+            "circleRadiusOnMap": 0,
+            "zoomLevel": 15,
+            "pinType": "APPROXIMATE_POINT",
+            "showMap": true
+        },
+        "streetView": {
+            "heading": null,
+            "pitch": null,
+            "zoom": null,
+            "latitude": 51.48916,
+            "longitude": 0.11477
+        },
+        "nearestAirports": [],
+        "nearestStations": [
+            {
+                "name": "Abbey Wood Station",
+                "types": ["NATIONAL_TRAIN"],
+                "distance": 0.27897733259569824,
+                "unit": "miles"
+            },
+            {
+                "name": "Plumstead Station",
+                "types": ["NATIONAL_TRAIN"],
+                "distance": 1.3118003647083127,
+                "unit": "miles"
+            },
+            {
+                "name": "Belvedere Station",
+                "types": ["NATIONAL_TRAIN"],
+                "distance": 1.6422546380589507,
+                "unit": "miles"
+            }
+        ],
+        "showSchoolInfo": true,
+        "countryGuide": null,
+        "channel": "RES_BUY",
+        "propertyUrls": {
+            "similarPropertiesUrl": "/property-for-sale/SE2-9NP.html?radius=0.5&minPrice=250000&maxPrice=325000&minBedrooms=1",
+            "nearbySoldPropertiesUrl": "/house-prices/se2-9np.html"
+        },
+        "sizings": [],
+        "brochures": [
+            {
+                "url": "https://media.rightmove.co.uk/8k/7420/125262434/7420_ABBSP212219_DOC_00_0000.pdf",
+                "caption": "Property Particulars"
+            }
+        ],
+        "epcGraphs": [],
+        "bedrooms": 1,
+        "bathrooms": null,
+        "transactionType": "BUY",
+        "tags": [],
+        "misInfo": {
+            "branchId": 7420,
+            "offerAdvertStampTypeId": null,
+            "premiumDisplay": false,
+            "premiumDisplayStampId": null,
+            "brandPlus": true,
+            "featuredProperty": false
+        },
+        "dfpAdInfo": {
+            "channel": "RES_BUY",
+            "targeting": [
+                { "key": "SO", "value": ["FALSE"] },
+                { "key": "R", "value": ["FALSE"] },
+                { "key": "AUCP", "value": ["FALSE"] },
+                { "key": "CCY", "value": ["GBP"] },
+                { "key": "UTo_A", "value": ["SE"] },
+                { "key": "UTo_C", "value": ["GB"] },
+                { "key": "CT", "value": ["property-for-sale"] },
+                { "key": "TT", "value": ["buy"] },
+                { "key": "BD", "value": ["1"] },
+                { "key": "PT", "value": ["flats_apartments"] },
+                { "key": "PST", "value": ["ground_flat"] },
+                { "key": "RESALEPRICE", "value": ["280000"] },
+                { "key": "B", "value": ["Band5"] },
+                { "key": "B_ID", "value": ["7420"] },
+                { "key": "C_ID", "value": ["Hunters"] },
+                { "key": "FP", "value": ["Y"] },
+                { "key": "EPC", "value": ["N"] },
+                { "key": "P_ID", "value": ["125262434"] },
+                { "key": "OV", "value": ["N"] },
+                { "key": "UTo_D", "value": ["SE2"] },
+                { "key": "UTo_Inc", "value": ["9NP"] },
+                { "key": "F", "value": ["garden"] },
+                { "key": "UTo_UKZ", "value": ["England"] }
+            ]
+        },
+        "staticMapImgUrls": {
+            "staticMapImgUrlMobile": "https://media.rightmove.co.uk/map/_generate?width=375&height=375&zoomLevel=15&latitude=51.48916&longitude=0.11477&signature=gIE5MzkcaaZp93Tknfy4GUMq9Bc=",
+            "staticMapImgUrlTablet": "https://media.rightmove.co.uk/map/_generate?width=768&height=347&zoomLevel=15&latitude=51.48916&longitude=0.11477&signature=2ktZMkxQaRAB5a_O-L-Vt0xnPw4=",
+            "staticMapImgUrlDesktopSmall": "https://media.rightmove.co.uk/map/_generate?width=580&height=347&zoomLevel=15&latitude=51.48916&longitude=0.11477&signature=wUd9vMYm92vDmB5BumkVUZJGd78=",
+            "staticMapImgUrlDesktopLarge": "https://media.rightmove.co.uk/map/_generate?width=761&height=347&zoomLevel=15&latitude=51.48916&longitude=0.11477&signature=MGNVuPCj_VQ1wXlmij6odv7cWhY="
+        },
+        "listingHistory": { "listingUpdateReason": "Added yesterday" },
+        "feesApply": null,
+        "broadband": {
+            "disclaimer": "* This is the average speed from the provider with the fastest broadband package available on <a rel=\"sponsored\" href=\"https://www.comparethemarket.com\" target=\"_blank\">comparethemarket.com</a> at this postcode. The average speed displayed is based on the download speeds of at least 50% of customers at peak time (8pm to 10pm). Fibre/cable services at the postcode are subject to availability and may differ between properties within a postcode. Speeds can be affected by a range of technical and environmental factors. The speed at the property may be lower than that listed above. You can check the estimated speed and confirm availability to a property prior to purchasing on the broadband provider's website. Providers may increase charges. The information is provided and maintained by <a href=\"https://www.stickee.co.uk/\" target=\"_blank\">Stickee Technology Limited</a>.",
+            "broadbandCheckerUrl": "https://partnerships-broadband.comparethemarket.com/v1/broadband/rightmove/SE29NP?apikey=0f6b7446ccfeee0154e9a89c9fa64f7fe8921b133264c4feb246d3e5aaf49bf0"
+        },
+        "contactInfo": {
+            "contactMethod": "EMAIL",
+            "telephoneNumbers": {
+                "localNumber": "020 8012 6822",
+                "internationalNumber": null,
+                "disclaimerText": null,
+                "disclaimerTitle": null,
+                "disclaimerDescription": null
+            }
+        },
+        "lettings": null,
+        "infoReelItems": [
+            {
+                "title": "PROPERTY TYPE",
+                "type": "PROPERTY_TYPE",
+                "primaryText": "Ground Flat",
+                "secondaryText": "",
+                "tooltipText": ""
+            },
+            {
+                "title": "BEDROOMS",
+                "type": "BEDROOMS",
+                "primaryText": "×1",
+                "secondaryText": "",
+                "tooltipText": ""
+            }
+        ],
+        "mortgageCalculator": {
+            "price": 280000,
+            "propertyTypeAlias": "flats_apartments"
+        },
+        "tenure": {
+            "tenureType": null,
+            "yearsRemainingOnLease": null,
+            "message": "Please confirm if this is a freehold or leasehold property with Hunters"
+        },
+        "soldPropertyType": "UNKNOWN",
+        "auctionProvider": null,
+        "propertySubType": "Ground Flat",
+        "businessForSale": false,
+        "commercial": false,
+        "commercialUseClasses": [],
+        "affordableBuyingScheme": false,
+        "sharedOwnership": {
+            "sharedOwnership": false,
+            "ownershipPercentage": null,
+            "rentPrice": null,
+            "rentFrequency": "not specified"
+        },
+        "livingCosts": {
+            "councilTaxExempt": false,
+            "councilTaxIncluded": false,
+            "annualGroundRent": null,
+            "groundRentReviewPeriodInYears": null,
+            "groundRentPercentageIncrease": null,
+            "annualServiceCharge": null,
+            "councilTaxBand": null,
+            "domesticRates": null
+        }
+    },
+    "metadata": {
+        "publicsiteUrl": "//www.rightmove.co.uk",
+        "cookieDomain": "rightmove.co.uk",
+        "currencyCode": "",
+        "emailAgentUrl": "/property-for-sale/contactBranch.html?backToPropertyURL=%2Fproperties%2F125262434&propertyId=125262434",
+        "facebookShareUrl": "https://facebook.com/share.php?u=https%3A%2F%2Fwww.rightmove.co.uk%2Fproperties%2F125262434%3Futm_campaign%3Dproperty-details%26utm_content%3Dbuying%26utm_medium%3Dsharing%26utm_source%3Dfacebook%23%2F%26channel%3DRES_BUY",
+        "twitterShareUrl": "https://twitter.com/share?text=Check out this 1 bedroom ground floor flat for sale on Rightmove&url=https%3A%2F%2Fwww.rightmove.co.uk%2Fproperties%2F125262434%3Futm_campaign%3Dproperty-details%26utm_content%3Dbuying%26utm_medium%3Dsharing%26utm_source%3Dtwitter%23%2F%26channel%3DRES_BUY",
+        "emailShareUrl": "mailto:?subject=Check%20out%20this%201%20bedroom%20ground%20floor%20flat%20for%20sale%20on%20Rightmove&body=Check%20out%20this%201%20bedroom%20ground%20floor%20flat%20for%20sale%20in%20Abbey%20Wood%20Road%20,%20Abbey%20Wood%20,%20London,%20SE2%209NP,%20SE2%20for%20%C2%A3280,000.%20Marketed%20by%20Hunters,%20Abbeywood%20London%20on%20Rightmove%0Ahttps%3A%2F%2Fwww.rightmove.co.uk%2Fproperties%2F125262434%3Futm_campaign%3Dproperty-details%26utm_content%3Dbuying%26utm_medium%3Demail%26utm_source%3Dsendtofriend%23%2F%26channel%3DRES_BUY",
+        "copyLinkUrl": "https://www.rightmove.co.uk/properties/125262434?utm_campaign=property-details&utm_content=buying&utm_medium=sharing&utm_source=copytoclipboard#/&channel=RES_BUY",
+        "whatsAppShareUrl": "https://web.whatsapp.com/send?text=Check%20out%20this%201%20bedroom%20ground%20floor%20flat%20for%20sale%20on%20Rightmove%0Ahttps%3A%2F%2Fwww.rightmove.co.uk%2Fproperties%2F125262434%3Futm_campaign%3Dproperty-details%26utm_content%3Dbuying%26utm_medium%3Dsharing%26utm_source%3Dwhatsapp%23%2F%26channel%3DRES_BUY",
+        "linkedInShareUrl": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.rightmove.co.uk%2Fproperties%2F125262434%3Futm_campaign%3Dproperty-details%26utm_content%3Dbuying%26utm_medium%3Dsharing%26utm_source%3Dlinkedin%23%2F%26channel%3DRES_BUY",
+        "myRightmoveUrl": "//my.rightmove.co.uk",
+        "mediaServerUrl": "//media.rightmove.co.uk",
+        "serverTimestamp": 1658598933038,
+        "deviceType": "desktop",
+        "deviceTypeForLazyLoad": "desktop",
+        "deviceOS": "other",
+        "mvtInfo": [
+            {
+                "label": "GoogleTagManagerSwitch.GTM_THIRD_PARTY_TAG_SWITCH",
+                "state": "on",
+                "shouldLog": true
+            },
+            {
+                "label": "GoogleTagManagerSwitch.GOOGLE_TAG_MANAGER_SWITCH",
+                "state": "on",
+                "shouldLog": true
+            },
+            {
+                "label": "OnlineViewingsSwitches.ONLINE_VIEWING_PAGE_ENABLED",
+                "state": "on",
+                "shouldLog": true
+            },
+            {
+                "label": "PropertyDetailsWeb.USE_RM_ASSISTANT",
+                "state": "on",
+                "shouldLog": true
+            },
+            {
+                "label": "MRMSwitches.USE_ASSISTANT_REGISTRATION",
+                "state": "on",
+                "shouldLog": true
+            },
+            {
+                "label": "PropertyDetailsWeb.STREETVIEW_BUTTON_ENABLED",
+                "state": "on",
+                "shouldLog": true
+            },
+            {
+                "label": "PropertyDetailsWeb.USE_TRAY_MORTGAGE",
+                "state": "off",
+                "shouldLog": true
+            },
+            {
+                "label": "PropertyDetailsWeb.USE_PREFER_EMAIL_CLIENT_ENABLED",
+                "state": "on",
+                "shouldLog": true
+            },
+            {
+                "label": "PropertyDetailsWeb.GOOGLE_OPTIMISE_ENABLED",
+                "state": "on",
+                "shouldLog": true
+            },
+            {
+                "label": "PropertyDetailsWeb.APP_DOWNLOAD_BANNER_ENABLED",
+                "state": "on",
+                "shouldLog": true
+            },
+            {
+                "label": "PropertyDetailsWeb.WELCOME_BANNER_ENABLED",
+                "state": "off",
+                "shouldLog": true
+            },
+            {
+                "label": "PropertyDetailsWeb.MARKET_INFO_LIMIT_THUMBNAILS",
+                "state": "off",
+                "shouldLog": true
+            },
+            {
+                "label": "PropertyDetailsWeb.LOG_INVALID_COOKIE_ENABLED",
+                "state": "off",
+                "shouldLog": true
+            },
+            {
+                "label": "PropertyDetailsWeb.ADDRESS_PICKER_ENABLED",
+                "state": "on",
+                "shouldLog": true
+            },
+            {
+                "label": "PropertyDetailsWeb.DEVELOPMENT_INFO_ENABLED",
+                "state": "on",
+                "shouldLog": true
+            },
+            {
+                "label": "PropertyDetailsWeb.CAROUSEL_GALLERY_PAGE_ENABLED",
+                "state": "on",
+                "shouldLog": true
+            },
+            {
+                "label": "PropertyDetailsWeb.HIDE_HISTORICAL_RES_LET_CTA_ENABLED",
+                "state": "on",
+                "shouldLog": true
+            },
+            {
+                "label": "PropertyDetailsWeb.STAMP_DUTY_CALCULATOR_ENABLED",
+                "state": "on",
+                "shouldLog": true
+            },
+            {
+                "label": "StampDutyCalculator.LANDING_PAGE_LINK_ENABLED",
+                "state": "on",
+                "shouldLog": true
+            },
+            {
+                "label": "PropertyDetailsWeb.AFFORDABILITY_WIDGET_ENABLED",
+                "state": "on",
+                "shouldLog": true
+            },
+            {
+                "label": "PropertyDetailsWeb.TRAY_LOGIN_FOR_VIEWINGS_ENABLED",
+                "state": "off",
+                "shouldLog": true
+            },
+            {
+                "label": "PropertyDetailsWeb.BROADBAND_WIDGET_ENABLED",
+                "state": "on",
+                "shouldLog": true
+            },
+            {
+                "label": "PropertyDetailsWeb.BUILT_FOR_RENTERS_INFO_MODAL_ENABLED",
+                "state": "on",
+                "shouldLog": true
+            },
+            {
+                "label": "PropertyDetailsWeb.UK_CREDIT_CHECK_SPONSORSHIP_AD_ENABLED",
+                "state": "on",
+                "shouldLog": true
+            },
+            {
+                "label": "PropertyDetailsWeb.SAVE_PROPERTY_TO_LIST_ENABLED",
+                "state": "on",
+                "shouldLog": true
+            },
+            {
+                "label": "PropertyDetailsWeb.MATERIAL_INFO_ENABLED",
+                "state": "on",
+                "shouldLog": true
+            },
+            {
+                "label": "NewPropertyDetailsPageRolloutSwitches.LABS_ROLLOUT_TURNED_ON",
+                "state": "on",
+                "shouldLog": true
+            },
+            {
+                "label": "NewPropertyDetailsPageRolloutSwitches.LABS_OVERSEAS",
+                "state": "on",
+                "shouldLog": true
+            },
+            {
+                "label": "NewPropertyDetailsPageRolloutSwitches.LABS_LETTINGS_RES",
+                "state": "on",
+                "shouldLog": true
+            },
+            {
+                "label": "NewPropertyDetailsPageRolloutSwitches.LABS_SALES_RES",
+                "state": "on",
+                "shouldLog": true
+            },
+            {
+                "label": "NewPropertyDetailsPageRolloutSwitches.LABS_LETTINGS_COM",
+                "state": "on",
+                "shouldLog": true
+            },
+            {
+                "label": "NewPropertyDetailsPageRolloutSwitches.LABS_SALES_COM",
+                "state": "on",
+                "shouldLog": true
+            },
+            {
+                "label": "NewPropertyDetailsPageRolloutSwitches.LABS_NEW_HOMES",
+                "state": "on",
+                "shouldLog": true
+            },
+            {
+                "label": "NewPropertyDetailsPageRolloutSwitches.LABS_STUDENT",
+                "state": "on",
+                "shouldLog": true
+            },
+            {
+                "label": "NewPropertyDetailsPageRolloutSwitches.ROLLOUT_TURNED_ON",
+                "state": "on",
+                "shouldLog": true
+            },
+            {
+                "label": "NewPropertyDetailsPageRolloutSwitches.OVERSEAS",
+                "state": "on",
+                "shouldLog": true
+            },
+            {
+                "label": "NewPropertyDetailsPageRolloutSwitches.LETTINGS_RES",
+                "state": "on",
+                "shouldLog": true
+            },
+            {
+                "label": "NewPropertyDetailsPageRolloutSwitches.SALES_RES",
+                "state": "on",
+                "shouldLog": true
+            },
+            {
+                "label": "NewPropertyDetailsPageRolloutSwitches.LETTINGS_COM",
+                "state": "on",
+                "shouldLog": true
+            },
+            {
+                "label": "NewPropertyDetailsPageRolloutSwitches.SALES_COM",
+                "state": "on",
+                "shouldLog": true
+            },
+            {
+                "label": "NewPropertyDetailsPageRolloutSwitches.NEW_HOMES",
+                "state": "on",
+                "shouldLog": true
+            },
+            {
+                "label": "NewPropertyDetailsPageRolloutSwitches.STUDENT",
+                "state": "on",
+                "shouldLog": true
+            },
+            {
+                "label": "CookieBarSwitches.BLOCK_UNKNOWN_COOKIES",
+                "state": "off",
+                "shouldLog": true
+            },
+            {
+                "label": "CookieBarSwitches.ENABLE_ONE_TRUST_COOKIE_SCRIPT",
+                "state": "on",
+                "shouldLog": true
+            }
+        ],
+        "featureSwitches": {
+            "GoogleTagManagerSwitch.GTM_THIRD_PARTY_TAG_SWITCH": true,
+            "GoogleTagManagerSwitch.GOOGLE_TAG_MANAGER_SWITCH": true,
+            "OnlineViewingsSwitches.ONLINE_VIEWING_PAGE_ENABLED": true,
+            "PropertyDetailsWeb.USE_RM_ASSISTANT": true,
+            "MRMSwitches.USE_ASSISTANT_REGISTRATION": true,
+            "PropertyDetailsWeb.STREETVIEW_BUTTON_ENABLED": true,
+            "PropertyDetailsWeb.USE_TRAY_MORTGAGE": false,
+            "PropertyDetailsWeb.USE_PREFER_EMAIL_CLIENT_ENABLED": true,
+            "PropertyDetailsWeb.GOOGLE_OPTIMISE_ENABLED": true,
+            "PropertyDetailsWeb.APP_DOWNLOAD_BANNER_ENABLED": true,
+            "PropertyDetailsWeb.WELCOME_BANNER_ENABLED": false,
+            "PropertyDetailsWeb.MARKET_INFO_LIMIT_THUMBNAILS": false,
+            "PropertyDetailsWeb.LOG_INVALID_COOKIE_ENABLED": false,
+            "PropertyDetailsWeb.ADDRESS_PICKER_ENABLED": true,
+            "PropertyDetailsWeb.DEVELOPMENT_INFO_ENABLED": true,
+            "PropertyDetailsWeb.CAROUSEL_GALLERY_PAGE_ENABLED": true,
+            "PropertyDetailsWeb.HIDE_HISTORICAL_RES_LET_CTA_ENABLED": true,
+            "PropertyDetailsWeb.STAMP_DUTY_CALCULATOR_ENABLED": true,
+            "StampDutyCalculator.LANDING_PAGE_LINK_ENABLED": true,
+            "PropertyDetailsWeb.AFFORDABILITY_WIDGET_ENABLED": true,
+            "PropertyDetailsWeb.TRAY_LOGIN_FOR_VIEWINGS_ENABLED": false,
+            "PropertyDetailsWeb.BROADBAND_WIDGET_ENABLED": true,
+            "PropertyDetailsWeb.BUILT_FOR_RENTERS_INFO_MODAL_ENABLED": true,
+            "PropertyDetailsWeb.UK_CREDIT_CHECK_SPONSORSHIP_AD_ENABLED": true,
+            "PropertyDetailsWeb.SAVE_PROPERTY_TO_LIST_ENABLED": true,
+            "PropertyDetailsWeb.MATERIAL_INFO_ENABLED": true,
+            "NewPropertyDetailsPageRolloutSwitches.LABS_ROLLOUT_TURNED_ON": true,
+            "NewPropertyDetailsPageRolloutSwitches.LABS_OVERSEAS": true,
+            "NewPropertyDetailsPageRolloutSwitches.LABS_LETTINGS_RES": true,
+            "NewPropertyDetailsPageRolloutSwitches.LABS_SALES_RES": true,
+            "NewPropertyDetailsPageRolloutSwitches.LABS_LETTINGS_COM": true,
+            "NewPropertyDetailsPageRolloutSwitches.LABS_SALES_COM": true,
+            "NewPropertyDetailsPageRolloutSwitches.LABS_NEW_HOMES": true,
+            "NewPropertyDetailsPageRolloutSwitches.LABS_STUDENT": true,
+            "NewPropertyDetailsPageRolloutSwitches.ROLLOUT_TURNED_ON": true,
+            "NewPropertyDetailsPageRolloutSwitches.OVERSEAS": true,
+            "NewPropertyDetailsPageRolloutSwitches.LETTINGS_RES": true,
+            "NewPropertyDetailsPageRolloutSwitches.SALES_RES": true,
+            "NewPropertyDetailsPageRolloutSwitches.LETTINGS_COM": true,
+            "NewPropertyDetailsPageRolloutSwitches.SALES_COM": true,
+            "NewPropertyDetailsPageRolloutSwitches.NEW_HOMES": true,
+            "NewPropertyDetailsPageRolloutSwitches.STUDENT": true,
+            "CookieBarSwitches.BLOCK_UNKNOWN_COOKIES": false,
+            "CookieBarSwitches.ENABLE_ONE_TRUST_COOKIE_SCRIPT": true
+        },
+        "adUnitPath": {
+            "mpu1": "/5029762/Rightmove_Property_Details_Web/UK_Sales_MPU1",
+            "trackingPixel": "/5029762/Rightmove_Property_Details_Web/Tracking_Pixel",
+            "ukCreditCheckSponsorship": "/5029762/Rightmove_Property_Details_Web/UK_Sponsorship_Text-link_Property-Details"
+        },
+        "backLink": { "url": "", "text": "", "operation": 0 },
+        "shouldTrackGTMSuccessTracker": false,
+        "emailPreferences": {
+            "preferencesUrl": "//my.rightmove.co.uk",
+            "showModal": false,
+            "source": ""
+        },
+        "staticAssetsPath": "https://media.rightmove.co.uk/assets/a04c507a807f8bdd7543a397a71b0ac4",
+        "staticImagesAndFontsPath": "https://media.rightmove.co.uk/assets/a04c507a807f8bdd7543a397a71b0ac4",
+        "correlationId": "ac49f11d-4b1b-4492-8499-c17e1928c541",
+        "locationSearchUrl": "//los.rightmove.co.uk",
+        "discoveryCarouselExperimentId": "E5lgjGT4SymB56QvcuggTg",
+        "serveEs6Bundles": false
+    },
+    "isAuthenticated": false,
+    "analyticsInfo": {
+        "analyticsBranch": {
+            "agentType": "ea_sales",
+            "branchId": 7420,
+            "branchName": "Abbeywood London",
+            "branchPostcode": null,
+            "brandName": "Hunters",
+            "companyName": "Hunters Property Group Ltd",
+            "companyTradingName": "Hunters",
+            "companyType": "corporate",
+            "displayAddress": "19 - 21 Wilton Road\r\nLondon\r\nSE2 9RH ",
+            "pageType": "Standard"
+        },
+        "analyticsProperty": {
+            "added": "20220722",
+            "auctionOnly": false,
+            "beds": 1,
+            "businessForSale": false,
+            "country": "GB",
+            "currency": "GBP",
+            "floorplanCount": 1,
+            "furnishedType": "Not Specified",
+            "hasOnlineViewing": false,
+            "imageCount": 20,
+            "latitude": 51.48916,
+            "longitude": 0.11477,
+            "letAgreed": false,
+            "lettingType": "Long term",
+            "maxSizeAc": null,
+            "maxSizeFt": null,
+            "minSizeAc": null,
+            "minSizeFt": null,
+            "ownership": "Non-shared ownership",
+            "postcode": "SE2 9NP",
+            "preOwned": "Resale",
+            "price": 280000,
+            "priceQualifier": "Guide Price",
+            "propertyId": 125262434,
+            "propertySubType": "Ground Flat",
+            "propertyType": "Flats / Apartments",
+            "retirement": false,
+            "selectedCurrency": null,
+            "selectedPrice": null,
+            "soldSTC": false,
+            "videoProvider": "No Video",
+            "viewType": "Current",
+            "customUri": "https://www.rightmove.co.uk/property-for-sale/properties"
+        }
+    }
+}
