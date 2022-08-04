@@ -1,79 +1,104 @@
 # Rightmove / Zoopla Project.
 
-[toc]
+- [toc]
 
 # Refactor
-[] Load layers on request, not by default
-    [x] bus routes
-    [x] academies / free schools
-    [x] state schools
-    [x] universities
-    [x] childrens centers
-    [] supermarkets
-[] Better app structure
-[] Make all Zoopla/Rightmove requests frontend
-[] Save last Zoopla/Rightmove request
-[] User Accounts - free / unlimited
-[] Loading icon - subtle - in corner?
-[x] Popup modal for clearing custom icon colours
+- [] Load layers on request, not by default
+    - [x] bus routes
+    - [x] academies / free schools
+    - [x] state schools
+    - [x] universities
+    - [x] childrens centers
+    - [] supermarkets
+- [] Better app structure
+- [] Make all Zoopla/Rightmove requests frontend
+- [] Save last Zoopla/Rightmove request
+- [] User Accounts - free / unlimited
+- [] Loading icon - subtle - in corner?
+- [x] Popup modal for clearing custom icon colours
 
 
 # Features
 
-[] House Report
-    [] Crimes at property
-[] Tube / Train stations say which route they're on
-[] Advanced location filtering. 
+- [] Unified Search?
+    - Zoopla
+    - Rightmove
+    - OnTheMarket
+- [] OnTheMarket
+    - [JSON](https://www.onthemarket.com/map/show-pins/?search-type=for-sale&min-bedrooms=1&location-id=se13&max-price=325000&min-price=275000&new-home-flag=F&retirement=false&shared-ownership=false&sort-field=keywords&view=map)
+- [] House Report
+    - [] Prices of surrounding property. 
+        - Price vs Avg Street price of properties
+        - Price vs Avg Area price of properties
+        - Price vs National Avg
+        - Prices of houses in street
+    - [] Crimes at property
+    - [] any construction near
+    - [] Broadband Services
+    - [] Council tax bands
+    - [] Price Change History 
+    - [] Extra Zoopla / Rightmove Data
+        - Borough
+        - EPC (energy performance certificate)
+        - Estate Agent Link
+        - Ground Rent
+        - Service Charge
+        - Length of Lease
+        - Council Tax
+        - Closest Schools
+        - Broadband Speed
+- [] Tube / Train stations say which route they're on
+- [] Advanced location filtering. 
     - AND / OR / NOT / XOR close to features
     - stations / lines / crimes 
-[x] Blacklist removal (refresh list on click)
-[x] Blacklist add (refresh list on click)
-[] Changing highlightList colour multiple times keeps adding entries to localStorage array. Just replace current one, don't keep adding.
-[] favourites always load, no need to query zoopla / rightmove.
-[] import / export favourites
-[x] Highlight properties my changing icon colour (custom colour)
-[x] Show floorplans
-[x] Hide crimes toggle
-[x] Text highlighter
-[x] Better blacklist listing
-[x] Google street-view link on drawer
+- [] Changing highlightList colour multiple times keeps adding entries to localStorage array. Just replace current one, don't keep adding.
+- [] favourites always load, no need to query zoopla / rightmove.
+- [] import / export favourites
+- [x] Highlight properties my changing icon colour (custom colour)
+- [x] Show floorplans
+- [x] Hide crimes toggle
+- [x] Text highlighter
+- [x] Better blacklist listing
+- [x] Google street-view link on drawer
     - https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=51.485127,-0.055555
-[X] Desatuate / Invert colours / Sepia / Dark-mode
+- [X] Desatuate / Invert colours / Sepia / Dark-mode
+- [x] Blacklist removal (refresh list on click)
+- [x] Blacklist add (refresh list on click)
 
 
 # Layers to add
 
-[] school catchment radius
-[] air polution
-[] Delivery services (deliveroo, uber-eats, just-eat, etc)
-[] small supermarkets.
-[] Pollen
-[] 5G Towers
-[] Broadband Services
-[] Phone coverage
-[] Conservation areas
-[] Flood areas
-[] planning permission
-[] waste services
-[] any construction near
-[] radioactive materials in the land
-[] sweage plant / waste plant / recycle center
-[] Amazon Prime
-[] Council tax bands
-[] Bike routes
-[] Flight paths
-[] Bars / Pubs / Nightclubs near
-[] air quality
-[] Windows / Sunlight / House Orientation
-[x] Trains (stations / Routes)
-[x] Tube (stations / Routes)
-[x] Buses (Stations / Routes)
-[x] Crime Boroughs
-[x] Crime Hotspots
-[x] Universities
-[x] Bus Routes
-[x] supermarkets. 
-[x] school locations
+- [] Broadband Services
+- [] school catchment radius
+- [] air polution
+- [] Delivery services (deliveroo, uber-eats, just-eat, etc)
+- [] small supermarkets.
+- [] Pollen
+- [] Mobile Phone Towers
+- [] Phone coverage
+- [] Conservation areas
+- [] Flood areas
+- [] planning permission
+- [] waste services
+- [] any construction near
+- [] radioactive materials in the land
+- [] sweage plant / waste plant / recycle center
+- [] Amazon Prime
+- [] Council tax bands
+- [] Bike routes
+- [] Flight paths
+- [] Bars / Pubs / Nightclubs near
+- [] air quality
+- [] Windows / Sunlight / House Orientation
+- [x] Trains (stations / Routes)
+- [x] Tube (stations / Routes)
+- [x] Buses (Stations / Routes)
+- [x] Crime Boroughs
+- [x] Crime Hotspots
+- [x] Universities
+- [x] Bus Routes
+- [x] supermarkets. 
+- [x] school locations
 
 
 Noise Levels
@@ -85,6 +110,8 @@ Noise Levels
 
 # House Report
 
+## GOV
+- [GOV APIs](https://www.api.gov.uk/#uk-public-sector-apis)
 
 ## Gov.uk - Land Registry
 - [Land Registry Data](https://use-land-property-data.service.gov.uk/)
