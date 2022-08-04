@@ -19,7 +19,6 @@ map.addEventListener('click', async function(event) {
      */
     if (marker.type == 'property')
     {
-        // Send the marker to backend to get all further details from zoopla/rightmove
         var propertyDetails = await load_feature_details(marker)
 
         // update the right drawer contents with results.

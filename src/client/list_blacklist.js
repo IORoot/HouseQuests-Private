@@ -28,6 +28,10 @@ function list_blacklist(){
                 colour = 'purple-500'
             }
 
+            if (markerSource == 'onthemarket'){
+                colour = 'rose-500'
+            }
+
             blacklistItems += '<div class="p-1 bg-'+colour+' text-white rounded-lg text-xs shadow flex flex-row gap-1 h-6 px-1">'
 
                 blacklistItems +=  '<a href="#" data-blacklist-source="'+markerSource+'" data-blacklist-id="'+markerID+'" class="blacklistid-link hover:underline" >'

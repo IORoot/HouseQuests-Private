@@ -45,7 +45,8 @@ function clear_search_boxes()
 {
     let sources = [
         'zoopla',
-        'rightmove'
+        'rightmove',
+        'onthemarket'
     ]
 
     sources.forEach(function(source){

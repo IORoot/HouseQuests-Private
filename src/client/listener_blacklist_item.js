@@ -22,6 +22,10 @@ var openBlacklistDrawer = async function() {
         domain = 'https://zoopla.co.uk/for-sale/details/'
     }
 
+    if (blacklistSource == 'onthemarket'){
+        domain = 'https://www.onthemarket.com/details/'
+    }
+
     if (blacklistSource == ''){
         return;
     }
@@ -33,7 +37,6 @@ var openBlacklistDrawer = async function() {
         'url': domain+blacklistId
     }
 
-    // Send the marker to backend to get all further details from zoopla/rightmove
     var propertyDetails = await load_feature_details(blacklistMarker)
 
     // update the right drawer contents with results.

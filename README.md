@@ -80,6 +80,7 @@
 - [ ] Changing highlightList colour multiple times keeps adding entries to localStorage array. Just replace current one, don't keep adding.
 - [ ] favourites always load, no need to query zoopla / rightmove.
 - [ ] import / export favourites
+- [ ] Elevation of building for flats?
 - [ ] Unified Search?
     - Zoopla
     - Rightmove
@@ -232,8 +233,6 @@ Postcode-based Standard report
 - [Python Wrapper for Zoopla](https://anthonybloomer.github.io/zoopla/)
 - [PHP Rightmove Property Feed](https://github.com/frozensheep/rightmoveADF)
 - [Python Tutorial to scrape Rightmove](https://low-brandon96.medium.com/scraping-property-listings-from-rightmove-bd3cfb36516a)
-
-
 
 
 

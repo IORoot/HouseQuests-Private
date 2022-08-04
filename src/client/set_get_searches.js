@@ -37,7 +37,8 @@ function onload_searches()
 {
     let sources = [
         'zoopla',
-        'rightmove'
+        'rightmove',
+        'onthemarket'
     ]
 
     sources.forEach(function(source){
