@@ -26,7 +26,7 @@
 <!-- /vscode-markdown-toc -->
 
 # Refactor
-- [] Load layers on request, not by default
+- [ ] Load layers on request, not by default
     - [x] bus routes
     - [x] academies / free schools
     - [x] state schools
@@ -129,7 +129,6 @@ Noise Levels
 - Are you near a train line?
 - Are you near a busy street?
 - How busy is the street? Google Traffic?
-- 
 
 # House Report
 
