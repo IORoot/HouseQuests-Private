@@ -1,6 +1,29 @@
 # Rightmove / Zoopla Project.
 
-- [toc]
+
+<!-- vscode-markdown-toc -->
+* 1. [GOV](#GOV)
+* 2. [Gov.uk - Land Registry](#Gov.uk-LandRegistry)
+* 3. [House Prices](#HousePrices)
+* 4. [Crimes](#Crimes)
+* 5. [Random data](#Randomdata)
+* 6. [Traffic](#Traffic)
+* 7. [Getting closest station](#Gettingcloseststation)
+* 8. [APIs](#APIs)
+* 9. [Schools](#Schools)
+* 10. [Universities](#Universities)
+* 11. [Police Crime API](#PoliceCrimeAPI)
+* 12. [Bus stations / routes](#Busstationsroutes)
+* 13. [Tube](#Tube)
+* 14. [Trains / Rail Maps](#TrainsRailMaps)
+* 15. [City of London MapsServers](#CityofLondonMapsServers)
+* 16. [Zoopla / Rightmove Direct APIs & Scraping](#ZooplaRightmoveDirectAPIsScraping)
+
+<!-- vscode-markdown-toc-config
+	numbering=true
+	autoSave=true
+	/vscode-markdown-toc-config -->
+<!-- /vscode-markdown-toc -->
 
 # Refactor
 - [] Load layers on request, not by default
@@ -110,13 +133,13 @@ Noise Levels
 
 # House Report
 
-## GOV
+##  1. <a name='GOV'></a>GOV
 - [GOV APIs](https://www.api.gov.uk/#uk-public-sector-apis)
 
-## Gov.uk - Land Registry
+##  2. <a name='Gov.uk-LandRegistry'></a>Gov.uk - Land Registry
 - [Land Registry Data](https://use-land-property-data.service.gov.uk/)
 
-## House Prices
+##  3. <a name='HousePrices'></a>House Prices
 
 Use Local Property Prices in area to determine how wealthy the area is.
 - [Zoopla Lookup](https://www.zoopla.co.uk/house-prices/se13-7aa/?q=SE137AA&search_source=house-prices)
@@ -128,7 +151,7 @@ Postcode-based Standard report
 - [Standard property price reports ](https://www.gov.uk/guidance/price-paid-data-standard-reports)
 - [Report Tool - generate CSV showing volume of sales in area in price band](https://landregistry.data.gov.uk/app/standard-reports)
 
-## Crimes
+##  4. <a name='Crimes'></a>Crimes
 - [Crimes at a property](https://data.police.uk/docs/method/crimes-at-location/)
 
 
@@ -138,24 +161,24 @@ Postcode-based Standard report
 
 # Other Data sources to use
 
-## Random data
+##  5. <a name='Randomdata'></a>Random data
 - [Various London Maps](https://mappinglondon.co.uk/category/data/)
 - [Datastore](https://data.london.gov.uk/dataset?q=location&sort=score%20desc,%20metadata_modified%20desc&_groups_limit=0&res_format=SHP)
 - [OpenStreetMap Map Features](https://wiki.openstreetmap.org/wiki/Map_features)
 - [OpenStreetMap Tester](]http://overpass-turbo.eu/)
 - [Commuter Hotspots](https://www.totallymoney.com/commuter-hotspots/tool/)
 
-## Traffic
+##  6. <a name='Traffic'></a>Traffic
 - [GOV - Road Traffic Stats](https://roadtraffic.dft.gov.uk/#14/51.4569/-0.0177/basemap-countpoints)
 - [TomTom Traffic API](https://developer.tomtom.com/traffic-api/documentation/product-information/introduction)
 - [Bing Traffic API](https://docs.microsoft.com/en-us/bingmaps/rest-services/traffic/?redirectedfrom=MSDN)
 - [MapBox Traffic API](https://docs.mapbox.com/api/navigation/directions/)
 
-## Getting closest station
+##  7. <a name='Gettingcloseststation'></a>Getting closest station
 -  [Forum Post](https://techforum.tfl.gov.uk/t/api-for-getting-the-nearest-train-stations/1671)
 -  [TFL API endpoint](https://api-portal.tfl.gov.uk/api-details#api=StopPoint&operation=StopPoint_GetByGeoPointByQueryLatQueryLonQueryStopTypesQueryRadiusQueryUseSt)
 
-## APIs
+##  8. <a name='APIs'></a>APIs
 - [Ordinance Survey API](https://api.os.uk/)
 
 
@@ -164,27 +187,27 @@ Postcode-based Standard report
 
 # Data Already Used.
 
-## Schools
+##  9. <a name='Schools'></a>Schools
 - [London Schools Atlas](https://data.london.gov.uk/dataset/london-schools-atlas)
 - [GOV School data](https://www.get-information-schools.service.gov.uk/Downloads)
 - [Schools Map](https://apps.london.gov.uk/schools/)
 
-## Universities
+##  10. <a name='Universities'></a>Universities
 - [UCAS Map](https://www.ucas.com/explore/unis?studyYear=current&map=true)
 
-## Police Crime API
+##  11. <a name='PoliceCrimeAPI'></a>Police Crime API
 - [Police API](https://data.police.uk/docs/)
 - [Crime Stats](https://data.london.gov.uk/strategic-crime-analysis/)
 - [Crime Maps](https://open-innovations.org/blog/2018-09-26-crime-maps)
 
-## Bus stations / routes
+##  12. <a name='Busstationsroutes'></a>Bus stations / routes
 - [Transport for London Unified API](https://api.tfl.gov.uk/)
 - [TfL Bus Stop Locations and Routes](https://data.london.gov.uk/dataset/tfl-bus-stop-locations-and-routes)
 - [OpenStreetMap Playground](http://overpass-turbo.eu/)
 - [List of bus routes](http://londonbusroutes.net/routes.htm)
 - [LIVE London bus map](http://traintimes.org.uk/map/london-buses/#1)
 
-## Tube
+##  13. <a name='Tube'></a>Tube
 
 - [TFL API](https://api.tfl.gov.uk/)
 - [Tube Map](http://www.tflmap.com/)
@@ -194,17 +217,17 @@ Postcode-based Standard report
 - [Live Tube Map](http://traintimes.org.uk/map/tube/)
 - [TFL API Example requests](https://content.tfl.gov.uk/example-api-requests.pdf)
 
-## Trains / Rail Maps
+##  14. <a name='TrainsRailMaps'></a>Trains / Rail Maps
 - [London Train Stations](https://www.doogal.co.uk/london_stations)
 - [Rail Lines](https://maps.walkingclub.org.uk/rail/rail_lines_google_map.shtml)
 - [GOV Transport Access / Nodes](https://www.gov.uk/government/publications/national-public-transport-access-node-schema)
 - [GOV NaPTAN Data](https://data.3dhub.org.uk/dataset/national-public-transport-access-nodes-naptan-bus-rail-and-tram-stops)
 - [LIVE Train Times](http://traintimes.org.uk/map/#lbg)
 
-## City of London MapsServers
+##  15. <a name='CityofLondonMapsServers'></a>City of London MapsServers
 - [ArcGIS REST Service](https://www.mapping.cityoflondon.gov.uk/arcgis/rest/services)
 
-## Zoopla / Rightmove Direct APIs & Scraping
+##  16. <a name='ZooplaRightmoveDirectAPIsScraping'></a>Zoopla / Rightmove Direct APIs & Scraping
 
 - [Python Wrapper for Zoopla](https://anthonybloomer.github.io/zoopla/)
 - [PHP Rightmove Property Feed](https://github.com/frozensheep/rightmoveADF)
