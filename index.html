@@ -29,16 +29,27 @@
             </button>
             <h5 class="inline-flex items-center mb-4 text-base font-semibold text-gray-800 dark:text-gray-400 capitalize ">Zoopla / Rightmove Advanced Search</h5>
 
-            <div class="flex flex-row my-4 gap-4">
-                <div class="rounded-xl bg-purple-500 p-4 flex flex-row gap-4 w-full">
-                    <p class="text-white">Zoopla</p>
-                    <input id="zooplaInput" class="w-full" type="text" placeholder="paste map URL from zoopla"></input>
-                </div> 
-    
-                <div class="rounded-xl bg-cyan-500 p-4 flex flex-row gap-4 w-full">
-                    <p class="text-white">Rightmove</p>
-                    <input id="rightmoveInput" class="w-full" type="text" placeholder="paste map URL from rightmove"></input>
+            <div class="flex flex-row gap-4">
+                <div class="grid grid-cols-2 my-4 gap-4 w-full">
+
+                    <div class="relative">
+                        <input id="zooplaInput" class="w-full rounded bg-purple-500 text-white" type="text" placeholder="paste map URL from zoopla"></input>
+                        <label for="zooplaInput" class="absolute rounded-xl text-sm text-gray-50 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-gray-800 px-2 left-1">Zoopla</label>
+                    </div>
+        
+                    <div class="relative ">
+                        <input id="rightmoveInput" class="w-full rounded bg-cyan-500 text-white" type="text" placeholder="paste map URL from rightmove"></input>
+                        <label for="rightmoveInput" class="absolute rounded-xl text-sm text-gray-50 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-gray-800 px-2 left-1">Rightmove</label>
+                    </div>
+
+                    <div class="relative ">
+                        <input id="onthemarketInput" class="w-full rounded bg-rose-500 text-white" type="text" placeholder="paste map URL from onTheMarket"></input>
+                        <label for="onthemarketInput" class="absolute rounded-xl text-sm text-gray-50 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-gray-800 px-2 left-1">OnTheMarket</label>
+                    </div>
+
                 </div>
+
+                <button id="clear-all-markers" type="button" class="flex flex-col text-white bg-gradient-to-r from-orange-500 via-orange-600 to-orange-700 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"><svg class="w-4 h-4 fill-white m-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9,2C5.14,2 2,5.14 2,9C2,14.25 9,22 9,22C9,22 16,14.25 16,9A7,7 0 0,0 9,2M9,6.5A2.5,2.5 0 0,1 11.5,9A2.5,2.5 0 0,1 9,11.5A2.5,2.5 0 0,1 6.5,9A2.5,2.5 0 0,1 9,6.5M16.58,14.16L15.17,15.58L17.58,18L15.17,20.41L16.58,21.82L19,19.41L21.41,21.82L22.83,20.41L20.41,18L22.83,15.58L21.41,14.16L19,16.58"/></svg><span class="m-auto">Remove Markers</span></button>
             </div>
             
             <div class="grid grid-cols-5 gap-4 my-4">
@@ -213,6 +224,7 @@
         <script src="src/client/initialise_popup.js"></script>
         <script src="src/client/load_property_details.js"></script>
         <script src="src/client/listener_paste.js"></script>
+        <script src="src/client/set_get_searches.js"></script>
         <script src="src/client/initialise_map.js"></script>
         <script src="src/client/listener_map.js"></script>
         <script src="src/client/initialise_drawer.js"></script>
@@ -227,6 +239,7 @@
         <script src="src/client/listener_blacklist_item_remove.js"></script>
         <script src="src/client/inspector_check.js"></script>
         <script src="src/client/listener_inspector_text.js"></script>
+        <script src="src/client/listener_clear_all_markers.js"></script>
         
         <!-- Highlight List-->
         <script src="src/client/listener_clear_highlightlist.js"></script>

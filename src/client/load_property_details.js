@@ -33,4 +33,16 @@ async function load_feature_details(marker)
     }
 
     
+    if (marker.source == 'onthemarket')
+    {
+        
+        // Send the marker details to the backend.
+        const onthemarketPropertyDetails = await fetch(hostname+'/onthemarketProperty', {method: 'POST', body: JSON.stringify(marker)})
+            .then(response => response.text())
+            .catch(function(error) {
+                console.log("ERROR:"+error);
+            });
+
+        return onthemarketPropertyDetails;
+    }
 }

@@ -53,6 +53,9 @@ function update_OL_markers(markerdata, icon, source){
      // Add New VECTOR layer.
     var layer = new ol.layer.Vector({
 
+        name: "properties",
+        title: 'properties',
+        
         // Source of Vector layer.
         source: new ol.source.Vector({
 

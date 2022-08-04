@@ -35,6 +35,7 @@ module.exports = function(app){
                 each: function(item){
                     item.source = "zoopla";
                     item.url = "https://zoopla.co.uk/for-sale/details/"+item.id
+                    item.id = parseInt(item.id)
                     return item; 
                 }
             }

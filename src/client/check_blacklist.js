@@ -21,17 +21,16 @@ function check_blacklist(markers)
     // Loop through ALL markers, checking if any in blacklist.
     markers.forEach(function(marker, index) {
 
-        markerID = marker[0];
-        markerSource = marker[1];
+        let propertyID = parseInt(marker.id);
 
-        if ( blacklistIDs.includes(marker.id) ){
+        if ( blacklistIDs.includes(propertyID) ){
+
             markers = markers.filter(function(item) {
                 return item !== marker
             })
         }
 
     });
-    
 
     return markers;
 }

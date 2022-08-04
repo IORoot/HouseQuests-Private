@@ -26,29 +26,27 @@
 <!-- /vscode-markdown-toc -->
 
 # Refactor
-- [ ] Load layers on request, not by default
+- [ ] Better app structure
+- [ ] Make all Zoopla/Rightmove requests frontend
+- [ ] User Accounts - free / unlimited
+- [ ] Loading icon - subtle - in corner?
+- [ ] Load ALL layers on request, not by default
+- [x] Save last Zoopla/Rightmove request
+- [x] Popup modal for clearing custom icon colours
+- [x] 
     - [x] bus routes
     - [x] academies / free schools
     - [x] state schools
     - [x] universities
     - [x] childrens centers
-    - [ ] supermarkets
-- [ ] Better app structure
-- [ ] Make all Zoopla/Rightmove requests frontend
-- [ ] Save last Zoopla/Rightmove request
-- [ ] User Accounts - free / unlimited
-- [ ] Loading icon - subtle - in corner?
-- [x] Popup modal for clearing custom icon colours
-
 
 # Features
 
-- [ ] Unified Search?
-    - Zoopla
-    - Rightmove
-    - OnTheMarket
 - [ ] OnTheMarket
-    - [JSON](https://www.onthemarket.com/map/show-pins/?search-type=for-sale&min-bedrooms=1&location-id=se13&max-price=325000&min-price=275000&new-home-flag=F&retirement=false&shared-ownership=false&sort-field=keywords&view=map)
+    - [Map Search](https://www.onthemarket.com/for-sale/property/lewisham/?view=map)
+    - [Map JSON  ](https://www.onthemarket.com/map/show-pins/?search-type=for-sale&location-id=lewisham&view=map)
+    - [Complex Listing](https://www.onthemarket.com/for-sale/1-bed-property/south-east-london/?keywords=Garden&max-price=325000&min-price=275000&new-home-flag=F&prop-types=bungalows&prop-types=detached&prop-types=flats-apartments&prop-types=semi-detached&prop-types=terraced&retirement=false&shared-ownership=false&sort-field=keywords)
+    - [Complex JSON Pins](https://www.onthemarket.com/map/show-pins/?search-type=for-sale&min-bedrooms=1&location-id=south-east-london&max-bedrooms=4&max-price=325000&min-price=275000&new-home-flag=F&prop-types=bungalows&prop-types=detached&prop-types=flats-apartments&prop-types=semi-detached&prop-types=terraced&retirement=false&shared-ownership=false&sort-field=keywords&view=map)
 - [ ] House Report
     - [ ] Prices of surrounding property. 
         - Price vs Avg Street price of properties
@@ -70,13 +68,22 @@
         - Council Tax
         - Closest Schools
         - Broadband Speed
-- [ ] Tube / Train stations say which route they're on
+    - [ ] Noise Levels
+    - [ ] Are you near a train line?
+    - [ ] Are you near a busy street?
+    - [ ] How busy is the street? Google Traffic?
+- [ ] Tube / Train stations say which route they're on 
+- [ ] Tube / Train lines - hide / fade / highlight specific lines.
 - [ ] Advanced location filtering. 
     - AND / OR / NOT / XOR close to features
     - stations / lines / crimes 
 - [ ] Changing highlightList colour multiple times keeps adding entries to localStorage array. Just replace current one, don't keep adding.
 - [ ] favourites always load, no need to query zoopla / rightmove.
 - [ ] import / export favourites
+- [ ] Unified Search?
+    - Zoopla
+    - Rightmove
+    - OnTheMarket
 - [x] Highlight properties my changing icon colour (custom colour)
 - [x] Show floorplans
 - [x] Hide crimes toggle
@@ -123,12 +130,6 @@
 - [x] supermarkets. 
 - [x] school locations
 
-
-Noise Levels
-
-- Are you near a train line?
-- Are you near a busy street?
-- How busy is the street? Google Traffic?
 
 # House Report
 
