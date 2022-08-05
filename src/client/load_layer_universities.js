@@ -1,5 +1,9 @@
-function load_layer_universities()
+async function load_layer_universities()
 {
+
+    const json_universities = await fetch(hostname+'/maps/university/universities.json', {method: 'GET'})
+    .then(response => response.json())
+    .catch(error => console.log("ERROR loading /maps/university/universities.json file."+error));
 
     let universityList = [];
 

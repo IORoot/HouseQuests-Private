@@ -1,5 +1,9 @@
-function load_layer_tube_stations()
+async function load_layer_tube_stations()
 {
+
+    const json_tube_stations = await fetch(hostname+'/maps/tfl/tube_stations.json', {method: 'GET'})
+    .then(response => response.json())
+    .catch(error => console.log("ERROR loading /maps/tfl/tube_stations.json file."+error));
 
     let stationList = [];
 

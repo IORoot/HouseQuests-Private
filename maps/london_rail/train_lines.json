@@ -1,4 +1,4 @@
-var json_train_lines = {
+{
     "type": "FeatureCollection",
     "name": "London Train Lines",
     "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
@@ -740,6 +740,6 @@ var json_train_lines = {
         { "type": "Feature", "properties": { "Name": "Thameslink - Wimbledon to Haydons Road", "type": "train_line", "description": null }, "geometry": { "type": "LineString", "coordinates": [[-0.206662833440053, 51.421107508793497], [-0.188929357279552, 51.425457011112904]] } },
         { "type": "Feature", "properties": { "Name": "Thameslink - Wimbledon to Haydons Road", "type": "train_line", "description": null }, "geometry": { "type": "LineString", "coordinates": [[-0.206662833440053, 51.421107508793497], [-0.188929357279552, 51.425457011112904]] } },
         { "type": "Feature", "properties": { "Name": "Thameslink - Wimbledon Chase to Wimbledon", "type": "train_line", "description": null }, "geometry": { "type": "LineString", "coordinates": [[-0.21408976708418, 51.409530583882237], [-0.206662833440053, 51.421107508793497]] } },
-        { "type": "Feature", "properties": { "Name": "Thameslink - Wimbledon Chase to Wimbledon", "type": "train_line", "description": null }, "geometry": { "type": "LineString", "coordinates": [[-0.21408976708418, 51.409530583882237], [-0.206662833440053, 51.421107508793497]] } },
+        { "type": "Feature", "properties": { "Name": "Thameslink - Wimbledon Chase to Wimbledon", "type": "train_line", "description": null }, "geometry": { "type": "LineString", "coordinates": [[-0.21408976708418, 51.409530583882237], [-0.206662833440053, 51.421107508793497]] } }
     ]
 }

@@ -29,8 +29,12 @@ function crime_style(feature) {
 
 
 
-function load_layer_crime_spots()
+async function load_layer_crime_spots()
 {
+
+    const json_crime_spots = await fetch(hostname+'/maps/crime/crime-boroughs-2018.json', {method: 'GET'})
+    .then(response => response.json())
+    .catch(error => console.log("ERROR loading /maps/crime/crime-boroughs-2018.json file."+error));
 
     // create new GeoJSON object.
     let crime_format = new ol.format.GeoJSON;

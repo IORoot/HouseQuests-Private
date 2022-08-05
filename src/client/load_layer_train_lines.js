@@ -52,8 +52,12 @@ function getColour_Lines(lineName) {
 }
 
 
-function load_layer_train_lines()
+async function load_layer_train_lines()
 {
+
+    const json_train_lines = await fetch(hostname+'/maps/london_rail/train_lines.json', {method: 'GET'})
+    .then(response => response.json())
+    .catch(error => console.log("ERROR loading /maps/london_rail/train_lines.json file."+error));
 
     // create new GeoJSON object.
     let format_Lines = new ol.format.GeoJSON;

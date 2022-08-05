@@ -1,4 +1,4 @@
-var json_tube_stations = {
+{
     "type": "FeatureCollection",
     "name": "London stations with zone information",
     "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
@@ -432,6 +432,6 @@ var json_tube_stations = {
         { "type": "Feature", "properties": { "Name": "Woodgrange Park", "description": "\n        <div>Zone 3,4<\/div>\n        <div>E7 8AA<\/div>\n        <div>Latitude: 51.549053<\/div>\n        <div>Longitude: 0.044572<\/div>\n        <div>\n          <a class=\"text-blue-500 underline\" href=\"https:\/\/www.doogal.co.uk\/StationMap.php?station=Woodgrange Park\" target=\"_blank\">More info<\/a>\n        <\/div>\n      " }, "geometry": { "type": "Point", "coordinates": [0.044572, 51.549053] } },
         { "type": "Feature", "properties": { "Name": "Woodside", "description": "\n        <div>Zone 3,4,5,6<\/div>\n        <div>SE25 5DP<\/div>\n        <div>Latitude: 51.387098<\/div>\n        <div>Longitude: -0.065347<\/div>\n        <div>\n          <a class=\"text-blue-500 underline\" href=\"https:\/\/www.doogal.co.uk\/StationMap.php?station=Woodside\" target=\"_blank\">More info<\/a>\n        <\/div>\n      " }, "geometry": { "type": "Point", "coordinates": [-0.065347, 51.387098] } },
         { "type": "Feature", "properties": { "Name": "Woodside Park", "description": "\n        <div>Zone 4<\/div>\n        <div>N12 8SE<\/div>\n        <div>Latitude: 51.617868<\/div>\n        <div>Longitude: -0.185426<\/div>\n        <div>\n          <a class=\"text-blue-500 underline\" href=\"https:\/\/www.doogal.co.uk\/StationMap.php?station=Woodside Park\" target=\"_blank\">More info<\/a>\n        <\/div>\n      " }, "geometry": { "type": "Point", "coordinates": [-0.185426, 51.617868] } },
-        { "type": "Feature", "properties": { "Name": "Woolwich Arsenal", "description": "\n        <div>Zone 4<\/div>\n        <div>SE18 6HX<\/div>\n        <div>Latitude: 51.489907<\/div>\n        <div>Longitude: 0.069194<\/div>\n        <div>\n          <a class=\"text-blue-500 underline\" href=\"https:\/\/www.doogal.co.uk\/StationMap.php?station=Woolwich Arsenal\" target=\"_blank\">More info<\/a>\n        <\/div>\n      " }, "geometry": { "type": "Point", "coordinates": [0.069194, 51.489907] } },
+        { "type": "Feature", "properties": { "Name": "Woolwich Arsenal", "description": "\n        <div>Zone 4<\/div>\n        <div>SE18 6HX<\/div>\n        <div>Latitude: 51.489907<\/div>\n        <div>Longitude: 0.069194<\/div>\n        <div>\n          <a class=\"text-blue-500 underline\" href=\"https:\/\/www.doogal.co.uk\/StationMap.php?station=Woolwich Arsenal\" target=\"_blank\">More info<\/a>\n        <\/div>\n      " }, "geometry": { "type": "Point", "coordinates": [0.069194, 51.489907] } }
     ]
 }

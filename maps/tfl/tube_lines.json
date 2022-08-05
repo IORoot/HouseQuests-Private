@@ -1,4 +1,4 @@
-var json_tube_lines = {
+{
     "type": "FeatureCollection",
     "name": "London Train Lines",
     "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
@@ -609,7 +609,6 @@ var json_tube_lines = {
         { "type": "Feature", "properties": { "Name": "Tramlink - Wellesley Road to East Croydon", "type": "tube_line", "description": null }, "geometry": { "type": "LineString", "coordinates": [[-0.097524908086714, 51.375367381230255], [-0.091863495536622, 51.375715953906258]] } },
         { "type": "Feature", "properties": { "Name": "Tramlink - West Croydon to Wellesley Road", "type": "tube_line", "description": null }, "geometry": { "type": "LineString", "coordinates": [[-0.102034292302637, 51.378552009432326], [-0.097524908086714, 51.375367381230255]] } },
         { "type": "Feature", "properties": { "Name": "Tramlink - Wimbledon to Dundonald Road", "type": "tube_line", "description": null }, "geometry": { "type": "LineString", "coordinates": [[-0.206662833440053, 51.421107508793497], [-0.20752711020077, 51.417397809124523]] } },
-        { "type": "Feature", "properties": { "Name": "Tramlink - Woodside to Arena", "type": "tube_line", "description": null }, "geometry": { "type": "LineString", "coordinates": [[-0.065347177855677, 51.387097578615169], [-0.058318549886912, 51.391522658988485]] } },
-
+        { "type": "Feature", "properties": { "Name": "Tramlink - Woodside to Arena", "type": "tube_line", "description": null }, "geometry": { "type": "LineString", "coordinates": [[-0.065347177855677, 51.387097578615169], [-0.058318549886912, 51.391522658988485]] } }
     ]
 }

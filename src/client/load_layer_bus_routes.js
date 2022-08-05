@@ -4,8 +4,6 @@
 
 async function load_layer_bus_routes()
 {
-
-    console.log('loading bus routes')
     
     const json_bus_routes = await fetch(hostname+'/maps/buses/london_buses.json', {method: 'GET'})
     .then(response => response.json())
