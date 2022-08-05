@@ -48,8 +48,12 @@ function update_drawer_contents(propertyDetails, source)
     });
     document.getElementById("drawer-image-grid").innerHTML = grid;
 
-    // Set Floor Plan
-    document.getElementById("drawer-floorplan").innerHTML = '<a class="mx-auto" href="'+property.floorplan+'" target="_blank"><img class="h-60" src="'+property.floorplan+'"/></a>';
+    // Set Floor Plan (if available)
+    if (property.floorplan){
+        document.getElementById("drawer-floorplan").innerHTML = '<a class="mx-auto h-60" href="'+property.floorplan+'" target="_blank"><img class="h-60" src="'+property.floorplan+'"/></a>';
+    } else {
+        document.getElementById("drawer-floorplan").innerHTML = '';
+    }
 
     // Clear the inspector contents (before inspector_check)
     document.getElementById("drawer-inspector-words").innerHTML = ''

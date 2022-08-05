@@ -69,6 +69,8 @@
     - [ ] Are you near a train line?
     - [ ] Are you near a busy street?
     - [ ] How busy is the street? Google Traffic?
+    - [ ] South facing roof?
+  
 - [ ] Tube / Train stations say which route they're on 
 - [ ] Tube / Train lines - hide / fade / highlight specific lines.
 - [ ] Advanced location filtering. 
