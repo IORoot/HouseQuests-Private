@@ -1,7 +1,5 @@
 module.exports = function(app){
-
-    const request = require('request');
-    const cheerio = require('cheerio');
+    const axios = require('axios').default;
     const url = require('url')
     var { transform } = require("node-json-transform");
 
@@ -23,18 +21,14 @@ module.exports = function(app){
         constructedURL += '&location-id='+locationID;
         constructedURL += '&'+requestURL.searchParams.toString()
 
-        var target = constructedURL;
-        
-        request({
-            uri: target,
-            headers:{
-            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36'
-            }
-        }, function( err, response, body){
-        
-            if (err) return;
+        axios({
+            method: 'get',
+            url: constructedURL,
+            headers:{ 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36' }
+        })
+        .then(function (response) {
 
-            data = JSON.parse(body);
+            data = response.data;
             data = Array.from(data.properties);
         
             var map = {
@@ -53,8 +47,15 @@ module.exports = function(app){
             var result = transform(data, map);
 
             res.send(result)
-            
-        });
+        })
+        .catch(function (error) {
+            // handle error
+            console.log(error);
+            return;
+        })
+
+
+
 
     });
 

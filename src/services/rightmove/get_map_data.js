@@ -1,6 +1,6 @@
 module.exports = function(app){
 
-    const request = require('request');
+    const axios = require('axios').default;
     const cheerio = require('cheerio');
     var { transform } = require("node-json-transform");
 
@@ -11,16 +11,15 @@ module.exports = function(app){
 
         var target = req.body;
         
-        request({
-            uri: target,
-            headers:{
-            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36'
-            }
-        }, function( err, response, body){
-        
-            if (err) return;
-        
-            var $ = cheerio.load(body);
+        axios({
+            method: 'get',
+            url: target,
+            headers:{ 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36' }
+        })
+        .then(function (response) {
+
+            // data = response.data;
+            var $ = cheerio.load(response.data);
         
             var modeldata = $('script:contains("jsonModel")').text().split(';');
         
@@ -47,8 +46,53 @@ module.exports = function(app){
             var result = transform(data, map);
 
             res.send(result)
+        })
+        .catch(function (error) {
+            // handle error
+            console.log(error);
+            return;
+        })
+
+
+
+        // request({
+        //     uri: target,
+        //     headers:{
+        //     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36'
+        //     }
+        // }, function( err, response, body){
+        
+        //     if (err) return;
+        
+        //     var $ = cheerio.load(body);
+        
+        //     var modeldata = $('script:contains("jsonModel")').text().split(';');
+        
+        //     var data = modeldata.toString().replace('window.jsonModel = ', '');
             
-        });
+        //     data = data.substring(0, data.indexOf('window.jsonModel.propertyTypeOptions') );
+        
+        //     data = JSON.parse(data);
+        //     data = Array.from(data.properties);
+        
+        //     var map = {
+        //         item: {
+        //             id:        "id",
+        //             longitude: "location.longitude",
+        //             latitude:  "location.latitude"
+        //         },
+        //         each: function(item){
+        //             item.source = "rightmove";
+        //             item.url = "https://rightmove.co.uk/properties/"+item.id
+        //             return item; 
+        //         }
+        //     }
+        
+        //     var result = transform(data, map);
+
+        //     res.send(result)
+            
+        // });
 
     });
 
