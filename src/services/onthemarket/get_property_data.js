@@ -1,8 +1,6 @@
 module.exports = function(app){
 
-    const request = require('request');
-    const cheerio = require('cheerio');
-    const URL = require('url')
+    const axios = require('axios').default;
     var { transform } = require("node-json-transform");
 
     // ┌─────────────────────────────────────┐
@@ -13,21 +11,17 @@ module.exports = function(app){
         var marker = JSON.parse(req.body);
         var target = marker.url;
 
-        request({
-            uri: target,
-            headers:{
-            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36'
-            }
-        }, function( err, response, body){
-        
-            if (err) return;
-        
-            var $ = cheerio.load(body);
-        
-            var scriptdata = $('script:contains("__OTM__.jsonData")').text();
-            scriptdata = scriptdata.replace(/[\s\S]*__OTM__\.jsonData = /g, '');
-            scriptdata = scriptdata.replace(/__OTM__\.globals =[\s\S]*/g, '');
-            scriptdata = scriptdata.replace(/};/g, '}');
+        axios({
+            method: 'get',
+            url: target,
+            headers:{ 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36' }
+        })
+        .then(function (response) {
+
+            var scriptdata = response.data
+            scriptdata = scriptdata.replace(/[\s\S]*__OTM__\.jsonData = /, '');
+            scriptdata = scriptdata.replace(/__OTM__\.globals =[\s\S]*/, '');
+            scriptdata = scriptdata.replace(/};/, '}');
 
             data = JSON.parse(scriptdata);
         
@@ -63,8 +57,13 @@ module.exports = function(app){
             result['station'] = data.station[0].name + '(' + data.station[0]["display-distance"] + ' )'
 
             res.json(result)
-            
-        });
+        })
+        .catch(function (error) {
+            // handle error
+            console.log(error);
+            return;
+        })
+
     });
 
 }
