@@ -16,13 +16,12 @@ import { listener_inspector_text } from "./listener_inspector_text.js";
 import { listener_clear_all_markers } from "./listener_clear_all_markers.js";
 import { listener_clear_highlightlist } from "./listener_clear_highlightlist.js";
 import { listener_change_property_colour } from "./listener_change_property_colour.js";
-
 import { filter_monochrome } from "./listener_filter_monochrome.js";
 import { filter_invert } from "./listener_filter_invert.js";
 import { filter_dark } from "./listener_filter_dark.js";
 import { filter_sepia } from "./listener_filter_sepia.js";
 
-export function load_event_listeners(){
+export function initialise_load_event_listeners(){
     listener_paste()
     listener_map()
     listener_exclude_button()
@@ -34,11 +33,10 @@ export function load_event_listeners(){
     listener_clear_all_markers()
     listener_clear_highlightlist()
     listener_change_property_colour()
-
     filter_monochrome()
     filter_invert()
     filter_dark()
     filter_sepia()
 }
 
-load_event_listeners()
+initialise_load_event_listeners()

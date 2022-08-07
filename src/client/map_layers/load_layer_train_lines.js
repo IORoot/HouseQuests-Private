@@ -20,7 +20,7 @@ function train_style_Lines(feature) {
 }
 
 
-async function load_layer_train_lines()
+export async function load_layer_train_lines()
 {
 
     const json_train_lines = await fetch(hostname+'/maps/london_rail/train_lines.json', {method: 'GET'})
@@ -48,11 +48,10 @@ async function load_layer_train_lines()
         style: train_style_Lines,
         name: "train-lines",
         title: 'train-lines',
-        visible: false
+        visible: true
     });
 
     // Add to map.
     map.addLayer(underground_lines);
 
 }
-load_layer_train_lines()

@@ -2,10 +2,8 @@
  * Vector Schools / Academies map Layer
  */
 
-async function load_layer_schools_statefunded()
+export async function load_layer_schools_statefunded()
 {
-
-    console.log('loading state funded schools')
     
     const json_schools_statefunded = await fetch(hostname+'/maps/schools/state_funded_schools.json', {method: 'GET'})
     .then(response => response.json())

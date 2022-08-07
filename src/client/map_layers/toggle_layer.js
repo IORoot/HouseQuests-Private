@@ -1,6 +1,6 @@
 
 // name of the layer to toggle on/off
-function toggleVectorLayer(name)
+export function toggle_layer(name)
 {
 
     // Get all layers

@@ -1,4 +1,4 @@
-async function load_layer_universities()
+export async function load_layer_universities()
 {
 
     const json_universities = await fetch(hostname+'/maps/university/universities.json', {method: 'GET'})
@@ -59,7 +59,7 @@ async function load_layer_universities()
             // Source Features to array of universitys
             features: universityList
         }),
-        visible: false
+        visible: true
 
     }); 
 
@@ -68,4 +68,3 @@ async function load_layer_universities()
     map.addLayer(layer); 
 
 }
-load_layer_universities()

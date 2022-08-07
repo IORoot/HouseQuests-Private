@@ -2,10 +2,8 @@
  * Vector Schools / Academies map Layer
  */
 
-async function load_layer_schools_childcenters()
+export async function load_layer_schools_childcenters()
 {
-
-    console.log('loading child centers')
     
     const json_child_centers = await fetch(hostname+'/maps/schools/children_centers.json', {method: 'GET'})
     .then(response => response.json())

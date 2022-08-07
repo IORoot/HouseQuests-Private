@@ -2,7 +2,7 @@
  * Vector supermarket Route map Layer
  */
 
-async function load_layer_supermarkets()
+export async function load_layer_supermarkets()
 {
 
     const json_supermarkets = await fetch(hostname+'/maps/supermarkets/supermarkets.json', {method: 'GET'})
@@ -39,11 +39,10 @@ async function load_layer_supermarkets()
         })],
         name: "supermarkets",
         title: 'supermarkets',
-        visible: false
+        visible: true
     });
     
     // Add to map.
     map.addLayer(supermarkets);
 
 }
-load_layer_supermarkets()

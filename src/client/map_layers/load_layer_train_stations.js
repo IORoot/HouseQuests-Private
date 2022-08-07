@@ -1,4 +1,4 @@
-async function load_layer_train_stations()
+export async function load_layer_train_stations()
 {
 
     const json_train_stations = await fetch(hostname+'/maps/london_rail/train_stations.json', {method: 'GET'})
@@ -54,7 +54,7 @@ async function load_layer_train_stations()
             // Source Features to array of stations
             features: stationList
         }),
-        visible: false
+        visible: true
 
     }); 
 
@@ -63,4 +63,3 @@ async function load_layer_train_stations()
     map.addLayer(layer); 
 
 }
-load_layer_train_stations()

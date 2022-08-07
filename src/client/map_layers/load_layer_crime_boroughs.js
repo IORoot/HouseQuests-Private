@@ -29,7 +29,7 @@ function crime_style(feature) {
 
 
 
-async function load_layer_crime_spots()
+export async function load_layer_crime_boroughs()
 {
 
     const json_crime_spots = await fetch(hostname+'/maps/crime/crime-boroughs-2018.json', {method: 'GET'})
@@ -58,11 +58,10 @@ async function load_layer_crime_spots()
         style: crime_style,
         name: "crime-boroughs",
         title: 'crime-boroughs',
-        visible: false
+        visible: true
     });
     
     // Add to map.
     map.addLayer(crime_spots);
 
 }
-load_layer_crime_spots()

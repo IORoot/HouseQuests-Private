@@ -19,7 +19,7 @@ function tube_style_Lines(feature) {
     })];
 }
 
-async function load_layer_tube_lines()
+export async function load_layer_tube_lines()
 {
 
     const json_tube_lines = await fetch(hostname+'/maps/tfl/tube_lines.json', {method: 'GET'})
@@ -48,11 +48,10 @@ async function load_layer_tube_lines()
         style: tube_style_Lines,
         name: "tube-lines",
         title: 'tube-lines',
-        visible: false
+        visible: true
     });
     
     // Add to map.
     map.addLayer(tube_lines);
 
 }
-load_layer_tube_lines()

@@ -2,7 +2,7 @@
  * Vector Bus Route map Layer
  */
 
-async function load_layer_bus_routes()
+export async function load_layer_bus_routes()
 {
     
     const json_bus_routes = await fetch(hostname+'/maps/buses/london_buses.json', {method: 'GET'})

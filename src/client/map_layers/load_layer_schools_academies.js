@@ -2,10 +2,8 @@
  * Vector Schools / Academies map Layer
  */
 
-async function load_layer_schools_academies()
+export async function load_layer_schools_academies()
 {
-
-    console.log('loading academies and free schools')
     
     const json_schools_academies = await fetch(hostname+'/maps/schools/academies_and_free.json', {method: 'GET'})
     .then(response => response.json())
