@@ -3,6 +3,7 @@
 // │        PASTE Event Listeners        │
 // │                                     │
 // └─────────────────────────────────────┘
+import { request_markers } from '../requests/request_markers.js'
 
 export function listener_paste(){
 

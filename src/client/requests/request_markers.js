@@ -1,5 +1,6 @@
+import { set_searches } from '../searches/set_searches.js'
 
-async function request_markers(currentURL, source) {
+export async function request_markers(currentURL, source) {
 
     let path = hostname+'/'+source+'Map'
     let icon = window['icon_'+source]

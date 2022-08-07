@@ -1,4 +1,4 @@
-function set_searches(search, source)
+export function set_searches(search, source)
 {
 
     if (!search){ return }

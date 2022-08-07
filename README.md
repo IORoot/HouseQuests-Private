@@ -1,6 +1,6 @@
 # Rightmove / Zoopla Project.
 
-
+<!-- vscode-markdown-toc -->
 * 1. [Refactor](#Refactor)
 * 2. [Features](#Features)
 * 3. [Layers to add](#Layerstoadd)
@@ -10,10 +10,11 @@
 	* 4.3. [House Prices](#HousePrices)
 * 5. [Crimes](#Crimes)
 * 6. [Other Data sources to use](#OtherDatasourcestouse)
-	* 6.1. [Random data](#Randomdata)
-	* 6.2. [Traffic](#Traffic)
-	* 6.3. [Getting closest station](#Gettingcloseststation)
-	* 6.4. [APIs](#APIs)
+	* 6.1. [Census Data](#CensusData)
+	* 6.2. [Random data](#Randomdata)
+	* 6.3. [Traffic](#Traffic)
+	* 6.4. [Getting closest station](#Gettingcloseststation)
+	* 6.5. [APIs](#APIs)
 * 7. [Data Already Used.](#DataAlreadyUsed.)
 	* 7.1. [Schools](#Schools)
 	* 7.2. [Universities](#Universities)
@@ -25,6 +26,11 @@
 	* 7.8. [Zoopla / Rightmove Direct APIs & Scraping](#ZooplaRightmoveDirectAPIsScraping)
 * 8. [Other Links](#OtherLinks)
 
+<!-- vscode-markdown-toc-config
+	numbering=true
+	autoSave=true
+	/vscode-markdown-toc-config -->
+<!-- /vscode-markdown-toc -->
 
 ##  1. <a name='Refactor'></a>Refactor
 - [ ] Better app structure
@@ -70,6 +76,7 @@
     - [ ] Are you near a busy street?
     - [ ] How busy is the street? Google Traffic?
     - [ ] South facing roof?
+    - [ ] Census Data
   
 - [ ] Tube / Train stations say which route they're on 
 - [ ] Tube / Train lines - hide / fade / highlight specific lines.
@@ -161,29 +168,30 @@ Postcode-based Standard report
 
 
 
-
-
-
 ##  6. <a name='OtherDatasourcestouse'></a>Other Data sources to use
 
-###  6.1. <a name='Randomdata'></a>Random data
+
+###  6.1. <a name='CensusData'></a>Census Data
+- [Census 2021](https://www.ons.gov.uk/census/censustransformationprogramme/census2021outputs/2021dataproducts)
+- [API details](https://digitalblog.ons.gov.uk/category/api/)
+###  6.2. <a name='Randomdata'></a>Random data
 - [Various London Maps](https://mappinglondon.co.uk/category/data/)
 - [Datastore](https://data.london.gov.uk/dataset?q=location&sort=score%20desc,%20metadata_modified%20desc&_groups_limit=0&res_format=SHP)
 - [OpenStreetMap Map Features](https://wiki.openstreetmap.org/wiki/Map_features)
 - [OpenStreetMap Tester](]http://overpass-turbo.eu/)
 - [Commuter Hotspots](https://www.totallymoney.com/commuter-hotspots/tool/)
 
-###  6.2. <a name='Traffic'></a>Traffic
+###  6.3. <a name='Traffic'></a>Traffic
 - [GOV - Road Traffic Stats](https://roadtraffic.dft.gov.uk/#14/51.4569/-0.0177/basemap-countpoints)
 - [TomTom Traffic API](https://developer.tomtom.com/traffic-api/documentation/product-information/introduction)
 - [Bing Traffic API](https://docs.microsoft.com/en-us/bingmaps/rest-services/traffic/?redirectedfrom=MSDN)
 - [MapBox Traffic API](https://docs.mapbox.com/api/navigation/directions/)
 
-###  6.3. <a name='Gettingcloseststation'></a>Getting closest station
+###  6.4. <a name='Gettingcloseststation'></a>Getting closest station
 -  [Forum Post](https://techforum.tfl.gov.uk/t/api-for-getting-the-nearest-train-stations/1671)
 -  [TFL API endpoint](https://api-portal.tfl.gov.uk/api-details#api=StopPoint&operation=StopPoint_GetByGeoPointByQueryLatQueryLonQueryStopTypesQueryRadiusQueryUseSt)
 
-###  6.4. <a name='APIs'></a>APIs
+###  6.5. <a name='APIs'></a>APIs
 - [Ordinance Survey API](https://api.os.uk/)
 
 

@@ -1,4 +1,6 @@
-function onload_searches()
+import { request_markers } from '../requests/request_markers.js'
+
+export function onload_searches()
 {
     let sources = [
         'zoopla',
@@ -22,4 +24,3 @@ function onload_searches()
     })
 
 }
-onload_searches()
