@@ -1,10 +1,10 @@
-
 // ┌─────────────────────────────────────┐
 // │                                     │
 // │     Update the Drawer Contents      │
 // │                                     │
 // └─────────────────────────────────────┘
-function update_drawer_contents(propertyDetails, source)
+
+export function update_drawer_contents(propertyDetails, source)
 {
 
     const property = JSON.parse(propertyDetails);

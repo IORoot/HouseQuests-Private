@@ -22,6 +22,7 @@
  *              crime boroughs
  *              
  */
+import {update_drawer_contents} from '../drawer/update_drawer_contents.js'
 
 export function listener_map(){
 

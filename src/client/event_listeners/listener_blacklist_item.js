@@ -3,6 +3,7 @@
 // │    Blacklist Item Event Listeners   │
 // │                                     │
 // └─────────────────────────────────────┘
+import {update_drawer_contents} from '../drawer/update_drawer_contents.js'
 
 export function listener_blacklist_item()
 {
