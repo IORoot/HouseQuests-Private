@@ -4,26 +4,31 @@
 // │                                     │
 // └─────────────────────────────────────┘
 
-const propertyCrimesButton = document.getElementById('drawer-crimes');
+export function listener_show_crimes()
+{
 
-propertyCrimesButton.addEventListener('click', async function(event) {
+    const propertyCrimesButton = document.getElementById('drawer-crimes');
 
-    // Get current ID.
-    const propertyLongitude = document.getElementById('drawer-longitude').dataset.longitude;
-    const propertyLatitude = document.getElementById('drawer-latitude').dataset.latitude;
+    propertyCrimesButton.addEventListener('click', async function(event) {
 
-    let policeURL = 'https://data.police.uk/api/crimes-street/all-crime'
-    policeURL += '?'
-    policeURL += 'lat='+propertyLatitude
-    policeURL += '&'
-    policeURL += 'lng='+propertyLongitude
+        // Get current ID.
+        const propertyLongitude = document.getElementById('drawer-longitude').dataset.longitude;
+        const propertyLatitude = document.getElementById('drawer-latitude').dataset.latitude;
 
-    const crimeMarkers = await fetch(policeURL, {method: 'GET'})
-        .then(response => response.json())
-        .catch(function(error) {
-            console.log("ERROR:"+error);
-        });
+        let policeURL = 'https://data.police.uk/api/crimes-street/all-crime'
+        policeURL += '?'
+        policeURL += 'lat='+propertyLatitude
+        policeURL += '&'
+        policeURL += 'lng='+propertyLongitude
 
-    update_OL_crime_markers(crimeMarkers);
+        const crimeMarkers = await fetch(policeURL, {method: 'GET'})
+            .then(response => response.json())
+            .catch(function(error) {
+                console.log("ERROR:"+error);
+            });
 
-});
+        update_OL_crime_markers(crimeMarkers);
+
+    });
+
+}

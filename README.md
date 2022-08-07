@@ -80,6 +80,10 @@
 - [ ] favourites always load, no need to query zoopla / rightmove.
 - [ ] import / export favourites
 - [ ] Elevation of building for flats?
+- [ ] School ratings / ofcom status?
+- [ ] highlight current icon
+- [ ] square footage
+- [ ] properties on a particular route / drive
 - [ ] Unified Search?
     - Zoopla
     - Rightmove
