@@ -1,5 +1,5 @@
 // ID of the property to exclude and remove off map.
-function removeFeatureFromMap(excludeID)
+export function remove_map_feature(excludeID)
 {
 
     // Get all layers
@@ -9,13 +9,13 @@ function removeFeatureFromMap(excludeID)
     layersCollection.forEach(function(layer, index){
 
         // Instance of Tile source / Vector source
-        source = layer.getSource()
+        let source = layer.getSource()
 
         // Filter for vectors only
         if (source instanceof ol.source.Vector){
 
             // Get Array of Features on Vector
-            features = source.getFeatures();
+            let features = source.getFeatures();
 
             // Loop through all features array
             features.forEach( function(feature){

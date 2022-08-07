@@ -7,6 +7,7 @@
 
 import { add_to_blacklist } from '../blacklist/add_to_blacklist.js'
 import { list_blacklist } from '../blacklist/list_blacklist.js'
+import { remove_map_feature } from '../map/remove_map_feature.js'
 
 export function listener_exclude_button(){
 
@@ -30,7 +31,7 @@ export function listener_exclude_button(){
             // push new ID onto array.
             add_to_blacklist(blacklist,excludeArray)
             list_blacklist()
-            removeFeatureFromMap(excludeIDinteger);
+            remove_map_feature(excludeIDinteger);
             drawer.hide();
         } else {
             blacklist = [excludeArray];
