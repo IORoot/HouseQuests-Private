@@ -1,5 +1,4 @@
-
-function check_words(sentance, positiveNegative, colour)
+export function check_words(sentance, positiveNegative, colour)
 {
     const drawerInspector = document.getElementById('drawer-inspector-words');
 

@@ -3,6 +3,7 @@
 // │     Update the Drawer Contents      │
 // │                                     │
 // └─────────────────────────────────────┘
+import { inspector_check } from '../text_inspector/inspector_check.js'
 
 export function update_drawer_contents(propertyDetails, source)
 {

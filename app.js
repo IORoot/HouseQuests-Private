@@ -3,7 +3,7 @@
  * 
  */
 import { onload_searches } from './src/client/searches/onload_searches.js'
-
+import { load_inspector } from './src/client/text_inspector/inspector_load.js'
 
 // ┌─────────────────────────────────────┐
 // │                                     │
@@ -11,3 +11,5 @@ import { onload_searches } from './src/client/searches/onload_searches.js'
 // │                                     │
 // └─────────────────────────────────────┘
 onload_searches()
+load_inspector('positive')
+load_inspector('negative')

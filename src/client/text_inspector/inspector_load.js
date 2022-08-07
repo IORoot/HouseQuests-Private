@@ -1,6 +1,6 @@
 
 // Load settings from localstorage when page is loaded.
-function loadInspector(positiveNegative)
+export function load_inspector(positiveNegative)
 {
     const inspector = document.getElementById('inspector-'+positiveNegative);
 
@@ -12,5 +12,3 @@ function loadInspector(positiveNegative)
     }
 
 }
-loadInspector('positive')
-loadInspector('negative')
