@@ -4,7 +4,8 @@
 // │       Insert Markers onto Map       │
 // │                                     │
 // └─────────────────────────────────────┘
-function update_OL_crime_markers(markerdata){
+
+export function update_crime_markers(markerdata){
 
     let featuresList = [];
 

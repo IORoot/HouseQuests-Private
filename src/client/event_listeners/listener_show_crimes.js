@@ -4,6 +4,8 @@
 // │                                     │
 // └─────────────────────────────────────┘
 
+import { update_crime_markers } from '../crimes/add_crime_layer.js'
+
 export function listener_show_crimes()
 {
 
@@ -27,7 +29,7 @@ export function listener_show_crimes()
                 console.log("ERROR:"+error);
             });
 
-        update_OL_crime_markers(crimeMarkers);
+        update_crime_markers(crimeMarkers);
 
     });
 
