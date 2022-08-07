@@ -21,7 +21,7 @@ import { filter_invert } from "./listener_filter_invert.js";
 import { filter_dark } from "./listener_filter_dark.js";
 import { filter_sepia } from "./listener_filter_sepia.js";
 
-export function initialise_load_event_listeners(){
+export function load_event_listeners(){
     listener_paste()
     listener_map()
     listener_exclude_button()
@@ -38,5 +38,3 @@ export function initialise_load_event_listeners(){
     filter_dark()
     filter_sepia()
 }
-
-initialise_load_event_listeners()
