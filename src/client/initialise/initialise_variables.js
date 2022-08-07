@@ -1,6 +1,6 @@
 // ┌─────────────────────────────────────┐
 // │                                     │
-// │              Variables              │
+// │           Global Variables          │
 // │                                     │
 // └─────────────────────────────────────┘
 
@@ -10,7 +10,7 @@ var icon_zoopla = "https://svg-rewriter.sachinraja.workers.dev/?url=https%3A%2F%
 var icon_onthemarket = "https://svg-rewriter.sachinraja.workers.dev/?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fnpm%2F%40mdi%2Fsvg%406.7.96%2Fsvg%2Fhome-map-marker.svg&fill=%23E11D48&width=20px&height=20px";
 
 // Hostname of node app
-const hostname = 'http://localhost:3000'
+var hostname = 'http://localhost:3000'
 
 // New Map Instance
 var map;

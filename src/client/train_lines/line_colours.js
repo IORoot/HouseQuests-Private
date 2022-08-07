@@ -1,4 +1,4 @@
-function getColour_Lines(lineName) {
+export function getColour_Lines(lineName) {
     return  lineName == "C2C" ? "rgba(178, 137, 191, 1.0)" : 
             lineName == "Chiltern Railways" ? "rgba(237, 1, 140, 1.0)" : 
             lineName == "Great Northern" ? "rgba(206, 156, 97, 1.0)" : 

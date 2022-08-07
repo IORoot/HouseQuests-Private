@@ -1,6 +1,7 @@
 /**
  * Vector Tube map Layers
  */
+import { getColour_Lines } from '../train_lines/line_colours.js'
 
 // ol.layer.Vector will automatically pass in 'feature' to the function.
 function train_style_Lines(feature) {
