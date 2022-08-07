@@ -4,6 +4,7 @@
 // │                                     │
 // └─────────────────────────────────────┘
 import {update_drawer_contents} from '../drawer/update_drawer_contents.js'
+import {load_property_details} from '../requests/load_property_details.js'
 
 export function listener_blacklist_item()
 {
@@ -42,7 +43,7 @@ export function listener_blacklist_item()
             'url': domain+blacklistId
         }
 
-        var propertyDetails = await load_feature_details(blacklistMarker)
+        var propertyDetails = await load_property_details(blacklistMarker)
 
         // update the right drawer contents with results.
         update_drawer_contents(propertyDetails, blacklistMarker.source)

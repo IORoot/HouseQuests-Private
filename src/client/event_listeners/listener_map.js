@@ -23,6 +23,7 @@
  *              
  */
 import {update_drawer_contents} from '../drawer/update_drawer_contents.js'
+import {load_property_details} from '../requests/load_property_details.js'
 
 export function listener_map(){
 
@@ -43,7 +44,7 @@ export function listener_map(){
          */
         if (marker.type == 'property')
         {
-            var propertyDetails = await load_feature_details(marker)
+            var propertyDetails = await load_property_details(marker)
 
             // update the right drawer contents with results.
             update_drawer_contents(propertyDetails, marker.source)

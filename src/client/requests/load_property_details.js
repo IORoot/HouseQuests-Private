@@ -4,7 +4,7 @@
 // │    Get the FULL feature details     │
 // │                                     │
 // └─────────────────────────────────────┘
-async function load_feature_details(marker)
+export async function load_property_details(marker)
 {
 
     if (marker.source == 'zoopla')
