@@ -4,7 +4,7 @@
 // │                                     │
 // └─────────────────────────────────────┘
 
-function check_blacklist(markers)
+export function check_blacklist(markers)
 {
 
     // get blacklist array

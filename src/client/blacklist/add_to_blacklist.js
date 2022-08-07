@@ -1,4 +1,4 @@
-function addToBlacklist(blacklist,excludeArray)
+export function add_to_blacklist(blacklist,excludeArray)
 {
     if (blacklist.find(element => element === excludeArray))
     {

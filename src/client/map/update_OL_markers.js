@@ -5,6 +5,7 @@
 // └─────────────────────────────────────┘
 
 import { check_highlight_list } from '../highlightlist/check_highlight_list.js'
+import { check_blacklist } from '../blacklist/check_blacklist.js'
 
 export function update_OL_markers(markerdata, icon, source){
 

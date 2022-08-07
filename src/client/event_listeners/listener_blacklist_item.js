@@ -42,8 +42,6 @@ export function listener_blacklist_item()
             'url': domain+blacklistId
         }
 
-        console.log(blacklistMarker)
-
         var propertyDetails = await load_feature_details(blacklistMarker)
 
         // update the right drawer contents with results.

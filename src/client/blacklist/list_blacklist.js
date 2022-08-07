@@ -4,7 +4,7 @@
 // │                                     │
 // └─────────────────────────────────────┘
 
-function list_blacklist(){
+export function list_blacklist(){
 
     // get blacklist array
     var blacklist = JSON.parse(window.localStorage.getItem('blacklistedIDs'));
@@ -16,8 +16,8 @@ function list_blacklist(){
         // Loop through markers, checking if any in blacklist.
         blacklist.forEach(function(marker, index) {
 
-            markerID = marker[0];
-            markerSource = marker[1];
+            let markerID = marker[0];
+            let markerSource = marker[1];
 
             var colour = 'slate-200'
             if (markerSource == 'rightmove'){
@@ -50,4 +50,3 @@ function list_blacklist(){
 
     document.getElementById("blacklist").innerHTML = blacklistItems;
 }
-list_blacklist();

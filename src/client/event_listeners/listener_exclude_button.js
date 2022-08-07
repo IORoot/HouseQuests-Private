@@ -5,6 +5,9 @@
 // │                                     │
 // └─────────────────────────────────────┘
 
+import { add_to_blacklist } from '../blacklist/add_to_blacklist.js'
+import { list_blacklist } from '../blacklist/list_blacklist.js'
+
 export function listener_exclude_button(){
 
     const excludeButton = document.getElementById('drawer-exclude');
@@ -25,7 +28,7 @@ export function listener_exclude_button(){
 
         if (blacklist){
             // push new ID onto array.
-            addToBlacklist(blacklist,excludeArray)
+            add_to_blacklist(blacklist,excludeArray)
             list_blacklist()
             removeFeatureFromMap(excludeIDinteger);
             drawer.hide();
