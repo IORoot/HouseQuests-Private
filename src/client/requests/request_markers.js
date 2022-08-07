@@ -1,4 +1,5 @@
 import { set_searches } from '../searches/set_searches.js'
+import { update_OL_markers } from '../map/update_OL_markers.js'
 
 export async function request_markers(currentURL, source) {
 

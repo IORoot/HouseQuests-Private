@@ -4,6 +4,8 @@
 // │                                     │
 // └─────────────────────────────────────┘
 
+import { add_to_highlight_list } from '../highlightlist/add_to_highlight_list.js'
+
 export function listener_change_property_colour()
 {
 
@@ -53,7 +55,7 @@ export function listener_change_property_colour()
                     // match against current property
                     if (featureID == propertyID){
                         feature.setStyle(newStyle);
-                        addToHighlightList(propertyID,colour)
+                        add_to_highlight_list(propertyID,colour)
                     }
                 })
 

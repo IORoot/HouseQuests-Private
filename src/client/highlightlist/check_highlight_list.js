@@ -4,7 +4,7 @@
 // │                                     │
 // └─────────────────────────────────────┘
 
-function check_highlightlist(currentPropertyID)
+export function check_highlight_list(currentPropertyID)
 {
 
     let newIcon = null;

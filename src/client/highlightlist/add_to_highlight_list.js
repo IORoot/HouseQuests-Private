@@ -1,4 +1,4 @@
-function addToHighlightList(propertyID,colour)
+export function add_to_highlight_list(propertyID,colour)
 {
 
     let propertyColourArray = {'propertyID' : propertyID, 'colour': colour}

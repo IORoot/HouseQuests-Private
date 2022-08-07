@@ -1,10 +1,12 @@
-
 // ┌─────────────────────────────────────┐
 // │                                     │
 // │       Insert Markers onto Map       │
 // │                                     │
 // └─────────────────────────────────────┘
-function update_OL_markers(markerdata, icon, source){
+
+import { check_highlight_list } from '../highlightlist/check_highlight_list.js'
+
+export function update_OL_markers(markerdata, icon, source){
 
     // Check if any ID is on the blacklist
     markerdata = check_blacklist(markerdata)
@@ -15,8 +17,10 @@ function update_OL_markers(markerdata, icon, source){
 
         property => {
 
+            let currentIcon = null;
+            
             // change icon if in highlightlist in localStorage
-            let customIcon = check_highlightlist(property.id)
+            let customIcon = check_highlight_list(property.id)
             if (customIcon){
                 currentIcon = customIcon 
                 customIcon = null
