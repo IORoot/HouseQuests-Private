@@ -24,11 +24,6 @@ module.exports = function(app){
             scriptdata = scriptdata.replace(/};/, '}');
 
             data = JSON.parse(scriptdata);
-        
-            // replace thumnbnail images for big images.
-            data.images.forEach(function(image,index){
-                data.images[index].url = image["large-url"]
-            })
 
             var map = {
                 item: {
@@ -36,7 +31,7 @@ module.exports = function(app){
                     description:    "description",
                     title:          "page-titles.page-title",
                     price:          "price",
-                    images:         "images",
+                    // images:         "images",
                     floorplan:      "floorplans[0].large-url",
                     longitude:      "location.lon",
                     latitude:       "location.lat",
@@ -53,6 +48,18 @@ module.exports = function(app){
             }
         
             var result = transform(data, map);
+            
+            // IMAGES
+            // Convert Images array to a standard list of URLs. 
+            // [ 'url': 'www', 'url': 'www', ...]
+            var imageArray = []
+            data.images.forEach(function(image, index) {
+                imageArray.push({ 
+                    'url': image["large-url"],
+                    'thumbnail': image.prefix + '-' + image.geometries.ls.suffix + '.' + image.ext
+                });
+            });
+            result['images'] = imageArray;
 
             result['station'] = data.station[0].name + '(' + data.station[0]["display-distance"] + ' )'
 

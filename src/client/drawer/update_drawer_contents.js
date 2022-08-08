@@ -45,7 +45,7 @@ export function update_drawer_contents(propertyDetails, source)
     const images = property.images;
     var grid = "";
     images.forEach(image => {
-        grid += '<a class="w-full h-30 bg-gray-200" href="'+ image.url +'" target="_blank"><img src="'+ image.url +'" /></a>'
+        grid += '<a class="w-full h-30 bg-gray-200" href="'+ image.url +'" target="_blank"><img src="'+ image.thumbnail +'" /></a>'
     });
     document.getElementById("drawer-image-grid").innerHTML = grid;
 

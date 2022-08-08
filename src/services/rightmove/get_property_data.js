@@ -33,7 +33,6 @@ module.exports = function(app){
                     description:    "propertyData.text.description",
                     title:          "propertyData.text.pageTitle",
                     price:          "propertyData.prices.primaryPrice",
-                    images:         "propertyData.images",
                     floorplan:      "propertyData.floorplans[0].url",
                     longitude:      "propertyData.location.longitude",
                     latitude:       "propertyData.location.latitude",
@@ -48,9 +47,20 @@ module.exports = function(app){
                     return item; 
                 }
             }
-        
+
             var result = transform(data, map);
 
+            // IMAGES
+            var imageArray = []
+            data.propertyData.images.forEach(function(image, index) {
+                imageArray.push({
+                    'url': image.url,
+                    'thumbnail': image.resizedImageUrls.size476x317
+                });
+            });
+            result['images'] = imageArray;
+
+            // Closest Station
             result['station'] = data.propertyData.nearestStations[0].name + '(' + Math.round(data.propertyData.nearestStations[0].distance * 100) / 100 + 'miles )'
 
             res.json(result)

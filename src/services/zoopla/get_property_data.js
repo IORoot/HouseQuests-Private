@@ -51,11 +51,14 @@ module.exports = function(app){
             // IMAGES
             // Convert Images array to a standard list of URLs. 
             // [ 'url': 'www', 'url': 'www', ...]
-            var newImageArray = []
+            var imageArray = []
             data.propertyImage.forEach(function(image, index) {
-                newImageArray.push({ 'url': "https://lid.zoocdn.com/u/480/360/" + image.filename });
+                imageArray.push({ 
+                    'url': "https://lid.zoocdn.com/u/1600/1200/" + image.filename,
+                    'thumbnail': "https://lid.zoocdn.com/u/480/360/" + image.filename
+                });
             });
-            result['images'] = newImageArray;
+            result['images'] = imageArray;
 
             // STATIONS
             // Search for Underground Station

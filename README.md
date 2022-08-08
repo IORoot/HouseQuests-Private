@@ -32,13 +32,21 @@
 	/vscode-markdown-toc-config -->
 <!-- /vscode-markdown-toc -->
 
+## Things I want to do first
+- [ ] Load thumbnail images that link to large.
+- [ ] House Report
+- [ ] Turn searches on / off
+- [ ] Turn blacklist on / off
+- [ ] Toggle Favourites on / off (different colours)
+- [ ] Advanced location filtering. 
+    - AND / OR / NOT / XOR close to features
+
+
 ##  1. <a name='Refactor'></a>Refactor
-- [ ] Better app structure
-- [ ] Use Axios or Fetch instead of Request (depreciated)
 - [ ] Make all Zoopla/Rightmove requests frontend
 - [ ] User Accounts - free / unlimited
 - [ ] Loading icon - subtle - in corner?
-- [ ] Load ALL layers on request, not by default
+- [x] Load ALL layers on request, not by default
 - [x] Save last Zoopla/Rightmove request
 - [x] Popup modal for clearing custom icon colours
 - [x] 
@@ -47,7 +55,8 @@
     - [x] state schools
     - [x] universities
     - [x] childrens centers
-
+- [x] Better app structure
+- [x] Use Axios or Fetch instead of Request (depreciated)
 ##  2. <a name='Features'></a>Features
 
 - [ ] House Report
@@ -78,8 +87,6 @@
     - [ ] South facing roof?
     - [ ] Census Data
   
-- [ ] Tube / Train stations say which route they're on 
-- [ ] Tube / Train lines - hide / fade / highlight specific lines.
 - [ ] Advanced location filtering. 
     - AND / OR / NOT / XOR close to features
     - stations / lines / crimes 
@@ -91,6 +98,8 @@
 - [ ] highlight current icon
 - [ ] square footage
 - [ ] properties on a particular route / drive
+- [ ] Tube / Train stations say which route they're on 
+- [ ] Tube / Train lines - hide / fade / highlight specific lines.
 - [ ] Unified Search?
     - Zoopla
     - Rightmove
