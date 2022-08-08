@@ -33,8 +33,8 @@
 <!-- /vscode-markdown-toc -->
 
 ## Things I want to do first
-- [ ] Load thumbnail images that link to large.
 - [ ] House Report
+- [ ] highlight current house
 - [ ] Turn searches on / off
 - [ ] Turn blacklist on / off
 - [ ] Toggle Favourites on / off (different colours)
@@ -57,44 +57,65 @@
     - [x] childrens centers
 - [x] Better app structure
 - [x] Use Axios or Fetch instead of Request (depreciated)
+- [x] Load thumbnail images that link to large.
 ##  2. <a name='Features'></a>Features
 
 - [ ] House Report
-    - [ ] Prices of surrounding property. 
+
+    - Property
+      - [ ] Crimes at property
+      - [ ] Broadband Services
+      - [ ] Council Tax
+      - [ ] Price Change History 
+      - [ ] Borough
+      - [ ] EPC
+      - [ ] Ground Rent
+      - [ ] Service Charge
+      - [ ] Length of Lease
+      - [ ] Previously known paid prices 
+      - [ ] History of currently listed price (has it gone down since being listed?)
+      - [ ] Elevation of building for flats?
+      - [ ] planning permissions
+      - [ ] Windows / Sunlight / House Orientation
+
+
+    - Transport
+      - [ ] Travel Time to specific location
+
+
+    - Local Area
+      - [ ] Prices of surrounding property. 
         - Price vs Avg Street price of properties
         - Price vs Avg Area price of properties
         - Price vs National Avg
-        - Prices of houses in street
-    - [ ] Crimes at property
-    - [ ] any construction near
-    - [ ] Broadband Services
-    - [ ] Council tax bands
-    - [ ] Price Change History 
-    - [ ] Extra Zoopla / Rightmove Data
-        - Borough
-        - EPC (energy performance certificate)
-        - Estate Agent Link
-        - Ground Rent
-        - Service Charge
-        - Length of Lease
-        - Council Tax
-        - Closest Schools
-        - Broadband Speed
-    - [ ] Noise Levels
-    - [ ] Are you near a train line?
-    - [ ] Are you near a busy street?
-    - [ ] How busy is the street? Google Traffic?
-    - [ ] South facing roof?
-    - [ ] Census Data
+      - [ ] Price of any houses up for sale in surrounding area.
+      - [ ] any construction near
+      - [ ] Closest Schools
+      - [ ] Closest Stations
+      - [ ] Census Data
+      - [ ] Delivery services (deliveroo, uber-eats, just-eat, etc)
+      - [ ] Pollen
+      - [ ] air quality
+
+
+    - Neighbourhood Rating
+      - [ ] Ofsted rating of closest school
+      - [ ] Crime ratings
+          - Number against national average.
+          - Type of crime
+      - [ ] Supermarket level
+  
+    - Agent
+      - [ ] Estate Agent Link
+
+
   
 - [ ] Advanced location filtering. 
-    - AND / OR / NOT / XOR close to features
-    - stations / lines / crimes 
+    - AND / OR / NOT / XOR close to other lng/lats
 - [ ] Changing highlightList colour multiple times keeps adding entries to localStorage array. Just replace current one, don't keep adding.
 - [ ] favourites always load, no need to query zoopla / rightmove.
 - [ ] import / export favourites
 - [ ] Elevation of building for flats?
-- [ ] School ratings / ofcom status?
 - [ ] highlight current icon
 - [ ] square footage
 - [ ] properties on a particular route / drive
@@ -119,28 +140,19 @@
 
 ##  3. <a name='Layerstoadd'></a>Layers to add
 
-- [ ] Broadband Services
-- [ ] school catchment radius
-- [ ] air polution
-- [ ] Delivery services (deliveroo, uber-eats, just-eat, etc)
 - [ ] small supermarkets.
-- [ ] Pollen
 - [ ] Mobile Phone Towers
 - [ ] Phone coverage
 - [ ] Conservation areas
 - [ ] Flood areas
-- [ ] planning permission
 - [ ] waste services
 - [ ] any construction near
 - [ ] radioactive materials in the land
 - [ ] sweage plant / waste plant / recycle center
 - [ ] Amazon Prime
-- [ ] Council tax bands
 - [ ] Bike routes
 - [ ] Flight paths
 - [ ] Bars / Pubs / Nightclubs near
-- [ ] air quality
-- [ ] Windows / Sunlight / House Orientation
 - [x] Trains (stations / Routes)
 - [x] Tube (stations / Routes)
 - [x] Buses (Stations / Routes)

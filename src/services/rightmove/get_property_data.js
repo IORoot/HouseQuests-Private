@@ -38,12 +38,37 @@ module.exports = function(app){
                     latitude:       "propertyData.location.latitude",
                     bedrooms:       "propertyData.bedrooms",
                     tenure:         "propertyData.tenure.tenureType",
-                    link:           "metadata.copyLinkUrl"
+                    link:           "metadata.copyLinkUrl",
+                    details:        {
+                        archived:           "propertyData.status.archived",
+                        branch:             "propertyData.customer.branchDisplayName",
+                        branchID:           "propertyData.customer.branchId",
+                        branchLogo:         "propertyData.customer.logoPath",
+                        branchURL:          "propertyData.customer.customerProfileUrl",
+                        broadbandUrl:       "propertyData.broadband.broadbandCheckerUrl",
+                        epc:                "propertyData.epcGraphs",
+                        featuresArray:      "propertyData.keyFeatures",
+                        groundRent:         "propertyData.livingCosts.annualGroundRent",
+                        leaseExpiry:        "propertyData.tenure.yearsRemainingOnLease",
+                        listingHistory:     "propertyData.listingHistory",
+                        numberBaths:        "propertyData.bathrooms",
+                        numberBeds:         "propertyData.bedrooms",
+                        pointsOfInterest:   "propertyData.nearestStations",
+                        pricePerSqFt:       "propertyData.prices.pricePerSqFt",
+                        propertyType:       "propertyData.propertySubType",
+                        roomsArray:         "propertyData.rooms",
+                        serviceCharge:      "propertyData.livingCosts.annualServiceCharge",
+                        sharedOwnership:    "propertyData.sharedOwnership.sharedOwnership",
+                        sizings:            "propertyData.sizings",
+                        status:             "propertyData.status.published",
+                        taxBand:            "propertyData.livingCosts.councilTaxBand",
+                    }
                 },
 
                 each: function(item){
                     item.source = "rightmove";
                     item.url = "https://rightmove.co.uk/properties/"+item.id
+                    item.details.branchURL = 'https://rightmove.co.uk' + item.details.branchURL;
                     return item; 
                 }
             }

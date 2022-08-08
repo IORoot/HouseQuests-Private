@@ -36,12 +36,42 @@ module.exports = function(app){
                     latitude:       "location.coordinates.latitude",
                     bedrooms:       "counts.numBedrooms",
                     tenure:         "analyticsTaxonomy.tenure",
+                    details:        {
+                        auction:            "pricing.isAuction",
+                        branch:             "branch.name",
+                        branchID:           "branch.branchId",
+                        branchLogo:         "branch.logoUrl",
+                        branchURL:          "branch.branchResultsUri",
+                        category:           "category",
+                        chain:              "analyticsTaxonomy.chainFree",
+                        deposit:            "deposit.label",
+                        epc:                "epc.image[0].filename",
+                        featuresArray:       "features.bullets",
+                        floorArea:          "floorArea",
+                        furnishedState:     "analyticsTaxonomy.furnishedState",
+                        groundRent:         "groundRent.label",
+                        leaseExpiry:        "leaseExpiry.yearsRemaining",
+                        listingCondition:   "analyticsTaxonomy.listingCondition",
+                        numberBaths:        "analyticsTaxonomy.numBaths",
+                        numberBeds:         "analyticsTaxonomy.numBeds",
+                        pointsOfInterest:   "pointsOfInterest",
+                        propertyType:       "propertyType",
+                        published:          "publishedOn",
+                        retirementHome:     "analyticsTaxonomy.isRetirementHome",
+                        section:            "section",
+                        serviceCharge:      "serviceCharge",
+                        sharedOwnership:    "analyticsTaxonomy.isSharedOwnership",
+                        size:               "analyticsTaxonomy.sizeSqFeet",
+                        statisticsArray:    "marketStats",
+                        taxBand:            "councilTaxBand",
+                    },
                 },
-
                 each: function(item){
                     item.source = "zoopla";
                     item.url = "https://zoopla.co.uk/for-sale/details/"+item.id
                     item.link = "https://zoopla.co.uk/for-sale/details/"+item.id
+                    item.floorplan = "https://lid.zoocdn.com/u/1600/1200/"+item.floorplan
+                    item.details.epc = "https://lid.zoocdn.com/u/1600/1200/"+item.details.epc
                     return item; 
                 }
             }
@@ -69,6 +99,8 @@ module.exports = function(app){
                 }
             });
             result['station'] = station;
+
+
 
             res.json(result)
         

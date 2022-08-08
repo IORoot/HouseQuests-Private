@@ -31,13 +31,29 @@ module.exports = function(app){
                     description:    "description",
                     title:          "page-titles.page-title",
                     price:          "price",
-                    // images:         "images",
                     floorplan:      "floorplans[0].large-url",
                     longitude:      "location.lon",
                     latitude:       "location.lat",
                     bedrooms:       "bedrooms-text",
                     tenure:         "unknown",
-                    link:           "canonical-url"
+                    link:           "canonical-url",
+                    details:        {
+                        area:               "minimum-area",
+                        branch:             "agent.name",
+                        branchID:           "agent.branch_id",
+                        branchLogo:         "agent.logo-path",
+                        branchURL:          "agent.website-url",
+                        broadband:          "broadband",
+                        epc:                "epc",
+                        featuresArray:      "features",
+                        newHome:            "new-home-flag",
+                        numberBaths:        "bathrooms",
+                        numberBeds:         "bedrooms",
+                        pointsOfInterest:   "station",
+                        propertyType:       "prop-sub-id",
+                        schools:            "school",
+                        mobileReception:    "mobile-reception"
+                    }
                 },
 
                 each: function(item){

@@ -144,24 +144,6 @@
     "show-num-people?": false,
     "hide-postcode?": false,
     "humanised-property-type": "Ground floor maisonette",
-    "sale-timeframe-values": [
-        {
-            "value": "sale-within-3-mo",
-            "name": "Within the next 3 months"
-        },
-        {
-            "value": "sale-within-6-mo",
-            "name": "Within the next 6 months"
-        },
-        {
-            "value": "sale-within-9-mo",
-            "name": "Within the next 9 months"
-        },
-        {
-            "value": "sale-within-12-mo",
-            "name": "Within the next 12 months"
-        }
-    ],
     "student?": false,
     "price-qualifier": null,
     "branch_id": 42774,
@@ -469,60 +451,6 @@
             "id": "school-28630"
         }
     ],
-    "mortgage-concerns-values": [
-        {
-            "value": "very-worried",
-            "name": "Yes, very worried",
-            "short-name": "Very worried"
-        },
-        {
-            "value": "slightly-worried",
-            "name": "Yes, slightly concerned",
-            "short-name": "Slightly concerned"
-        },
-        {
-            "value": "no",
-            "name": "No, I’m sure it will be fine",
-            "short-name": "I’m sure it will be fine"
-        },
-        {
-            "value": "no-agreement",
-            "name": "No, I have a mortgage Agreement in Principle already",
-            "short-name": "I've got a mortgage in principle"
-        },
-        {
-            "value": "no-need",
-            "name": "No, because I don’t need a mortgage to buy a property",
-            "short-name": "I don’t need a mortgage to buy"
-        },
-        {
-            "value": "not-thought",
-            "name": "I’ve not thought about it yet",
-            "short-name": "I’ve not thought about it yet"
-        }
-    ],
-    "term-length-values": [
-        {
-            "value": "0-3-mo",
-            "name": "Less than 3 months"
-        },
-        {
-            "value": "3-6-mo",
-            "name": "3-6 months"
-        },
-        {
-            "value": "6-12-mo",
-            "name": "6-12 months"
-        },
-        {
-            "value": "more-than-1-yr",
-            "name": "More than 1 year"
-        },
-        {
-            "value": "not-sure",
-            "name": "Not sure"
-        }
-    ],
     "images": [
         {
             "position-caption": "Image 1 of 7",
@@ -785,28 +713,6 @@
         }
     ],
     "pluralize-school?": true,
-    "sale-situation-values": [
-        {
-            "value": "no",
-            "name": "No"
-        },
-        {
-            "value": "not-on-mrk",
-            "name": "Yes, it is not yet on the market"
-        },
-        {
-            "value": "on-mrk",
-            "name": "Yes, it is on the market already"
-        },
-        {
-            "value": "under-off",
-            "name": "Yes, it is under offer"
-        },
-        {
-            "value": "exchanged",
-            "name": "Yes, it is already exchanged"
-        }
-    ],
     "hero-image-3": {
         "position-caption": "Image 2 of 7",
         "large-url": "https://media.onthemarket.com/properties/11549011/1390499977/image-1-1024x1024.jpg",
@@ -885,28 +791,6 @@
         },
         "text": "Lounge"
     },
-    "rent-situation-values": [
-        {
-            "value": "no",
-            "name": "No"
-        },
-        {
-            "value": "rent-to-purchase",
-            "name": "Not yet, I intend to buy to let"
-        },
-        {
-            "value": "rent-available",
-            "name": "Yes, it is available to let now"
-        },
-        {
-            "value": "rent-available-soon",
-            "name": "Yes, it will be available to let soon"
-        },
-        {
-            "value": "rent-occupied",
-            "name": "Yes, it is currently occupied"
-        }
-    ],
     "hide-appraisal?": false,
     "development-property?": false,
     "recommended?": false,
@@ -1497,49 +1381,9 @@
         "meta-title": "Cubitt & West - Shirley present this 2 bedroom ground floor maisonette for sale in Cheston Avenue, Shirley, Croydon, Surrey"
     },
     "id": "11549011",
-    "start-date-values": [
-        {
-            "value": "asap",
-            "name": "ASAP"
-        },
-        {
-            "value": "0-3-mo",
-            "name": "Within 3 months"
-        },
-        {
-            "value": "3-6-mo",
-            "name": "3-6 months"
-        },
-        {
-            "value": "more-than-6-mo",
-            "name": "More than 6 months time"
-        },
-        {
-            "value": "not-sure",
-            "name": "Not sure"
-        }
-    ],
     "poi?": true,
     "days-since-added-reduced": "OnTheMarket > 14 days",
     "spotlight?": false,
-    "moving-situation-values": [
-        {
-            "value": "moving-within-3-mo",
-            "name": "Within the next 3 months"
-        },
-        {
-            "value": "moving-within-6-mo",
-            "name": "Within the next 6 months"
-        },
-        {
-            "value": "moving-within-9-mo",
-            "name": "Within the next 9 months"
-        },
-        {
-            "value": "moving-within-12-mo",
-            "name": "Within the next 12 months"
-        }
-    ],
     "floorplans": [
         {
             "position-caption": "Floorplan",

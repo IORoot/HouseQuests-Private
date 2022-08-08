@@ -7,8 +7,10 @@ import { inspector_check } from '../text_inspector/inspector_check.js'
 
 export function update_drawer_contents(propertyDetails, source)
 {
-
+    
     const property = JSON.parse(propertyDetails);
+
+    console.log(property);
 
     // Set Source
     document.getElementById("drawer-source").innerHTML = source;

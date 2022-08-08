@@ -38,13 +38,13 @@ export function listener_change_property_colour()
         layersCollection.forEach(function(layer, index){
 
             // Instance of Tile source / Vector source
-            source = layer.getSource()
+            let source = layer.getSource()
 
             // Filter for vectors only
             if (source instanceof ol.source.Vector){
 
                 // Get Array of Features on Vector
-                features = source.getFeatures();
+                let features = source.getFeatures();
 
                 // Loop through all features array
                 features.forEach( function(feature){
