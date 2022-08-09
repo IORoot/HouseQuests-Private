@@ -16,6 +16,8 @@ var hostname = 'http://localhost:3000'
 // New Map Instance
 var map;
 
+// blacklist enabled state
+var blacklistEnabled = true
 
 // ┌─────────────────────────────────────┐
 // │                                     │
@@ -24,18 +26,18 @@ var map;
 // └─────────────────────────────────────┘
 
 
-const options = {
-    placement: 'right',
-    backdrop: false,
-    bodyScrolling: false,
-    edge: false,
-    edgeOffset: '',
-    backdropClasses: 'bg-gray-900 bg-opacity-50 dark:bg-opacity-80 fixed inset-0 z-30',
-};
+    const options = {
+        placement: 'right',
+        backdrop: false,
+        bodyScrolling: false,
+        edge: false,
+        edgeOffset: '',
+        backdropClasses: 'bg-gray-900 bg-opacity-50 dark:bg-opacity-80 fixed inset-0 z-30',
+    };
 
-const targetEl = document.getElementById('drawer');
+    const targetEl = document.getElementById('drawer');
 
-const drawer = new Drawer(targetEl, options);
+    const drawer = new Drawer(targetEl, options);
 
 
 // ┌─────────────────────────────────────┐
@@ -70,25 +72,25 @@ const drawer = new Drawer(targetEl, options);
 // │                                     │
 // └─────────────────────────────────────┘
 
-var sourceOSM = new ol.source.OSM();
+    var sourceOSM = new ol.source.OSM();
 
-map = new ol.Map({
-    target: 'map',
+    map = new ol.Map({
+        target: 'map',
 
-    // Use new OSM OpenSourceMap
-    layers: [
-        new ol.layer.Tile({
-            source: sourceOSM
-        })
-    ],
+        // Use new OSM OpenSourceMap
+        layers: [
+            new ol.layer.Tile({
+                source: sourceOSM
+            })
+        ],
 
-    // Popup overlays
-    overlays: [overlay],
+        // Popup overlays
+        overlays: [overlay],
 
-    // Default view
-    view: new ol.View({
-        center: ol.proj.fromLonLat([0.0098,51.4934]),
-        zoom: 12
-    }),
+        // Default view
+        view: new ol.View({
+            center: ol.proj.fromLonLat([0.0098,51.4934]),
+            zoom: 12
+        }),
 
-});
+    });

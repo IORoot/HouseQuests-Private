@@ -1,20 +1,26 @@
 // ┌─────────────────────────────────────┐
 // │                                     │
-// │         Clear All Markers           │
+// │            Toggle Blacklist         │
 // │                                     │
 // └─────────────────────────────────────┘
-
+import { onload_searches } from '../searches/onload_searches.js'
 import { remove_vector_layers } from '../map/remove_vector_layers.js'
-import { clear_search_boxes } from '../drawer/clear_search_boxes.js'
 
-export function listener_clear_all_markers()
-{
-    const clearAllMarkers = document.getElementById('clear-all-markers');
+export function listener_toggle_blacklist(){
 
-    clearAllMarkers.addEventListener('click', function(event) {
+    const toggleBlacklistSwitch = document.getElementById('blacklisttoggle');
+    toggleBlacklistSwitch.addEventListener('click', async function(event) {
+
+        // Remove all existing layers
         remove_vector_layers('zoopla')
         remove_vector_layers('rightmove')
         remove_vector_layers('onthemarket')
-        clear_search_boxes();
+
+        // toggle the blacklist search
+        blacklistEnabled = !blacklistEnabled
+
+        // search again.
+        onload_searches()
     });
+
 }

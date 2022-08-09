@@ -108,12 +108,14 @@
             </div>
         
         
-
-            <h5 class="col-span-6 inline-flex items-center text-sm font-semibold text-gray-800 dark:text-gray-400 capitalize mb-4 mr-2">Blacklist IDs</h5>
-            <label for="blacklisttoggle" class="inline-flex relative items-center mr-5 cursor-pointer">
-                <input type="checkbox" value="" id="blacklisttoggle" class="sr-only peer" checked>
-                <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-gray-300 dark:peer-focus:ring-regrayd-800 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-gray-600"></div>
-            </label>
+            <div class="flex flex-row relative">
+                <h5 class="col-span-6 inline-flex items-center text-sm font-semibold text-gray-800 dark:text-gray-400 capitalize mb-4 mr-2">Blacklist IDs</h5>
+                <label for="blacklisttoggle" class="ml-auto inline-flex relative items-center mr-5 cursor-pointer">
+                    <input type="checkbox" value="" id="blacklisttoggle" class="sr-only peer" checked>
+                    <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-gray-300 dark:peer-focus:ring-regrayd-800 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-2.5 after:left-2 after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-gray-600"></div>
+                </label>
+            </div>
+            
             <div id="blacklist" class="w-full h-40 bg-slate-100 flex flexrow flex-wrap gap-4 p-4 rounded overflow-y-scroll"></div>
 
         </div>

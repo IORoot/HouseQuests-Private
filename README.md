@@ -35,7 +35,8 @@
 ## Things I want to do first
 - [ ] House Report
 - [ ] highlight current house
-- [ ] Turn searches on / off
+- [x] Turn searches on / off
+- [ ] measurement tool (walk / cycle / drive)
 - [ ] Turn blacklist on / off
 - [ ] Toggle Favourites on / off (different colours)
 - [ ] Advanced location filtering. 

@@ -21,19 +21,16 @@ export function listener_toggle_layers(){
 
     const toggleZooplaMarkers = document.getElementById('zooplaInputToggle');
     toggleZooplaMarkers.addEventListener('click', async function(event) {
-        console.log('zoopla click')
         toggle_layer('zoopla')
     });
 
     const toggleRightmoveMarkers = document.getElementById('rightmoveInputToggle');
     toggleRightmoveMarkers.addEventListener('click', async function(event) {
-        console.log('Rightmove click')
         toggle_layer('rightmove')
     });
 
     const toggleOnthemarketMarkers = document.getElementById('onthemarketInputToggle');
     toggleOnthemarketMarkers.addEventListener('click', async function(event) {
-        console.log('Onthemarket click')
         toggle_layer('onthemarket')
     });
     

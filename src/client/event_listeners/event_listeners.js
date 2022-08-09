@@ -9,6 +9,7 @@ import { listener_paste } from "./listener_paste.js";
 import { listener_map } from "./listener_map.js";
 import { listener_exclude_button } from "./listener_exclude_button.js";
 import { listener_toggle_layers } from "./listener_toggle_layers.js";
+import { listener_toggle_blacklist } from "./listener_toggle_blacklist.js";
 import { listener_show_crimes } from "./listener_show_crimes.js";
 import { listener_blacklist_item } from "./listener_blacklist_item.js";
 import { listener_blacklist_item_remove } from "./listener_blacklist_item_remove.js";
@@ -26,6 +27,7 @@ export function load_event_listeners(){
     listener_map()
     listener_exclude_button()
     listener_toggle_layers()
+    listener_toggle_blacklist()
     listener_show_crimes()
     listener_blacklist_item()
     listener_blacklist_item_remove()
