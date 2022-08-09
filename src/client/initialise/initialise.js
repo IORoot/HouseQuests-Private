@@ -71,6 +71,25 @@ var blacklistEnabled = true
 // │           Initialise Map            │
 // │                                     │
 // └─────────────────────────────────────┘
+    var measurementToolSource = new ol.source.Vector();
+    var measurementToolVector = new ol.layer.Vector({
+        source: measurementToolSource,
+        style: new ol.style.Style({
+            fill: new ol.style.Fill({
+                color: 'rgba(255, 255, 255, 0.2)',
+            }),
+            stroke: new ol.style.Stroke({
+                color: 'rgba(225, 29, 72, 1.0)',
+                width: 2,
+            }),
+            image: new ol.style.Circle({
+                radius: 7,
+                fill: new ol.style.Fill({
+                    color: 'rgba(225, 29, 72, 1.0)',
+                }),
+            }),
+        }),
+    });
 
     var sourceOSM = new ol.source.OSM();
 
@@ -81,7 +100,8 @@ var blacklistEnabled = true
         layers: [
             new ol.layer.Tile({
                 source: sourceOSM
-            })
+            }),
+            measurementToolVector
         ],
 
         // Popup overlays
