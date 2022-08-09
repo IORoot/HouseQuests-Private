@@ -58,7 +58,7 @@
 - [ ] House Report
 
     - Property
-      - [ ] Crimes at property
+      - [x] Crimes at property
       - [ ] Broadband Services
       - [ ] Council Tax
       - [ ] Price Change History 
@@ -196,6 +196,8 @@ Postcode-based Standard report
 - [OpenStreetMap Map Features](https://wiki.openstreetmap.org/wiki/Map_features)
 - [OpenStreetMap Tester](]http://overpass-turbo.eu/)
 - [Commuter Hotspots](https://www.totallymoney.com/commuter-hotspots/tool/)
+- [PropertyChecker](https://propertychecker.co.uk/property-details/?postcode=SE13%207AA&paon=11)
+- [Postcode API](https://postcodes.io/docs) - contains more than postcodes.
 
 ###  7.3. <a name='Traffic'></a>Traffic
 - [GOV - Road Traffic Stats](https://roadtraffic.dft.gov.uk/#14/51.4569/-0.0177/basemap-countpoints)

@@ -73,6 +73,7 @@ export async function request_property_crimes(longitude, latitude)
                     message += '<th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">' + crime.category + '</th>'
                     message += '<td class="py-4 px-6">' + crime.location.street.name +'</td>'
                     message += '<td class="py-4 px-6">' + crime.month +'</td>'
+                    message += '</tr>'
                 });
 
                 message += '</tbody>'
