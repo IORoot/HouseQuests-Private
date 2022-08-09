@@ -75,6 +75,17 @@
         return output;
     };
 
+
+    const walkingTime = function (line) {
+        const distanceMeters = ol.sphere.getLength(line);
+        const averageSpeed = 80; // meters per minute
+        let time = distanceMeters / averageSpeed
+        time = Math.round(time)
+        
+        return time  + 'mins'
+    }
+
+
     function addInteraction() {
         const type = 'LineString';
         draw = new ol.interaction.Draw({
@@ -116,8 +127,9 @@
             listener = sketch.getGeometry().on('change', function (evt) {
                 const geom = evt.target;
                 let output = formatLength(geom);
+                let timeToWalk = walkingTime(geom);
                 tooltipCoord = geom.getLastCoordinate();
-                measureTooltipElement.innerHTML = output;
+                measureTooltipElement.innerHTML = output + ' | ' + timeToWalk;
                 measureTooltip.setPosition(tooltipCoord);
             });
         });
