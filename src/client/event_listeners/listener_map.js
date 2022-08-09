@@ -140,7 +140,6 @@ export function listener_map(){
         if (marker.type == 'crime')
         {
             overlay.setPosition(event.coordinate);
-
             var popupHTML = '';
             popupHTML += '<div class="flex flex-col gap-2">';
                 popupHTML += '<div class="text-md text-red-800">'+marker.category+'</div>'
@@ -148,6 +147,7 @@ export function listener_map(){
                 popupHTML += '<div class="text-sm">'+marker.month+'</div>'
                 popupHTML += '<div class="text-sm">'+marker.outcome.category+'</div>'
                 popupHTML += '<div class="text-sm">'+marker.outcome.date+'</div>'
+                popupHTML += '<div class="text-sm">LNG: '+marker.longitude+' LAT: '+marker.latitude+'</div>'
             popupHTML += '</div>';
 
             popupContent.innerHTML = popupHTML;

@@ -30,7 +30,7 @@
 - [ ] House Report
 - [ ] highlight current house
 - [x] Turn searches on / off
-- [ ] measurement tool (walk / cycle / drive)
+- [x] measurement tool (walk / cycle / drive)
 - [x] Turn blacklist on / off
 - [ ] Toggle Favourites on / off (different colours)
 - [ ] Advanced location filtering. 

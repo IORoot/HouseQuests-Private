@@ -19,6 +19,9 @@ var map;
 // blacklist enabled state
 var blacklistEnabled = true
 
+// Current viewed property
+var currentProperty;
+
 // ┌─────────────────────────────────────┐
 // │                                     │
 // │       Initialise the Drawer         │

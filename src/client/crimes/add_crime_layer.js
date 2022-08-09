@@ -28,6 +28,8 @@ export function update_crime_markers(markerdata){
                 category: category,
                 month: month,
                 outcome: outcome,
+                longitude: crime.location.longitude,
+                latitude: crime.location.latitude,
                 type: 'crime'
             })
 

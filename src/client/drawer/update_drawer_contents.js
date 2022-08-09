@@ -4,11 +4,15 @@
 // │                                     │
 // └─────────────────────────────────────┘
 import { inspector_check } from '../text_inspector/inspector_check.js'
+import { update_details_contents } from './update_details_contents.js'
 
 export function update_drawer_contents(propertyDetails, source)
 {
     
     const property = JSON.parse(propertyDetails);
+
+    // Update global variable.
+    currentProperty = property;
 
     // Set Source
     document.getElementById("drawer-source").innerHTML = source;
