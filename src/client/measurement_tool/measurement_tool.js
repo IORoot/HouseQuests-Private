@@ -1,5 +1,5 @@
-
-
+    import {toggle_layer} from '../map_layers/toggle_layer.js'
+    
     /**
      * Currently drawn feature.
      * @type {import("../src/ol/Feature.js").default}
@@ -141,8 +141,6 @@
         interactionList.forEach(function(singleInteraction){
 
             if (singleInteraction instanceof ol.interaction.Draw ){
-                console.log('removing interaction:')
-                console.log(singleInteraction)
                 map.removeInteraction(singleInteraction)
             }
         })
@@ -186,25 +184,29 @@
 
     
 
+/**
+ * Listen for measurement tool button toggle
+ */
+const measurementToolToggle = document.getElementById('toggleMeasurementTool');
+measurementToolToggle.addEventListener('click', function(event) { 
 
-    const measurementToolToggle = document.getElementById('toggleMeasurementTool');
-    measurementToolToggle.addEventListener('click', async function(event) { 
+    if (this.dataset.toggle)
+    {
+        this.dataset.toggle = ""
+        map.un('pointermove', pointerMoveHandler);
+        removeInteraction();
+        return;
+    } 
 
-        if (this.dataset.toggle)
-        {
-            console.log('measurement tool OFF')
-            this.dataset.toggle = ""
-            map.un('pointermove', pointerMoveHandler);
-            removeInteraction();
-            return;
-        } 
-
-        console.log('measurement tool ON')
-        this.dataset.toggle = "on"
-        map.on('pointermove', pointerMoveHandler);
-        map.getViewport().addEventListener('mouseout', function () {
-            helpTooltipElement.classList.add('hidden');
-        });
-        addInteraction();
-
+    this.dataset.toggle = "on"
+    map.on('pointermove', pointerMoveHandler);
+    map.getViewport().addEventListener('mouseout', function () {
+        helpTooltipElement.classList.add('hidden');
     });
+    addInteraction();
+
+});
+
+measurementToolToggle.addEventListener('dblclick', function(event) { 
+    toggle_layer('measurementTool')
+});

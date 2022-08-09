@@ -89,6 +89,8 @@ var blacklistEnabled = true
                 }),
             }),
         }),
+        name: 'measurementTool',
+        title: 'measurementTool',
     });
 
     var sourceOSM = new ol.source.OSM();
