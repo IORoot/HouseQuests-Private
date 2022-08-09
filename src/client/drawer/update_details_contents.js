@@ -19,18 +19,3 @@ export function update_details_contents()
     request_property_crimes(longitude, latitude)
     
 }
-
-
-/**
- * Append content to a tab:
- * property, neighbourhood, rating, agent
- * 
- * @param {string} tabname 
- * @param {string} content 
- */
-export function append_details_to_tab(tabname,content)
-{
-    var tab = tabname + 'TabContent';
-    var currentHTML = document.getElementById(tab).innerHTML;
-    document.getElementById(tab).innerHTML = currentHTML + content;
-}
