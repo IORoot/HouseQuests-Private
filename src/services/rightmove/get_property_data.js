@@ -53,7 +53,8 @@ module.exports = function(app){
                         branchLogo:         "propertyData.customer.logoPath",
                         branchURL:          "propertyData.customer.customerProfileUrl",
                         broadbandUrl:       "propertyData.broadband.broadbandCheckerUrl",
-                        epc:                "propertyData.epcGraphs",
+                        councilTaxBand:     "propertyData.livingCosts.councilTaxBand",
+                        epcGraphs:          "propertyData.epcGraphs",
                         featuresArray:      "propertyData.keyFeatures",
                         groundRent:         "propertyData.livingCosts.annualGroundRent",
                         leaseExpiry:        "propertyData.tenure.yearsRemainingOnLease",
@@ -68,7 +69,6 @@ module.exports = function(app){
                         sharedOwnership:    "propertyData.sharedOwnership.sharedOwnership",
                         sizings:            "propertyData.sizings",
                         status:             "propertyData.status.published",
-                        taxBand:            "propertyData.livingCosts.councilTaxBand",
                     }
                 },
 

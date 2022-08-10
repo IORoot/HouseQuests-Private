@@ -51,7 +51,7 @@ module.exports = function(app){
                         branchLogo:         "agent.logo-path",
                         branchURL:          "agent.website-url",
                         broadband:          "broadband",
-                        epc:                "epc",
+                        epcRating:          "epc.rating",
                         featuresArray:      "features",
                         newHome:            "new-home-flag",
                         numberBaths:        "bathrooms",
@@ -84,7 +84,25 @@ module.exports = function(app){
             });
             result['images'] = imageArray;
 
+            // Closest Station
             result['station'] = data.station[0].name + '(' + data.station[0]["display-distance"] + ' )'
+
+            // Loop through key-items
+            data['key-info'].forEach(function(infoItem){
+                
+                if(infoItem.title.toLowerCase() == 'tenure'){
+                    result.tenure = infoItem.value
+                }                
+
+                if(infoItem.title.toLowerCase() == 'council tax'){
+                    result.details.councilTaxBand = infoItem.value
+                }
+
+                if(infoItem.title.toLowerCase() == 'broadband'){
+                    result.details.broadband = infoItem.value
+                }
+            })
+
 
             res.json(result)
         })

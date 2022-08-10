@@ -51,8 +51,9 @@ module.exports = function(app){
                         branchURL:          "branch.branchResultsUri",
                         category:           "category",
                         chain:              "analyticsTaxonomy.chainFree",
+                        councilTaxBand:     "councilTaxBand",
                         deposit:            "deposit.label",
-                        epc:                "epc.image[0].filename",
+                        epcImage:           "epc.image[0].filename",
                         featuresArray:       "features.bullets",
                         floorArea:          "floorArea",
                         furnishedState:     "analyticsTaxonomy.furnishedState",
@@ -70,7 +71,6 @@ module.exports = function(app){
                         sharedOwnership:    "analyticsTaxonomy.isSharedOwnership",
                         size:               "analyticsTaxonomy.sizeSqFeet",
                         statisticsArray:    "marketStats",
-                        taxBand:            "councilTaxBand",
                     },
                 },
                 each: function(item){
