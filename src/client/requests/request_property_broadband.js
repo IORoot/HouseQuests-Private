@@ -65,7 +65,7 @@ export async function request_property_broadband(longitude, latitude)
 
     let message = '';
 
-    message += '<div class="text-lg mb-2">Crimes</div>'
+    message += '<div class="text-lg mb-2">Broadband</div>'
 
     // NO CRIMES
     if (!broadbandResult){

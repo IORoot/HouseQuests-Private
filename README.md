@@ -59,7 +59,7 @@
 
     - Property
       - [x] Crimes at property
-      - [ ] Broadband Services
+      - [x] Broadband Services
       - [ ] Council Tax
       - [ ] Price Change History 
       - [ ] Borough
@@ -85,7 +85,7 @@
         - Price vs National Avg
       - [ ] Price of any houses up for sale in surrounding area.
       - [ ] any construction near
-      - [ ] Closest Schools
+      - [ ] Closest Schools + ofsted rating
       - [ ] Closest Stations
       - [ ] Census Data
       - [ ] Delivery services (deliveroo, uber-eats, just-eat, etc)
@@ -99,6 +99,7 @@
           - Number against national average.
           - Type of crime
       - [ ] Supermarket level
+      - [ ] Number of renters in area vs owners
   
     - Agent
       - [ ] Estate Agent Link
