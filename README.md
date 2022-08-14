@@ -33,6 +33,7 @@
 - [x] measurement tool (walk / cycle / drive)
 - [x] Turn blacklist on / off
 - [ ] Toggle Favourites on / off (different colours)
+- [ ] Custom Notes
 - [ ] Advanced location filtering. 
     - AND / OR / NOT / XOR close to features
 
@@ -41,6 +42,7 @@
 - [ ] Make all Zoopla/Rightmove requests frontend
 - [ ] User Accounts - free / unlimited
 - [ ] Loading icon - subtle - in corner?
+- [ ] Dynamically update excluded list / list them in newest first.
 - [x] Load ALL layers on request, not by default
 - [x] Save last Zoopla/Rightmove request
 - [x] Popup modal for clearing custom icon colours
@@ -58,10 +60,10 @@
 - [ ] House Report
 
     - Property
-      - [x] Crimes at property
+      - [x] [Crimes at a property](https://data.police.uk/docs/method/crimes-at-location/)
       - [x] Broadband Services
       - [ ] Council Tax
-      - [ ] Price Change History 
+      - [ ] Price Change History   
       - [ ] Borough
       - [ ] EPC
       - [ ] Ground Rent
@@ -72,7 +74,8 @@
       - [ ] Elevation of building for flats?
       - [ ] planning permissions
       - [ ] Windows / Sunlight / House Orientation
-
+      -  [Closest station Forum Post](https://techforum.tfl.gov.uk/t/api-for-getting-the-nearest-train-stations/1671)
+      -  [Closest Station TFL API endpoint](https://api-portal.tfl.gov.uk/api-details#api=StopPoint&operation=StopPoint_GetByGeoPointByQueryLatQueryLonQueryStopTypesQueryRadiusQueryUseSt)
 
     - Transport
       - [ ] Travel Time to specific location
@@ -91,7 +94,37 @@
       - [ ] Delivery services (deliveroo, uber-eats, just-eat, etc)
       - [ ] Pollen
       - [ ] air quality
-
+      - [ ] Is it currently Leasehold or Freehold? Answer: [https://search-property-information.service.gov.uk/search/](https://search-property-information.service.gov.uk/search/)
+      - [ ] Show extent and position of registered freehold properties in England and Wales? Answer: [https://use-land-property-data.service.gov.uk/datasets/inspire/download#local-authorities-for-L](https://use-land-property-data.service.gov.uk/datasets/inspire/download#local-authorities-for-L)
+      - [ ] Show borders of freehold / leaseholds and title to houses: [https://www.gov.uk/guidance/apply-for-hm-land-registry-business-e-services](https://www.gov.uk/guidance/apply-for-hm-land-registry-business-e-services)
+      - [ ] determine what an owner can, or cannot do, with their land or property (restrictive covenants - Inclusion in the dataset confirms that a restrictive covenant is recorded against that land or property): [https://use-land-property-data.service.gov.uk/datasets/res_cov](https://use-land-property-data.service.gov.uk/datasets/res_cov)
+      - [ ] Tfl Speed limit map (PDF) [https://content.tfl.gov.uk/london-digital-speed-limit-map.pdf](https://content.tfl.gov.uk/london-digital-speed-limit-map.pdf)
+      - [ ] Borough house pricing [https://mappinglondon.co.uk/2015/house-prices-a-borough-cartogram/](https://mappinglondon.co.uk/2015/house-prices-a-borough-cartogram/)
+      - [ ] Smelly? [http://goodcitylife.org/smellymaps/index.php](http://goodcitylife.org/smellymaps/index.php)
+      - [ ] Age of building in local area [https://mapmaker.cdrc.ac.uk/#/dwelling-age?lon=-0.0191&lat=51.4635&zoom=13.79](https://mapmaker.cdrc.ac.uk/#/dwelling-age?lon=-0.0191&lat=51.4635&zoom=13.79)
+      - [x] [London Schools Atlas](https://data.london.gov.uk/dataset/london-schools-atlas)
+      - [x] [GOV School data](https://www.get-information-schools.service.gov.uk/Downloads)
+      - [x] [Schools Map](https://apps.london.gov.uk/schools/)
+      - [ ] [School catchment and info](https://www.schoolguide.co.uk/school-guide-api)
+      - [ ] [Ofsted Reports for schools](https://www.compare-school-performance.service.gov.uk/schools-by-type?step=default&table=schools&region=all-england&for=ofsted)
+      - [ ] [Ofsted Reports for postcode](https://www.compare-school-performance.service.gov.uk/?searchtype=search-by-location&LocationCoordinates=51.45952%2C-0.01718&keywords=Marsala+Road%2C+Lewisham%2C+London%2C+SE13%2C+London&radius=3)
+      - [ ] [Ofsted ratings for postcode](https://reports.ofsted.gov.uk/search?q=&location=Marsala+Road%2C+London+SE13+7AA%2C+UK&lat=51.46056799999999&lon=-0.0168842&radius=0&level_1_types=0)
+      - [ ] [Ofsted data view searcher](https://public.tableau.com/app/profile/ofsted/viz/Dataview/DataViewsurvey)
+      - [x] [Police API](https://data.police.uk/docs/)
+      - [ ] [Coffee](http://overpass-turbo.eu/)
+      - [x] [TFL API](https://api.tfl.gov.uk/)
+      - [x] [Tube Map](http://www.tflmap.com/)
+      - [ ] [Access to Jobs commuting](https://www.trustforlondon.org.uk/data/access-to-work-in-london-by-public-and-personal-transport/)
+      - [x] [Tube map ZONES](https://github.com/oobrien/vis/blob/master/tube/data/zones1to6.json)
+      - [x] [Tube Map JSON Data](https://github.com/oobrien/vis/tree/master/tube/data)
+      - [x] [Live Tube Map](http://traintimes.org.uk/map/tube/)
+      - [x] [TFL API Example requests](https://content.tfl.gov.uk/example-api-requests.pdf)
+      - [x] [London Train Stations](https://www.doogal.co.uk/london_stations)
+      - [x] [Rail Lines](https://maps.walkingclub.org.uk/rail/rail_lines_google_map.shtml)
+      - [x] [GOV Transport Access / Nodes](https://www.gov.uk/government/publications/national-public-transport-access-node-schema)
+      - [x] [GOV NaPTAN Data](https://data.3dhub.org.uk/dataset/national-public-transport-access-nodes-naptan-bus-rail-and-tram-stops)
+      - [x] [LIVE Train Times](http://traintimes.org.uk/map/#lbg)
+      - [ ] [City of London Mapservers ArcGIS REST Service](https://www.mapping.cityoflondon.gov.uk/arcgis/rest/services))
 
     - Neighbourhood Rating
       - [ ] Ofsted rating of closest school
@@ -100,7 +133,31 @@
           - Type of crime
       - [ ] Supermarket level
       - [ ] Number of renters in area vs owners
-  
+      - [ ] [Zoopla Lookup](https://www.zoopla.co.uk/house-prices/se13-7aa/?q=SE137AA&search_source=house-prices)
+      - [ ] [nethouseprices Lookup](https://nethouseprices.com/house-prices/se13%207aa)
+      - [ ] [Postcode-level historical prices paid for local houses](https://landregistry.data.gov.uk/app/qonsole#)
+      - [ ] [Standard property price reports ](https://www.gov.uk/guidance/price-paid-data-standard-reports)
+      - [ ] [Report Tool - generate CSV showing volume of sales in area in price band](https://landregistry.data.gov.uk/app/standard-reports)
+      - [ ] [Violent Crime Hotspots PDF](http://web.archive.org/web/20151207064128/http://lesscrime.info/london_violence.pdf)
+      - [ ] [Local Authority Statistics - population / quals / jobs / etc... ](https://www.nomisweb.co.uk/reports/lmp/la/1946157254/report.aspx#tabempunemp)
+      - [ ] [ONS (Office Natinoal Statistics) Census API details](https://digitalblog.ons.gov.uk/category/api/)
+      - [ ] Where people have live that have a seecond address outside london! [https://datashine.org.uk/#table=QS106EW&col=QS106EW0004&ramp=YlOrRd&layers=BTTT&zoom=12&lon=-0.0997&lat=51.5008](https://datashine.org.uk/#table=QS106EW&col=QS106EW0004&ramp=YlOrRd&layers=BTTT&zoom=12&lon=-0.0997&lat=51.5008)
+      - [ ] Where people of cool professions live [https://datashine.org.uk/#table=QS606EW&col=QS606EW0048&ramp=PuRd&layers=BTTT&zoom=12&lon=-0.1449&lat=51.5323](https://datashine.org.uk/#table=QS606EW&col=QS606EW0048&ramp=PuRd&layers=BTTT&zoom=12&lon=-0.1449&lat=51.5323)
+      - [ ] [Crime Stats](https://data.london.gov.uk/strategic-crime-analysis/)
+      - [ ] [Transport for London Unified API](https://api.tfl.gov.uk/)
+      - [ ] [TfL Bus Stop Locations and Routes](https://data.london.gov.uk/dataset/tfl-bus-stop-locations-and-routes)
+      - [List of bus routes](http://londonbusroutes.net/routes.htm)
+      - [LIVE London bus map](http://traintimes.org.uk/map/london-buses/#1)
+
+
+    - National
+      - [ ] [House price statistics](https://landregistry.data.gov.uk/app/ukhpi/browse?from=2021-06-01&location=http%3A%2F%2Flandregistry.data.gov.uk%2Fid%2Fregion%2Flondon&to=2022-06-01&lang=en)
+      - [ ] [National Statistics / graphs of monthly House price index](https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/housepriceindex/may2022)
+      - [ ] [Commuter Hotspot Map](https://www.totallymoney.com/commuter-hotspots/tool/)
+      - [x] [UCAS Map](https://www.ucas.com/explore/unis?studyYear=current&map=true)
+      - [ ] [Crime Maps](https://open-innovations.org/blog/2018-09-26-crime-maps)
+
+
     - Agent
       - [ ] Estate Agent Link
 
@@ -160,113 +217,17 @@
 - [x] school locations
 
 
-##  5. <a name='HouseReport'></a>House Report
-
-###  5.1. <a name='GOV'></a>GOV
-- [GOV APIs](https://www.api.gov.uk/#uk-public-sector-apis)
-
-###  5.2. <a name='Gov.uk-LandRegistry'></a>Gov.uk - Land Registry
-- [Land Registry Data](https://use-land-property-data.service.gov.uk/)
-
-###  5.3. <a name='HousePrices'></a>House Prices
-
-Use Local Property Prices in area to determine how wealthy the area is.
-- [Zoopla Lookup](https://www.zoopla.co.uk/house-prices/se13-7aa/?q=SE137AA&search_source=house-prices)
-- [nethouseprices Lookup](https://nethouseprices.com/house-prices/se13%207aa)
-- [property Prices](https://www.gov.uk/government/collections/price-paid-data)
-- [property Price Report Tool](https://landregistry.data.gov.uk/app/ppd)
-- 
-Postcode-based Standard report
-- [Standard property price reports ](https://www.gov.uk/guidance/price-paid-data-standard-reports)
-- [Report Tool - generate CSV showing volume of sales in area in price band](https://landregistry.data.gov.uk/app/standard-reports)
-
-##  6. <a name='Crimes'></a>Crimes
-- [Crimes at a property](https://data.police.uk/docs/method/crimes-at-location/)
 
 
 
-##  7. <a name='OtherDatasourcestouse'></a>Other Data sources to use
-
-
-###  7.1. <a name='CensusData'></a>Census Data
-- [Census 2021](https://www.ons.gov.uk/census/censustransformationprogramme/census2021outputs/2021dataproducts)
-- [API details](https://digitalblog.ons.gov.uk/category/api/)
-###  7.2. <a name='Randomdata'></a>Random data
-- [Various London Maps](https://mappinglondon.co.uk/category/data/)
-- [Datastore](https://data.london.gov.uk/dataset?q=location&sort=score%20desc,%20metadata_modified%20desc&_groups_limit=0&res_format=SHP)
-- [OpenStreetMap Map Features](https://wiki.openstreetmap.org/wiki/Map_features)
-- [OpenStreetMap Tester](]http://overpass-turbo.eu/)
-- [Commuter Hotspots](https://www.totallymoney.com/commuter-hotspots/tool/)
-- [PropertyChecker](https://propertychecker.co.uk/property-details/?postcode=SE13%207AA&paon=11)
-- [Postcode API](https://postcodes.io/docs) - contains more than postcodes.
-
-###  7.3. <a name='Traffic'></a>Traffic
-- [GOV - Road Traffic Stats](https://roadtraffic.dft.gov.uk/#14/51.4569/-0.0177/basemap-countpoints)
-- [TomTom Traffic API](https://developer.tomtom.com/traffic-api/documentation/product-information/introduction)
-- [Bing Traffic API](https://docs.microsoft.com/en-us/bingmaps/rest-services/traffic/?redirectedfrom=MSDN)
-- [MapBox Traffic API](https://docs.mapbox.com/api/navigation/directions/)
-
-###  7.4. <a name='Gettingcloseststation'></a>Getting closest station
--  [Forum Post](https://techforum.tfl.gov.uk/t/api-for-getting-the-nearest-train-stations/1671)
--  [TFL API endpoint](https://api-portal.tfl.gov.uk/api-details#api=StopPoint&operation=StopPoint_GetByGeoPointByQueryLatQueryLonQueryStopTypesQueryRadiusQueryUseSt)
-
-###  7.5. <a name='APIs'></a>APIs
-- [Ordinance Survey API](https://api.os.uk/)
-
-
-
-
-
-##  8. <a name='DataAlreadyUsed.'></a>Data Already Used.
-
-###  8.1. <a name='Schools'></a>Schools
-- [London Schools Atlas](https://data.london.gov.uk/dataset/london-schools-atlas)
-- [GOV School data](https://www.get-information-schools.service.gov.uk/Downloads)
-- [Schools Map](https://apps.london.gov.uk/schools/)
-
-###  8.2. <a name='Universities'></a>Universities
-- [UCAS Map](https://www.ucas.com/explore/unis?studyYear=current&map=true)
-
-###  8.3. <a name='PoliceCrimeAPI'></a>Police Crime API
-- [Police API](https://data.police.uk/docs/)
-- [Crime Stats](https://data.london.gov.uk/strategic-crime-analysis/)
-- [Crime Maps](https://open-innovations.org/blog/2018-09-26-crime-maps)
-
-###  8.4. <a name='Busstationsroutes'></a>Bus stations / routes
-- [Transport for London Unified API](https://api.tfl.gov.uk/)
-- [TfL Bus Stop Locations and Routes](https://data.london.gov.uk/dataset/tfl-bus-stop-locations-and-routes)
-- [OpenStreetMap Playground](http://overpass-turbo.eu/)
-- [List of bus routes](http://londonbusroutes.net/routes.htm)
-- [LIVE London bus map](http://traintimes.org.uk/map/london-buses/#1)
-
-###  8.5. <a name='Tube'></a>Tube
-
-- [TFL API](https://api.tfl.gov.uk/)
-- [Tube Map](http://www.tflmap.com/)
-- [Access to Jobs commuting](https://www.trustforlondon.org.uk/data/access-to-work-in-london-by-public-and-personal-transport/)
-- [Tube map ZONES](https://github.com/oobrien/vis/blob/master/tube/data/zones1to6.json)
-- [Tube Map JSON Data](https://github.com/oobrien/vis/tree/master/tube/data)
-- [Live Tube Map](http://traintimes.org.uk/map/tube/)
-- [TFL API Example requests](https://content.tfl.gov.uk/example-api-requests.pdf)
-
-###  8.6. <a name='TrainsRailMaps'></a>Trains / Rail Maps
-- [London Train Stations](https://www.doogal.co.uk/london_stations)
-- [Rail Lines](https://maps.walkingclub.org.uk/rail/rail_lines_google_map.shtml)
-- [GOV Transport Access / Nodes](https://www.gov.uk/government/publications/national-public-transport-access-node-schema)
-- [GOV NaPTAN Data](https://data.3dhub.org.uk/dataset/national-public-transport-access-nodes-naptan-bus-rail-and-tram-stops)
-- [LIVE Train Times](http://traintimes.org.uk/map/#lbg)
-
-###  8.7. <a name='CityofLondonMapsServers'></a>City of London MapsServers
-- [ArcGIS REST Service](https://www.mapping.cityoflondon.gov.uk/arcgis/rest/services)
-
-###  8.8. <a name='ZooplaRightmoveDirectAPIsScraping'></a>Zoopla / Rightmove Direct APIs & Scraping
-
-- [Python Wrapper for Zoopla](https://anthonybloomer.github.io/zoopla/)
-- [PHP Rightmove Property Feed](https://github.com/frozensheep/rightmoveADF)
-- [Python Tutorial to scrape Rightmove](https://low-brandon96.medium.com/scraping-property-listings-from-rightmove-bd3cfb36516a)
-
-
-
-
-##  9. <a name='OtherLinks'></a>Other Links
-- [Batch Geocoding](https://www.doogal.co.uk/BatchGeocoding)
+## Other APIs / Links
+- [ ] [GOV APIs](https://www.api.gov.uk/#uk-public-sector-apis)
+- [ ] [Census 2021](https://www.ons.gov.uk/census/censustransformationprogramme/census2021outputs/2021dataproducts)
+- [ ] [https://builtplace.com/](https://builtplace.com/)
+- [ ] [Various London Maps](https://mappinglondon.co.uk/category/data/)
+- [ ] [London Datastore](https://data.london.gov.uk/)
+- [ ] [PropertyChecker PAID](https://propertychecker.co.uk/property-details/?postcode=SE13%207AA&paon=11)
+- [ ] [Postcode API](https://postcodes.io/docs) - contains more than postcodes.
+- [ ] [OpenStreetMap Map Features](https://wiki.openstreetmap.org/wiki/Map_features)
+- [ ] [OpenStreetMap Tester](]http://overpass-turbo.eu/)
+- [ ] [Batch Geocoding postcodes to long/lats](https://www.doogal.co.uk/BatchGeocoding)

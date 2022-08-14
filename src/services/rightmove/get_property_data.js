@@ -33,7 +33,7 @@ module.exports = function(app){
             var data = modeldata.toString().replace('window.PAGE_MODEL = ', '');
         
             data = JSON.parse(data);
-        
+
             var map = {
                 item: {
                     id:             "propertyData.id",

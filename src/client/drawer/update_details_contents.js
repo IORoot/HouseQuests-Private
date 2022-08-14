@@ -5,6 +5,7 @@
 // └─────────────────────────────────────┘
 import { request_property_crimes } from '../requests/request_property_crimes.js'
 import { request_property_broadband } from '../requests/request_property_broadband.js'
+import { request_property_council_tax } from '../requests/request_property_council_tax.js'
 
 /**
  * 
@@ -24,5 +25,8 @@ export function update_details_contents()
 
     // Broadband Services
     request_property_broadband(longitude, latitude)
+
+    // Council Tax
+    request_property_council_tax()
     
 }
