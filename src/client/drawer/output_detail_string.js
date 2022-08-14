@@ -23,7 +23,7 @@ export async function output_detail_string(config)
 
     // NOT Found / Null value
     if (!attribute){
-        attribute = "Not specified, try manual search."
+        attribute = "Not specified."
         type = "string"
     }
 
@@ -38,10 +38,15 @@ export async function output_detail_string(config)
     }
 
     if (type === "string"){
-        message += '<td class="py-4 px-6">' + attribute +'</td>'
+        message += '<td class="py-4 px-6" data-'+config.target+'="'+attribute+'"><a class="hover:underline hover:text-blue-500" href="'+sourceURL+'" target="_blank">' + attribute +'</a></td>'
     }
     
-    message += '<td class="py-4 px-6"><a class="underline hover:text-blue-500" href="' + serviceURL +'" target="_blank">Manual Search</a></td>'
+    if (serviceURL){
+        message += '<td class="py-4 px-6"><a class="underline hover:text-blue-500" href="' + serviceURL +'" target="_blank">Manual Search</a></td>'
+    } else {
+        message += '<td></td>'
+    }
+    
 
 
     

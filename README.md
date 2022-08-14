@@ -232,3 +232,5 @@
 - [ ] [OpenStreetMap Map Features](https://wiki.openstreetmap.org/wiki/Map_features)
 - [ ] [OpenStreetMap Tester](]http://overpass-turbo.eu/)
 - [ ] [Batch Geocoding postcodes to long/lats](https://www.doogal.co.uk/BatchGeocoding)
+- [ ] [Reverse Geolocation lng/lat to address](https://nominatim.openstreetmap.org/ui/search.html)
+- [ ] [Reverse Geolocation lng/lat to address API](https://nominatim.openstreetmap.org/reverse?format=json&lat=54.9824031826&lon=9.2833114795&zoom=18&addressdetails=1)

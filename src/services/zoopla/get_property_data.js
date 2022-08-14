@@ -44,6 +44,7 @@ module.exports = function(app){
                     bedrooms:       "counts.numBedrooms",
                     tenure:         "analyticsTaxonomy.tenure",
                     details:        {
+                        area:               "floorArea",
                         auction:            "pricing.isAuction",
                         branch:             "branch.name",
                         branchID:           "branch.branchId",
@@ -55,7 +56,6 @@ module.exports = function(app){
                         deposit:            "deposit.label",
                         epcImage:           "epc.image[0].filename",
                         featuresArray:      "features.bullets",
-                        floorArea:          "floorArea",
                         furnishedState:     "analyticsTaxonomy.furnishedState",
                         groundRent:         "groundRent.label",
                         leaseExpiry:        "leaseExpiry.yearsRemaining",
