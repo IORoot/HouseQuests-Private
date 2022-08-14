@@ -40,6 +40,7 @@ export function update_details_contents()
             'title':        'EPC Rating',
             'sourceURL':    currentProperty.link,
             'serviceURL':   'https://find-energy-certificate.service.gov.uk/find-a-certificate/search-by-postcode?postcode='+currentProperty.postcode,
+            'serviceTitle': 'Gov.uk',
         })
     }
 
@@ -53,6 +54,7 @@ export function update_details_contents()
             'title':        'EPC Rating',
             'sourceURL':    currentProperty.link,
             'serviceURL':   'https://find-energy-certificate.service.gov.uk/find-a-certificate/search-by-postcode?postcode='+currentProperty.postcode,
+            'serviceTitle': 'Gov.uk',
         })
     }
 
@@ -65,6 +67,7 @@ export function update_details_contents()
         'title':        'Postcode (from property site)',
         'sourceURL':    currentProperty.link,
         'serviceURL':   'https://findthatpostcode.uk/points/'+currentProperty.latitude+'%2C'+currentProperty.longitude+'.html',
+        'serviceTitle': 'findthatpostcode.uk',
     })
 
 
@@ -77,6 +80,7 @@ export function update_details_contents()
         'title':        'Council Tax',
         'sourceURL':    currentProperty.link,
         'serviceURL':   'https://www.tax.service.gov.uk/check-council-tax-band/search',
+        'serviceTitle': 'Gov.uk',
     })
 
 
@@ -89,6 +93,7 @@ export function update_details_contents()
         'title':        'Tenure',
         'sourceURL':    currentProperty.link,
         'serviceURL':   'https://search-property-information.service.gov.uk',
+        'serviceTitle': 'Gov.uk',
     })
 
 
@@ -101,6 +106,7 @@ export function update_details_contents()
         'title':        'Area',
         'sourceURL':    currentProperty.link,
         'serviceURL':   null,
+        'serviceTitle': null,
     })
 
 

@@ -8,13 +8,14 @@
 export async function output_detail_string(config)
 {
 
-    let attribute   = config.attribute
-    let type        = config.type
-    let icon        = config.icon
-    let target      = document.getElementById(config.target);
-    let title       = config.title
-    let sourceURL   = config.sourceURL
-    let serviceURL  = config.serviceURL
+    let attribute       = config.attribute
+    let type            = config.type
+    let icon            = config.icon
+    let target          = document.getElementById(config.target);
+    let title           = config.title
+    let sourceURL       = config.sourceURL
+    let serviceURL      = config.serviceURL
+    let serviceTitle    = config.serviceTitle
 
     // return if already set
     if (target.dataset.loaded == sourceURL){ return }
@@ -42,7 +43,7 @@ export async function output_detail_string(config)
     }
     
     if (serviceURL){
-        message += '<td class="py-4 px-6"><a class="underline hover:text-blue-500" href="' + serviceURL +'" target="_blank">Manual Search</a></td>'
+        message += '<td class="py-4 px-6"><a class="underline hover:text-blue-500" href="' + serviceURL +'" target="_blank">'+serviceTitle+'</a></td>'
     } else {
         message += '<td></td>'
     }

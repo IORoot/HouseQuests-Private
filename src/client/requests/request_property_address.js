@@ -34,6 +34,7 @@ export async function request_property_address(longitude, latitude)
             'title':        'Address House <div class="text-gray-400 text-xs">(calculated)</div>',
             'sourceURL':    'https://nominatim.openstreetmap.org/reverse?format=json&lat='+latitude+'&lon='+longitude+'&addressdetails=1',
             'serviceURL':   'https://nominatim.openstreetmap.org/ui/reverse.html?lat='+latitude+'&lon='+longitude+'&zoom=18',
+            'serviceTitle': 'Nominatim'
         })
     } else {
         clear_detail_string('details-property-address-house-number')
@@ -50,6 +51,7 @@ export async function request_property_address(longitude, latitude)
             'title':        'Address Road <div class="text-gray-400 text-xs">(calculated)</div>',
             'sourceURL':    'https://nominatim.openstreetmap.org/reverse?format=json&lat='+latitude+'&lon='+longitude+'&addressdetails=1',
             'serviceURL':   'https://nominatim.openstreetmap.org/ui/reverse.html?lat='+latitude+'&lon='+longitude+'&zoom=18',
+            'serviceTitle': 'Nominatim'
         })
     } else {
         clear_detail_string('details-property-address-road')
@@ -66,6 +68,7 @@ export async function request_property_address(longitude, latitude)
             'title':        'Address Neighbourhood <div class="text-gray-400 text-xs">(calculated)</div>',
             'sourceURL':    'https://nominatim.openstreetmap.org/reverse?format=json&lat='+latitude+'&lon='+longitude+'&addressdetails=1',
             'serviceURL':   'https://nominatim.openstreetmap.org/ui/reverse.html?lat='+latitude+'&lon='+longitude+'&zoom=18',
+            'serviceTitle': 'Nominatim'
         })
     } else {
         clear_detail_string('details-property-address-neighbourhood')
@@ -82,6 +85,7 @@ export async function request_property_address(longitude, latitude)
             'title':        'Address District <div class="text-gray-400 text-xs">(calculated)</div>',
             'sourceURL':    'https://nominatim.openstreetmap.org/reverse?format=json&lat='+latitude+'&lon='+longitude+'&addressdetails=1',
             'serviceURL':   'https://nominatim.openstreetmap.org/ui/reverse.html?lat='+latitude+'&lon='+longitude+'&zoom=18',
+            'serviceTitle': 'Nominatim'
         })
     } else {
         clear_detail_string('details-property-address-district')
@@ -98,6 +102,7 @@ export async function request_property_address(longitude, latitude)
             'title':        'Address City <div class="text-gray-400 text-xs">(calculated)</div>',
             'sourceURL':    'https://nominatim.openstreetmap.org/reverse?format=json&lat='+latitude+'&lon='+longitude+'&addressdetails=1',
             'serviceURL':   'https://nominatim.openstreetmap.org/ui/reverse.html?lat='+latitude+'&lon='+longitude+'&zoom=18',
+            'serviceTitle': 'Nominatim'
         })
     } else {
         clear_detail_string('details-property-address-city')
@@ -114,6 +119,7 @@ export async function request_property_address(longitude, latitude)
             'title':        'Address County <div class="text-gray-400 text-xs">(calculated)</div>',
             'sourceURL':    'https://nominatim.openstreetmap.org/reverse?format=json&lat='+latitude+'&lon='+longitude+'&addressdetails=1',
             'serviceURL':   'https://nominatim.openstreetmap.org/ui/reverse.html?lat='+latitude+'&lon='+longitude+'&zoom=18',
+            'serviceTitle': 'Nominatim'
         })
     } else {
         clear_detail_string('details-property-address-county')
@@ -130,6 +136,7 @@ export async function request_property_address(longitude, latitude)
             'title':        'Address Postcode <div class="text-gray-400 text-xs">(calculated)</div>',
             'sourceURL':    'https://nominatim.openstreetmap.org/reverse?format=json&lat='+latitude+'&lon='+longitude+'&addressdetails=1',
             'serviceURL':   'https://nominatim.openstreetmap.org/ui/reverse.html?lat='+latitude+'&lon='+longitude+'&zoom=18',
+            'serviceTitle': 'Nominatim'
         })
     } else {
         clear_detail_string('details-property-address-postcode')
