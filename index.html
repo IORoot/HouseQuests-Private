@@ -200,9 +200,35 @@
             <div id="myTabContent">
                 <div class="hidden" id="propertyTabContent" role="tabpanel" aria-labelledby="property-tab">
                     <div class="flex flex-col gap-2">
-                        <div id="details-property-broadband" data-loaded=""></div>
-                        <div id="details-property-council-tax" data-loaded=""></div>
+                        <div class="overflow-x-auto relative bg-gray-200 text-white fill-white rounded-lg p-4 flex flex-col gap-2">
+
+                            <div class="text-lg mb-2 text-gray-800">Property Details</div>
+
+                            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                                    <tr>
+                                        <th scope="col" class="py-3 px-6">
+                                            Metric
+                                        </th>
+                                        <th scope="col" class="py-3 px-6">
+                                            Result
+                                        </th>
+                                        <th scope="col" class="py-3 px-6">
+                                            Manual Search
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700" id="details-property-postcode" data-loaded=""></tr>
+                                    <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700" id="details-property-epc" data-loaded=""></tr>
+                                    <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700" id="details-property-council-tax" data-loaded=""></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
                         <div id="details-property-crimes" data-loaded=""></div>
+                        <div id="details-property-broadband" data-loaded=""></div>
+
                     </div>
                 </div>
                 <div class="hidden" id="neighbourhoodTabContent" role="tabpanel" aria-labelledby="neighbourhood-tab">

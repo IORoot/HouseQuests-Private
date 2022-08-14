@@ -51,6 +51,7 @@ module.exports = function(app){
                         branchLogo:         "agent.logo-path",
                         branchURL:          "agent.website-url",
                         broadband:          "broadband",
+                        dataLayer:          "header-data.data-layer",
                         epcRating:          "epc.rating",
                         featuresArray:      "features",
                         newHome:            "new-home-flag",
@@ -66,6 +67,12 @@ module.exports = function(app){
                 each: function(item){
                     item.source = "onthemarket";
                     item.url = "https://www.onthemarket.com/details/"+item.id
+
+                    if (item.details.dataLayer){
+                        let dataLayer = JSON.parse(item.details.dataLayer)
+                        item.postcode = dataLayer.postcode
+                    }
+                    
                     return item; 
                 }
             }
@@ -101,6 +108,11 @@ module.exports = function(app){
                 if(infoItem.title.toLowerCase() == 'broadband'){
                     result.details.broadband = infoItem.value
                 }
+            })
+
+            // Make features an Array of strings.
+            result.details.featuresArray.forEach(function(item, index){
+                result.details.featuresArray[index] = item.feature
             })
 
 

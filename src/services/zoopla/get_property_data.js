@@ -31,7 +31,7 @@ module.exports = function(app){
             var data = JSON.parse($('#__NEXT_DATA__').text());
 
             data = data.props.pageProps.listingDetails
-        
+
             var map = {
                 item: {
                     id:             "listingId",
@@ -54,7 +54,7 @@ module.exports = function(app){
                         councilTaxBand:     "councilTaxBand",
                         deposit:            "deposit.label",
                         epcImage:           "epc.image[0].filename",
-                        featuresArray:       "features.bullets",
+                        featuresArray:      "features.bullets",
                         floorArea:          "floorArea",
                         furnishedState:     "analyticsTaxonomy.furnishedState",
                         groundRent:         "groundRent.label",
@@ -71,14 +71,19 @@ module.exports = function(app){
                         sharedOwnership:    "analyticsTaxonomy.isSharedOwnership",
                         size:               "analyticsTaxonomy.sizeSqFeet",
                         statisticsArray:    "marketStats",
+                        postalIncode:       "analyticsTaxonomy.incode",
+                        postalOutcode:      "analyticsTaxonomy.outcode",
                     },
                 },
                 each: function(item){
                     item.source = "zoopla";
                     item.url = "https://zoopla.co.uk/for-sale/details/"+item.id
+                    item.postcode =  item.details.postalOutcode + " " + item.details.postalIncode
                     item.link = "https://zoopla.co.uk/for-sale/details/"+item.id
                     item.floorplan = "https://lid.zoocdn.com/u/1600/1200/"+item.floorplan
-                    item.details.epc = "https://lid.zoocdn.com/u/1600/1200/"+item.details.epc
+                    if (item.details.epcImage){
+                        item.details.epcImage = "https://lid.zoocdn.com/u/1600/1200/"+item.details.epcImage
+                    }
                     return item; 
                 }
             }

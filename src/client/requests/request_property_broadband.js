@@ -61,8 +61,6 @@ export async function request_property_broadband(longitude, latitude)
             console.log("ERROR:"+error);
         });
 
-    console.log(broadbandResult)
-
     let message = '';
 
     message += '<div class="text-lg mb-2">Broadband</div>'

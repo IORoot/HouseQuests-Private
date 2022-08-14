@@ -62,8 +62,7 @@
     - Property
       - [x] [Crimes at a property](https://data.police.uk/docs/method/crimes-at-location/)
       - [x] Broadband Services
-      - [ ] Council Tax
-      - [ ] Price Change History   
+      - [x] Council Tax
       - [ ] Borough
       - [ ] EPC
       - [ ] Ground Rent
@@ -74,6 +73,7 @@
       - [ ] Elevation of building for flats?
       - [ ] planning permissions
       - [ ] Windows / Sunlight / House Orientation
+      - [ ] Price Change History 
       -  [Closest station Forum Post](https://techforum.tfl.gov.uk/t/api-for-getting-the-nearest-train-stations/1671)
       -  [Closest Station TFL API endpoint](https://api-portal.tfl.gov.uk/api-details#api=StopPoint&operation=StopPoint_GetByGeoPointByQueryLatQueryLonQueryStopTypesQueryRadiusQueryUseSt)
 
@@ -222,6 +222,7 @@
 
 ## Other APIs / Links
 - [ ] [GOV APIs](https://www.api.gov.uk/#uk-public-sector-apis)
+- [ ] [GOV APIs](https://www.api.gov.uk/index/#index)
 - [ ] [Census 2021](https://www.ons.gov.uk/census/censustransformationprogramme/census2021outputs/2021dataproducts)
 - [ ] [https://builtplace.com/](https://builtplace.com/)
 - [ ] [Various London Maps](https://mappinglondon.co.uk/category/data/)

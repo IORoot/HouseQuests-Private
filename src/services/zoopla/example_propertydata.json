@@ -1,491 +1,567 @@
 {
-    "__typename": "ListingData",
-    "listingId": "61023550",
-    "publishedOn": "2022-03-18T17:37:51",
-    "category": "residential",
-    "section": "for-sale",
-    "additionalLinks": [],
-    "adTargeting": {
-        "__typename": "ListingAnalyticsTaxonomy",
-        "acorn": 17,
-        "acornType": 17,
-        "areaName": "London",
-        "bedsMax": 1,
-        "bedsMin": 1,
-        "branchId": 63914,
-        "branchLogoUrl": "https://st.zoocdn.com/zoopla_static_agent_logo_(262079).png",
-        "branchName": "Inner City Estates",
-        "brandName": "Inner City Estates",
-        "chainFree": true,
-        "companyId": 33861,
-        "countryCode": "gb",
-        "countyAreaName": "London",
-        "currencyCode": "GBP",
-        "displayAddress": "Cannon Street Road, Shadwell E1",
-        "furnishedState": "",
-        "groupId": null,
-        "hasEpc": true,
-        "hasFloorplan": true,
-        "incode": "0BH",
-        "isRetirementHome": false,
-        "isSharedOwnership": false,
-        "listingCondition": "pre-owned",
-        "listingId": 61023550,
-        "listingsCategory": "residential",
-        "listingStatus": "for_sale",
-        "location": "London",
-        "memberType": "agent",
-        "numBaths": 1,
-        "numBeds": 1,
-        "numImages": 11,
-        "numRecepts": 1,
-        "outcode": "E1",
-        "postalArea": "E",
-        "postTownName": "London",
-        "priceActual": 300000,
-        "price": 300000,
-        "priceMax": 300000,
-        "priceMin": 300000,
-        "priceQualifier": "guide_price",
-        "propertyHighlight": "",
-        "propertyType": "flat",
-        "regionName": "London",
-        "section": "for-sale",
-        "sizeSqFeet": "",
-        "tenure": "leasehold",
-        "zindex": 531148
+    "backToResultsLink": {
+        "__typename": "BackToResultsLink",
+        "linkType": "geo",
+        "uri": "/for-sale/property/deptford/"
     },
-    "branch": {
-        "__typename": "AgentBranch",
-        "branchDetailsUri": "/find-agents/branch/inner-city-estates-london-63914/",
-        "branchId": "63914",
-        "branchResultsUri": "/for-sale/branch/inner-city-estates-london-63914/",
-        "logoUrl": "https://st.zoocdn.com/zoopla_static_agent_logo_(262079).png",
-        "phone": "020 3641 8145",
-        "name": "Inner City Estates",
-        "memberType": "agent",
-        "address": "447 Roman Road, London",
-        "postcode": "E3 5LX"
-    },
-    "pointsOfInterest": [
+    "breadcrumbs": [
         {
-            "__typename": "PointOfInterest",
-            "title": "Green Gables Montessori Primary School",
-            "type": "uk_school_primary",
-            "distanceMiles": 0.1
+            "__typename": "Breadcrumbs",
+            "label": "Zoopla",
+            "tracking": "home",
+            "uri": "/",
+            "noAppend": null,
+            "i18nLabelKey": null
         },
         {
-            "__typename": "PointOfInterest",
-            "title": "Shadwell",
-            "type": "national_rail_station",
-            "distanceMiles": 0.1
+            "__typename": "Breadcrumbs",
+            "label": "For sale",
+            "tracking": "for sale",
+            "uri": "/for-sale/",
+            "noAppend": null,
+            "i18nLabelKey": null
         },
         {
-            "__typename": "PointOfInterest",
-            "title": "Bigland Green Primary School",
-            "type": "uk_school_primary",
-            "distanceMiles": 0.2
+            "__typename": "Breadcrumbs",
+            "label": "London",
+            "tracking": "london",
+            "uri": "/for-sale/property/london/",
+            "noAppend": null,
+            "i18nLabelKey": null
         },
         {
-            "__typename": "PointOfInterest",
-            "title": "Shadwell",
-            "type": "london_underground_station",
-            "distanceMiles": 0.2
+            "__typename": "Breadcrumbs",
+            "label": "South London",
+            "tracking": "south london",
+            "uri": "/for-sale/property/south-london/",
+            "noAppend": null,
+            "i18nLabelKey": null
+        },
+        {
+            "__typename": "Breadcrumbs",
+            "label": "Deptford",
+            "tracking": "deptford",
+            "uri": "/for-sale/property/deptford/",
+            "noAppend": null,
+            "i18nLabelKey": null
+        },
+        {
+            "__typename": "Breadcrumbs",
+            "label": "Trundleys Road",
+            "tracking": "trundleys road",
+            "uri": "/for-sale/property/london/trundleys-road/",
+            "noAppend": null,
+            "i18nLabelKey": null
+        },
+        {
+            "__typename": "Breadcrumbs",
+            "label": "1 bed flat for sale",
+            "tracking": null,
+            "uri": null,
+            "noAppend": 1,
+            "i18nLabelKey": null
         }
     ],
-    "embeddedContent": {
-        "__typename": "EmbeddedContent",
-        "videos": null,
-        "tours": null,
-        "links": null,
-        "smartViewings": null
-    },
-    "epc": {
-        "__typename": "EPC",
-        "image": [
-            {
-                "__typename": "Media",
-                "caption": null,
-                "filename": "c8559154f1dc4ee2144f29e8a05bff254b3e641d.png",
-                "url": null
-            }
-        ],
-        "links": null,
-        "pdf": null
-    },
-    "detailedDescription": "***video link available***<br>One bedroom second floor apartment set within a period conversion on a residential street with access to communal terrace close to Whitechapel station<br>This lovely apartment comprises an spacious kitchen/ dining area, one bedroom, Lounge and a stylish family bathroom.<br>Also has use of communal terrace<br>The property further benefits from wood flooring throughout and secure phone entry system<br>The location of the property is superb within easy reach of Shadwell overground and DLR Stations, Aldgate and Whitechapel tube station.<br>The apartment is near the beautiful Shadwell Basin, a great place for cyclists or just to stroll around. Rope Walk Gardens is also within walking distance from the property to enjoy some lovely green spaces<br>Property is offered chain free",
-    "features": {
-        "__typename": "Features",
-        "bullets": [
-            "One bedroom flat",
-            "Kitchen/Dining area",
-            "Communal terrace",
-            "Great location near wapping",
-            "Chain free",
-            "Video link available",
-            "Share of freehold"
-        ],
-        "flags": {
-            "__typename": "FeatureFlag",
-            "furnishedState": null,
-            "studentFriendly": false,
-            "tenure": {
-                "__typename": "Label",
-                "name": "leasehold",
-                "label": "Leasehold"
-            },
-            "availableFromDate": null
-        },
-        "highlights": null
-    },
-    "floorPlan": {
-        "__typename": "FloorPlan",
-        "image": [
-            {
-                "__typename": "Media",
-                "filename": "8f2609cab962c3eff3e2a68011eb792febfa2ba7.jpg",
-                "caption": null
-            }
-        ],
-        "links": null,
-        "pdf": null
-    },
-    "propertyImage": [
-        {
-            "__typename": "Media",
-            "filename": "36c266e16174f4ed9a4b22d6c963194396d0f15d.jpg",
-            "caption": null
-        },
-        {
-            "__typename": "Media",
-            "filename": "2a15b915b9fa75d75b1a3eeef1c31b21e00f15b3.jpg",
-            "caption": null
-        },
-        {
-            "__typename": "Media",
-            "filename": "31100c1edfb9497ddc165fe76cc38a3d88e44f12.jpg",
-            "caption": null
-        },
-        {
-            "__typename": "Media",
-            "filename": "dfc25fa0a3888dcf0166ec6fad8cc2b0290842a3.jpg",
-            "caption": null
-        },
-        {
-            "__typename": "Media",
-            "filename": "9bc0dcd129c4a4628b94cc30ca80ce48b15d874e.jpg",
-            "caption": null
-        },
-        {
-            "__typename": "Media",
-            "filename": "9cffc172ae3c1a04d8546e6616b914b11d1ea2cc.jpg",
-            "caption": null
-        },
-        {
-            "__typename": "Media",
-            "filename": "cb07b4e20bc23edb3626809c3f12ac99a9fd8363.jpg",
-            "caption": null
-        },
-        {
-            "__typename": "Media",
-            "filename": "eb2fb23061281a16cc5f2cc5c810698df9d503f0.jpg",
-            "caption": null
-        },
-        {
-            "__typename": "Media",
-            "filename": "8cd5ee6948b45ba2e8bb24cbe789244c7cc64783.jpg",
-            "caption": null
-        },
-        {
-            "__typename": "Media",
-            "filename": "6f82918e31aeb2cf3a35868afe65bb8384f7637b.jpg",
-            "caption": null
-        },
-        {
-            "__typename": "Media",
-            "filename": "f3bb92d6f872e34df37932b5043c3ad82cf6d0d6.jpg",
-            "caption": null
-        }
-    ],
-    "analyticsTaxonomy": {
-        "__typename": "ListingAnalyticsTaxonomy",
-        "location": "London",
-        "regionName": "London",
+    "listingDetails": {
+        "__typename": "ListingData",
+        "listingId": "61122968",
+        "publishedOn": "2022-03-30T12:47:18",
+        "category": "residential",
         "section": "for-sale",
-        "acorn": 17,
-        "acornType": 17,
-        "areaName": "London",
-        "bedsMax": 1,
-        "bedsMin": 1,
-        "branchId": 63914,
-        "branchLogoUrl": "https://st.zoocdn.com/zoopla_static_agent_logo_(262079).png",
-        "branchName": "Inner City Estates",
-        "brandName": "Inner City Estates",
-        "chainFree": true,
-        "companyId": 33861,
-        "countryCode": "gb",
-        "countyAreaName": "London",
-        "currencyCode": "GBP",
-        "displayAddress": "Cannon Street Road, Shadwell E1",
-        "furnishedState": "",
-        "groupId": null,
-        "hasEpc": true,
-        "hasFloorplan": true,
-        "incode": "0BH",
-        "isRetirementHome": false,
-        "isSharedOwnership": false,
-        "listingCondition": "pre-owned",
-        "listingId": 61023550,
-        "listingsCategory": "residential",
-        "listingStatus": "for_sale",
-        "memberType": "agent",
-        "numBaths": 1,
-        "numBeds": 1,
-        "numImages": 11,
-        "numRecepts": 1,
-        "outcode": "E1",
-        "postalArea": "E",
-        "postTownName": "London",
-        "priceActual": 300000,
-        "price": 300000,
-        "priceMax": 300000,
-        "priceMin": 300000,
-        "priceQualifier": "guide_price",
-        "propertyHighlight": "",
-        "propertyType": "flat",
-        "sizeSqFeet": "",
-        "tenure": "leasehold",
-        "zindex": 531148
-    },
-    "title": "1 bed flat for sale",
-    "metaTitle": "1 bed flat for sale in Cannon Street Road, Shadwell E1 - Zoopla",
-    "metaDescription": "1 bed flat for sale in Cannon Street Road, Shadwell E1, selling for £300,000 from Inner City Estates. See property details on Zoopla or browse all our range of properties in Cannon Street Road, Shadwell E1.",
-    "listingUris": {
-        "__typename": "ListingUris",
-        "detail": "/for-sale/details/61023550/"
-    },
-    "location": {
-        "__typename": "ListingLocation",
-        "coordinates": {
-            "__typename": "LocationCoordinates",
-            "latitude": 51.510553,
-            "longitude": -0.060669,
-            "isApproximate": false
-        }
-    },
-    "displayAddress": "Cannon Street Road, Shadwell E1",
-    "administrationFees": null,
-    "content": {
-        "__typename": "MediaContent",
-        "floorPlan": [
+        "additionalLinks": [],
+        "adTargeting": {
+            "__typename": "ListingAnalyticsTaxonomy",
+            "acorn": 53,
+            "acornType": 53,
+            "areaName": "London",
+            "bedsMax": 1,
+            "bedsMin": 1,
+            "branchId": 112,
+            "branchLogoUrl": "https://st.zoocdn.com/zoopla_static_agent_logo_(701121).png",
+            "branchName": "Acorn - Lewisham",
+            "brandName": "Acorn",
+            "chainFree": true,
+            "companyId": 8143,
+            "countryCode": "gb",
+            "countyAreaName": "London",
+            "currencyCode": "GBP",
+            "displayAddress": "Trundleys Road, London SE8",
+            "furnishedState": "",
+            "groupId": 25,
+            "hasEpc": true,
+            "hasFloorplan": true,
+            "incode": "5JG",
+            "isRetirementHome": false,
+            "isSharedOwnership": false,
+            "listingCondition": "pre-owned",
+            "listingId": 61122968,
+            "listingsCategory": "residential",
+            "listingStatus": "for_sale",
+            "location": "London",
+            "memberType": "agent",
+            "numBaths": 1,
+            "numBeds": 1,
+            "numImages": 8,
+            "numRecepts": 1,
+            "outcode": "SE8",
+            "postalArea": "SE",
+            "postTownName": "London",
+            "priceActual": 290000,
+            "price": 290000,
+            "priceMax": 300000,
+            "priceMin": 275000,
+            "priceQualifier": "offers_over",
+            "propertyHighlight": "",
+            "propertyType": "flat",
+            "regionName": "London",
+            "section": "for-sale",
+            "sizeSqFeet": "",
+            "tenure": "share_of_freehold",
+            "zindex": 405746
+        },
+        "branch": {
+            "__typename": "AgentBranch",
+            "branchDetailsUri": "/find-agents/branch/acorn-lewisham-lewisham-112/",
+            "branchId": "112",
+            "branchResultsUri": "/for-sale/branch/acorn-lewisham-lewisham-112/",
+            "logoUrl": "https://st.zoocdn.com/zoopla_static_agent_logo_(701121).png",
+            "phone": "020 3641 7330",
+            "name": "Acorn - Lewisham",
+            "memberType": "agent",
+            "address": "153 High Street, Lewisham",
+            "postcode": "SE13 6AA"
+        },
+        "pointsOfInterest": [
+            {
+                "__typename": "PointOfInterest",
+                "title": "Sir Francis Drake Primary School",
+                "type": "uk_school_primary",
+                "distanceMiles": 0.1
+            },
+            {
+                "__typename": "PointOfInterest",
+                "title": "Deptford Park Primary School",
+                "type": "uk_school_primary",
+                "distanceMiles": 0.3
+            },
+            {
+                "__typename": "PointOfInterest",
+                "title": "Surrey Quays",
+                "type": "national_rail_station",
+                "distanceMiles": 0.5
+            },
+            {
+                "__typename": "PointOfInterest",
+                "title": "Surrey Quays",
+                "type": "london_underground_station",
+                "distanceMiles": 0.5
+            }
+        ],
+        "embeddedContent": {
+            "__typename": "EmbeddedContent",
+            "videos": null,
+            "tours": null,
+            "links": null,
+            "smartViewings": null
+        },
+        "epc": {
+            "__typename": "EPC",
+            "image": [
+                {
+                    "__typename": "Media",
+                    "caption": "EPC Graphs",
+                    "filename": "2a20c7ccd8c8ecc6ca0ca826ce428522fb2d4c3f.jpg",
+                    "url": null
+                }
+            ],
+            "links": null,
+            "pdf": null
+        },
+        "detailedDescription": "Unveiled to the SE8 market is this impressive one bedroom Conversion set within this attractive Period building located on the ever so popular Trundleys Road, close to local amenities and with Surrey Quays station only 0.6 mile walk away, offering great connections into the city.<br><br>The accommodation itself is set on the first floor and the layout comprises of an open plan kitchen/living room, a good size double bedroom and a three-piece bathroom suite. Internally the flat is neutrally decorated and offers an allocated parking space with a garage within the gated car park.<br><br>Trudleys Road is set within a great location being spoilt for choice with the open green spaces with Deptford Park and Folkstone Gardens close by as well as Southwark Park slightly further. There is a parade of local shops by Lower Road and choices of public transport nearby.<br><br>Please note all viewings are strictly via appointment only.<br><br>Energy Efficiency Rating: C",
+        "features": {
+            "__typename": "Features",
+            "bullets": [
+                "One Bedroom Apartment",
+                "First Floor Accommodation",
+                "Share of Freehold",
+                "Off-Street Parking",
+                "Great Location!",
+                "Deptford Park 0.1m Walk!",
+                "No Onward Chain",
+                "Energy Efficiency Rating: C"
+            ],
+            "flags": {
+                "__typename": "FeatureFlag",
+                "furnishedState": null,
+                "studentFriendly": false,
+                "tenure": {
+                    "__typename": "Label",
+                    "name": "share_of_freehold",
+                    "label": "Share of freehold"
+                },
+                "availableFromDate": "2022-03-14T12:00:00"
+            },
+            "highlights": null
+        },
+        "floorPlan": {
+            "__typename": "FloorPlan",
+            "image": [
+                {
+                    "__typename": "Media",
+                    "filename": "133a11f44630d4900dab08da4ac49bb3e0855e65.jpg",
+                    "caption": "Floor Plan"
+                }
+            ],
+            "links": null,
+            "pdf": null
+        },
+        "propertyImage": [
             {
                 "__typename": "Media",
-                "original": "https://lc.zoocdn.com/8f2609cab962c3eff3e2a68011eb792febfa2ba7.jpg"
+                "filename": "edfe8b71144847ece86582e10e0e5015f6e45ce4.jpg",
+                "caption": "External"
+            },
+            {
+                "__typename": "Media",
+                "filename": "7a5858dea32e88d02423fc45f63dcd265471ffec.jpg",
+                "caption": "Reception"
+            },
+            {
+                "__typename": "Media",
+                "filename": "4ea8966dc3218de242d07a012b354063d7e25fb1.jpg",
+                "caption": "Reception"
+            },
+            {
+                "__typename": "Media",
+                "filename": "588778b3a9f4a905d77eb76fd88c117336c681ee.jpg",
+                "caption": "Reception"
+            },
+            {
+                "__typename": "Media",
+                "filename": "2c964984e91d5c68239bc93018e26e54ae7ddd27.jpg",
+                "caption": "Kitchen"
+            },
+            {
+                "__typename": "Media",
+                "filename": "2aa4304c6a10844e2af3f57c46a283168d0c664a.jpg",
+                "caption": "Bathroom"
+            },
+            {
+                "__typename": "Media",
+                "filename": "ce094d730da002bcb5f6f1a1a170536094d27c9d.jpg",
+                "caption": "Bedroom"
+            },
+            {
+                "__typename": "Media",
+                "filename": "8c5d0d2ff55d1da4f74787190e5c0b9129177cc1.jpg",
+                "caption": "Bedroom"
             }
-        ]
-    },
-    "statusSummary": null,
-    "tags": [],
-    "counts": {
-        "__typename": "RoomCount",
-        "numBedrooms": 1,
-        "numBathrooms": 1,
-        "numLivingRooms": 1
-    },
-    "floorArea": null,
-    "pricing": {
-        "__typename": "ListingPricing",
-        "label": "£300,000",
-        "priceQualifierLabel": "Guide price",
-        "rentFrequencyLabel": null,
-        "isAuction": false,
-        "pricePerFloorAreaUnit": null,
-        "alternateRentFrequencyPrice": null,
-        "originalCurrencyPrice": null
-    },
-    "analyticsEcommerce": {
-        "__typename": "ListingAnalyticsEcommerce",
-        "brand": "Inner City Estates",
-        "category": "for-sale/resi/agent/pre-owned/gb",
-        "id": 61023550,
-        "name": "FS_Contact",
-        "price": 1,
-        "quantity": 1,
-        "variant": "standard"
-    },
-    "uuid": "1e081013-ac95-4c80-9884-e790a8632bc7",
-    "marketStats": {
-        "__typename": "MarketStatsResults",
-        "areaName": "E1",
-        "areaNameUri": "london/e1/aldgate-stepney-mile-end-whitechapel",
-        "propertyTypeGroup": "flat",
-        "askingPrices": {
-            "__typename": "AskingPrices",
-            "toRent": {
-                "__typename": "AskingPrice",
-                "meanValue": 2352.3002832861175
+        ],
+        "analyticsTaxonomy": {
+            "__typename": "ListingAnalyticsTaxonomy",
+            "location": "London",
+            "regionName": "London",
+            "section": "for-sale",
+            "acorn": 53,
+            "acornType": 53,
+            "areaName": "London",
+            "bedsMax": 1,
+            "bedsMin": 1,
+            "branchId": 112,
+            "branchLogoUrl": "https://st.zoocdn.com/zoopla_static_agent_logo_(701121).png",
+            "branchName": "Acorn - Lewisham",
+            "brandName": "Acorn",
+            "chainFree": true,
+            "companyId": 8143,
+            "countryCode": "gb",
+            "countyAreaName": "London",
+            "currencyCode": "GBP",
+            "displayAddress": "Trundleys Road, London SE8",
+            "furnishedState": "",
+            "groupId": 25,
+            "hasEpc": true,
+            "hasFloorplan": true,
+            "incode": "5JG",
+            "isRetirementHome": false,
+            "isSharedOwnership": false,
+            "listingCondition": "pre-owned",
+            "listingId": 61122968,
+            "listingsCategory": "residential",
+            "listingStatus": "for_sale",
+            "memberType": "agent",
+            "numBaths": 1,
+            "numBeds": 1,
+            "numImages": 8,
+            "numRecepts": 1,
+            "outcode": "SE8",
+            "postalArea": "SE",
+            "postTownName": "London",
+            "priceActual": 290000,
+            "price": 290000,
+            "priceMax": 300000,
+            "priceMin": 275000,
+            "priceQualifier": "offers_over",
+            "propertyHighlight": "",
+            "propertyType": "flat",
+            "sizeSqFeet": "",
+            "tenure": "share_of_freehold",
+            "zindex": 405746
+        },
+        "title": "1 bed flat for sale",
+        "metaTitle": "1 bed flat for sale in Trundleys Road, London SE8 - Zoopla",
+        "metaDescription": "1 bed flat for sale in Trundleys Road, London SE8, selling for £290,000 from Acorn - Lewisham. See property details on Zoopla or browse all our range of properties in Trundleys Road, London SE8.",
+        "listingUris": {
+            "__typename": "ListingUris",
+            "detail": "/for-sale/details/61122968/"
+        },
+        "location": {
+            "__typename": "ListingLocation",
+            "coordinates": {
+                "__typename": "LocationCoordinates",
+                "latitude": 51.486283,
+                "longitude": -0.042873,
+                "isApproximate": false
             }
         },
-        "historicalEstimates": [
-            {
-                "__typename": "HistoricalEstimate",
-                "overMonth": "0",
-                "value": 616589,
-                "pctChangeSince": 0,
-                "date": "2022-07-23",
-                "changeSince": 0
+        "displayAddress": "Trundleys Road, London SE8",
+        "administrationFees": null,
+        "content": {
+            "__typename": "MediaContent",
+            "floorPlan": [
+                {
+                    "__typename": "Media",
+                    "original": "https://lc.zoocdn.com/133a11f44630d4900dab08da4ac49bb3e0855e65.jpg"
+                }
+            ]
+        },
+        "statusSummary": null,
+        "tags": [],
+        "counts": {
+            "__typename": "RoomCount",
+            "numBedrooms": 1,
+            "numBathrooms": 1,
+            "numLivingRooms": 1
+        },
+        "floorArea": null,
+        "pricing": {
+            "__typename": "ListingPricing",
+            "label": "£290,000",
+            "priceQualifierLabel": "Offers over",
+            "rentFrequencyLabel": null,
+            "isAuction": false,
+            "pricePerFloorAreaUnit": null,
+            "alternateRentFrequencyPrice": null,
+            "originalCurrencyPrice": null
+        },
+        "analyticsEcommerce": {
+            "__typename": "ListingAnalyticsEcommerce",
+            "brand": "Acorn",
+            "category": "for-sale/resi/agent/pre-owned/gb",
+            "id": 61122968,
+            "name": "FS_Contact",
+            "price": 1,
+            "quantity": 1,
+            "variant": "standard"
+        },
+        "uuid": "73ceaa3c-cac0-4a90-b1cb-c1d84aaa3a87",
+        "marketStats": {
+            "__typename": "MarketStatsResults",
+            "areaName": "SE8",
+            "areaNameUri": "london/se8/deptford",
+            "propertyTypeGroup": "flat",
+            "askingPrices": {
+                "__typename": "AskingPrices",
+                "toRent": {
+                    "__typename": "AskingPrice",
+                    "meanValue": 1514.7826086956504
+                }
             },
-            {
-                "__typename": "HistoricalEstimate",
-                "overMonth": "3",
-                "value": 605020,
-                "pctChangeSince": 1.912,
-                "date": "2022-04-23",
-                "changeSince": 11569
-            },
-            {
-                "__typename": "HistoricalEstimate",
-                "overMonth": "6",
-                "value": 601750,
-                "pctChangeSince": 2.466,
-                "date": "2022-01-23",
-                "changeSince": 14839
-            },
-            {
-                "__typename": "HistoricalEstimate",
-                "overMonth": "12",
-                "value": 593730,
-                "pctChangeSince": 3.85,
-                "date": "2021-07-23",
-                "changeSince": 22859
-            },
-            {
-                "__typename": "HistoricalEstimate",
-                "overMonth": "60",
-                "value": 555871,
-                "pctChangeSince": 10.923,
-                "date": "2017-07-23",
-                "changeSince": 60718
-            },
-            {
-                "__typename": "HistoricalEstimate",
-                "overMonth": "120",
-                "value": 367125,
-                "pctChangeSince": 67.951,
-                "date": "2012-07-23",
-                "changeSince": 249464
-            },
-            {
-                "__typename": "HistoricalEstimate",
-                "overMonth": "180",
-                "value": 370110,
-                "pctChangeSince": 66.596,
-                "date": "2007-07-23",
-                "changeSince": 246479
-            },
-            {
-                "__typename": "HistoricalEstimate",
-                "overMonth": "240",
-                "value": 227889,
-                "pctChangeSince": 170.565,
-                "date": "2002-07-23",
-                "changeSince": 388700
-            }
-        ],
-        "sales": [
-            {
-                "__typename": "HistoricalSales",
-                "overYear": "1",
-                "mean": 550478,
-                "newBuilds": 3,
-                "numSales": 213
-            },
-            {
-                "__typename": "HistoricalSales",
-                "overYear": "3",
-                "mean": 549897,
-                "newBuilds": 55,
-                "numSales": 1016
-            },
-            {
-                "__typename": "HistoricalSales",
-                "overYear": "5",
-                "mean": 551203,
-                "newBuilds": 77,
-                "numSales": 1732
-            },
-            {
-                "__typename": "HistoricalSales",
-                "overYear": "7",
-                "mean": 572386,
-                "newBuilds": 262,
-                "numSales": 3054
-            }
-        ],
-        "recentSales": [
-            {
-                "__typename": "RecentSale",
-                "date": "2022-03-17T00:00:00Z",
-                "price": 595000,
-                "propertyId": 7605121,
-                "streetAddress": "56b Cannon Street Road",
-                "uri": "56b-cannon-street-road/london/e1-0bh"
-            },
-            {
-                "__typename": "RecentSale",
-                "date": "2022-04-25T00:00:00Z",
-                "price": 370000,
-                "propertyId": 7606793,
-                "streetAddress": "6 Colet Flats, White Horse Road",
-                "uri": "6-colet-flats/white-horse-road/london/e1-0nj"
-            },
-            {
-                "__typename": "RecentSale",
-                "date": "2022-04-21T00:00:00Z",
-                "price": 580000,
-                "propertyId": 7635502,
-                "streetAddress": "Flat 123, Riverside Mansions, Milk Yard",
-                "uri": "flat-123/riverside-mansions/milk-yard/london/e1w-3sz"
-            },
-            {
-                "__typename": "RecentSale",
-                "date": "2022-04-21T00:00:00Z",
-                "price": 875000,
-                "propertyId": 7618681,
-                "streetAddress": "24 Louisa Street",
-                "uri": "24-louisa-street/london/e1-4nf"
-            },
-            {
-                "__typename": "RecentSale",
-                "date": "2022-04-19T00:00:00Z",
-                "price": 729000,
-                "propertyId": 7616495,
-                "streetAddress": "29 Mile End Place",
-                "uri": "29-mile-end-place/london/e1-4bh"
-            },
-            {
-                "__typename": "RecentSale",
-                "date": "2022-04-11T00:00:00Z",
-                "price": 320000,
-                "propertyId": 7605285,
-                "streetAddress": "Flat 15, Lowood House, Bewley Street",
-                "uri": "flat-15/lowood-house/bewley-street/london/e1-0bt"
-            }
-        ]
+            "historicalEstimates": [
+                {
+                    "__typename": "HistoricalEstimate",
+                    "overMonth": "0",
+                    "value": 379089,
+                    "pctChangeSince": 0,
+                    "date": "2022-08-13",
+                    "changeSince": 0
+                },
+                {
+                    "__typename": "HistoricalEstimate",
+                    "overMonth": "3",
+                    "value": 377953,
+                    "pctChangeSince": 0.301,
+                    "date": "2022-05-13",
+                    "changeSince": 1136
+                },
+                {
+                    "__typename": "HistoricalEstimate",
+                    "overMonth": "6",
+                    "value": 379760,
+                    "pctChangeSince": -0.177,
+                    "date": "2022-02-13",
+                    "changeSince": -671
+                },
+                {
+                    "__typename": "HistoricalEstimate",
+                    "overMonth": "12",
+                    "value": 374869,
+                    "pctChangeSince": 1.126,
+                    "date": "2021-08-13",
+                    "changeSince": 4220
+                },
+                {
+                    "__typename": "HistoricalEstimate",
+                    "overMonth": "60",
+                    "value": 375598,
+                    "pctChangeSince": 0.929,
+                    "date": "2017-08-13",
+                    "changeSince": 3491
+                },
+                {
+                    "__typename": "HistoricalEstimate",
+                    "overMonth": "120",
+                    "value": 250376,
+                    "pctChangeSince": 51.408,
+                    "date": "2012-08-13",
+                    "changeSince": 128713
+                },
+                {
+                    "__typename": "HistoricalEstimate",
+                    "overMonth": "180",
+                    "value": 244755,
+                    "pctChangeSince": 54.885,
+                    "date": "2007-08-13",
+                    "changeSince": 134334
+                },
+                {
+                    "__typename": "HistoricalEstimate",
+                    "overMonth": "240",
+                    "value": 158208,
+                    "pctChangeSince": 139.614,
+                    "date": "2002-08-13",
+                    "changeSince": 220881
+                }
+            ],
+            "sales": [
+                {
+                    "__typename": "HistoricalSales",
+                    "overYear": "1",
+                    "mean": 349324,
+                    "newBuilds": 1,
+                    "numSales": 88
+                },
+                {
+                    "__typename": "HistoricalSales",
+                    "overYear": "3",
+                    "mean": 357533,
+                    "newBuilds": 13,
+                    "numSales": 347
+                },
+                {
+                    "__typename": "HistoricalSales",
+                    "overYear": "5",
+                    "mean": 382148,
+                    "newBuilds": 114,
+                    "numSales": 763
+                },
+                {
+                    "__typename": "HistoricalSales",
+                    "overYear": "7",
+                    "mean": 386084,
+                    "newBuilds": 259,
+                    "numSales": 1429
+                }
+            ],
+            "recentSales": [
+                {
+                    "__typename": "RecentSale",
+                    "date": "2021-09-15T00:00:00Z",
+                    "price": 520000,
+                    "propertyId": 27217828,
+                    "streetAddress": "79b Trundleys Road",
+                    "uri": "79b-trundleys-road/london/se8-5bd"
+                },
+                {
+                    "__typename": "RecentSale",
+                    "date": "2021-08-26T00:00:00Z",
+                    "price": 385000,
+                    "propertyId": 20966130,
+                    "streetAddress": "Flat 8, Chester Court, Trundleys Road",
+                    "uri": "flat-8/chester-court/trundleys-road/london/se8-5an"
+                },
+                {
+                    "__typename": "RecentSale",
+                    "date": "2022-05-16T00:00:00Z",
+                    "price": 485000,
+                    "propertyId": 20966879,
+                    "streetAddress": "172b Evelyn Street",
+                    "uri": "172b-evelyn-street/london/se8-5db"
+                },
+                {
+                    "__typename": "RecentSale",
+                    "date": "2022-04-22T00:00:00Z",
+                    "price": 138914,
+                    "propertyId": 20962806,
+                    "streetAddress": "Flat 12, Addey House, Douglas Way",
+                    "uri": "flat-12/addey-house/douglas-way/london/se8-4bb"
+                },
+                {
+                    "__typename": "RecentSale",
+                    "date": "2022-04-21T00:00:00Z",
+                    "price": 247800,
+                    "propertyId": 20964825,
+                    "streetAddress": "110k Deptford High Street",
+                    "uri": "110k-deptford-high-street/london/se8-4ns"
+                },
+                {
+                    "__typename": "RecentSale",
+                    "date": "2022-04-01T00:00:00Z",
+                    "price": 265000,
+                    "propertyId": 20966822,
+                    "streetAddress": "Flat 212, Inwen Court, Grinstead Road",
+                    "uri": "flat-212/inwen-court/grinstead-road/london/se8-5bn"
+                },
+                {
+                    "__typename": "RecentSale",
+                    "date": "2022-03-31T00:00:00Z",
+                    "price": 270000,
+                    "propertyId": 20961573,
+                    "streetAddress": "31 Enterprize Way",
+                    "uri": "31-enterprize-way/london/se8-3pj"
+                }
+            ]
+        },
+        "propertyType": "flat",
+        "groundRent": {
+            "__typename": "GroundRent",
+            "label": null
+        },
+        "deposit": {
+            "__typename": "Deposit",
+            "label": null
+        },
+        "leaseExpiry": null,
+        "serviceCharge": null,
+        "councilTaxBand": "B"
     },
-    "propertyType": "flat",
-    "groundRent": {
-        "__typename": "GroundRent",
-        "label": "£300"
-    },
-    "deposit": {
-        "__typename": "Deposit",
-        "label": null
-    },
-    "leaseExpiry": {
-        "__typename": "LeaseExpiry",
-        "yearsRemaining": "99 years"
-    },
-    "serviceCharge": null,
-    "councilTaxBand": null
+    "__OPTIMIZELY_STATE__": [
+        "_details_ldp-heading-readability",
+        "_details_nts_info",
+        "_details_val_lead-cc-a-s-d-c-var-2",
+        "_favourites_tracked-properties_crme-1732",
+        "_for-sale_landing-page-v2",
+        "_global-header",
+        "_homepage-optimisation",
+        "_my-home-notification_page-visible",
+        "_my_zoopla_personalised_content",
+        "_privacy_render-flag",
+        "_property-details-floor-area-visible",
+        "_property_insight_consent",
+        "_to-rent_landing-page-v2",
+        "hom_countdown_timestamp",
+        "hom_similar_properties_v2",
+        "leads_use_direct_ingestion_for_valuation",
+        "mov_456_my_home_experience",
+        "sr_1249_save_email_alert_modal"
+    ]
 }
