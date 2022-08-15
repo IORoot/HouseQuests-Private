@@ -139,9 +139,9 @@ export function update_details_contents()
     // Schools
     output_detail_schools({
         'attribute':    currentProperty.details.schools,
-        'icon':         '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,2C8,2 4,2.5 4,6V15.5A3.5,3.5 0 0,0 7.5,19L6,20.5V21H8.23L10.23,19H14L16,21H18V20.5L16.5,19A3.5,3.5 0 0,0 20,15.5V6C20,2.5 16.42,2 12,2M7.5,17A1.5,1.5 0 0,1 6,15.5A1.5,1.5 0 0,1 7.5,14A1.5,1.5 0 0,1 9,15.5A1.5,1.5 0 0,1 7.5,17M11,10H6V6H11V10M13,10V6H18V10H13M16.5,17A1.5,1.5 0 0,1 15,15.5A1.5,1.5 0 0,1 16.5,14A1.5,1.5 0 0,1 18,15.5A1.5,1.5 0 0,1 16.5,17Z"/></svg>',
+        'icon':         '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"/></svg>',
         'target':       'details-property-schools',
-        'title':        'Local Schools',
+        'title':        'Schools',
         'sourceURL':    currentProperty.link,
         'serviceURL':   'https://reports.ofsted.gov.uk/search?q=&lat='+currentProperty.latitude+'&lon='+currentProperty.longitude+'',
         'serviceTitle': 'ofsted.gov.uk',
@@ -175,7 +175,6 @@ export function update_details_contents()
 // published:          "",
 // retirementHome:     "",
 // roomsArray:         "",
-// schools:            "",
 // section:            "",
 // serviceCharge:      "",
 // sharedOwnership:    "",
