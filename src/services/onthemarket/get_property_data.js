@@ -57,10 +57,10 @@ module.exports = function(app){
                         newHome:            "new-home-flag",
                         numberBaths:        "bathrooms",
                         numberBeds:         "bedrooms",
-                        pointsOfInterest:   "station",
                         propertyType:       "prop-sub-id",
                         schools:            "school",
-                        mobileReception:    "mobile-reception"
+                        mobileReception:    "mobile-reception",
+                        trainStations:      "station",
                     }
                 },
 
@@ -93,6 +93,23 @@ module.exports = function(app){
 
             // Closest Station
             result['station'] = data.station[0].name + '(' + data.station[0]["display-distance"] + ' )'
+
+            // Train stations
+            if (result.details.trainStations){
+                result.details.trainStations.forEach(function(oldStation, index){
+
+                    let lines = ''
+                    oldStation['all-networks'].forEach(function(line){
+                        lines += line.type + ', '
+                    })
+
+                    result.details.trainStations[index] = {
+                        'name': oldStation['full-name'],
+                        'type': lines,
+                        'distance': oldStation['display-distance'] 
+                    }
+                });
+            }
 
             // Loop through key-items
             data['key-info'].forEach(function(infoItem){

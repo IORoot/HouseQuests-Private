@@ -102,17 +102,22 @@ module.exports = function(app){
             });
             result['images'] = imageArray;
 
-            // STATIONS
-            // Search for Underground Station
-            var station = "Not Specified"
-            data.pointsOfInterest.forEach(function(poi, index) {
-                if (poi.type == "london_underground_station"){
-                    station = poi.title + '( ' + poi.distanceMiles + ' miles )';
-                }
-            });
-            result['station'] = station;
+            // Train stations
+            result.details.trainStations = []
+            if (data.pointsOfInterest){
+                data.pointsOfInterest.forEach(function(poi, index) {
+                    if (!(poi.type == "london_underground_station") || (poi.type == "national_rail_station")){
+                        return
+                    }
+                    let newStation = {
+                        'name': poi.title,
+                        'type': poi.type,
+                        'distance': Math.round(poi.distanceMiles * 100) / 100 + ' miles'
+                    }
 
-
+                    result.details.trainStations.push(newStation)
+                });
+            }
 
             res.json(result)
         
