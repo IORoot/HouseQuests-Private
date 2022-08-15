@@ -102,9 +102,12 @@ module.exports = function(app){
             });
             result['images'] = imageArray;
 
-            // Train stations
+            // Train stations & Schools
+            result.details.schools = []
             result.details.trainStations = []
             if (data.pointsOfInterest){
+
+                // trains
                 data.pointsOfInterest.forEach(function(poi, index) {
                     if (!(poi.type == "london_underground_station") || (poi.type == "national_rail_station")){
                         return
@@ -116,6 +119,20 @@ module.exports = function(app){
                     }
 
                     result.details.trainStations.push(newStation)
+                });
+
+                // schools
+                data.pointsOfInterest.forEach(function(poi, index) {
+                    if ((poi.type == "london_underground_station") || (poi.type == "national_rail_station")){
+                        return
+                    }
+                    let newSchool = {
+                        'name': poi.title,
+                        'distance': Math.round(poi.distanceMiles * 100) / 100 + ' miles',
+                        'report': 'Not Supplied'
+                    }
+
+                    result.details.schools.push(newSchool)
                 });
             }
 

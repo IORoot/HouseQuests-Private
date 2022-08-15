@@ -5,7 +5,7 @@
 // │                                     │
 // └─────────────────────────────────────┘
 //
-export async function output_detail_trains(config)
+export async function output_detail_schools(config)
 {
 
     let attribute       = config.attribute
@@ -23,7 +23,7 @@ export async function output_detail_trains(config)
 
     // NOT Found / Null value
     if (!attribute){
-        attribute = [{ name: "None Supplied. Use manual search.", type: 'N/A', distance: "N/A", }]
+        attribute = [{ name: "None Supplied. Use manual search.", distance: "N/A", report: 'N/A' }]
     }
 
     message += '<th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap  flex flex-row gap-1"><div class="h-5 w-5 fill-black">' + icon + '</div>' + title +'</th>'
@@ -33,24 +33,24 @@ export async function output_detail_trains(config)
                 message += '<thead class="text-xs text-gray-700 uppercase bg-yellow-200">'
                     message += '<tr>'
                         message += ' <th scope="col" class="py-2 px-3">'
-                            message += 'Station'
-                        message += '</th>'
-                        message += '<th scope="col" class="py-2 px-3">'
-                            message += 'Type'
+                            message += 'School'
                         message += '</th>'
                         message += '<th scope="col" class="py-2 px-3">'
                             message += 'Distance'
+                        message += '</th>'
+                        message += '<th scope="col" class="py-2 px-3">'
+                            message += 'Standard'
                         message += '</th>'
                     message += '</tr>'
                 message += '</thead>'
                 message += '<tbody>'
 
-                attribute.forEach(function(station){
+                attribute.forEach(function(school){
                     message += '<tr class="bg-white border-b  id="details-property-address-house-number">'
 
-                    message += '<td class="py-2 px-3">'+station.name+'</td>'
-                    message += '<td class="py-2 px-3">'+station.type+'</td>'
-                    message += '<td class="py-2 px-3">'+station.distance+'</td>'
+                    message += '<td class="py-2 px-3">'+school.name+'</td>'
+                    message += '<td class="py-2 px-3">'+school.distance+'</td>'
+                    message += '<td class="py-2 px-3">'+school.report+'</td>'
 
                     message += '</tr>'
                 })

@@ -111,6 +111,23 @@ module.exports = function(app){
                 });
             }
 
+            // schools
+            if (result.details.schools){
+                result.details.schools.forEach(function(oldSchool, index){
+
+                    let report = 'N/A'
+                    if (oldSchool['report-descriptive']){
+                        report = oldSchool['report-descriptive']
+                    }
+                    
+                    result.details.schools[index] = {
+                        'name': oldSchool['name'],
+                        'distance': oldSchool['display-distance'],
+                        'report': report
+                    }
+                })
+            }
+
             // Loop through key-items
             data['key-info'].forEach(function(infoItem){
                 
