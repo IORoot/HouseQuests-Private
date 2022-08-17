@@ -14,6 +14,8 @@ export function onload_searches()
 
         let searchArray = JSON.parse(window.localStorage.getItem(storageKey));
 
+        if (!searchArray){ return }
+        
         let currentSearch = searchArray.search
 
         let inputTextBox = document.getElementById(source+'Input');

@@ -10,7 +10,7 @@ export function check_blacklist(markers)
     // get blacklist array
     var blacklist = JSON.parse(window.localStorage.getItem('blacklistedIDs'));
 
-    if (!blacklist){ return }
+    if (!blacklist){ return markers }
 
     // Create an array of just the IDs. (remove the source.)
     var blacklistIDs = []

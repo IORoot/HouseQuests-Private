@@ -22,6 +22,9 @@ var blacklistEnabled = true
 // Current viewed property
 var currentProperty;
 
+// Total count of markers
+var totalMarkerCount = 0;
+
 // ┌─────────────────────────────────────┐
 // │                                     │
 // │       Initialise the Drawer         │

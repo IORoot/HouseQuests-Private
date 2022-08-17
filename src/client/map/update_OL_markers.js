@@ -9,10 +9,12 @@ import { check_blacklist } from '../blacklist/check_blacklist.js'
 
 export function update_OL_markers(markerdata, icon, source){
 
+    
+
     // Check if any ID is on the blacklist
     if (blacklistEnabled)
     {
-        markerdata = check_blacklist(markerdata)
+        markerdata = check_blacklist(markerdata);
     }
 
     let featuresList = [];

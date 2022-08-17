@@ -5,6 +5,8 @@ export function check_words(sentance, positiveNegative, colour)
     let inspectorList = document.getElementById('inspector-'+positiveNegative).value;
     let wordList = inspectorList.split(',');
 
+    if ((wordList.length == 1) && (wordList[0] == '')){ return sentance }
+
     wordList.forEach(function(word, index){
 
         // remove whitespace

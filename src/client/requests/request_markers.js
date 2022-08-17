@@ -1,5 +1,6 @@
 import { set_searches } from '../searches/set_searches.js'
 import { update_OL_markers } from '../map/update_OL_markers.js'
+import { update_search_counts } from '../searches/update_search_counts.js'
 
 export async function request_markers(currentURL, source) {
 
@@ -11,8 +12,12 @@ export async function request_markers(currentURL, source) {
         .catch(function(error) {
             console.log("ERROR:"+error);
         });
-    
-    update_OL_markers(JSON.parse(currentMarkers), icon, source);
+
+    let markers = JSON.parse(currentMarkers)
+
+    update_OL_markers(markers, icon, source);
 
     set_searches(currentURL, source)
+
+    update_search_counts(source, markers.length)
 }
