@@ -7,6 +7,8 @@ import { request_property_crimes } from '../requests/request_property_crimes.js'
 import { request_property_broadband } from '../requests/request_property_broadband.js'
 import { request_property_address } from '../requests/request_property_address.js'
 import { output_detail_string } from './output_detail_string.js'
+import { output_detail_trains } from './output_detail_trains.js'
+import { output_detail_schools } from './output_detail_schools.js'
 
 /**
  * 
@@ -64,7 +66,7 @@ export function update_details_contents()
         'type':         'string',
         'icon':         '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6M20 6L12 11L4 6H20M20 18H4V8L12 13L20 8V18Z"/></svg>',
         'target':       'details-property-postcode',
-        'title':        'Postcode (from property site)',
+        'title':        'Postcode <div class="text-gray-400 text-xs">(from property site)</div>',
         'sourceURL':    currentProperty.link,
         'serviceURL':   'https://findthatpostcode.uk/points/'+currentProperty.latitude+'%2C'+currentProperty.longitude+'.html',
         'serviceTitle': 'findthatpostcode.uk',
@@ -122,32 +124,56 @@ export function update_details_contents()
         'serviceTitle': 'Propertychecker.co.uk',
     })
 
+    // Train Stations
+    output_detail_trains({
+        'attribute':    currentProperty.details.trainStations,
+        'icon':         '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,2C8,2 4,2.5 4,6V15.5A3.5,3.5 0 0,0 7.5,19L6,20.5V21H8.23L10.23,19H14L16,21H18V20.5L16.5,19A3.5,3.5 0 0,0 20,15.5V6C20,2.5 16.42,2 12,2M7.5,17A1.5,1.5 0 0,1 6,15.5A1.5,1.5 0 0,1 7.5,14A1.5,1.5 0 0,1 9,15.5A1.5,1.5 0 0,1 7.5,17M11,10H6V6H11V10M13,10V6H18V10H13M16.5,17A1.5,1.5 0 0,1 15,15.5A1.5,1.5 0 0,1 16.5,14A1.5,1.5 0 0,1 18,15.5A1.5,1.5 0 0,1 16.5,17Z"/></svg>',
+        'target':       'details-property-trains',
+        'title':        'Train Stations',
+        'sourceURL':    currentProperty.link,
+        'serviceURL':   'https://tfl.gov.uk/travel-information/stations-stops-and-piers/',
+        'serviceTitle': 'tfl.gov.uk',
+    })
 
-// archived:           boolean ( property removed ),
+    // Schools
+    output_detail_schools({
+        'attribute':    currentProperty.details.schools,
+        'icon':         '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"/></svg>',
+        'target':       'details-property-schools',
+        'title':        'Schools',
+        'sourceURL':    currentProperty.link,
+        'serviceURL':   'https://reports.ofsted.gov.uk/search?q=&lat='+currentProperty.latitude+'&lon='+currentProperty.longitude+'',
+        'serviceTitle': 'ofsted.gov.uk',
+    })
+    
 // auction:            boolen
-// broadband:          string "Ultra-fast 1000Mbps *",
-// broadbandUrl:       string "https://partnerships-broadband.comparethemarket.com/v1/broadband/rightmove/SE29NP?apikey=0f6b7446ccfeee0154e9a89c9fa64f7fe8921b133264c4feb246d3e5aaf49bf0"
 // category:           string "residential"
 // chain:              bool (ChainFree or not),
 // deposit:            string "",
 // featuresArray:      array of strings,
 // floorArea:          string,
 // furnishedState:     string,
-// groundRent:         "",
-// leaseExpiry:        "",
-// listingCondition:   "",
-// listingHistory:     "",
-// mobileReception:    "",
-// newHome:            "",
-// numberBaths:        "",
-// numberBeds:         "",
-// pointsOfInterest:   "",
+// groundRent:         string,
+// leaseExpiry:        string,
+// listingCondition:   string,
+// listingHistory:     object { "listingUpdateReason": "Added yesterday" }
+// mobileReception:    object {
+                        //     "o2": "enhanced",
+                        //     "three": "enhanced",
+                        //     "vodafone": "enhanced",
+                        //     "ee": "enhanced",
+                        //     "date": "March 7, 2022"
+                        // },
+// newHome:            bool (a new build or not),
+// numberBaths:        string or int or bool?,
+// numberBeds:         int,
+
+
 // pricePerSqFt:       "",
 // propertyType:       "",
 // published:          "",
 // retirementHome:     "",
 // roomsArray:         "",
-// schools:            "",
 // section:            "",
 // serviceCharge:      "",
 // sharedOwnership:    "",

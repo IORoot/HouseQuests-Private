@@ -62,7 +62,6 @@ module.exports = function(app){
                         listingHistory:     "propertyData.listingHistory",
                         numberBaths:        "propertyData.bathrooms",
                         numberBeds:         "propertyData.bedrooms",
-                        pointsOfInterest:   "propertyData.nearestStations",
                         pricePerSqFt:       "propertyData.prices.pricePerSqFt",
                         propertyType:       "propertyData.propertySubType",
                         roomsArray:         "propertyData.rooms",
@@ -70,6 +69,7 @@ module.exports = function(app){
                         sharedOwnership:    "propertyData.sharedOwnership.sharedOwnership",
                         sizings:            "propertyData.sizings",
                         status:             "propertyData.status.published",
+                        trainStations:      "propertyData.nearestStations",
                     }
                 },
 
@@ -93,8 +93,16 @@ module.exports = function(app){
             });
             result['images'] = imageArray;
 
-            // Closest Station
-            result['station'] = data.propertyData.nearestStations[0].name + '(' + Math.round(data.propertyData.nearestStations[0].distance * 100) / 100 + 'miles )'
+            // Train stations
+            if (result.details.trainStations){
+                result.details.trainStations.forEach(function(oldStation, index){
+                    result.details.trainStations[index] = {
+                        'name': oldStation.name,
+                        'type': oldStation.types.join(', '),
+                        'distance': Math.round(oldStation.distance * 100) / 100 + ' miles'
+                    }
+                });
+            }
 
             res.json(result)
         })
