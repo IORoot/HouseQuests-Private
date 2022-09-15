@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>APS Map</title>
+        <link rel="stylesheet" href="./lib/v6.15.1-dist/ol.css" type="text/css">
+        <link rel="stylesheet" type="text/css" href="./views/style.css" />
+        <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+        <script src="./lib/v6.15.1-dist/ol.js"></script>
+
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+        <meta name="hand-generated html (primitive, aint it?)">
+
+    </head>
+    <body class="bg-blue-700">
+
+        <!-- drawer init and toggle -->
+        <div class="text-center absolute top-3 left-12 z-10">
+            <button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm p-2" type="button" data-drawer-target="settings" data-drawer-show="settings" aria-controls="settings-drawer" >
+                <svg class="w-8 h-8 fill-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.25,12C17.25,12.23 17.23,12.46 17.2,12.68L18.68,13.84C18.81,13.95 18.85,14.13 18.76,14.29L17.36,16.71C17.27,16.86 17.09,16.92 16.93,16.86L15.19,16.16C14.83,16.44 14.43,16.67 14,16.85L13.75,18.7C13.72,18.87 13.57,19 13.4,19H10.6C10.43,19 10.28,18.87 10.25,18.7L10,16.85C9.56,16.67 9.17,16.44 8.81,16.16L7.07,16.86C6.91,16.92 6.73,16.86 6.64,16.71L5.24,14.29C5.15,14.13 5.19,13.95 5.32,13.84L6.8,12.68C6.77,12.46 6.75,12.23 6.75,12C6.75,11.77 6.77,11.54 6.8,11.32L5.32,10.16C5.19,10.05 5.15,9.86 5.24,9.71L6.64,7.29C6.73,7.13 6.91,7.07 7.07,7.13L8.81,7.84C9.17,7.56 9.56,7.32 10,7.15L10.25,5.29C10.28,5.13 10.43,5 10.6,5H13.4C13.57,5 13.72,5.13 13.75,5.29L14,7.15C14.43,7.32 14.83,7.56 15.19,7.84L16.93,7.13C17.09,7.07 17.27,7.13 17.36,7.29L18.76,9.71C18.85,9.86 18.81,10.05 18.68,10.16L17.2,11.32C17.23,11.54 17.25,11.77 17.25,12M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3M12,10C10.89,10 10,10.89 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12C14,10.89 13.1,10 12,10Z"/></svg>
+            </button>
+        </div>
+
+
+
+        <div id="map" class=" p-1 bg-blue-700"></div>
+
+
+
+        <!-- SETTINGS drawer LEFT component -->
+        <div id="settings" class="overflow-y-auto fixed z-50 p-4 w-1/2 h-screen bg-white " tabindex="-1" aria-labelledby="settings">
+            <button type="button" data-drawer-dismiss="settings" aria-controls="settings" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center " >
+                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                <span class="sr-only">Close menu</span>
+            </button>
+
+            <div class="mb-4 border-b border-gray-200 ">
+                <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="settingsTabs" data-tabs-toggle="#settingsTabContent" role="tablist">
+                    <li class="mr-2" role="presentation">
+                        <button class="inline-block p-4 rounded-t-lg border-b-2" id="search-tab" data-tabs-target="#searchTabContent" type="button" role="tab" aria-controls="property" aria-selected="false">Search</button>
+                    </li>
+                    <li class="mr-2" role="presentation">
+                        <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 " id="layers-tab" data-tabs-target="#layersTabContent" type="button" role="tab" aria-controls="layers" aria-selected="false">Layers</button>
+                    </li>
+                    <li class="mr-2" role="presentation">
+                        <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 " id="preferences-tab" data-tabs-target="#preferencesTabContent" type="button" role="tab" aria-controls="preferences" aria-selected="false">Preferences</button>
+                    </li>
+                    <li role="presentation">
+                        <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 " id="admin-tab" data-tabs-target="#adminTabContent" type="button" role="tab" aria-controls="admin" aria-selected="false">Admin</button>
+                    </li>
+                </ul>
+            </div>
+
+
+
+            <div id="settingsTabContent">
+                <div class="hidden" id="searchTabContent" role="tabpanel" aria-labelledby="search-tab">
+                    <div class="flex flex-col gap-2">
+                        <h5 class="inline-flex items-center mb-4 text-base font-semibold text-gray-800 capitalize ">Advanced Property Search</h5>
+
+                        <div class="flex flex-row gap-4">
+
+                            <div class="flex flex-col my-4 gap-4 w-full">
+            
+                                <div class="flex flex-row gap-2">
+                                    <button class="block text-white bg-purple-700 hover:bg-purple-800  font-medium rounded-lg text-sm px-5 py-2.5 text-center" type="button" data-modal-toggle="popup-modal-zoopla-getall">
+                                        <svg class="w-4 h-4 fill-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9,11.5A2.5,2.5 0 0,0 11.5,9A2.5,2.5 0 0,0 9,6.5A2.5,2.5 0 0,0 6.5,9A2.5,2.5 0 0,0 9,11.5M9,2C12.86,2 16,5.13 16,9C16,14.25 9,22 9,22C9,22 2,14.25 2,9A7,7 0 0,1 9,2M15,17H18V14H20V17H23V19H20V22H18V19H15V17Z"/></svg>
+                                    </button>
+                                    <div class="relative  w-full">
+                                        <input id="zooplaInput" class="w-full rounded bg-purple-500 text-white" type="text" placeholder="paste map URL from zoopla"></input>
+                                        <label for="zooplaInput" class="absolute rounded-xl text-sm text-gray-50 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-gray-800 px-2 left-1">Zoopla</label>
+                                    </div>
+                                    <label for="zooplaInputToggle" class="inline-flex relative items-center mr-5 cursor-pointer">
+                                        <input type="checkbox" value="" id="zooplaInputToggle" class="sr-only peer" checked>
+                                        <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-purple-300  peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-2.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-purple-600"></div>
+                                    </label>
+                                    <div id="zooplaInputCount" class="text-purple-500 text-sm my-auto"></div>
+                                </div>
+            
+                                <div class="flex flex-row gap-2">
+                                    <div class="relative w-full">
+                                        <input id="rightmoveInput" class="w-full rounded bg-cyan-500 text-white" type="text" placeholder="paste map URL from rightmove"></input>
+                                        <label for="rightmoveInput" class="absolute rounded-xl text-sm text-gray-50 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-gray-800 px-2 left-1">Rightmove</label>
+                                    </div>
+                                    <label for="rightmoveInputToggle" class="inline-flex relative items-center mr-5 cursor-pointer">
+                                        <input type="checkbox" value="" id="rightmoveInputToggle" class="sr-only peer" checked>
+                                        <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-teal-300  peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-2.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-teal-600"></div>
+                                    </label>
+                                    <div id="rightmoveInputCount" class="text-cyan-500 text-sm my-auto"></div>
+                                </div>
+            
+            
+                                <div class="flex flex-row gap-2">
+                                    <div class="relative w-full">
+                                        <input id="onthemarketInput" class="w-full rounded bg-rose-500 text-white" type="text" placeholder="paste map URL from onTheMarket"></input>
+                                        <label for="onthemarketInput" class="absolute rounded-xl text-sm text-gray-50 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-gray-800 px-2 left-1">OnTheMarket</label>
+                                    </div>
+                                    <label for="onthemarketInputToggle" class="inline-flex relative items-center mr-5 cursor-pointer">
+                                        <input type="checkbox" value="" id="onthemarketInputToggle" class="sr-only peer" checked>
+                                        <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-red-300  peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-2.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-red-600"></div>
+                                    </label>
+                                    <div id="onthemarketInputCount" class="text-rose-500 text-sm my-auto"></div>
+                                </div>
+            
+                            </div>
+                            
+                        </div>
+            
+                        <div class="flex flex-row gap-4 justify-end">
+                            <div>Total Markers</div>
+                            <div id="totalMarkerCount" class=""></div>
+                        </div>
+
+                        <div class="flex flex-row">
+                            <button id="clear-all-markers" type="button" class="w-1/6 text-white bg-gradient-to-r from-orange-500 via-orange-600 to-orange-700 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"><svg class="w-4 h-4 fill-white m-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9,2C5.14,2 2,5.14 2,9C2,14.25 9,22 9,22C9,22 16,14.25 16,9A7,7 0 0,0 9,2M9,6.5A2.5,2.5 0 0,1 11.5,9A2.5,2.5 0 0,1 9,11.5A2.5,2.5 0 0,1 6.5,9A2.5,2.5 0 0,1 9,6.5M16.58,14.16L15.17,15.58L17.58,18L15.17,20.41L16.58,21.82L19,19.41L21.41,21.82L22.83,20.41L20.41,18L22.83,15.58L21.41,14.16L19,16.58"/></svg><span class="m-auto">Clear Searches</span></button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="hidden" id="layersTabContent" role="tabpanel" aria-labelledby="layers-tab">
+                <div class="flex flex-col gap-2">
+                    <div class="grid grid-cols-5 gap-4 my-4">
+                        <h5 class="col-span-5 inline-flex items-center text-sm font-semibold text-gray-800 capitalize ">Layer Visibility</h5>
+                        <button id="toggle-tube-lines" data-loaded="" type="button" class="flex flex-col w-full text-white ring-gray-600 bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"><svg class="w-4 h-4 fill-white m-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15,12C15,10.7 14.16,9.6 13,9.18V6.82C14.16,6.4 15,5.3 15,4A3,3 0 0,0 12,1A3,3 0 0,0 9,4C9,5.3 9.84,6.4 11,6.82V9.19C9.84,9.6 9,10.7 9,12C9,13.3 9.84,14.4 11,14.82V17.18C9.84,17.6 9,18.7 9,20A3,3 0 0,0 12,23A3,3 0 0,0 15,20C15,18.7 14.16,17.6 13,17.18V14.82C14.16,14.4 15,13.3 15,12M12,3A1,1 0 0,1 13,4A1,1 0 0,1 12,5A1,1 0 0,1 11,4A1,1 0 0,1 12,3M12,21A1,1 0 0,1 11,20A1,1 0 0,1 12,19A1,1 0 0,1 13,20A1,1 0 0,1 12,21Z"/></svg><span class="m-auto">Tube Lines</span></button>
+                        <button id="toggle-tube-stations" data-loaded="" type="button" class="flex flex-col w-full text-white ring-gray-600 bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"><svg class="w-4 h-4 fill-white m-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.5,15A1,1 0 0,1 9.5,16A1,1 0 0,1 8.5,17A1,1 0 0,1 7.5,16A1,1 0 0,1 8.5,15M7,9H17V14H7V9M15.5,15A1,1 0 0,1 16.5,16A1,1 0 0,1 15.5,17A1,1 0 0,1 14.5,16A1,1 0 0,1 15.5,15M18,15.88V9C18,6.38 15.32,6 12,6C9,6 6,6.37 6,9V15.88A2.62,2.62 0 0,0 8.62,18.5L7.5,19.62V20H9.17L10.67,18.5H13.5L15,20H16.5V19.62L15.37,18.5C16.82,18.5 18,17.33 18,15.88M17.8,2.8C20.47,3.84 22,6.05 22,8.86V22H2V8.86C2,6.05 3.53,3.84 6.2,2.8C8,2.09 10.14,2 12,2C13.86,2 16,2.09 17.8,2.8Z"/></svg><span class="m-auto">Tube Stations</span></button>    
+                        <button id="toggle-train-lines" data-loaded="" type="button" class="flex flex-col w-full text-white ring-gray-600 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"><svg class="w-4 h-4 fill-white m-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18,11H14.82C14.4,9.84 13.3,9 12,9C10.7,9 9.6,9.84 9.18,11H6C5.67,11 4,10.9 4,9V8C4,6.17 5.54,6 6,6H16.18C16.6,7.16 17.7,8 19,8A3,3 0 0,0 22,5A3,3 0 0,0 19,2C17.7,2 16.6,2.84 16.18,4H6C4.39,4 2,5.06 2,8V9C2,11.94 4.39,13 6,13H9.18C9.6,14.16 10.7,15 12,15C13.3,15 14.4,14.16 14.82,13H18C18.33,13 20,13.1 20,15V16C20,17.83 18.46,18 18,18H7.82C7.4,16.84 6.3,16 5,16A3,3 0 0,0 2,19A3,3 0 0,0 5,22C6.3,22 7.4,21.16 7.82,20H18C19.61,20 22,18.93 22,16V15C22,12.07 19.61,11 18,11M19,4A1,1 0 0,1 20,5A1,1 0 0,1 19,6A1,1 0 0,1 18,5A1,1 0 0,1 19,4M5,20A1,1 0 0,1 4,19A1,1 0 0,1 5,18A1,1 0 0,1 6,19A1,1 0 0,1 5,20Z"/></svg><span class="m-auto">Train Lines</span></button>
+                        <button id="toggle-train-stations" data-loaded="" type="button" class="flex flex-col w-full text-white ring-gray-600 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"><svg class="w-4 h-4 fill-white m-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18,10H6V5H18M12,17C10.89,17 10,16.1 10,15C10,13.89 10.89,13 12,13A2,2 0 0,1 14,15A2,2 0 0,1 12,17M4,15.5A3.5,3.5 0 0,0 7.5,19L6,20.5V21H18V20.5L16.5,19A3.5,3.5 0 0,0 20,15.5V5C20,1.5 16.42,1 12,1C7.58,1 4,1.5 4,5V15.5Z"/></svg><span class="m-auto">Train Stations</span></button>
+                        <button id="toggle-bus-routes" data-loaded="" type="button" class="flex flex-col w-full text-white ring-gray-600 bg-gradient-to-r from-orange-500 via-orange-600 to-orange-700 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"><svg class="w-4 h-4 fill-white m-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 7V16C22 16.71 21.62 17.36 21 17.72V19.25C21 19.66 20.66 20 20.25 20H19.75C19.34 20 19 19.66 19 19.25V18H12V19.25C12 19.66 11.66 20 11.25 20H10.75C10.34 20 10 19.66 10 19.25V17.72C9.39 17.36 9 16.71 9 16V7C9 4 12 4 15.5 4S22 4 22 7M13 15C13 14.45 12.55 14 12 14S11 14.45 11 15 11.45 16 12 16 13 15.55 13 15M20 15C20 14.45 19.55 14 19 14S18 14.45 18 15 18.45 16 19 16 20 15.55 20 15M20 7H11V11H20V7M7 9.5C6.97 8.12 5.83 7 4.45 7.05C3.07 7.08 1.97 8.22 2 9.6C2.03 10.77 2.86 11.77 4 12V20H5V12C6.18 11.76 7 10.71 7 9.5Z"/></svg><span class="m-auto">Bus Routes</span></button>
+                        <button id="toggle-supermarkets" data-loaded="" type="button" class="flex flex-col w-full text-white ring-gray-600 bg-gradient-to-r from-lime-400 via-lime-500 to-lime-600 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"><svg class="w-4 h-4 fill-white m-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z"/></svg><span class="m-auto">Supermarkets</span></button>
+                        <button id="toggle-universities" data-loaded="" type="button" class="flex flex-col w-full text-white ring-gray-600 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"><svg class="w-4 h-4 fill-white m-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"/></svg><span class="m-auto">University</span></button>
+                        <button id="toggle-schools-academies" data-loaded="" type="button" class="flex flex-col w-full text-white ring-gray-600 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"><svg class="w-4 h-4 fill-white m-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3L1 9L5 11.18V17.18L12 21L19 17.18V11.18L21 10.09V17H23V9L12 3M18.82 9L12 12.72L5.18 9L12 5.28L18.82 9M17 16L12 18.72L7 16V12.27L12 15L17 12.27V16Z"/></svg><span class="m-auto">Free Schools</span></button>
+                        <button id="toggle-schools-statefunded" data-loaded="" type="button" class="flex flex-col w-full text-white ring-gray-600 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"><svg class="w-4 h-4 fill-white m-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3L1 9L5 11.18V17.18L12 21L19 17.18V11.18L21 10.09V17H23V9L12 3M18.82 9L12 12.72L5.18 9L12 5.28L18.82 9M17 16L12 18.72L7 16V12.27L12 15L17 12.27V16Z"/></svg><span class="m-auto">Funded Schools</span></button>
+                        <button id="toggle-schools-childcenters" data-loaded="" type="button" class="flex flex-col w-full text-white ring-gray-600 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"><svg class="w-4 h-4 fill-white m-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3L1 9L5 11.18V17.18L12 21L19 17.18V11.18L21 10.09V17H23V9L12 3M18.82 9L12 12.72L5.18 9L12 5.28L18.82 9M17 16L12 18.72L7 16V12.27L12 15L17 12.27V16Z"/></svg><span class="m-auto">Child Centers</span></button>
+                        <button id="toggle-crime-boroughs" data-loaded="" type="button" class="flex flex-col w-full text-white ring-gray-600 bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"><svg class="w-4 h-4 fill-white m-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.62,2C23.97,7.61 12.47,20.15 12.47,20.15L9.6,17.28L4.91,22L2.77,19.86L20.62,2Z"/></svg><span class="m-auto">Crime Boroughs</span></button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="hidden" id="preferencesTabContent" role="tabpanel" aria-labelledby="preferences-tab">
+                <div class="flex flex-col gap-2">
+
+                    <div class="grid grid-cols-2 gap-4 my-8">
+                        <h5 class="col-span-2 inline-flex items-center text-sm font-semibold text-gray-800 capitalize">Text Highlighter</h5>
+                        <p class="col-span-2 text-xs text-gray-500 mb-4">This feature will highlight any positive or negative words within the description of a property.</p>
+                        <div class="relative">
+                            <textarea id="inspector-positive" spellcheck="false" rows="2" class="block p-2.5 w-full text-sm text-emerald-600 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 " placeholder="Words to highlight in description. (Comma Separated)"></textarea>
+                            <label for="inspector-positive" class="absolute text-sm text-blue-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white  px-2 peer-focus:px-2 peer-focus:text-blue-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">Text Searcher - Postives</label>
+                        </div>
+            
+                        <div class="relative">
+                            <textarea id="inspector-negative" spellcheck="false" rows="2" class="block p-2.5 w-full text-sm text-red-700 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 " placeholder="Words to highlight in description. (Comma Separated)"></textarea>
+                            <label for="inspector-negative" class="absolute text-sm text-blue-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white  px-2 peer-focus:px-2 peer-focus:text-blue-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">Text Searcher - Negatives</label>
+                        </div>
+                    </div>
+                
+                
+                    <div class="flex flex-col my-8">
+
+                        <div class="flex flex-cols-2 relative">
+                            <h5 class="col-span-6 inline-flex items-center text-sm font-semibold text-gray-800 capitalize mb-4 mr-2">Excluded IDs</h5>
+                            <label for="blacklisttoggle" class="ml-auto inline-flex relative items-center mr-5 cursor-pointer">
+                                <input type="checkbox" value="" id="blacklisttoggle" class="sr-only peer" checked>
+                                <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-gray-300 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-2.5 after:left-2 after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-gray-600"></div>
+                            </label>
+                        </div>
+
+                        <p class="col-span-2 text-xs text-gray-500 mb-4">These are all the properties you have excluded from the map. You can click on any one to see the property and remove it from this list.</p>
+                        
+                        <div id="blacklist" class="w-full h-40 bg-slate-100 flex flexrow flex-wrap gap-4 p-4 rounded overflow-y-scroll"></div>
+                    </div>
+
+
+                    <div class="grid grid-cols-5 gap-4 my-8">
+                        <h5 class="col-span-5 inline-flex items-center text-sm font-semibold text-gray-800 capitalize ">Map Colours</h5>
+                        <p class="col-span-5 text-xs text-gray-500 mb-4">Toggle the colour of the map and features.</p>
+                        <button id="filter-monochrome-toggle" data-toggle="" type="button" class="w-full text-white bg-gradient-to-r from-gray-400 via-gray-500 to-gray-600 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Monochrome Map</button>
+                        <button id="filter-invert-toggle" data-toggle="" type="button" class="w-full text-white bg-gradient-to-r from-gray-400 via-gray-500 to-gray-600 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Invert Map</button>
+                        <button id="filter-dark-toggle" data-toggle="" type="button" class="w-full text-white bg-gradient-to-r from-gray-400 via-gray-500 to-gray-600 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Dark Map</button>
+                        <button id="filter-sepia-toggle" data-toggle="" type="button" class="w-full text-white bg-gradient-to-r from-gray-400 via-gray-500 to-gray-600 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Sepia Map</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            
+            <div class="hidden" id="adminTabContent" role="tabpanel" aria-labelledby="admin-tab">
+                <div class="flex flex-col gap-2">
+                    <div class="grid grid-cols-5 gap-4 my-4">
+                        <h5 class="col-span-5 inline-flex items-center text-sm font-semibold text-gray-800 capitalize ">Admin</h5>
+                        <button type="button" data-modal-toggle="popup-modal-customColoursClear" class="w-full text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2" >Reset Icon Colours</button>
+                        <button type="button" data-modal-toggle="popup-modal-import" class="w-full text-white bg-gradient-to-r from-gray-400 via-gray-500 to-gray-600 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2" >Import All Settings</button>
+                        <a href="#" id="admin-export" class="flex flex-row w-full text-white bg-gradient-to-r from-gray-400 via-gray-500 to-gray-600 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"><span class="m-auto">Export All Settings</span></a>
+                        <button type="button" data-modal-toggle="popup-modal-save-searches" class=" text-white bg-gradient-to-r from-emerald-400 via-emerald-500 to-emerald-600 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2" ><svg class="w-4 h-4 fill-white m-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15,9H5V5H15M12,19A3,3 0 0,1 9,16A3,3 0 0,1 12,13A3,3 0 0,1 15,16A3,3 0 0,1 12,19M17,3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V7L17,3Z"/></svg>Save Settings</button>
+                    </div>
+
+                    <div class="flex flex-col my-8">
+                        <h5 class="inline-flex items-center text-sm font-semibold text-gray-800 capitalize mr-2">Saved Settings</h5>
+                        <p class="mb-4 text-xs text-gray-500">This saves searches, excluded ids, highlighted properties, and text highlights.</p>
+                        <div id="saved-searches-list" class="w-full h-64 bg-slate-100 flex flex-col flex-wrap gap-1 p-4 rounded overflow-y-scroll"></div>
+                    </div>
+
+                    <div>
+                        <h5 class="inline-flex items-center text-sm font-semibold text-gray-800 capitalize mr-2">Authentication Code</h5>
+                        <p class="mb-4 text-xs text-gray-500">Please enter your authentication code to access the application.</p>
+                        <div class="flex flex-row gap-2">
+                            <input type="text" id="authentication-code" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="64-Character Purchase Code" required>
+                            <button type="button" id="authentication-code-submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 focus:outline-none ">Access</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+        <!-- drawer RIGHT component -->
+        <div data-drawer-target="drawer" data-drawer-placement="right" class="invisible hidden">Used to init drawer</div>
+        <div id="drawer" class="overflow-y-auto fixed z-40 p-4 w-1/2 h-screen bg-white " tabindex="-1" aria-labelledby="drawer-label">
+            <button type="button" data-drawer-dismiss="drawer" aria-controls="drawer" aria-controls="drawer-navigation" class="absolute top-2.5 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 inline-flex items-center  z-10" >
+                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                <span class="sr-only">Close menu</span>
+            </button>
+
+
+            <div class="mb-4 border-b border-gray-200 ">
+                <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="drawerTabs" data-tabs-toggle="#drawerTabContent" role="tablist">
+                    <li class="mr-2" role="presentation">
+                        <button class="inline-block p-4 rounded-t-lg border-b-2" id="currentproperty-tab" data-tabs-target="#currentpropertyTabContent" type="button" role="tab" aria-controls="currentproperty" aria-selected="false">Property</button>
+                    </li>
+                    <li class="mr-2" role="presentation">
+                        <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 " id="details-tab" data-tabs-target="#detailsTabContent" type="button" role="tab" aria-controls="details" aria-selected="false">Details</button>
+                    </li>
+                    <li class="mr-2" role="presentation">
+                        <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 " id="local-tab" data-tabs-target="#localTabContent" type="button" role="tab" aria-controls="local" aria-selected="false">Local Area</button>
+                    </li>
+                    <li class="mr-2" role="presentation">
+                        <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 " id="local-tab" data-tabs-target="#neighbourhoodTabContent" type="button" role="tab" aria-controls="neighbourhood" aria-selected="false">Neighbourhood Rating</button>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div id="drawerTabContent">
+                <div class="hidden" id="currentpropertyTabContent" role="tabpanel" aria-labelledby="currentproperty-tab">
+                    <div class="flex flex-col gap-2">
+            
+                        <h5 id="drawer-title" class="inline-flex items-center mb-4 text-base font-semibold text-gray-800 capitalize "></h5>
+            
+                        <div class="flex flex-row gap-4 mb-4">
+                            <a href="#" id="drawer-exclude" class="py-2 px-4 text-xs font-medium text-center text-gray-100 bg-black rounded-lg border border-gray-800  hover:bg-gray-800 hover:text-white"><svg class="w-6 h-6 mx-auto fill-slate-100" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.6 14.2L15.2 15.6L17.6 18L15.2 20.4L16.6 21.8L19 19.4L21.4 21.8L22.8 20.4L20.4 18L22.8 15.6L21.4 14.2L19 16.6M9 6.5C10.4 6.5 11.5 7.6 11.5 9S10.4 11.5 9 11.5 6.5 10.4 6.5 9 7.6 6.5 9 6.5M9 2C12.9 2 16 5.1 16 9C16 14.2 9 22 9 22S2 14.2 2 9C2 5.1 5.1 2 9 2M9 4C6.2 4 4 6.2 4 9C4 10 4 12 9 18.7C14 12 14 10 14 9C14 6.2 11.8 4 9 4Z"/></svg> Exclude</a>
+                            <button type="button" data-modal-toggle="popup-modal" class="block text-white bg-emerald-700 hover:bg-emerald-800 focus:ring-4  focus:ring-emerald-300 font-medium rounded-lg text-xs px-5 py-2.5 text-center" ><svg class="w-6 h-6 mx-auto fill-slate-100" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.5,12A1.5,1.5 0 0,1 16,10.5A1.5,1.5 0 0,1 17.5,9A1.5,1.5 0 0,1 19,10.5A1.5,1.5 0 0,1 17.5,12M14.5,8A1.5,1.5 0 0,1 13,6.5A1.5,1.5 0 0,1 14.5,5A1.5,1.5 0 0,1 16,6.5A1.5,1.5 0 0,1 14.5,8M9.5,8A1.5,1.5 0 0,1 8,6.5A1.5,1.5 0 0,1 9.5,5A1.5,1.5 0 0,1 11,6.5A1.5,1.5 0 0,1 9.5,8M6.5,12A1.5,1.5 0 0,1 5,10.5A1.5,1.5 0 0,1 6.5,9A1.5,1.5 0 0,1 8,10.5A1.5,1.5 0 0,1 6.5,12M12,3A9,9 0 0,0 3,12A9,9 0 0,0 12,21A1.5,1.5 0 0,0 13.5,19.5C13.5,19.11 13.35,18.76 13.11,18.5C12.88,18.23 12.73,17.88 12.73,17.5A1.5,1.5 0 0,1 14.23,16H16A5,5 0 0,0 21,11C21,6.58 16.97,3 12,3Z"/></svg> Marker Colour</button>
+                            <a href="#" id="drawer-google-streetview" target="_blank"  class="inline-flex items-center py-2 px-4 text-xs font-medium text-center text-white bg-yellow-600 rounded-lg hover:bg-yellow-800"><span class="m-auto"><svg class="w-6 h-6 mx-auto fill-slate-100" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M11.95,9.27C13.96,9.27 15.59,7.64 15.59,5.63C15.59,3.63 13.96,2 11.95,2C9.94,2 8.32,3.63 8.32,5.63C8.32,7.64 9.94,9.27 11.95,9.27M9.36,12.97C9.36,12.97 8.27,15.94 7.96,16.5C7.85,16.71 7.87,16.77 7.6,16.77C7.33,16.77 6.91,16.5 6.91,16.5C6.91,16.5 6.71,16.37 6.79,16.14C7.03,15.4 8.12,11.08 8.35,10.25C8.6,9.36 9.28,9.39 9.28,9.39H9.93L12.03,13.04L14.14,9.39H14.92C14.92,9.39 15.23,9.43 15.46,9.7C15.7,9.97 15.75,10.44 15.75,10.44L17.14,15.84C17.14,15.84 17.24,16.22 17.21,16.33C17.17,16.5 17.08,16.5 17.08,16.5C17.08,16.5 16.69,16.62 16.47,16.69C16.07,16.82 16,16.44 16,16.44L14.7,13.04L14.55,22H12.6L12.27,16.89C12.27,16.89 12.21,16.76 12.03,16.76C11.86,16.76 11.8,16.89 11.8,16.89L11.45,22H9.5L9.37,12.97H9.36Z"/></svg> Streetview</a>
+                            <a href="#" id="drawer-link" target="_blank" class="inline-flex flex-col items-center py-2 px-4 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800"><svg class="w-6 h-6 mx-auto fill-slate-100" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"/></svg><div id="drawer-link-text" class="m-auto">Property</div></a>
+                        </div>
+            
+                        <div class="grid grid-cols-4 gap-2 mb-4 text-center text-sm text-gray-700">
+                            <div id="drawer-price" class="text-semibold bg-slate-100 rounded p-2 flex flex-col align-center justify-center">PRICE</div>
+                            <div id="drawer-bedrooms" class="text-semibold bg-slate-100 rounded p-2 flex flex-col align-center justify-center">BEDROOMS</div>
+                            <div id="drawer-tenure" class="text-semibold bg-slate-100 rounded p-2 flex flex-col align-center justify-center">TENURE</div>
+                            <div id="drawer-station" class="text-semibold bg-slate-100 rounded p-2 flex flex-col align-center justify-center">STATION</div>
+                        </div>
+            
+                        <div id="drawer-inspector-words" class="rounded bg-slate-100 p-2 mb-4 flex flex-row gap-2"></div>
+            
+                        <div>
+                            <div id="drawer-image-grid" class="grid grid-cols-3 gap-2 mb-4"></div>
+                            <div id="drawer-floorplan" class="mb-4 bg-slate-200 flex flex-row"></div>
+                            <div id="drawer-contents"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="hidden" id="detailsTabContent" role="tabpanel" aria-labelledby="details-tab">
+
+                <div class="flex flex-row mr-10">
+                    <h5 id="drawer-source" class="inline-flex items-center mb-4 text-sm font-light text-gray-500 capitalize" data-source="">Source</h5>
+                    <h5 id="drawer-id" class="inline-flex items-center mb-4 text-sm font-light text-gray-500 ml-auto" data-id="">ID</h5>
+                    <h5 id="drawer-longitude" class="inline-flex items-center mb-4 text-sm font-light text-gray-500 ml-auto" data-lng="">LNG</h5>
+                    <h5 id="drawer-latitude" class="inline-flex items-center mb-4 text-sm font-light text-gray-500 ml-auto" data-lat="">LAT</h5>
+                </div>
+
+                <div class="text-lg mb-2 text-gray-800">Property Details</div>
+
+                <div class="flex flex-col gap-2 p-4 bg-yellow-200 rounded-xl mb-4">
+
+                    <table class="w-full text-sm text-left text-gray-500">
+                        <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                            <tr>
+                                <th scope="col" class="py-3 px-6">
+                                    Metric
+                                </th>
+                                <th scope="col" class="py-3 px-6">
+                                    Result
+                                </th>
+                                <th scope="col" class="py-3 px-6">
+                                    3rd Party Tool
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-white border-b  " id="details-property-address-house-number" data-loaded=""></tr>
+                            <tr class="bg-white border-b  " id="details-property-address-road" data-loaded=""></tr>
+                            <tr class="bg-white border-b  " id="details-property-address-neighbourhood" data-loaded=""></tr>
+                            <tr class="bg-white border-b  " id="details-property-address-district" data-loaded=""></tr>
+                            <tr class="bg-white border-b  " id="details-property-address-city" data-loaded=""></tr>
+                            <tr class="bg-white border-b  " id="details-property-address-county" data-loaded=""></tr>
+                            <tr class="bg-white border-b  " id="details-property-address-postcode" data-loaded=""></tr>
+                            <tr class="bg-white border-b  " id="details-property-area" data-loaded=""></tr>
+                            <tr class="bg-white border-b  " id="details-property-broadband2" data-loaded=""></tr>
+                            <tr class="bg-white border-b  " id="details-property-council-tax" data-loaded=""></tr>
+                            <tr class="bg-white border-b  " id="details-property-epc" data-loaded=""></tr>
+                            <tr class="bg-white border-b  " id="details-property-postcode" data-loaded=""></tr>
+                            <tr class="bg-white border-b  " id="details-property-schools" data-loaded=""></tr>
+                            <tr class="bg-white border-b  " id="details-property-tenure" data-loaded=""></tr>
+                            <tr class="bg-white border-b  " id="details-property-trains" data-loaded=""></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="details-property-crimes" data-loaded="" class="mb-4"></div>
+
+                <div id="details-property-broadband" data-loaded="" class="mb-4"></div>
+            </div>
+
+
+
+
+            <div class="hidden" id="localTabContent" role="tabpanel" aria-labelledby="local-tab">
+                <div class="flex flex-col gap-2">
+                    <div class="text-lg mb-2 text-gray-800">Local Area</div>
+
+                    <div class="flex flex-row gap-4 mb-4">
+                        
+                        
+                        <div class="flex flex-col gap-1">
+                            <a href="#" id="load-local-crimes" class="py-2 px-4 text-xs font-medium text-center text-gray-100 bg-red-500 rounded-lg border border-gray-200  hover:bg-red-700 hover:text-red-300"><svg class="w-6 h-6 mx-auto fill-slate-100" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22,2L17.39,3.75L10.46,10.68L14,14.22L20.92,7.29C22.43,5.78 22,2 22,2M8.33,10L6.92,11.39L8.33,12.8L2.68,18.46L6.21,22L11.87,16.34L13.28,17.76L14.7,16.34L8.33,10Z"/></svg> Local Crimes</a>
+                            <label for="toggle-local-crimes" class="inline-flex relative items-center cursor-pointer mx-auto">
+                                <input type="checkbox" value="" id="toggle-local-crimes" class="sr-only peer" checked>
+                                <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-gray-300  peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-gray-600"></div>
+                            </label>
+                        </div>                     
+                        
+                        <div class="flex flex-col gap-1">
+                            <a href="#" id="load-local-supermarkets" data-loaded="" class="py-2 px-4 text-xs font-medium text-center text-gray-100 bg-lime-500 rounded-lg border border-gray-200  hover:bg-lime-700 hover:text-lime-300"><svg class="w-6 h-6 mx-auto fill-slate-100" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z"/></svg>Supermarkets</a>
+                            <label for="toggle-local-supermarkets" class="inline-flex relative items-center cursor-pointer mx-auto">
+                                <input type="checkbox" value="" id="toggle-local-supermarkets" class="sr-only peer" checked>
+                                <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-gray-300  peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-gray-600"></div>
+                            </label>
+                        </div>                     
+                        
+                        <div class="flex flex-col gap-1">
+                            <a href="#" id="load-local-convenience" data-loaded="" class="py-2 px-4 text-xs font-medium text-center text-gray-100 bg-lime-500 rounded-lg border border-gray-200  hover:bg-lime-700 hover:text-lime-300"><svg class="w-6 h-6 mx-auto fill-slate-100" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z"/></svg>Convenience Stores</a>
+                            <label for="toggle-local-convenience" class="inline-flex relative items-center cursor-pointer mx-auto">
+                                <input type="checkbox" value="" id="toggle-local-convenience" class="sr-only peer" checked>
+                                <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-gray-300  peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-gray-600"></div>
+                            </label>
+                        </div>                     
+                        
+                        <div class="flex flex-col gap-1">
+                            <a href="#" id="load-local-coffee" data-loaded="" class="py-2 px-4 text-xs font-medium text-center text-gray-100 bg-amber-900 rounded-lg border border-gray-200  hover:bg-amber-700 hover:text-amber-300"><svg class="w-6 h-6 mx-auto fill-slate-100" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M2,21H20V19H2M20,8H18V5H20M20,3H4V13A4,4 0 0,0 8,17H14A4,4 0 0,0 18,13V10H20A2,2 0 0,0 22,8V5C22,3.89 21.1,3 20,3Z"/></svg>Cafe / Coffee</a>
+                            <label for="toggle-local-coffee" class="inline-flex relative items-center cursor-pointer mx-auto">
+                                <input type="checkbox" value="" id="toggle-local-coffee" class="sr-only peer" checked>
+                                <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-gray-300  peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-gray-600"></div>
+                            </label>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="hidden" id="neighbourhoodTabContent" role="tabpanel" aria-labelledby="neighbourhood-tab">
+                <div class="flex flex-col gap-2">
+                    <div class="text-lg mb-2 text-gray-800">Neighbourhood Rating</div>
+
+                        <div class="flex flex-col gap-2 p-4 bg-gray-800 rounded-xl mb-4">
+
+                            <table class="w-full text-sm text-left text-gray-500">
+                                <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                                    <tr>
+                                        <th scope="col" class="py-3 px-6">
+                                            Description
+                                        </th>
+                                        <th scope="col" class="py-3 px-6">
+                                            Value
+                                        </th>
+                                        <th scope="col" class="py-3 px-6">
+                                            Rating
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody id="neighbourhood-results-table">
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+        <!-- Popup component-->
+        <div id="popup" class="ol-popup">
+            <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+            <div id="popup-content"></div>
+        </div>
+
+
+        <!-- Popup Modal - Change Colours -->
+        <div id="popup-modal" tabindex="-1" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 md:inset-0 h-modal md:h-full">
+            <div class="relative p-4 w-full max-w-md h-full md:h-auto">
+                <div class="relative bg-white rounded-lg shadow">
+                    <button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center " data-modal-toggle="popup-modal">
+                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                    <div class="p-6 text-center">
+                        <svg aria-hidden="true" class="mx-auto mb-4 w-14 h-14 text-gray-400 " viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.5,12A1.5,1.5 0 0,1 16,10.5A1.5,1.5 0 0,1 17.5,9A1.5,1.5 0 0,1 19,10.5A1.5,1.5 0 0,1 17.5,12M14.5,8A1.5,1.5 0 0,1 13,6.5A1.5,1.5 0 0,1 14.5,5A1.5,1.5 0 0,1 16,6.5A1.5,1.5 0 0,1 14.5,8M9.5,8A1.5,1.5 0 0,1 8,6.5A1.5,1.5 0 0,1 9.5,5A1.5,1.5 0 0,1 11,6.5A1.5,1.5 0 0,1 9.5,8M6.5,12A1.5,1.5 0 0,1 5,10.5A1.5,1.5 0 0,1 6.5,9A1.5,1.5 0 0,1 8,10.5A1.5,1.5 0 0,1 6.5,12M12,3A9,9 0 0,0 3,12A9,9 0 0,0 12,21A1.5,1.5 0 0,0 13.5,19.5C13.5,19.11 13.35,18.76 13.11,18.5C12.88,18.23 12.73,17.88 12.73,17.5A1.5,1.5 0 0,1 14.23,16H16A5,5 0 0,0 21,11C21,6.58 16.97,3 12,3Z"/></svg>
+                        <h3 class="mb-5 text-lg font-normal text-gray-500">Change Colour of Property</h3>
+                        <div class="grid grid-cols-4 gap-1 mb-5">
+                            <button data-modal-toggle="popup-modal" data-marker-colour="000000" type="button" class="modal-icon-colour-button text-white bg-black hover:bg-gray-900 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2"></button>
+                            <button data-modal-toggle="popup-modal" data-marker-colour="f9fafb" type="button" class="modal-icon-colour-button text-black bg-gray-50 hover:bg-gray-200 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2"></button>
+                            <button data-modal-toggle="popup-modal" data-marker-colour="6b7280" type="button" class="modal-icon-colour-button text-white bg-gray-500 hover:bg-gray-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2"></button>
+                            <button data-modal-toggle="popup-modal" data-marker-colour="ef4444" type="button" class="modal-icon-colour-button text-white bg-red-500 hover:bg-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2"></button>
+                            <button data-modal-toggle="popup-modal" data-marker-colour="f97316" type="button" class="modal-icon-colour-button text-white bg-orange-500 hover:bg-orange-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2"></button>
+                            <button data-modal-toggle="popup-modal" data-marker-colour="eab308" type="button" class="modal-icon-colour-button text-white bg-yellow-500 hover:bg-yellow-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2"></button>
+                            <button data-modal-toggle="popup-modal" data-marker-colour="22c55e" type="button" class="modal-icon-colour-button text-white bg-green-500 hover:bg-green-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2"></button>
+                            <button data-modal-toggle="popup-modal" data-marker-colour="3b82f6" type="button" class="modal-icon-colour-button text-white bg-blue-500 hover:bg-blue-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2"></button>
+                        </div>
+                        <button data-modal-toggle="popup-modal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 ">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Popup Modal - Delete all coloured icons-->
+        <div id="popup-modal-customColoursClear" tabindex="-1" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 md:inset-0 h-modal md:h-full">
+            <div class="relative p-4 w-full max-w-md h-full md:h-auto">
+                <div class="relative bg-white rounded-lg shadow">
+                    <button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center " data-modal-toggle="popup-modal-customColoursClear">
+                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                    <div class="p-6 text-center">
+                        <svg aria-hidden="true" class="mx-auto mb-4 w-14 h-14 text-gray-400 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <h3 class="mb-5 text-lg font-normal text-gray-500">Are you sure you want to clear all custom coloured icons? (reload required)</h3>
+                        <button id="clear-highlightlist" data-modal-toggle="popup-modal-customColoursClear" type="button" class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2">Yes, I'm sure</button>
+                        <button data-modal-toggle="popup-modal-customColoursClear" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 ">No, cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal for Zoopla Get-All -->
+        <div id="popup-modal-zoopla-getall" tabindex="-1" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 md:inset-0 h-modal md:h-full">
+            <div class="relative p-4 w-full max-w-md h-full md:h-auto">
+                <div class="relative bg-white rounded-lg shadow">
+                    <button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center " data-modal-toggle="popup-modal-zoopla-getall">
+                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                    <div class="p-6 text-center">
+                        <svg aria-hidden="true" class="mx-auto mb-4 w-14 h-14 text-gray-400 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <h3 class="mb-5 text-lg font-normal text-gray-500">By default, Zoopla returns the first 100 results. Get all results? <br/> Warning: this could result in a rate-limit to your IP.</h3>
+                        <button id="zooplaGetAll" data-modal-toggle="popup-modal-zoopla-getall" type="button" class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2">
+                            Yes, I'm sure
+                        </button>
+                        <button data-modal-toggle="popup-modal-zoopla-getall" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 ">No, cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal for Import Data File -->
+        <div id="popup-modal-import" tabindex="-1" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 md:inset-0 h-modal md:h-full">
+            <div class="relative p-4 w-full max-w-md h-full md:h-auto">
+                <div class="relative bg-white rounded-lg shadow">
+                    <button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center " data-modal-toggle="popup-modal-import">
+                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                    <div class="p-6 text-center flex flex-col gap-4">
+                        <h3 class="mb-5 text-lg font-normal text-gray-500">Import saved data.<br/> (This will overwrite all current settings)</h3>
+                        <input class="block w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 cursor-pointer focus:outline-none " id="import_file_input" type="file" accept=".json">
+                        <button data-modal-toggle="popup-modal-import" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 ">No, cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal for Save Searches -->
+        <div id="popup-modal-save-searches" tabindex="-1" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 md:inset-0 h-modal md:h-full">
+            <div class="relative p-4 w-full max-w-md h-full md:h-auto">
+                <div class="relative bg-white rounded-lg shadow">
+                    <button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center " data-modal-toggle="popup-modal-save-searches">
+                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                    <div class="p-6 text-center flex flex-col gap-4">
+                        <h3 class="mb-5 text-lg font-normal text-gray-500">Save current searches.</h3>
+                        <input type="text" id="save-searches-name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Save Name" required>
+                        <button id="save-searches" data-modal-toggle="popup-modal-save-searches" type="button" class="text-white bg-green-600 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center"><span class="m-auto">Save</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Modal for Overwrite Message -->
+        <div id="popup-modal-overwrite-message" data-saved-search-title="" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 md:inset-0 h-modal md:h-full" tabindex="-1" aria-hidden="true" role="dialog">
+            <div class="relative p-4 w-full max-w-md h-full md:h-auto">
+                <div class="relative bg-white rounded-lg shadow">
+                    <button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center " data-modal-toggle="popup-modal-overwrite-message">
+                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                    <div class="p-6 text-center flex flex-col gap-4">
+                        <h3 class="mb-5 text-lg font-normal text-gray-500">Are you sure you wish to overwrite this file?</h3>
+
+                        <div class="flex flex-row gap-2">
+                            <a href="#" id="overwrite-saved-search" class="w-full bg-red-500 hover:bg-red-900 rounded-lg px-5 py-2.5" title="Overwrite">
+                                <svg class="pointer-events-none -auto w-4 h-4 m-auto fill-gray-100 hover:fill-amber-900" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15,8V4H5V8H15M12,18A3,3 0 0,0 15,15A3,3 0 0,0 12,12A3,3 0 0,0 9,15A3,3 0 0,0 12,18M17,2L21,6V18A2,2 0 0,1 19,20H5C3.89,20 3,19.1 3,18V4A2,2 0 0,1 5,2H17M11,22H13V24H11V22M7,22H9V24H7V22M15,22H17V24H15V22Z"/>
+                                </svg>
+                                <div class="text-white">Overwrite File</div>
+                            </a>
+                            <button data-modal-toggle="popup-modal-overwrite-message" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium w-full px-5 py-2.5 hover:text-gray-900 focus:z-10 ">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Measurement Tool -->
+        <div class="text-center absolute bottom-8 right-3 z-10">
+            <button id="toggleMeasurementTool" data-toggle="" class="text-white bg-emerald-500 hover:bg-emerald-700 focus:ring-4 focus:ring-emerald-300 font-medium rounded-lg text-sm p-1" type="button" >
+                <svg class="w-4 h-4 fill-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18,15A3,3 0 0,1 21,18A3,3 0 0,1 18,21C16.69,21 15.58,20.17 15.17,19H14V17H15.17C15.58,15.83 16.69,15 18,15M18,17A1,1 0 0,0 17,18A1,1 0 0,0 18,19A1,1 0 0,0 19,18A1,1 0 0,0 18,17M18,8A1.43,1.43 0 0,0 19.43,6.57C19.43,5.78 18.79,5.14 18,5.14C17.21,5.14 16.57,5.78 16.57,6.57A1.43,1.43 0 0,0 18,8M18,2.57A4,4 0 0,1 22,6.57C22,9.56 18,14 18,14C18,14 14,9.56 14,6.57A4,4 0 0,1 18,2.57M8.83,17H10V19H8.83C8.42,20.17 7.31,21 6,21A3,3 0 0,1 3,18C3,16.69 3.83,15.58 5,15.17V14H7V15.17C7.85,15.47 8.53,16.15 8.83,17M6,17A1,1 0 0,0 5,18A1,1 0 0,0 6,19A1,1 0 0,0 7,18A1,1 0 0,0 6,17M6,3A3,3 0 0,1 9,6C9,7.31 8.17,8.42 7,8.83V10H5V8.83C3.83,8.42 3,7.31 3,6A3,3 0 0,1 6,3M6,5A1,1 0 0,0 5,6A1,1 0 0,0 6,7A1,1 0 0,0 7,6A1,1 0 0,0 6,5M11,19V17H13V19H11M7,13H5V11H7V13Z"/></svg>
+            </button>
+        </div>
+
+
+        <!-- UI Components -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+
+
+        <!-- Main App -->
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="./client/initialise/initialise.js"></script>
+        <script src="app.js" type="module" ></script>
+        <script src="./client/measurement_tool/measurement_tool.js" type="module"></script>
+        <script src='./express.js'></script>
+        
+    </body>
+</html>

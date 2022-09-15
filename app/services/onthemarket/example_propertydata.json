@@ -1,0 +1,1465 @@
+{
+    "station": [
+        {
+            "name": "Eden Park",
+            "full-name": "Eden Park Station",
+            "all-lines": [
+                {
+                    "full-name": ""
+                }
+            ],
+            "all-networks": [
+                {
+                    "type": "default-network"
+                }
+            ],
+            "location_type": "station",
+            "id": "station-782",
+            "display-distance": "1.0mi."
+        },
+        {
+            "name": "West Wickham",
+            "full-name": "West Wickham Station",
+            "all-lines": [
+                {
+                    "full-name": ""
+                }
+            ],
+            "all-networks": [
+                {
+                    "type": "default-network"
+                }
+            ],
+            "location_type": "station",
+            "id": "station-2421",
+            "display-distance": "1.0mi."
+        },
+        {
+            "name": "Arena",
+            "full-name": "Arena Station",
+            "all-lines": [
+                {
+                    "full-name": "Route 2",
+                    "short-name": "route"
+                }
+            ],
+            "all-networks": [
+                {
+                    "type": "Tramlink"
+                }
+            ],
+            "location_type": "station",
+            "id": "station-2771",
+            "display-distance": "1.3mi."
+        }
+    ],
+    "rooms": {
+        "descriptions": []
+    },
+    "description": "This ground floor maisonette has plenty of space whether you are looking for something smaller or your first home. With direct access to your own rear garden you will be able to sit and relax when the weather is warm.<p></p> <br /><i>Please refer to the footnote regarding the services and appliances.</i><p></p>Room sizes:<ul><li><b>Entrance Hall</b></li><li><b>Lounge</b>: 14'10 x 11'6 (4.52m x 3.51m)</li><li><b>Kitchen</b>: 8'5 x 7'1 (2.57m x 2.16m)</li><li><b>Bedroom 1</b>: 12'4 x 11'4 (3.76m x 3.46m)</li></ul><ul><li><b>Bedroom 2</b>: 9'5 x 9'1 (2.87m x 2.77m)</li><li><b>Bathroom</b></li><li><b>Rear Garden</b></li></ul><p> <br /><i>The information provided about this property does not constitute or form part of an offer or contract, nor may be it be regarded as representations. All interested parties must verify accuracy and your solicitor must verify tenure/lease information, fixtures & fittings and, where the property has been extended/converted, planning/building regulation consents. All dimensions are approximate and quoted for guidance only as are floor plans which are not to scale and their accuracy cannot be confirmed. Reference to appliances and/or services does not imply that they are necessarily in working order or fit for the purpose.<br /> <br />We are pleased to offer our customers a range of additional services to help them with moving home. None of these services are obligatory and you are free to use service providers of your choice. Current regulations require all estate agents to inform their customers of the fees they earn for recommending third party services. If you choose to use a service provider recommended by Cubitt & West, details of all referral fees can be found at the link below. If you decide to use any of our services, please be assured that this will not increase the fees you pay to our service providers, which remain as quoted directly to you.</i></p>",
+    "commercial?": false,
+    "sitting-rooms?": false,
+    "header-data": {
+        "data-layer": "{\"parent-locations\":[\"uk\",\"england\",\"south-east\"],\"development-property\":false,\"feed-type\":\"realtime\",\"postcode\":\"CR0 8DD\",\"meta-robots\":\"noindex, follow\",\"uk_country\":\"england\",\"property-id\":11549011,\"http-status\":\"200\",\"status\":\"live\",\"trans-type-id\":\"resale\",\"price\":\"280,000\",\"addressline_2\":\"Cheston Avenue\"}",
+        "render-data-layer?": true
+    },
+    "features": [
+        {
+            "id": 1,
+            "feature": "Tenure: Leasehold"
+        },
+        {
+            "id": 2,
+            "feature": "Fantastic ground floor maisonette in the heart of Shirley"
+        },
+        {
+            "id": 3,
+            "feature": "Direct access to your own rear garden"
+        },
+        {
+            "id": 4,
+            "feature": "Lounge and separate kitchen"
+        },
+        {
+            "id": 5,
+            "feature": "Quiet cul-de-sac with easy access to transport, local shops and amenities"
+        },
+        {
+            "id": 6,
+            "feature": "No onward chain"
+        },
+        {
+            "id": 7,
+            "feature": "EPC energy rating C (69)"
+        }
+    ],
+    "hero-image-2": {
+        "position-caption": "Image 1 of 7",
+        "large-url": "https://media.onthemarket.com/properties/11549011/1391562892/image-0-1024x1024.jpg",
+        "is-image": true,
+        "ext": "jpg",
+        "webp-available?": true,
+        "prefix": "https://media.onthemarket.com/properties/11549011/1391562892/image-0",
+        "url": "https://media.onthemarket.com/properties/11549011/1391562892/image-0-81x55.jpg",
+        "geometries": {
+            "ls": {
+                "w": 480,
+                "h": 320,
+                "suffix": "480x320"
+            },
+            "hd": {
+                "w": 1024,
+                "h": 682,
+                "suffix": "1024x1024"
+            },
+            "dc": {
+                "w": 571,
+                "h": 380,
+                "suffix": "x380"
+            },
+            "mc": {
+                "w": 375,
+                "h": 250,
+                "suffix": "x250"
+            },
+            "th": {
+                "w": 81,
+                "h": 55,
+                "suffix": "81x55"
+            }
+        },
+        "text": "Lounge"
+    },
+    "bedrooms-text": "2",
+    "broadband": {
+        "max-download-mbps": 1000,
+        "max-upload-mbps": 926,
+        "broadband-type": "ultra-fast",
+        "date": "March 7, 2022"
+    },
+    "premium?": true,
+    "hero-image-2?": true,
+    "more-like-this-url": "/for-sale/2-bed-property/cr0/?max-price=350000&min-price=220000&more-like-this=true&radius=1.0",
+    "external-floorplans?": false,
+    "show-num-people?": false,
+    "hide-postcode?": false,
+    "humanised-property-type": "Ground floor maisonette",
+    "student?": false,
+    "price-qualifier": null,
+    "branch_id": 42774,
+    "related-properties": [
+        {
+            "bedrooms-text": "2",
+            "premium?": false,
+            "price-qualifier": null,
+            "branch_id": 42790,
+            "premium-text": "",
+            "development-property?": false,
+            "recommended?": false,
+            "display_address": "Ambleside Gardens, South Croydon, Surrey",
+            "cover-images": {
+                "default": "https://media.onthemarket.com/properties/11046339/1408243466/image-0-480x320.jpg",
+                "webp": "https://media.onthemarket.com/properties/11046339/1408243466/image-0-480x320.webp"
+            },
+            "property-title": "2 bedroom ground floor maisonette for sale",
+            "price-coming-soon?": false,
+            "bathrooms?": false,
+            "bedrooms": 2,
+            "id": "11046339",
+            "cover-image-landscape?": false,
+            "spotlight?": false,
+            "bathrooms": 0,
+            "property-link": "/details/11046339/",
+            "recently-added?": false,
+            "exclusive?": false,
+            "cover-image": "https://media.onthemarket.com/properties/11046339/1408243466/image-0-480x320.jpg",
+            "price": "£275,000"
+        },
+        {
+            "bedrooms-text": "2",
+            "premium?": false,
+            "price-qualifier": null,
+            "branch_id": 42774,
+            "premium-text": "",
+            "development-property?": false,
+            "recommended?": false,
+            "display_address": "Broom Gardens, Shirley, Surrey",
+            "cover-images": {
+                "default": "https://media.onthemarket.com/properties/7749962/1409543142/image-0-480x320.jpg",
+                "webp": "https://media.onthemarket.com/properties/7749962/1409543142/image-0-480x320.webp"
+            },
+            "property-title": "2 bedroom flat for sale",
+            "price-coming-soon?": false,
+            "bathrooms?": false,
+            "bedrooms": 2,
+            "id": "7749962",
+            "cover-image-landscape?": false,
+            "spotlight?": false,
+            "bathrooms": 0,
+            "property-link": "/details/7749962/",
+            "recently-added?": false,
+            "exclusive?": false,
+            "cover-image": "https://media.onthemarket.com/properties/7749962/1409543142/image-0-480x320.jpg",
+            "price": "£240,000"
+        },
+        {
+            "bedrooms-text": "2",
+            "premium?": false,
+            "price-qualifier": "Offers over",
+            "branch_id": 5328,
+            "premium-text": "",
+            "development-property?": false,
+            "recommended?": false,
+            "display_address": "Shirley Road, Croydon",
+            "cover-images": {
+                "default": "https://media.onthemarket.com/properties/12152508/1410352353/image-0-480x320.jpg",
+                "webp": "https://media.onthemarket.com/properties/12152508/1410352353/image-0-480x320.webp"
+            },
+            "property-title": "2 bedroom apartment for sale",
+            "price-coming-soon?": false,
+            "bathrooms?": false,
+            "bedrooms": 2,
+            "id": "12152508",
+            "cover-image-landscape?": false,
+            "spotlight?": false,
+            "bathrooms": 0,
+            "property-link": "/details/12152508/",
+            "recently-added?": true,
+            "exclusive?": false,
+            "cover-image": "https://media.onthemarket.com/properties/12152508/1410352353/image-0-480x320.jpg",
+            "price": "£280,000"
+        },
+        {
+            "bedrooms-text": "2",
+            "premium?": false,
+            "price-qualifier": null,
+            "branch_id": 40493,
+            "premium-text": "",
+            "development-property?": false,
+            "recommended?": false,
+            "display_address": "Linton Glade, Croydon CR0",
+            "cover-images": {
+                "default": "https://media.onthemarket.com/properties/11966681/1403730352/image-0-480x320.jpg",
+                "webp": "https://media.onthemarket.com/properties/11966681/1403730352/image-0-480x320.webp"
+            },
+            "property-title": "2 bedroom flat for sale",
+            "price-coming-soon?": false,
+            "bathrooms?": false,
+            "bedrooms": 2,
+            "id": "11966681",
+            "cover-image-landscape?": false,
+            "spotlight?": false,
+            "bathrooms": 0,
+            "property-link": "/details/11966681/",
+            "recently-added?": false,
+            "exclusive?": false,
+            "cover-image": "https://media.onthemarket.com/properties/11966681/1403730352/image-0-480x320.jpg",
+            "price": "£260,000"
+        },
+        {
+            "bedrooms-text": "2",
+            "premium?": false,
+            "price-qualifier": null,
+            "branch_id": 45269,
+            "premium-text": "",
+            "development-property?": false,
+            "recommended?": false,
+            "display_address": "Ambleside Gardens, South Croydon",
+            "cover-images": {
+                "default": "https://media.onthemarket.com/properties/11992687/1404552387/image-0-480x320.jpg",
+                "webp": "https://media.onthemarket.com/properties/11992687/1404552387/image-0-480x320.webp"
+            },
+            "property-title": "2 bedroom maisonette for sale",
+            "price-coming-soon?": false,
+            "bathrooms?": false,
+            "bedrooms": 2,
+            "id": "11992687",
+            "cover-image-landscape?": false,
+            "spotlight?": false,
+            "bathrooms": 0,
+            "property-link": "/details/11992687/",
+            "recently-added?": false,
+            "exclusive?": false,
+            "cover-image": "https://media.onthemarket.com/properties/11992687/1404552387/image-0-480x320.jpg",
+            "price": "£275,000"
+        },
+        {
+            "bedrooms-text": "2",
+            "premium?": false,
+            "price-qualifier": null,
+            "branch_id": 46787,
+            "premium-text": "",
+            "development-property?": false,
+            "recommended?": false,
+            "display_address": "Sundridge Place, Addiscombe",
+            "cover-images": {
+                "default": "https://media.onthemarket.com/properties/11523399/1406205654/image-0-480x320.jpg",
+                "webp": "https://media.onthemarket.com/properties/11523399/1406205654/image-0-480x320.webp"
+            },
+            "property-title": "2 bedroom apartment for sale",
+            "price-coming-soon?": false,
+            "bathrooms?": false,
+            "bedrooms": 2,
+            "id": "11523399",
+            "cover-image-landscape?": false,
+            "spotlight?": false,
+            "bathrooms": 0,
+            "property-link": "/details/11523399/",
+            "recently-added?": false,
+            "exclusive?": false,
+            "cover-image": "https://media.onthemarket.com/properties/11523399/1406205654/image-0-480x320.jpg",
+            "price": "£300,000"
+        },
+        {
+            "bedrooms-text": "2",
+            "premium?": false,
+            "price-qualifier": null,
+            "branch_id": 3394,
+            "premium-text": "",
+            "development-property?": false,
+            "recommended?": false,
+            "display_address": "Peregrine Gardens, Shirley",
+            "cover-images": {
+                "default": "https://media.onthemarket.com/properties/11627450/1405621744/image-0-480x320.jpg",
+                "webp": "https://media.onthemarket.com/properties/11627450/1405621744/image-0-480x320.webp"
+            },
+            "property-title": "2 bedroom retirement property for sale",
+            "price-coming-soon?": false,
+            "bathrooms?": false,
+            "bedrooms": 2,
+            "id": "11627450",
+            "cover-image-landscape?": false,
+            "spotlight?": false,
+            "bathrooms": 0,
+            "property-link": "/details/11627450/",
+            "recently-added?": false,
+            "exclusive?": false,
+            "cover-image": "https://media.onthemarket.com/properties/11627450/1405621744/image-0-480x320.jpg",
+            "price": "£275,000"
+        },
+        {
+            "bedrooms-text": "1",
+            "premium?": false,
+            "price-qualifier": null,
+            "branch_id": 3394,
+            "premium-text": "",
+            "development-property?": false,
+            "recommended?": false,
+            "display_address": "Birch House, Shirley Oaks Village",
+            "cover-images": {
+                "default": "https://media.onthemarket.com/properties/11818032/1405621748/image-0-480x320.jpg",
+                "webp": "https://media.onthemarket.com/properties/11818032/1405621748/image-0-480x320.webp"
+            },
+            "property-title": "1 bedroom apartment for sale",
+            "price-coming-soon?": false,
+            "bathrooms?": false,
+            "bedrooms": 1,
+            "id": "11818032",
+            "cover-image-landscape?": false,
+            "spotlight?": false,
+            "bathrooms": 0,
+            "property-link": "/details/11818032/",
+            "recently-added?": false,
+            "exclusive?": false,
+            "cover-image": "https://media.onthemarket.com/properties/11818032/1405621748/image-0-480x320.jpg",
+            "price": "£265,000"
+        },
+        {
+            "bedrooms-text": "1",
+            "premium?": false,
+            "price-qualifier": null,
+            "branch_id": 55013,
+            "premium-text": "",
+            "development-property?": false,
+            "recommended?": false,
+            "display_address": "Middlefields, Croydon, Surrey",
+            "cover-images": {
+                "default": "https://media.onthemarket.com/properties/12041979/1408560578/image-0-480x320.jpg",
+                "webp": "https://media.onthemarket.com/properties/12041979/1408560578/image-0-480x320.webp"
+            },
+            "property-title": "1 bedroom flat for sale",
+            "price-coming-soon?": false,
+            "bathrooms?": false,
+            "bedrooms": 1,
+            "id": "12041979",
+            "cover-image-landscape?": false,
+            "spotlight?": false,
+            "bathrooms": 0,
+            "property-link": "/details/12041979/",
+            "recently-added?": false,
+            "exclusive?": false,
+            "cover-image": "https://media.onthemarket.com/properties/12041979/1408560578/image-0-480x320.jpg",
+            "price": "£230,000"
+        },
+        {
+            "bedrooms-text": "1",
+            "premium?": false,
+            "price-qualifier": null,
+            "branch_id": 45315,
+            "premium-text": "",
+            "development-property?": false,
+            "recommended?": false,
+            "display_address": "Ashburton Road, Croydon, CR0",
+            "cover-images": {
+                "default": "https://media.onthemarket.com/properties/12164292/1410233948/image-0-480x320.jpg",
+                "webp": "https://media.onthemarket.com/properties/12164292/1410233948/image-0-480x320.webp"
+            },
+            "property-title": "1 bedroom apartment for sale",
+            "price-coming-soon?": false,
+            "bathrooms?": false,
+            "bedrooms": 1,
+            "id": "12164292",
+            "cover-image-landscape?": false,
+            "spotlight?": false,
+            "bathrooms": 0,
+            "property-link": "/details/12164292/",
+            "recently-added?": true,
+            "exclusive?": false,
+            "cover-image": "https://media.onthemarket.com/properties/12164292/1410233948/image-0-480x320.jpg",
+            "price": "£240,000"
+        }
+    ],
+    "pluralize-station?": true,
+    "property-details?": true,
+    "epc": {
+        "rating": "C",
+        "date": "March 7, 2022"
+    },
+    "show-address-fields?": true,
+    "premium-text": "Cul-de-sac",
+    "school": [
+        {
+            "name": "Orchard Way Primary School",
+            "display-distance": "0.4mi.",
+            "location_type": "school",
+            "id": "school-36944"
+        },
+        {
+            "name": "Orchard Park High (Croydon)",
+            "display-distance": "0.4mi.",
+            "report-descriptive": "Good",
+            "report-descriptive-class": "good",
+            "location_type": "school",
+            "id": "school-16700"
+        },
+        {
+            "name": "Bethlem and Maudsley Hospital School",
+            "display-distance": "0.4mi.",
+            "report-descriptive": "Outstanding",
+            "report-descriptive-class": "outstanding",
+            "location_type": "school",
+            "id": "school-28630"
+        }
+    ],
+    "images": [
+        {
+            "position-caption": "Image 1 of 7",
+            "large-url": "https://media.onthemarket.com/properties/11549011/1391562892/image-0-1024x1024.jpg",
+            "is-image": true,
+            "ext": "jpg",
+            "webp-available?": true,
+            "prefix": "https://media.onthemarket.com/properties/11549011/1391562892/image-0",
+            "url": "https://media.onthemarket.com/properties/11549011/1391562892/image-0-81x55.jpg",
+            "geometries": {
+                "ls": {
+                    "w": 480,
+                    "h": 320,
+                    "suffix": "480x320"
+                },
+                "hd": {
+                    "w": 1024,
+                    "h": 682,
+                    "suffix": "1024x1024"
+                },
+                "dc": {
+                    "w": 571,
+                    "h": 380,
+                    "suffix": "x380"
+                },
+                "mc": {
+                    "w": 375,
+                    "h": 250,
+                    "suffix": "x250"
+                },
+                "th": {
+                    "w": 81,
+                    "h": 55,
+                    "suffix": "81x55"
+                }
+            },
+            "text": "Lounge"
+        },
+        {
+            "position-caption": "Image 2 of 7",
+            "large-url": "https://media.onthemarket.com/properties/11549011/1390499977/image-1-1024x1024.jpg",
+            "is-image": true,
+            "ext": "jpg",
+            "webp-available?": true,
+            "prefix": "https://media.onthemarket.com/properties/11549011/1390499977/image-1",
+            "url": "https://media.onthemarket.com/properties/11549011/1390499977/image-1-81x55.jpg",
+            "geometries": {
+                "ls": {
+                    "w": 480,
+                    "h": 320,
+                    "suffix": "480x320"
+                },
+                "hd": {
+                    "w": 1024,
+                    "h": 682,
+                    "suffix": "1024x1024"
+                },
+                "dc": {
+                    "w": 571,
+                    "h": 380,
+                    "suffix": "x380"
+                },
+                "mc": {
+                    "w": 375,
+                    "h": 250,
+                    "suffix": "x250"
+                },
+                "th": {
+                    "w": 81,
+                    "h": 55,
+                    "suffix": "81x55"
+                }
+            },
+            "text": "Front"
+        },
+        {
+            "position-caption": "Image 3 of 7",
+            "large-url": "https://media.onthemarket.com/properties/11549011/1391562892/image-2-1024x1024.jpg",
+            "is-image": true,
+            "ext": "jpg",
+            "webp-available?": true,
+            "prefix": "https://media.onthemarket.com/properties/11549011/1391562892/image-2",
+            "url": "https://media.onthemarket.com/properties/11549011/1391562892/image-2-81x55.jpg",
+            "geometries": {
+                "ls": {
+                    "w": 480,
+                    "h": 320,
+                    "suffix": "480x320"
+                },
+                "hd": {
+                    "w": 1024,
+                    "h": 682,
+                    "suffix": "1024x1024"
+                },
+                "dc": {
+                    "w": 571,
+                    "h": 380,
+                    "suffix": "x380"
+                },
+                "mc": {
+                    "w": 375,
+                    "h": 250,
+                    "suffix": "x250"
+                },
+                "th": {
+                    "w": 81,
+                    "h": 55,
+                    "suffix": "81x55"
+                }
+            },
+            "text": "Bedroom 1"
+        },
+        {
+            "position-caption": "Image 4 of 7",
+            "large-url": "https://media.onthemarket.com/properties/11549011/1390499977/image-3-1024x1024.jpg",
+            "is-image": true,
+            "ext": "jpg",
+            "webp-available?": true,
+            "prefix": "https://media.onthemarket.com/properties/11549011/1390499977/image-3",
+            "url": "https://media.onthemarket.com/properties/11549011/1390499977/image-3-81x55.jpg",
+            "geometries": {
+                "ls": {
+                    "w": 480,
+                    "h": 320,
+                    "suffix": "480x320"
+                },
+                "hd": {
+                    "w": 1024,
+                    "h": 682,
+                    "suffix": "1024x1024"
+                },
+                "dc": {
+                    "w": 571,
+                    "h": 380,
+                    "suffix": "x380"
+                },
+                "mc": {
+                    "w": 375,
+                    "h": 250,
+                    "suffix": "x250"
+                },
+                "th": {
+                    "w": 81,
+                    "h": 55,
+                    "suffix": "81x55"
+                }
+            },
+            "text": "Kitchen"
+        },
+        {
+            "position-caption": "Image 5 of 7",
+            "large-url": "https://media.onthemarket.com/properties/11549011/1392621526/image-4-1024x1024.jpg",
+            "is-image": true,
+            "ext": "jpg",
+            "webp-available?": true,
+            "prefix": "https://media.onthemarket.com/properties/11549011/1392621526/image-4",
+            "url": "https://media.onthemarket.com/properties/11549011/1392621526/image-4-81x55.jpg",
+            "geometries": {
+                "ls": {
+                    "w": 480,
+                    "h": 320,
+                    "suffix": "480x320"
+                },
+                "hd": {
+                    "w": 1024,
+                    "h": 682,
+                    "suffix": "1024x1024"
+                },
+                "dc": {
+                    "w": 571,
+                    "h": 380,
+                    "suffix": "x380"
+                },
+                "mc": {
+                    "w": 375,
+                    "h": 250,
+                    "suffix": "x250"
+                },
+                "th": {
+                    "w": 81,
+                    "h": 55,
+                    "suffix": "81x55"
+                }
+            },
+            "text": "Rear Garden"
+        },
+        {
+            "position-caption": "Image 6 of 7",
+            "large-url": "https://media.onthemarket.com/properties/11549011/1390058057/image-5-1024x1024.jpg",
+            "is-image": true,
+            "ext": "jpg",
+            "webp-available?": true,
+            "prefix": "https://media.onthemarket.com/properties/11549011/1390058057/image-5",
+            "url": "https://media.onthemarket.com/properties/11549011/1390058057/image-5-81x55.jpg",
+            "geometries": {
+                "ls": {
+                    "w": 480,
+                    "h": 320,
+                    "suffix": "480x320"
+                },
+                "hd": {
+                    "w": 1024,
+                    "h": 682,
+                    "suffix": "1024x1024"
+                },
+                "dc": {
+                    "w": 571,
+                    "h": 380,
+                    "suffix": "x380"
+                },
+                "mc": {
+                    "w": 375,
+                    "h": 250,
+                    "suffix": "x250"
+                },
+                "th": {
+                    "w": 81,
+                    "h": 55,
+                    "suffix": "81x55"
+                }
+            },
+            "text": "Bedroom 2"
+        },
+        {
+            "position-caption": "Image 7 of 7",
+            "large-url": "https://media.onthemarket.com/properties/11549011/1390058057/image-6-1024x1024.jpg",
+            "is-image": true,
+            "ext": "jpg",
+            "webp-available?": true,
+            "prefix": "https://media.onthemarket.com/properties/11549011/1390058057/image-6",
+            "url": "https://media.onthemarket.com/properties/11549011/1390058057/image-6-81x55.jpg",
+            "geometries": {
+                "ls": {
+                    "w": 480,
+                    "h": 320,
+                    "suffix": "480x320"
+                },
+                "hd": {
+                    "w": 1024,
+                    "h": 682,
+                    "suffix": "1024x1024"
+                },
+                "dc": {
+                    "w": 571,
+                    "h": 380,
+                    "suffix": "x380"
+                },
+                "mc": {
+                    "w": 375,
+                    "h": 250,
+                    "suffix": "x250"
+                },
+                "th": {
+                    "w": 81,
+                    "h": 55,
+                    "suffix": "81x55"
+                }
+            },
+            "text": "Bathroom"
+        }
+    ],
+    "pluralize-school?": true,
+    "hero-image-3": {
+        "position-caption": "Image 2 of 7",
+        "large-url": "https://media.onthemarket.com/properties/11549011/1390499977/image-1-1024x1024.jpg",
+        "is-image": true,
+        "ext": "jpg",
+        "webp-available?": true,
+        "prefix": "https://media.onthemarket.com/properties/11549011/1390499977/image-1",
+        "url": "https://media.onthemarket.com/properties/11549011/1390499977/image-1-81x55.jpg",
+        "geometries": {
+            "ls": {
+                "w": 480,
+                "h": 320,
+                "suffix": "480x320"
+            },
+            "hd": {
+                "w": 1024,
+                "h": 682,
+                "suffix": "1024x1024"
+            },
+            "dc": {
+                "w": 571,
+                "h": 380,
+                "suffix": "x380"
+            },
+            "mc": {
+                "w": 375,
+                "h": 250,
+                "suffix": "x250"
+            },
+            "th": {
+                "w": 81,
+                "h": 55,
+                "suffix": "81x55"
+            }
+        },
+        "text": "Front"
+    },
+    "new-home-flag": false,
+    "student-channel?": false,
+    "street-view?": true,
+    "send-to-friend-url": "/my-account/properties/send-to-friend/?property-id=11549011",
+    "hero-image-1": {
+        "position-caption": "Image 1 of 7",
+        "large-url": "https://media.onthemarket.com/properties/11549011/1391562892/image-0-1024x1024.jpg",
+        "is-image": true,
+        "ext": "jpg",
+        "webp-available?": true,
+        "prefix": "https://media.onthemarket.com/properties/11549011/1391562892/image-0",
+        "url": "https://media.onthemarket.com/properties/11549011/1391562892/image-0-81x55.jpg",
+        "geometries": {
+            "ls": {
+                "w": 480,
+                "h": 320,
+                "suffix": "480x320"
+            },
+            "hd": {
+                "w": 1024,
+                "h": 682,
+                "suffix": "1024x1024"
+            },
+            "dc": {
+                "w": 571,
+                "h": 380,
+                "suffix": "x380"
+            },
+            "mc": {
+                "w": 375,
+                "h": 250,
+                "suffix": "x250"
+            },
+            "th": {
+                "w": 81,
+                "h": 55,
+                "suffix": "81x55"
+            }
+        },
+        "text": "Lounge"
+    },
+    "hide-appraisal?": false,
+    "development-property?": false,
+    "recommended?": false,
+    "images?": true,
+    "display_address": "Cheston Avenue, Shirley, Croydon, Surrey",
+    "params": {
+        "form-name": "details-contact"
+    },
+    "more-like-this": [
+        {
+            "text": "Property & houses for sale in CR9",
+            "url": "/for-sale/property/cr9/"
+        },
+        {
+            "text": "Property & houses for sale in CR0",
+            "url": "/for-sale/property/cr0/"
+        },
+        {
+            "text": "2 bedroom flats for sale in Croydon",
+            "url": "/for-sale/2-bed-flats-apartments/croydon-south-east-london/?max-bedrooms=2"
+        },
+        {
+            "text": "Ground floor maisonettes for sale in Croydon",
+            "url": "/for-sale/ground-maisonette/croydon-south-east-london/"
+        }
+    ],
+    "property-sticker": "Cul-de-sac",
+    "ads": {
+        "results": {
+            "top": {
+                "img": "https://s3-eu-west-1.amazonaws.com/images.agentsmutual.co.uk/agent-products/4452/b8e80c02-e20c-4b55-84f2-014c2f681b09-Mortgage Leaderboard.png",
+                "href": "/banners/mortgage-link-redirect/?redirect-token=1f9TfxIEZwU982kMEDmfDxpxCsZZQv%2FEah%2BobMh%2Bds04rgdAsbCUAT0oGmRBOEQLpKrbUsuQu5ZVyMmLEN4nwn%2FQdoprz%2B8k1pFNLRBv6QHwG23dIxh%2BtJGDB4%2F6WDuh6UJoi29s9JL4c8L8a3rQSpPNoa3ETkuiZSPfbkr8O2tFTkCzLVdBDzWQrjRjSp8o8Ab8g2MVpDtKFYrH6%2FpoKg%3D%3D",
+                "text": null,
+                "type": "otm",
+                "position": "top"
+            },
+            "top-mobile": {
+                "img": "https://s3-eu-west-1.amazonaws.com/images.agentsmutual.co.uk/agent-products/4452/42e5ed09-506a-4616-8341-d34919ad9b5d-Mortgage Mobile.png",
+                "href": "/banners/mortgage-link-redirect/?redirect-token=1f9TfxIEZwU982kMEDmfDxpxCsZZQv%2FEah%2BobMh%2Bds04rgdAsbCUAT0oGmRBOEQLpKrbUsuQu5ZVyMmLEN4nwn%2FQdoprz%2B8k1pFNLRBv6QHwG23dIxh%2BtJGDB4%2F6WDuh6UJoi29s9JL4c8L8a3rQSpPNoa3ETkuiZSPfbkr8O2tFTkCzLVdBDzWQrjRjSp8o8Ab8g2MVpDtKFYrH6%2FpoKg%3D%3D",
+                "text": null,
+                "type": "otm",
+                "position": "top-mobile"
+            },
+            "side": {
+                "img": "https://s3-eu-west-1.amazonaws.com/images.agentsmutual.co.uk/agent-products/4452/bde1b692-759e-4faa-901b-8f9be585610a-Mortgage MPU.png",
+                "href": "/banners/mortgage-link-redirect/?redirect-token=1f9TfxIEZwU982kMEDmfDxpxCsZZQv%2FEah%2BobMh%2Bds04rgdAsbCUAT0oGmRBOEQLpKrbUsuQu5ZVyMmLEN4nwn%2FQdoprz%2B8k1pFNLRBv6QHwG23dIxh%2BtJGDB4%2F6WDuh6UJoi29s9JL4c8L8a3rQSpPNoa3ETkuiZSPfbkr8O2tFTkCzLVdBDzWQrjRjSp8o8Ab8g2MVpDtKFYrH6%2FpoKg%3D%3D",
+                "text": null,
+                "type": "otm",
+                "position": "side"
+            }
+        },
+        "third-party-ads?": false,
+        "otm-ads?": true
+    },
+    "key-info?": true,
+    "agent": {
+        "description": "Few things are more important to us than our homes, so here at Cubitt &amp; West, we believe it’s a real privilege to help people make their dreams a reality. Everyone has their own story. Whether you are buying, selling, or renting we’re here to support you every step of the way. We are excited to show you all the ways we can help, so why not get in touch?  In the meantime, see what thousands of our customers are saying about us on Trustpilot. After all, they probably say it better than we can. Register directly with us to get pre-marketing previews of new properties We can market your property everywhere online. Your property is seen on the four top national property portals. With an extensive office network and a huge database of active customers, we might already have your perfect buyer or tenant on our books. With a joined-up approach to the best quality marketing that really delivers, which includes professional photography, video walk rounds or our amazing virtual tours, along with an exclusive early launch to the very best buyers, which really builds up a buzz about your property before it even hits the property websites, we’ve got you covered. Having helped generations of families move, we are here to help, whether you are looking to buy, sell or rent; you can lean on us.",
+        "search-for-sale-url": "/agents/branch/cubitt-and-west-shirley/properties/?search-type=for-sale&under-offer=true&view=grid",
+        "address": "137-139 Wickham Road\nShirley, Croydon\nCR0 8TE",
+        "virtual?": false,
+        "search-to-rent-url": "/agents/branch/cubitt-and-west-shirley/properties/?let-agreed=true&search-type=to-rent&view=grid",
+        "branch_id": 42774,
+        "logo-path": "/agents/companies/4452/191010091606269/logo-original.jpg",
+        "barratt-new-homes?": false,
+        "property_reference": null,
+        "letting_fees": {
+            "default-fee?": true
+        },
+        "logo": {
+            "geometries": {
+                "290x55": {
+                    "w": 82,
+                    "h": 55,
+                    "bound-x": 290,
+                    "bound-y": 55,
+                    "url": "agents/companies/4452/191010091606269/logo-290x55.jpg"
+                },
+                "300x200": {
+                    "w": 299,
+                    "h": 200,
+                    "bound-x": 300,
+                    "bound-y": 200,
+                    "url": "agents/companies/4452/191010091606269/logo-300x200.jpg"
+                },
+                "100x65": {
+                    "w": 97,
+                    "h": 65,
+                    "bound-x": 100,
+                    "bound-y": 65,
+                    "url": "agents/companies/4452/191010091606269/logo-100x65.jpg"
+                },
+                "190x100": {
+                    "w": 150,
+                    "h": 100,
+                    "bound-x": 190,
+                    "bound-y": 100,
+                    "url": "agents/companies/4452/191010091606269/logo-190x100.jpg"
+                }
+            }
+        },
+        "telephone_enquiries": "020 8115 3782",
+        "affiliations?": false,
+        "telephone": "020 8115 3782",
+        "lead-form-recaptcha?": false,
+        "name": "Cubitt & West - Shirley",
+        "lettings": {
+            "inactive": false,
+            "website_url": "www.cubittandwest.co.uk?utm_source=otm&utm_medium=web&utm_campaign=none",
+            "email": "shirley.lettings@cubittandwest.co.uk",
+            "logo-path": "/agents/companies/4452/191010091606269/logo-original.jpg",
+            "logo": {
+                "geometries": {
+                    "290x55": {
+                        "w": 82,
+                        "h": 55,
+                        "bound-x": 290,
+                        "bound-y": 55,
+                        "url": "agents/companies/4452/191010091606269/logo-290x55.jpg"
+                    },
+                    "300x200": {
+                        "w": 299,
+                        "h": 200,
+                        "bound-x": 300,
+                        "bound-y": 200,
+                        "url": "agents/companies/4452/191010091606269/logo-300x200.jpg"
+                    },
+                    "100x65": {
+                        "w": 97,
+                        "h": 65,
+                        "bound-x": 100,
+                        "bound-y": 65,
+                        "url": "agents/companies/4452/191010091606269/logo-100x65.jpg"
+                    },
+                    "190x100": {
+                        "w": 150,
+                        "h": 100,
+                        "bound-x": 190,
+                        "bound-y": 100,
+                        "url": "agents/companies/4452/191010091606269/logo-190x100.jpg"
+                    }
+                }
+            },
+            "telephone_enquiries": "020 8115 3782",
+            "telephone": "020 8115 3782",
+            "opening-hours": {
+                "office-hours": {
+                    "monday": [
+                        {
+                            "open": "09:00",
+                            "close": "18:00"
+                        }
+                    ],
+                    "tuesday": [
+                        {
+                            "open": "09:00",
+                            "close": "18:00"
+                        }
+                    ],
+                    "wednesday": [
+                        {
+                            "open": "09:00",
+                            "close": "18:00"
+                        }
+                    ],
+                    "thursday": [
+                        {
+                            "open": "09:00",
+                            "close": "18:00"
+                        }
+                    ],
+                    "friday": [
+                        {
+                            "open": "09:00",
+                            "close": "18:00"
+                        }
+                    ],
+                    "saturday": [
+                        {
+                            "open": "09:00",
+                            "close": "17:00"
+                        }
+                    ],
+                    "sunday": []
+                },
+                "phone-support-hours": {
+                    "monday": [
+                        {
+                            "open": "09:00",
+                            "close": "18:00"
+                        }
+                    ],
+                    "tuesday": [
+                        {
+                            "open": "09:00",
+                            "close": "18:00"
+                        }
+                    ],
+                    "wednesday": [
+                        {
+                            "open": "09:00",
+                            "close": "18:00"
+                        }
+                    ],
+                    "thursday": [
+                        {
+                            "open": "09:00",
+                            "close": "18:00"
+                        }
+                    ],
+                    "friday": [
+                        {
+                            "open": "09:00",
+                            "close": "18:00"
+                        }
+                    ],
+                    "saturday": [
+                        {
+                            "open": "09:00",
+                            "close": "17:00"
+                        }
+                    ],
+                    "sunday": []
+                },
+                "viewing-hours": {
+                    "monday": [
+                        {
+                            "open": "09:00",
+                            "close": "18:00"
+                        }
+                    ],
+                    "tuesday": [
+                        {
+                            "open": "09:00",
+                            "close": "18:00"
+                        }
+                    ],
+                    "wednesday": [
+                        {
+                            "open": "09:00",
+                            "close": "18:00"
+                        }
+                    ],
+                    "thursday": [
+                        {
+                            "open": "09:00",
+                            "close": "18:00"
+                        }
+                    ],
+                    "friday": [
+                        {
+                            "open": "09:00",
+                            "close": "18:00"
+                        }
+                    ],
+                    "saturday": [
+                        {
+                            "open": "09:00",
+                            "close": "17:00"
+                        }
+                    ],
+                    "sunday": []
+                }
+            },
+            "exclude-from-valuation?": false,
+            "email_enquiries": "shirley.lettings@cubittandwest.co.uk",
+            "logo-url": "https://s3-eu-west-1.amazonaws.com/images.agentsmutual.co.uk/agents/companies/4452/191010091606269/logo-original.jpg",
+            "exclusive?": false,
+            "department_id": 47371,
+            "email_appraisals": "shirley.lettings@cubittandwest.co.uk",
+            "callwell": {
+                "emails": false,
+                "valuations": false
+            },
+            "telephone_appraisals": "020 8115 3782"
+        },
+        "resale": {
+            "inactive": false,
+            "website_url": "www.cubittandwest.co.uk?utm_source=otm&utm_medium=web&utm_campaign=none",
+            "email": "shirley-otm@cubittandwest.co.uk",
+            "logo-path": "/agents/companies/4452/191010091606269/logo-original.jpg",
+            "logo": {
+                "geometries": {
+                    "290x55": {
+                        "w": 82,
+                        "h": 55,
+                        "bound-x": 290,
+                        "bound-y": 55,
+                        "url": "agents/companies/4452/191010091606269/logo-290x55.jpg"
+                    },
+                    "300x200": {
+                        "w": 299,
+                        "h": 200,
+                        "bound-x": 300,
+                        "bound-y": 200,
+                        "url": "agents/companies/4452/191010091606269/logo-300x200.jpg"
+                    },
+                    "100x65": {
+                        "w": 97,
+                        "h": 65,
+                        "bound-x": 100,
+                        "bound-y": 65,
+                        "url": "agents/companies/4452/191010091606269/logo-100x65.jpg"
+                    },
+                    "190x100": {
+                        "w": 150,
+                        "h": 100,
+                        "bound-x": 190,
+                        "bound-y": 100,
+                        "url": "agents/companies/4452/191010091606269/logo-190x100.jpg"
+                    }
+                }
+            },
+            "telephone_enquiries": "020 8115 3782",
+            "telephone": "020 8115 3782",
+            "opening-hours": {
+                "office-hours": {
+                    "monday": [
+                        {
+                            "open": "09:00",
+                            "close": "18:00"
+                        }
+                    ],
+                    "tuesday": [
+                        {
+                            "open": "09:00",
+                            "close": "18:00"
+                        }
+                    ],
+                    "wednesday": [
+                        {
+                            "open": "09:00",
+                            "close": "18:00"
+                        }
+                    ],
+                    "thursday": [
+                        {
+                            "open": "09:00",
+                            "close": "18:00"
+                        }
+                    ],
+                    "friday": [
+                        {
+                            "open": "09:00",
+                            "close": "18:00"
+                        }
+                    ],
+                    "saturday": [
+                        {
+                            "open": "09:00",
+                            "close": "17:00"
+                        }
+                    ],
+                    "sunday": []
+                },
+                "phone-support-hours": {
+                    "monday": [
+                        {
+                            "open": "09:00",
+                            "close": "18:00"
+                        }
+                    ],
+                    "tuesday": [
+                        {
+                            "open": "09:00",
+                            "close": "18:00"
+                        }
+                    ],
+                    "wednesday": [
+                        {
+                            "open": "09:00",
+                            "close": "18:00"
+                        }
+                    ],
+                    "thursday": [
+                        {
+                            "open": "09:00",
+                            "close": "18:00"
+                        }
+                    ],
+                    "friday": [
+                        {
+                            "open": "09:00",
+                            "close": "18:00"
+                        }
+                    ],
+                    "saturday": [
+                        {
+                            "open": "09:00",
+                            "close": "17:00"
+                        }
+                    ],
+                    "sunday": []
+                },
+                "viewing-hours": {
+                    "monday": [
+                        {
+                            "open": "09:00",
+                            "close": "18:00"
+                        }
+                    ],
+                    "tuesday": [
+                        {
+                            "open": "09:00",
+                            "close": "18:00"
+                        }
+                    ],
+                    "wednesday": [
+                        {
+                            "open": "09:00",
+                            "close": "18:00"
+                        }
+                    ],
+                    "thursday": [
+                        {
+                            "open": "09:00",
+                            "close": "18:00"
+                        }
+                    ],
+                    "friday": [
+                        {
+                            "open": "09:00",
+                            "close": "18:00"
+                        }
+                    ],
+                    "saturday": [
+                        {
+                            "open": "09:00",
+                            "close": "17:00"
+                        }
+                    ],
+                    "sunday": []
+                }
+            },
+            "exclude-from-valuation?": false,
+            "email_enquiries": "shirley-otm@cubittandwest.co.uk",
+            "logo-url": "https://s3-eu-west-1.amazonaws.com/images.agentsmutual.co.uk/agents/companies/4452/191010091606269/logo-original.jpg",
+            "exclusive?": false,
+            "department_id": 47303,
+            "email_appraisals": "shirley-otm@cubittandwest.co.uk",
+            "callwell": {
+                "emails": false,
+                "valuations": true
+            },
+            "telephone_appraisals": "020 8115 3782"
+        },
+        "details-url": "/agents/branch/cubitt-and-west-shirley/",
+        "base-contact-url": "/agents/contact/11549011/",
+        "hide-appraisal?": false,
+        "resale?": true,
+        "postcode": "CR0 8TE",
+        "type": "all",
+        "uk_country": "england",
+        "addressline_1": "137-139 Wickham Road",
+        "development?": false,
+        "company_name": "Cubitt & West",
+        "website-url": "http://www.cubittandwest.co.uk?utm_source=otm&utm_medium=web&utm_campaign=none",
+        "company_id": 4452,
+        "group_id": 117,
+        "display-logo": {
+            "url": "https://media.onthemarket.com/agents/companies/4452/191010091606269/logo-190x100.jpg",
+            "height": 100,
+            "width": 150,
+            "resized?": true
+        },
+        "contact-url": "/agents/contact/11549011/?form-name=details-contact",
+        "status": "active",
+        "group_name": "Arun Estates",
+        "id": 42774,
+        "url_name": "cubitt-and-west-shirley",
+        "company_url_name": "cubitt-and-west",
+        "tenancy_fees": {
+            "default-fee?": true
+        },
+        "logo-url": "https://s3-eu-west-1.amazonaws.com/images.agentsmutual.co.uk/agents/companies/4452/191010091606269/logo-original.jpg",
+        "search-overseas-url": "/agents/branch/cubitt-and-west-shirley/properties/?search-type=overseas&view=grid",
+        "appraisal-url": "/agents/contact/11549011/?appraisal=true&form-name=details-appraisal",
+        "lettings?": true,
+        "website-redirect-url": "/agents/website-redirect/?redirect-token=TmIJQaDkY7ODtqxpfD2HJaqOrRASpo9ayARMDO1wkXsg%2FupPmV9d9z%2Bp%2FjOlr9EFzk%2BncA%2BpEChdIF4UMtbYcgk5KGR8CZv%2B84TU79MAK%2FvwBvyDYxWkO0oVisfr%2Bmgq",
+        "overseas?": false,
+        "addressline_2": "Shirley, Croydon",
+        "telephone_appraisals": "020 8115 3782"
+    },
+    "key-info": [
+        {
+            "title": "Tenure",
+            "description": "Knowing the tenure is important because it affects your rights and costs associated with the property.\n\n                                  If you do not know the tenure, you will not know how you will legally own the property and if there are any further costs & obligations you must comply with.",
+            "icon-id": "file-certificate",
+            "value": "Leasehold"
+        },
+        {
+            "title": "Council tax",
+            "description": "If you do not know the Council Tax band you will not know how much you need to pay.",
+            "icon-id": "receipt",
+            "value": "Band C"
+        },
+        {
+            "title": "Broadband",
+            "description": "If you don't know the type of utilities which the property has, there may be additional costs, for example an adequate broadband connection may not be available.",
+            "icon-id": "wifi",
+            "value": "Ultra-fast 1000Mbps *"
+        },
+        {
+            "title": "Mobile signal",
+            "description": "If you don't know the type of utilities which the property has, there may be additional costs, for example adequate mobile reception may not be available.",
+            "icon-id": "mobile-signal-out",
+            "data": {
+                "ee": "enhanced",
+                "o2": "enhanced",
+                "three": "enhanced",
+                "vodafone": "enhanced",
+                "date": "2022-03-07T11:57:34.892Z"
+            },
+            "is-mobile-signal?": true
+        }
+    ],
+    "more-like-this?": true,
+    "bedrooms?": true,
+    "agent?": true,
+    "book-viewings-enabled?": true,
+    "mobile-reception": {
+        "o2": "enhanced",
+        "three": "enhanced",
+        "vodafone": "enhanced",
+        "ee": "enhanced",
+        "date": "March 7, 2022"
+    },
+    "summary": "This ground floor maisonette has plenty of space whether you are looking for something smaller or your first home. With direct access to your own rear garden you will be able to sit and relax when the weather is warm.",
+    "property-labels": [
+        "Online viewing",
+        "Chain-free"
+    ],
+    "property-title": "2 bedroom ground floor maisonette for sale",
+    "disclaimers": [
+        {
+            "title": "DISCLAIMER",
+            "text": "<p>Property reference 21710409. The information displayed about this property comprises a property advertisement. OnTheMarket.com makes no warranty as to the accuracy or completeness of the advertisement or any linked or associated information, and OnTheMarket.com has no control over the content provided by the agent or developer. This property advertisement does not constitute property particulars. The information is provided and maintained by Cubitt & West - Shirley.\n</p>\n  <p>OnTheMarket may have applied supplementary data to this property listing, including:</p>\n\n  <p class=\"heading\"><strong>Broadband availability and predicted speed:</strong> obtained from Ofcom on March 7, 2022</p>\n\n  <p>Broadband speed is measured in megabits per second, with the number returned showing how fast the connection is. Each reading is based on the highest predicted speed of any major broadband network for services that deliver the download speeds. The following are the different readings that we may display:</p>\n\n  <p><strong>Basic:</strong> Up to 30 Mbit/s<br />\n  <strong>Super-fast:</strong> Between 30 Mbit/s and 300 Mbit/s<br />\n  <strong>Ultra-fast:</strong> Over 300 Mbit/s</p>\n\n  <p>The data is updated three times a year. The checker results are predictions and should not be regarded as guaranteed. For more information, see: <a href=\"https://checker.ofcom.org.uk/en-gb/about-checker#Answer_0_2\">https://checker.ofcom.org.uk/en-gb/about-checker#Answer_0_2</a></p>\n\n  <p class=\"heading\"><strong>Mobile phone signal availability and predicted strength:</strong> obtained from Ofcom on March 7, 2022</p>\n\n  <p>Mobile signal predictions are provided by the four UK mobile network operators: EE, O2, Three and Vodafone. Predictions can vary significantly from the coverage you may actually experience as a result of local factors (especially terrain). Ofcom has tested the actual coverage provided in various locations around the UK to help ensure that these predictions are reasonable. The values shown against a property can be broken down as follows:</p>\n\n  <p><strong>Clear:</strong> No bars, no signal predicted<br />\n  <strong>Red:</strong> One bar, reliable signal unlikely<br />\n  <strong>Amber:</strong> Two bars, may experience problems with connectivity<br />\n  <strong>Green:</strong> Three bars, likely to have good coverage and receive a data rate to support basic web services<br />\n  <strong>Enhanced:</strong> Full bars, likely to have good coverage indoors and to receive an enhanced data rate to support multimedia services</p>\n\n  <p class=\"heading\"><strong>Energy Performance data and Internal floor area:</strong> obtained on March 7, 2022 from The Energy Performance of Buildings (Certificates and Inspections) (England and Wales) Regulations 2007 or the Home Report if in relation to a residential property in Scotland.</p>\n\n  <p>Any supplementary data should not be relied upon as forming part of any property particulars and OnTheMarket cannot be held responsible for any incorrectness in this data. See <a href=\"https://www.onthemarket.com/terms/#other\">here</a> for more information.</p>\n</p>\n"
+        },
+        {
+            "title": "Call rate information",
+            "text": "Calls to 0843 numbers will be charged at 4p/min from BT landlines. Calls from other networks may vary, and calls from mobiles and outside the UK will be higher. Calls to local numbers beginning with 01, 02 and 03 numbers will incur standard geographic charges from landlines and mobiles."
+        }
+    ],
+    "canonical-url": "https://www.onthemarket.com/details/11549011/",
+    "documents": [
+        {
+            "position-caption": "Document 1 of 4",
+            "text": "Full PDF brochure",
+            "brochure?": true,
+            "url": "https://fwd.cubittandwest.co.uk/redirect.asp?c=1&a=Broc-OM1&m=21710409&path=https://www.cubittandwest.co.uk/_assets/pdfs/21710409.PDF",
+            "is-pdf": true
+        },
+        {
+            "position-caption": "Document 2 of 4",
+            "text": "Video Pre View",
+            "brochure?": true,
+            "url": "https://www.cubittandwest.co.uk/for-sale/2-bedroom-flat-in-shirley,-croydon/21710409?utm_source=OnTheMarket&utm_medium=web&utm_campaign=video#virtual-tour"
+        },
+        {
+            "position-caption": "Document 3 of 4",
+            "text": "Referral fees",
+            "brochure?": true,
+            "url": "https://www.cubittandwest.co.uk/referral-fees/?utm_source=OnTheMarket&utm_medium=web&utm_campaign=referral-fees"
+        },
+        {
+            "position-caption": "Document 4 of 4",
+            "text": "Privacy policy",
+            "brochure?": true,
+            "url": "https://www.cubittandwest.co.uk/privacy-policy/?utm_source=OnTheMarket&utm_medium=web&utm_campaign=privacy-policy"
+        }
+    ],
+    "price-coming-soon?": false,
+    "external-floorplans": [],
+    "humanised-property-type?": true,
+    "hero-image-1?": true,
+    "sitting-rooms": null,
+    "bathrooms?": true,
+    "bedrooms": 2,
+    "static-map-urls": {
+        "w375xh400": "https://maps.googleapis.com/maps/api/staticmap?center=51.37761%2C-0.03789&scale=2&markers=scale%3A2%7Cicon%3Ahttps%3A%2F%2Fwww.onthemarket.com%2Fassets%2Fimages%2Fotm2-map-pin-x2.png%7C51.37761%2C-0.03789&zoom=16&size=375x400&maptype=roadmap&key=AIzaSyCTucTgRsesCvBsfEx7z8tslSK91TlzUhs&signature=0pSXGofUb1Lz_RL4q3wSqkrAPeI=",
+        "w473xh400": "https://maps.googleapis.com/maps/api/staticmap?center=51.37761%2C-0.03789&scale=2&markers=scale%3A2%7Cicon%3Ahttps%3A%2F%2Fwww.onthemarket.com%2Fassets%2Fimages%2Fotm2-map-pin-x2.png%7C51.37761%2C-0.03789&zoom=16&size=473x400&maptype=roadmap&key=AIzaSyCTucTgRsesCvBsfEx7z8tslSK91TlzUhs&signature=wl4ZkiDrA8PUYxD2sbo3nABS41E=",
+        "w719xh400": "https://maps.googleapis.com/maps/api/staticmap?center=51.37761%2C-0.03789&scale=2&markers=scale%3A2%7Cicon%3Ahttps%3A%2F%2Fwww.onthemarket.com%2Fassets%2Fimages%2Fotm2-map-pin-x2.png%7C51.37761%2C-0.03789&zoom=16&size=719x400&maptype=roadmap&key=AIzaSyCTucTgRsesCvBsfEx7z8tslSK91TlzUhs&signature=oHVCBDbDdWyM4_5Nkyj1TpJAC_M=",
+        "w352xh450": "https://maps.googleapis.com/maps/api/staticmap?center=51.37761%2C-0.03789&scale=2&markers=scale%3A2%7Cicon%3Ahttps%3A%2F%2Fwww.onthemarket.com%2Fassets%2Fimages%2Fotm2-map-pin-x2.png%7C51.37761%2C-0.03789&zoom=16&size=352x450&maptype=roadmap&key=AIzaSyCTucTgRsesCvBsfEx7z8tslSK91TlzUhs&signature=IMK56p7LSjGvvjPKNPt52r5oDr4=",
+        "w460xh450": "https://maps.googleapis.com/maps/api/staticmap?center=51.37761%2C-0.03789&scale=2&markers=scale%3A2%7Cicon%3Ahttps%3A%2F%2Fwww.onthemarket.com%2Fassets%2Fimages%2Fotm2-map-pin-x2.png%7C51.37761%2C-0.03789&zoom=16&size=460x450&maptype=roadmap&key=AIzaSyCTucTgRsesCvBsfEx7z8tslSK91TlzUhs&signature=Sy5r7qE94Gp2aNXjHmp_lBrtPr0=",
+        "w856xh450": "https://maps.googleapis.com/maps/api/staticmap?center=51.37761%2C-0.03789&scale=2&markers=scale%3A2%7Cicon%3Ahttps%3A%2F%2Fwww.onthemarket.com%2Fassets%2Fimages%2Fotm2-map-pin-x2.png%7C51.37761%2C-0.03789&zoom=16&size=856x450&maptype=roadmap&key=AIzaSyCTucTgRsesCvBsfEx7z8tslSK91TlzUhs&signature=fEoiYL-Xl0dFFZY8wO0mrTdsh_0="
+    },
+    "page-titles": {
+        "page-title": "Cheston Avenue, Shirley, Croydon, Surrey 2 bed ground floor maisonette for sale - £280,000",
+        "meta-title": "Cubitt & West - Shirley present this 2 bedroom ground floor maisonette for sale in Cheston Avenue, Shirley, Croydon, Surrey"
+    },
+    "id": "11549011",
+    "poi?": true,
+    "days-since-added-reduced": "OnTheMarket > 14 days",
+    "spotlight?": false,
+    "floorplans": [
+        {
+            "position-caption": "Floorplan",
+            "large-url": "https://media.onthemarket.com/properties/11549011/1392621526/floor-plan-0-1024x1024.png",
+            "is-image": true,
+            "ext": "png",
+            "webp-available?": true,
+            "prefix": "https://media.onthemarket.com/properties/11549011/1392621526/floor-plan-0",
+            "url": "https://media.onthemarket.com/properties/11549011/1392621526/floor-plan-0-81x55.png",
+            "portrait?": true,
+            "geometries": {
+                "ls": {
+                    "w": 252,
+                    "h": 320,
+                    "suffix": "480x320"
+                },
+                "hd": {
+                    "w": 615,
+                    "h": 780,
+                    "suffix": "1024x1024"
+                },
+                "dc": {
+                    "w": 300,
+                    "h": 380,
+                    "suffix": "x380"
+                },
+                "mc": {
+                    "w": 197,
+                    "h": 250,
+                    "suffix": "x250"
+                },
+                "th": {
+                    "w": 43,
+                    "h": 55,
+                    "suffix": "81x55"
+                }
+            },
+            "text": "Ground Floor"
+        }
+    ],
+    "search-type": "for-sale",
+    "to-rent?": false,
+    "virtual-tours?": false,
+    "bathrooms": 1,
+    "documents?": true,
+    "show-features?": true,
+    "show-property-labels?": true,
+    "property-link": "/details/11549011/",
+    "rooms?": false,
+    "mortgage-link": "/banners/mortgage-link-redirect/?redirect-token=1f9TfxIEZwU982kMEDmfDxpxCsZZQv%2FEah%2BobMh%2Bds04rgdAsbCUAT0oGmRBOEQLpKrbUsuQu5ZVyMmLEN4nwn%2FQdoprz%2B8k1pFNLRBv6QHwG23dIxh%2BtJGDB4%2F6WDuh6UJoi29s9JL4c8L8a3rQSpPNoa3ETkuiZSPfbkr8O2tFTkCzLVdBDzWQrjRjSp8o8Ab8g2MVpDtKFYrH6%2FpoKg%3D%3D",
+    "virtualtours": [],
+    "recently-added?": false,
+    "videotours": [
+        {
+            "is-video": true,
+            "position-caption": "Virtual tours",
+            "text": "Video Pre View",
+            "url": "https://vimeo.com/682791113",
+            "vimeo-id": "682791113"
+        }
+    ],
+    "exclusive?": false,
+    "relevant-agents-contact-text": "Contact relevant agents",
+    "trans-type-id": "resale",
+    "show-whatsapp-contactable?": false,
+    "location": {
+        "lon": -0.03789,
+        "lat": 51.37761
+    },
+    "address-locality": "Croydon",
+    "price": "£280,000",
+    "videos?": true,
+    "hero-image-3?": true,
+    "minimum-area": "645 sq ft / 60 sq m",
+    "prop-sub-id": "ground-maisonette",
+    "overseas?": false,
+    "floorplans?": true,
+    "for-sale?": true
+}
