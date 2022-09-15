@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.8 (2022-09-15)
+
+### Highlights
+
+- Reconfigured the folder structure of the electron app.
+
+
 ## 0.1.7 (2022-09-14)
 
 ### Highlights

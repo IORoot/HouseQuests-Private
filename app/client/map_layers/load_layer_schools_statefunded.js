@@ -5,7 +5,7 @@
 export async function load_layer_schools_statefunded()
 {
     
-    const json_schools_statefunded = await fetch(hostname+'/maps/schools/state_funded_schools.json', {method: 'GET'})
+    const json_schools_statefunded = await fetch('./maps/schools/state_funded_schools.json', {method: 'GET'})
     .then(response => response.json())
     .catch(error => console.log("ERROR loading /maps/schools/state_funded_schools.json file."+error));
 

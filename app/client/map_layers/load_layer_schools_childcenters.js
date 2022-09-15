@@ -5,7 +5,7 @@
 export async function load_layer_schools_childcenters()
 {
     
-    const json_child_centers = await fetch(hostname+'/maps/schools/children_centers.json', {method: 'GET'})
+    const json_child_centers = await fetch('./maps/schools/children_centers.json', {method: 'GET'})
     .then(response => response.json())
     .catch(error => console.log("ERROR loading /maps/schools/children_centers.json file."+error));
 

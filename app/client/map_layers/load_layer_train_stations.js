@@ -1,7 +1,7 @@
 export async function load_layer_train_stations()
 {
 
-    const json_train_stations = await fetch(hostname+'/maps/london_rail/train_stations.json', {method: 'GET'})
+    const json_train_stations = await fetch('./maps/london_rail/train_stations.json', {method: 'GET'})
     .then(response => response.json())
     .catch(error => console.log("ERROR loading /maps/london_rail/train_stations.json file."+error));
 

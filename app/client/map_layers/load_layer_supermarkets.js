@@ -5,7 +5,7 @@
 export async function load_layer_supermarkets()
 {
 
-    const json_supermarkets = await fetch(hostname+'/maps/supermarkets/supermarkets.json', {method: 'GET'})
+    const json_supermarkets = await fetch('./maps/supermarkets/supermarkets.json', {method: 'GET'})
     .then(response => response.json())
     .catch(error => console.log("ERROR loading /maps/supermarkets/supermarkets.json file."+error));
 
