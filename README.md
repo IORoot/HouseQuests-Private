@@ -18,6 +18,11 @@ ccc8f4e8fb7e8c9d5b52673faca84322cfed8e5b76b4634d978edf06f8e13332
 ##  2. <a name='ThingsIwanttodofirst'></a>Things I want to do first
 - [x] Electron App / Deployment
   - [x] Move requests to client-side
+  - [ ] Build to
+    - [x] Mac ARM
+    - [x] Max x86
+    - [ ] Windows
+    - [ ] Linux
 - [x] Setup simple authentication code system
 - [x] Move property details to right drawer and tabs.
 - [ ] Neighbourhood Rating
@@ -69,12 +74,13 @@ Different Shop Types:
 ## Neighbourhood Rating
 
   ### 100m radius
+  - [x] Price compared to ALL average of all other properties for sale in area.
   - [ ] Prices of surrounding properties that have same number of bedrooms.
   - [ ] Price compared to any other houses up for sale in area.
   - [ ] Ofsted rating of closest school
   - [ ] Crime ratings (in each category) compared to national averages / highest
   - [ ] Closest supermarkets and level of supermarket (high / med / low )
-  - [ ] Number of renters in area vs owners
+  - [ ] Number of places to rent vs places to own in area
 
   ### City Average
   - [ ] House Price vs Avg City Price of property with same number of bedrooms.
@@ -87,7 +93,7 @@ Different Shop Types:
   ### Notes
 
     - Neighbourhood Rating
-      - [ ] Ofsted rating of closest school
+      - [x] Ofsted rating of closest school
       - [ ] Crime ratings
           - Number against national average.
           - Type of crime

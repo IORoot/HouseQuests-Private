@@ -18,6 +18,17 @@
     "directories": {
       "buildResources": "resources"
     },
+    "mac": {
+      "target": [
+        {
+          "target": "default",
+          "arch": [
+            "x64",
+            "arm64"
+          ]
+        }
+      ]
+    },
     "publish": null
   },
   "scripts": {
