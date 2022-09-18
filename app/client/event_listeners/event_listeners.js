@@ -12,6 +12,7 @@ import { listener_toggle_layers } from "./listener_toggle_layers.js";
 import { listener_toggle_blacklist } from "./listener_toggle_blacklist.js";
 import { listener_show_crimes } from "./listener_show_crimes.js";
 import { listener_show_supermarkets } from "./listener_show_supermarkets.js";
+import { listener_show_schools } from "./listener_show_schools.js";
 import { listener_show_convenience } from "./listener_show_convenience.js";
 import { listener_show_coffee } from "./listener_show_coffee.js";
 import { listener_blacklist_item } from "./listener_blacklist_item.js";
@@ -41,6 +42,7 @@ export function load_event_listeners(){
     listener_toggle_blacklist()
     listener_show_crimes()
     listener_show_supermarkets()
+    listener_show_schools()
     listener_show_convenience()
     listener_show_coffee()
     listener_blacklist_item()

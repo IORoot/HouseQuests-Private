@@ -39,8 +39,12 @@ ccc8f4e8fb7e8c9d5b52673faca84322cfed8e5b76b4634d978edf06f8e13332
 - [ ] Loading icon - subtle - in corner?
 - [ ] Errors. Missing properties like: [https://www.rightmove.co.uk/properties/86419927#/?channel=RES_BUY](https://www.rightmove.co.uk/properties/86419927#/?channel=RES_BUY)
 - [ ] Debug Mode
-- [ ] Responsive Layout
+- [x] Responsive Layout
 - [ ] Intro Modal for AUTH Code
+- [ ] Website and Distribution
+- [ ] Updates and Changelog
+- [ ] Refactor
+- [ ] Debugging / Logging / API Trigger alerts
 
 
 
@@ -75,13 +79,14 @@ Different Shop Types:
 
   ### 100m radius
   - [x] Price compared to ALL average of all other properties for sale in area.
-  - [ ] Prices of surrounding properties that have same number of bedrooms.
+  - [x] Number of properties with sale history in postcode
   - [ ] Price compared to any other houses up for sale in area.
   - [ ] Ofsted rating of closest school
-  - [ ] Crime ratings (in each category) compared to national averages / highest
+  - [x] Crime ratings (in each category) compared to national averages / highest
   - [ ] Closest supermarkets and level of supermarket (high / med / low )
   - [ ] Number of places to rent vs places to own in area
-
+  - [ ] Prices of surrounding properties that have same number of bedrooms.
+  
   ### City Average
   - [ ] House Price vs Avg City Price of property with same number of bedrooms.
 
@@ -94,7 +99,7 @@ Different Shop Types:
 
     - Neighbourhood Rating
       - [x] Ofsted rating of closest school
-      - [ ] Crime ratings
+      - [x] Crime ratings
           - Number against national average.
           - Type of crime
       - [ ] Supermarket level

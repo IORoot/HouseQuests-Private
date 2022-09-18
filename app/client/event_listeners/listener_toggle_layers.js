@@ -177,5 +177,11 @@ export function listener_toggle_layers(){
     toggleLocalCoffee.addEventListener('click', async function(event) {
         button_ring_toggle(this)
         toggle_layer('local-coffee')
+    });    
+
+    const toggleLocalSchools = document.getElementById('toggle-local-schools');
+    toggleLocalSchools.addEventListener('click', async function(event) {
+        button_ring_toggle(this)
+        toggle_layer('local-school')
     });
 }

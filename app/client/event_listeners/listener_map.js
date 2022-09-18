@@ -245,6 +245,34 @@ export function listener_map(){
 
 
         /**
+         * Click on Openpass School
+         * 
+         */
+        if (marker.type == 'local-school')
+        {
+            console.log(marker)
+            overlay.setPosition(event.coordinate);
+
+            var popupHTML = '';
+            popupHTML += '<div class="flex flex-col gap-2">';
+            popupHTML += '<div class="text-md text-sky-500">'+marker.name+'</div>'
+            popupHTML += '<p class="w-full">'+marker.brand+'</p>'
+            popupHTML += '<p class="w-full">'+marker.hours+'</p>'
+            popupHTML += '<a href="'+marker.contact+'" class="text-sm underline text-blue-500" target="_blank">'+marker.contact+'</a>'
+            popupHTML += '<a href="'+marker.website+'" class="text-sm underline text-blue-500" target="_blank">'+marker.website+'</a>'
+            popupHTML += '<div class="text-xs bg-stone-100 p-2 rounded m-1 flex flex-col">'+marker.number
+                popupHTML += '<div>'+marker.street+ '</div>'
+                popupHTML += '<div>'+marker.city+ '</div>'
+                popupHTML += '<div>'+marker.postcode+ '</div>'
+            popupHTML += '</div>'
+        popupHTML += '</div>';
+
+            popupContent.innerHTML = popupHTML;
+
+        }
+
+
+        /**
          * Click on Universities
          */
         if (marker.type == 'university')

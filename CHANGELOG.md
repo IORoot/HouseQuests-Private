@@ -1,5 +1,19 @@
 # Changelog
 
+
+## 0.1.9 (2022-09-18)
+
+### Highlights
+
+- Simple responsiveness on the drawers and main page.
+- Add schools to local area
+- Add Neibourhood rating:
+  - overall average property price
+  - price change
+  - number of properties
+
+
+
 ## 0.1.8 (2022-09-15)
 
 ### Highlights

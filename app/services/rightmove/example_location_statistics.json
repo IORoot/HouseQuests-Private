@@ -1,1004 +1,572 @@
 {
-    "results": {
-        "title": "House Prices around SE19 3DX",
-        "metaTagDescription": "The average price for a property in SE19 3DX is £540,421 over the last year. Use Rightmove online house price checker tool to find out exactly how much properties sold for in SE19 3DX since 1995 (based on official Land Registry data).",
-        "containsScotland": false,
-        "resultCount": "604",
-        "properties": [
-            {
-                "address": "85, Eversley Road, London, Greater London SE19 3QS",
-                "propertyType": "Semi-Detached",
-                "bedrooms": 4,
-                "images": {
-                    "imageUrl": "https://media.rightmove.co.uk/dir/86k/85703/120198179/85703_2259937_IMG_00_0000_max_135x100.jpeg",
-                    "mediumImageUrl": "https://media.rightmove.co.uk/dir/86k/85703/120198179/85703_2259937_IMG_00_0000_max_296x197.jpeg",
-                    "count": 16
-                },
-                "hasFloorPlan": true,
-                "transactions": [
-                    {
-                        "displayPrice": "£1,080,000",
-                        "dateSold": "15 Jun 2022",
-                        "tenure": "Freehold",
-                        "newBuild": false
-                    },
-                    {
-                        "displayPrice": "£297,000",
-                        "dateSold": "30 Oct 2002",
-                        "tenure": "Freehold",
-                        "newBuild": false
-                    }
-                ],
-                "location": {
-                    "lat": 51.4174,
-                    "lng": -0.09508
-                },
-                "detailUrl": "https://www.rightmove.co.uk/house-prices/details/england-120198179-15390388?s=98946eadda724c1a40807088ef78129c0f3bde6672ae458b111f27c614c02291"
-            },
-            {
-                "address": "25, Glenhurst Rise, London, Greater London SE19 3XN",
-                "propertyType": "Semi-Detached",
-                "bedrooms": 3,
-                "images": {
-                    "imageUrl": "https://media.rightmove.co.uk/dir/51k/50710/79928907/50710_P245192_IMG_00_0000_max_135x100.jpeg",
-                    "mediumImageUrl": "https://media.rightmove.co.uk/dir/51k/50710/79928907/50710_P245192_IMG_00_0000_max_296x197.jpeg",
-                    "count": 13
-                },
-                "hasFloorPlan": true,
-                "transactions": [
-                    {
-                        "displayPrice": "£575,000",
-                        "dateSold": "1 Apr 2022",
-                        "tenure": "Freehold",
-                        "newBuild": false
-                    }
-                ],
-                "location": {
-                    "lat": 51.41467,
-                    "lng": -0.09893
-                },
-                "detailUrl": "https://www.rightmove.co.uk/house-prices/details/england-79928907-15087586?s=3cff3b9a732b51da6dc550874d6a527023817204ec28ca0a6e8e119d8f6efa1b"
-            },
-            {
-                "address": "3, Waddington Way, London, Greater London SE19 3XH",
-                "propertyType": "Semi-Detached",
-                "bedrooms": 2,
-                "images": {
-                    "imageUrl": "https://media.rightmove.co.uk/dir/76k/75804/114333227/75804_919596-1_IMG_00_0000_max_135x100.jpeg",
-                    "mediumImageUrl": "https://media.rightmove.co.uk/dir/76k/75804/114333227/75804_919596-1_IMG_00_0000_max_296x197.jpeg",
-                    "count": 13
-                },
-                "hasFloorPlan": true,
-                "transactions": [
-                    {
-                        "displayPrice": "£470,000",
-                        "dateSold": "30 Mar 2022",
-                        "tenure": "Freehold",
-                        "newBuild": false
-                    },
-                    {
-                        "displayPrice": "£365,000",
-                        "dateSold": "21 May 2014",
-                        "tenure": "Freehold",
-                        "newBuild": false
-                    }
-                ],
-                "location": {
-                    "lat": 51.41388,
-                    "lng": -0.09997
-                },
-                "detailUrl": "https://www.rightmove.co.uk/house-prices/details/england-114333227-15087583?s=9d8a57e8d0501a6f2bd91f6c7fb054842e3995109e1abedc9ff661590cb85c4c"
-            },
-            {
-                "address": "17, Spa Hill, London, Greater London SE19 3TW",
-                "propertyType": "Semi-Detached",
-                "bedrooms": 3,
-                "images": {
-                    "imageUrl": "https://media.rightmove.co.uk/dir/86k/85703/114746045/85703_2254952_IMG_00_0000_max_135x100.jpeg",
-                    "mediumImageUrl": "https://media.rightmove.co.uk/dir/86k/85703/114746045/85703_2254952_IMG_00_0000_max_296x197.jpeg",
-                    "count": 16
-                },
-                "hasFloorPlan": true,
-                "transactions": [
-                    {
-                        "displayPrice": "£605,000",
-                        "dateSold": "18 Mar 2022",
-                        "tenure": "Freehold",
-                        "newBuild": false
-                    },
-                    {
-                        "displayPrice": "£522,000",
-                        "dateSold": "20 Feb 2020",
-                        "tenure": "Freehold",
-                        "newBuild": false
-                    }
-                ],
-                "location": {
-                    "lat": 51.41205,
-                    "lng": -0.09285
-                },
-                "detailUrl": "https://www.rightmove.co.uk/house-prices/details/england-114746045-93099615?s=4ab78dcc39dc99fb51599bec9b9d640287fdabd7778c970ccdee88e641844761"
-            },
-            {
-                "address": "Flat 2, Annan Court, 19, Harold Road, London, Greater London SE19 3PQ",
-                "propertyType": "Flat",
-                "bedrooms": null,
-                "images": {
-                    "imageUrl": "/spw/images/placeholder/no-image.svg",
-                    "mediumImageUrl": "/spw/images/placeholder/no-image.svg",
-                    "count": 0
-                },
-                "hasFloorPlan": false,
-                "transactions": [
-                    {
-                        "displayPrice": "£366,000",
-                        "dateSold": "11 Mar 2022",
-                        "tenure": "Leasehold",
-                        "newBuild": false
-                    }
-                ],
-                "location": {
-                    "lat": 51.41535,
-                    "lng": -0.0907
-                },
-                "detailUrl": ""
-            },
-            {
-                "address": "35, Ellery Road, London, Greater London SE19 3QG",
-                "propertyType": "Flat",
-                "bedrooms": 2,
-                "images": {
-                    "imageUrl": "https://media.rightmove.co.uk/dir/161k/160394/81948978/160394_160394_176_IMG_00_0000_max_135x100.jpeg",
-                    "mediumImageUrl": "https://media.rightmove.co.uk/dir/161k/160394/81948978/160394_160394_176_IMG_00_0000_max_296x197.jpeg",
-                    "count": 14
-                },
-                "hasFloorPlan": true,
-                "transactions": [
-                    {
-                        "displayPrice": "£405,000",
-                        "dateSold": "4 Mar 2022",
-                        "tenure": "Leasehold",
-                        "newBuild": false
-                    },
-                    {
-                        "displayPrice": "£340,000",
-                        "dateSold": "3 Aug 2015",
-                        "tenure": "Leasehold",
-                        "newBuild": false
-                    },
-                    {
-                        "displayPrice": "£223,750",
-                        "dateSold": "20 Jan 2010",
-                        "tenure": "Leasehold",
-                        "newBuild": false
-                    },
-                    {
-                        "displayPrice": "£182,500",
-                        "dateSold": "6 Apr 2006",
-                        "tenure": "Leasehold",
-                        "newBuild": false
-                    },
-                    {
-                        "displayPrice": "£160,000",
-                        "dateSold": "21 Jan 2003",
-                        "tenure": "Leasehold",
-                        "newBuild": false
-                    }
-                ],
-                "location": {
-                    "lat": 51.41484,
-                    "lng": -0.09259
-                },
-                "detailUrl": "https://www.rightmove.co.uk/house-prices/details/england-81948978-93422865?s=9889a49eeee6ce431bc6253e0dbd9068ce4c7fa440823472f9319435ae9c91a4"
-            },
-            {
-                "address": "1, The Woodlands, London, Greater London SE19 3EG",
-                "propertyType": "Flat",
-                "bedrooms": 3,
-                "images": {
-                    "imageUrl": "https://media.rightmove.co.uk/dir/69k/68930/115919318/68930_CRY210344_IMG_00_0000_max_135x100.jpeg",
-                    "mediumImageUrl": "https://media.rightmove.co.uk/dir/69k/68930/115919318/68930_CRY210344_IMG_00_0000_max_296x197.jpeg",
-                    "count": 10
-                },
-                "hasFloorPlan": true,
-                "transactions": [
-                    {
-                        "displayPrice": "£370,700",
-                        "dateSold": "17 Feb 2022",
-                        "tenure": "Leasehold",
-                        "newBuild": false
-                    },
-                    {
-                        "displayPrice": "£38,000",
-                        "dateSold": "12 Feb 1999",
-                        "tenure": "Leasehold",
-                        "newBuild": false
-                    }
-                ],
-                "location": {
-                    "lat": 51.41609,
-                    "lng": -0.09757
-                },
-                "detailUrl": "https://www.rightmove.co.uk/house-prices/details/england-115919318-93099597?s=9c80b02ecfcaf8eb32ff05cf5db60b9136fa59c1bee18cb253c4a9f612eb5140"
-            },
-            {
-                "address": "34, Ellery Road, London, Greater London SE19 3QG",
-                "propertyType": "Terraced",
-                "bedrooms": 4,
-                "images": {
-                    "imageUrl": "https://media.rightmove.co.uk/dir/12k/11433/51654250/11433_0131_HRT013107565_IMG_12_0000_max_135x100.jpg",
-                    "mediumImageUrl": "https://media.rightmove.co.uk/dir/12k/11433/51654250/11433_0131_HRT013107565_IMG_12_0000_max_296x197.jpg",
-                    "count": 7
-                },
-                "hasFloorPlan": true,
-                "transactions": [
-                    {
-                        "displayPrice": "£675,000",
-                        "dateSold": "14 Feb 2022",
-                        "tenure": "Freehold",
-                        "newBuild": false
-                    },
-                    {
-                        "displayPrice": "£122,500",
-                        "dateSold": "28 Oct 1998",
-                        "tenure": "Freehold",
-                        "newBuild": false
-                    }
-                ],
-                "location": {
-                    "lat": 51.41484,
-                    "lng": -0.09259
-                },
-                "detailUrl": "https://www.rightmove.co.uk/house-prices/details/england-51654250-15689806?s=15eeb8c643491231aeb07785ea3f88cf975828996463778fc3dab2b4ece94af0"
-            },
-            {
-                "address": "3, Woodfield Close, London, Greater London SE19 3EN",
-                "propertyType": "Semi-Detached",
-                "bedrooms": 4,
-                "images": {
-                    "imageUrl": "https://media.rightmove.co.uk/dir/18k/17108/113046908/17108_DWR001DE4_IMG_00_0002_max_135x100.jpeg",
-                    "mediumImageUrl": "https://media.rightmove.co.uk/dir/18k/17108/113046908/17108_DWR001DE4_IMG_00_0002_max_296x197.jpeg",
-                    "count": 17
-                },
-                "hasFloorPlan": true,
-                "transactions": [
-                    {
-                        "displayPrice": "£962,360",
-                        "dateSold": "11 Feb 2022",
-                        "tenure": "Freehold",
-                        "newBuild": false
-                    },
-                    {
-                        "displayPrice": "£162,500",
-                        "dateSold": "2 May 1997",
-                        "tenure": "Freehold",
-                        "newBuild": false
-                    }
-                ],
-                "location": {
-                    "lat": 51.41674,
-                    "lng": -0.09913
-                },
-                "detailUrl": "https://www.rightmove.co.uk/house-prices/details/england-113046908-93422835?s=604b57c41878d42cc343b1d08410ffcafe9829cf0d29f5665c3a8fa495248fa3"
-            },
-            {
-                "address": "Flat 2, 45, Beulah Hill, London, Greater London SE19 3DS",
-                "propertyType": "Flat",
-                "bedrooms": null,
-                "images": {
-                    "imageUrl": "/spw/images/placeholder/no-image.svg",
-                    "mediumImageUrl": "/spw/images/placeholder/no-image.svg",
-                    "count": 0
-                },
-                "hasFloorPlan": false,
-                "transactions": [
-                    {
-                        "displayPrice": "£328,000",
-                        "dateSold": "4 Feb 2022",
-                        "tenure": "Leasehold",
-                        "newBuild": false
-                    },
-                    {
-                        "displayPrice": "£31,500",
-                        "dateSold": "5 Feb 1997",
-                        "tenure": "Leasehold",
-                        "newBuild": false
-                    }
-                ],
-                "location": {
-                    "lat": 51.41403,
-                    "lng": -0.09291
-                },
-                "detailUrl": ""
-            },
-            {
-                "address": "9, Hermitage Road, London, Greater London SE19 3QW",
-                "propertyType": "Semi-Detached",
-                "bedrooms": 3,
-                "images": {
-                    "imageUrl": "https://media.rightmove.co.uk/dir/86k/85703/76448301/85703_2230244_IMG_01_0000_max_135x100.JPG",
-                    "mediumImageUrl": "https://media.rightmove.co.uk/dir/86k/85703/76448301/85703_2230244_IMG_01_0000_max_296x197.JPG",
-                    "count": 16
-                },
-                "hasFloorPlan": true,
-                "transactions": [
-                    {
-                        "displayPrice": "£630,000",
-                        "dateSold": "11 Jan 2022",
-                        "tenure": "Freehold",
-                        "newBuild": false
-                    },
-                    {
-                        "displayPrice": "£246,500",
-                        "dateSold": "31 May 2002",
-                        "tenure": "Freehold",
-                        "newBuild": false
-                    },
-                    {
-                        "displayPrice": "£160,000",
-                        "dateSold": "31 Oct 2000",
-                        "tenure": "Freehold",
-                        "newBuild": false
-                    },
-                    {
-                        "displayPrice": "£75,000",
-                        "dateSold": "20 Sep 1996",
-                        "tenure": "Freehold",
-                        "newBuild": false
-                    }
-                ],
-                "location": {
-                    "lat": 51.41823,
-                    "lng": -0.09648
-                },
-                "detailUrl": "https://www.rightmove.co.uk/house-prices/details/england-76448301-15689812?s=fc56bfaee49dd1d17410790b2896a2612b08e4b876e9938be73297f252c7d1ad"
-            },
-            {
-                "address": "4, William Court, Highfield Hill, London, Greater London SE19 3QF",
-                "propertyType": "Flat",
-                "bedrooms": null,
-                "images": {
-                    "imageUrl": "/spw/images/placeholder/no-image.svg",
-                    "mediumImageUrl": "/spw/images/placeholder/no-image.svg",
-                    "count": 0
-                },
-                "hasFloorPlan": false,
-                "transactions": [
-                    {
-                        "displayPrice": "£362,500",
-                        "dateSold": "16 Dec 2021",
-                        "tenure": "Leasehold",
-                        "newBuild": false
-                    },
-                    {
-                        "displayPrice": "£267,000",
-                        "dateSold": "20 Jul 2015",
-                        "tenure": "Leasehold",
-                        "newBuild": false
-                    }
-                ],
-                "location": {
-                    "lat": 51.41497,
-                    "lng": -0.08986
-                },
-                "detailUrl": ""
-            },
-            {
-                "address": "68, The Woodlands, London, Greater London SE19 3EH",
-                "propertyType": "Flat",
-                "bedrooms": 2,
-                "images": {
-                    "imageUrl": "https://media.rightmove.co.uk/dir/92k/91703/37368758/91703_0123_IMG_09_0000_max_135x100.jpg",
-                    "mediumImageUrl": "https://media.rightmove.co.uk/dir/92k/91703/37368758/91703_0123_IMG_09_0000_max_296x197.jpg",
-                    "count": 7
-                },
-                "hasFloorPlan": false,
-                "transactions": [
-                    {
-                        "displayPrice": "£305,000",
-                        "dateSold": "5 Nov 2021",
-                        "tenure": "Leasehold",
-                        "newBuild": false
-                    },
-                    {
-                        "displayPrice": "£277,500",
-                        "dateSold": "20 May 2016",
-                        "tenure": "Leasehold",
-                        "newBuild": false
-                    },
-                    {
-                        "displayPrice": "£170,000",
-                        "dateSold": "19 Oct 2015",
-                        "tenure": "Leasehold",
-                        "newBuild": false
-                    },
-                    {
-                        "displayPrice": "£14,000",
-                        "dateSold": "28 Apr 1995",
-                        "tenure": "Leasehold",
-                        "newBuild": false
-                    }
-                ],
-                "location": {
-                    "lat": 51.41538,
-                    "lng": -0.09861
-                },
-                "detailUrl": "https://www.rightmove.co.uk/house-prices/details/england-37368758-14086492?s=5bad6cac12ee983b121d68b47dafc63d47990d5a6365ea333abde42a1a8b21f3"
-            },
-            {
-                "address": "Flat 2, 4, Hermitage Road, London, Greater London SE19 3QR",
-                "propertyType": "Flat",
-                "bedrooms": null,
-                "images": {
-                    "imageUrl": "/spw/images/placeholder/no-image.svg",
-                    "mediumImageUrl": "/spw/images/placeholder/no-image.svg",
-                    "count": 0
-                },
-                "hasFloorPlan": false,
-                "transactions": [
-                    {
-                        "displayPrice": "£391,500",
-                        "dateSold": "29 Oct 2021",
-                        "tenure": "Leasehold",
-                        "newBuild": false
-                    },
-                    {
-                        "displayPrice": "£363,000",
-                        "dateSold": "11 May 2018",
-                        "tenure": "Leasehold",
-                        "newBuild": false
-                    },
-                    {
-                        "displayPrice": "£248,000",
-                        "dateSold": "1 Jul 2013",
-                        "tenure": "Leasehold",
-                        "newBuild": false
-                    },
-                    {
-                        "displayPrice": "£169,000",
-                        "dateSold": "9 Dec 2002",
-                        "tenure": "Leasehold",
-                        "newBuild": false
-                    }
-                ],
-                "location": {
-                    "lat": 51.41724,
-                    "lng": -0.09652
-                },
-                "detailUrl": ""
-            },
-            {
-                "address": "31, Waddington Way, London, Greater London SE19 3XP",
-                "propertyType": "Semi-Detached",
-                "bedrooms": 3,
-                "images": {
-                    "imageUrl": "https://media.rightmove.co.uk/dir/69k/68930/111862157/68930_CRY210011_IMG_00_0000_max_135x100.jpeg",
-                    "mediumImageUrl": "https://media.rightmove.co.uk/dir/69k/68930/111862157/68930_CRY210011_IMG_00_0000_max_296x197.jpeg",
-                    "count": 8
-                },
-                "hasFloorPlan": true,
-                "transactions": [
-                    {
-                        "displayPrice": "£580,250",
-                        "dateSold": "17 Sep 2021",
-                        "tenure": "Freehold",
-                        "newBuild": false
-                    }
-                ],
-                "location": {
-                    "lat": 51.41394,
-                    "lng": -0.09824
-                },
-                "detailUrl": "https://www.rightmove.co.uk/house-prices/details/england-111862157-13502851?s=67f6ecde525ce2019eb5e65baec3ce613e2233be7c192acba94f05a42a083145"
-            },
-            {
-                "address": "16, Ellery Road, London, Greater London SE19 3QG",
-                "propertyType": "Terraced",
-                "bedrooms": 4,
-                "images": {
-                    "imageUrl": "https://media.rightmove.co.uk/dir/12k/11433/111186446/11433_0131_HRT013109843_IMG_01_0000_max_135x100.jpeg",
-                    "mediumImageUrl": "https://media.rightmove.co.uk/dir/12k/11433/111186446/11433_0131_HRT013109843_IMG_01_0000_max_296x197.jpeg",
-                    "count": 16
-                },
-                "hasFloorPlan": true,
-                "transactions": [
-                    {
-                        "displayPrice": "£520,000",
-                        "dateSold": "24 Aug 2021",
-                        "tenure": "Freehold",
-                        "newBuild": false
-                    }
-                ],
-                "location": {
-                    "lat": 51.41475,
-                    "lng": -0.0926
-                },
-                "detailUrl": "https://www.rightmove.co.uk/house-prices/details/england-111186446-14778838?s=b211edc600f91e9fc9659e97f95f5b35edf08fb7b682a80d6f240870337882b3"
-            },
-            {
-                "address": "84, Spa Hill, London, Greater London SE19 3TZ",
-                "propertyType": "Detached",
-                "bedrooms": 3,
-                "images": {
-                    "imageUrl": "https://media.rightmove.co.uk/dir/81k/80716/107230802/80716_100510002067_IMG_00_0000_max_135x100.jpeg",
-                    "mediumImageUrl": "https://media.rightmove.co.uk/dir/81k/80716/107230802/80716_100510002067_IMG_00_0000_max_296x197.jpeg",
-                    "count": 13
-                },
-                "hasFloorPlan": true,
-                "transactions": [
-                    {
-                        "displayPrice": "£580,000",
-                        "dateSold": "12 Aug 2021",
-                        "tenure": "Freehold",
-                        "newBuild": false
-                    }
-                ],
-                "location": {
-                    "lat": 51.41197,
-                    "lng": -0.09343
-                },
-                "detailUrl": "https://www.rightmove.co.uk/house-prices/details/england-107230802-13251034?s=cf9560a6eaabccbaeb84c465cce61c3a06847468d5e11fef74adb03c4a60bbf1"
-            },
-            {
-                "address": "8, Menlo Gardens, London, Greater London SE19 3DU",
-                "propertyType": "Flat",
-                "bedrooms": 2,
-                "images": {
-                    "imageUrl": "https://media.rightmove.co.uk/dir/12k/11433/78256154/11433_0131_HRT013109318_IMG_01_0000_max_135x100.jpg",
-                    "mediumImageUrl": "https://media.rightmove.co.uk/dir/12k/11433/78256154/11433_0131_HRT013109318_IMG_01_0000_max_296x197.jpg",
-                    "count": 9
-                },
-                "hasFloorPlan": true,
-                "transactions": [
-                    {
-                        "displayPrice": "£250,000",
-                        "dateSold": "12 Jul 2021",
-                        "tenure": "Leasehold",
-                        "newBuild": false
-                    },
-                    {
-                        "displayPrice": "£147,000",
-                        "dateSold": "14 Mar 2006",
-                        "tenure": "Leasehold",
-                        "newBuild": false
-                    }
-                ],
-                "location": {
-                    "lat": 51.41523,
-                    "lng": -0.09488
-                },
-                "detailUrl": "https://www.rightmove.co.uk/house-prices/details/england-78256154-13748419?s=ed48c25af8af2308febe5456f2d4c51fc9d77012eb7fd1b5914789eb4632bc97"
-            },
-            {
-                "address": "27, Glenhurst Rise, London, Greater London SE19 3XN",
-                "propertyType": "Detached",
-                "bedrooms": 3,
-                "images": {
-                    "imageUrl": "https://media.rightmove.co.uk/dir/24k/23060/78924894/23060_CRP160460_IMG_00_0000_max_135x100.jpeg",
-                    "mediumImageUrl": "https://media.rightmove.co.uk/dir/24k/23060/78924894/23060_CRP160460_IMG_00_0000_max_296x197.jpeg",
-                    "count": 18
-                },
-                "hasFloorPlan": true,
-                "transactions": [
-                    {
-                        "displayPrice": "£625,000",
-                        "dateSold": "30 Jun 2021",
-                        "tenure": "Freehold",
-                        "newBuild": false
-                    },
-                    {
-                        "displayPrice": "£375,000",
-                        "dateSold": "24 Sep 2013",
-                        "tenure": "Freehold",
-                        "newBuild": false
-                    },
-                    {
-                        "displayPrice": "£295,000",
-                        "dateSold": "3 Aug 2007",
-                        "tenure": "Freehold",
-                        "newBuild": false
-                    }
-                ],
-                "location": {
-                    "lat": 51.41467,
-                    "lng": -0.09893
-                },
-                "detailUrl": "https://www.rightmove.co.uk/house-prices/details/england-78924894-14086543?s=c2a3bd81e75876c4789f210e740f61baeea851c3be99d13ba18997b587a187d1"
-            },
-            {
-                "address": "9, The Woodlands, London, Greater London SE19 3EG",
-                "propertyType": "Flat",
-                "bedrooms": 3,
-                "images": {
-                    "imageUrl": "https://media.rightmove.co.uk/dir/152k/151079/71345673/151079_956681-1_IMG_03_0000_max_135x100.jpg",
-                    "mediumImageUrl": "https://media.rightmove.co.uk/dir/152k/151079/71345673/151079_956681-1_IMG_03_0000_max_296x197.jpg",
-                    "count": 11
-                },
-                "hasFloorPlan": true,
-                "transactions": [
-                    {
-                        "displayPrice": "£445,000",
-                        "dateSold": "29 Jun 2021",
-                        "tenure": "Leasehold",
-                        "newBuild": false
-                    },
-                    {
-                        "displayPrice": "£397,500",
-                        "dateSold": "15 May 2017",
-                        "tenure": "Leasehold",
-                        "newBuild": false
-                    },
-                    {
-                        "displayPrice": "£200,000",
-                        "dateSold": "14 Jun 2013",
-                        "tenure": "Leasehold",
-                        "newBuild": false
-                    }
-                ],
-                "location": {
-                    "lat": 51.41609,
-                    "lng": -0.09757
-                },
-                "detailUrl": "https://www.rightmove.co.uk/house-prices/details/england-71345673-13502827?s=ddf1f73178e3fd282ac2a33bff367062e61a80d4a82b9b57bbc0eb722df59ede"
-            },
-            {
-                "address": "36, Dale Park Road, London, Greater London SE19 3TY",
-                "propertyType": "Semi-Detached",
-                "bedrooms": 5,
-                "images": {
-                    "imageUrl": "https://media.rightmove.co.uk/dir/86k/85703/77177235/85703_2240849_IMG_01_0000_max_135x100.JPG",
-                    "mediumImageUrl": "https://media.rightmove.co.uk/dir/86k/85703/77177235/85703_2240849_IMG_01_0000_max_296x197.JPG",
-                    "count": 16
-                },
-                "hasFloorPlan": true,
-                "transactions": [
-                    {
-                        "displayPrice": "£700,000",
-                        "dateSold": "28 Jun 2021",
-                        "tenure": "Freehold",
-                        "newBuild": false
-                    },
-                    {
-                        "displayPrice": "£247,500",
-                        "dateSold": "18 Aug 2005",
-                        "tenure": "Freehold",
-                        "newBuild": false
-                    },
-                    {
-                        "displayPrice": "£103,000",
-                        "dateSold": "2 Sep 1998",
-                        "tenure": "Freehold",
-                        "newBuild": false
-                    }
-                ],
-                "location": {
-                    "lat": 51.41173,
-                    "lng": -0.09517
-                },
-                "detailUrl": "https://www.rightmove.co.uk/house-prices/details/england-77177235-14086531?s=95acb2db029b072db36e61308e85c0cbb29bacd02cd32fc21c806bf9c17b4f06"
-            },
-            {
-                "address": "23, Glenhurst Rise, London, Greater London SE19 3XN",
-                "propertyType": "Semi-Detached",
-                "bedrooms": 4,
-                "images": {
-                    "imageUrl": "https://media.rightmove.co.uk/dir/18k/17108/82585750/17108_DWR000F4E_IMG_00_0000_max_135x100.jpeg",
-                    "mediumImageUrl": "https://media.rightmove.co.uk/dir/18k/17108/82585750/17108_DWR000F4E_IMG_00_0000_max_296x197.jpeg",
-                    "count": 14
-                },
-                "hasFloorPlan": true,
-                "transactions": [
-                    {
-                        "displayPrice": "£745,000",
-                        "dateSold": "25 Jun 2021",
-                        "tenure": "Freehold",
-                        "newBuild": false
-                    },
-                    {
-                        "displayPrice": "£585,000",
-                        "dateSold": "14 Aug 2014",
-                        "tenure": "Freehold",
-                        "newBuild": false
-                    },
-                    {
-                        "displayPrice": "£200,000",
-                        "dateSold": "13 Jun 2000",
-                        "tenure": "Freehold",
-                        "newBuild": false
-                    }
-                ],
-                "location": {
-                    "lat": 51.41467,
-                    "lng": -0.09893
-                },
-                "detailUrl": "https://www.rightmove.co.uk/house-prices/details/england-82585750-14086540?s=d73d33146201d8261864877e5413ba9e4b9bd1f883062901e480528ce22b2dd0"
-            },
-            {
-                "address": "4g, Hermitage Road, London, Greater London SE19 3QR",
-                "propertyType": "Flat",
-                "bedrooms": null,
-                "images": {
-                    "imageUrl": "/spw/images/placeholder/no-image.svg",
-                    "mediumImageUrl": "/spw/images/placeholder/no-image.svg",
-                    "count": 0
-                },
-                "hasFloorPlan": false,
-                "transactions": [
-                    {
-                        "displayPrice": "£337,800",
-                        "dateSold": "1 Jun 2021",
-                        "tenure": "Leasehold",
-                        "newBuild": false
-                    },
-                    {
-                        "displayPrice": "£250,000",
-                        "dateSold": "19 Jul 2007",
-                        "tenure": "Leasehold",
-                        "newBuild": false
-                    },
-                    {
-                        "displayPrice": "£195,000",
-                        "dateSold": "10 Feb 2003",
-                        "tenure": "Leasehold",
-                        "newBuild": false
-                    },
-                    {
-                        "displayPrice": "£63,500",
-                        "dateSold": "21 Aug 1997",
-                        "tenure": "Leasehold",
-                        "newBuild": false
-                    }
-                ],
-                "location": {
-                    "lat": 51.41724,
-                    "lng": -0.09652
-                },
-                "detailUrl": ""
-            },
-            {
-                "address": "22a, Ravensdale Gardens, London, Greater London SE19 3QD",
-                "propertyType": "Semi-Detached",
-                "bedrooms": null,
-                "images": {
-                    "imageUrl": "/spw/images/placeholder/no-image.svg",
-                    "mediumImageUrl": "/spw/images/placeholder/no-image.svg",
-                    "count": 0
-                },
-                "hasFloorPlan": false,
-                "transactions": [
-                    {
-                        "displayPrice": "£600,000",
-                        "dateSold": "28 May 2021",
-                        "tenure": "Freehold",
-                        "newBuild": true
-                    }
-                ],
-                "location": {
-                    "lat": 51.41408,
-                    "lng": -0.09004
-                },
-                "detailUrl": ""
-            },
-            {
-                "address": "98, Priory Crescent, London, Greater London SE19 3EF",
-                "propertyType": "Flat",
-                "bedrooms": 2,
-                "images": {
-                    "imageUrl": "https://media.rightmove.co.uk/dir/12k/11433/78450689/11433_0131_HRT013109314_IMG_09_0000_max_135x100.jpg",
-                    "mediumImageUrl": "https://media.rightmove.co.uk/dir/12k/11433/78450689/11433_0131_HRT013109314_IMG_09_0000_max_296x197.jpg",
-                    "count": 12
-                },
-                "hasFloorPlan": true,
-                "transactions": [
-                    {
-                        "displayPrice": "£290,000",
-                        "dateSold": "30 Apr 2021",
-                        "tenure": "Leasehold",
-                        "newBuild": false
-                    },
-                    {
-                        "displayPrice": "£193,000",
-                        "dateSold": "27 Mar 2008",
-                        "tenure": "Leasehold",
-                        "newBuild": false
-                    },
-                    {
-                        "displayPrice": "£147,000",
-                        "dateSold": "23 Sep 2004",
-                        "tenure": "Leasehold",
-                        "newBuild": false
-                    },
-                    {
-                        "displayPrice": "£84,950",
-                        "dateSold": "10 Oct 2001",
-                        "tenure": "Leasehold",
-                        "newBuild": false
-                    }
-                ],
-                "location": {
-                    "lat": 51.41598,
-                    "lng": -0.09643
-                },
-                "detailUrl": "https://www.rightmove.co.uk/house-prices/details/england-78450689-13020811?s=f17fc110e9f1836009829e3ec501789fc40fd6c3e61b8edfdca6233b7fbab4f4"
-            }
-        ]
-    },
-    "sidebar": {
-        "blurb": [
-            "Properties around SE19 3DX had an overall average price of £540,421 over the last year.",
-            "The majority of sales around SE19 3DX during the last year were semi-detached properties, selling for an average price of £700,373. Flats sold for an average of £361,243, with terraced properties fetching £675,000.",
-            "Overall, sold prices around SE19 3DX over the last year were 4% up on the previous year and 23% up on the 2017 peak of £438,488."
-        ],
-        "nearbyLocations": {
-            "title": "House prices near SE19 3DX",
-            "links": [
-                {
-                    "text": "House prices in CR0",
-                    "url": "/house-prices/cr0.html"
-                },
-                {
-                    "text": "House prices in SW16",
-                    "url": "/house-prices/sw16.html"
-                },
-                {
-                    "text": "House prices in BR3",
-                    "url": "/house-prices/br3.html"
-                },
-                {
-                    "text": "House prices in SW2",
-                    "url": "/house-prices/sw2.html"
-                },
-                {
-                    "text": "House prices in SW17",
-                    "url": "/house-prices/sw17.html"
-                },
-                {
-                    "text": "House prices in CR9",
-                    "url": "/house-prices/cr9.html"
-                },
-                {
-                    "text": "House prices in SE6",
-                    "url": "/house-prices/se6.html"
-                }
-            ]
-        },
-        "propertyValueLinks": {
-            "title": "What is your property worth?",
-            "links": [
-                {
-                    "text": "Agent Property Valuation",
-                    "url": "/property-valuation.html"
-                },
-                {
-                    "text": "Market Trends for SE19 3DX",
-                    "url": "/house-prices-in-my-area/marketTrendsTotalPropertiesSoldAndAveragePrice.html?searchLocation=SE19+3DX"
-                },
-                {
-                    "text": "Price Comparison Report for SE19 3DX",
-                    "url": "/house-value.html?searchLocation=SE19+3DX"
-                },
-                {
-                    "text": "Estate agents in SE19 3DX",
-                    "url": "/estate-agents/find.html?locationIdentifier=POSTCODE^758914"
-                },
-                {
-                    "text": "Properties for sale in SE19 3DX",
-                    "url": "/property-for-sale/find.html?locationIdentifier=POSTCODE^758914"
-                },
-                {
-                    "text": "Properties to let in SE19 3DX",
-                    "url": "/property-to-rent/find.html?locationIdentifier=POSTCODE^758914"
-                },
-                {
-                    "text": "Selling guide",
-                    "url": "/resources/property-guides/selling-guide.html"
-                },
-                {
-                    "text": "Buying guide",
-                    "url": "/resources/property-guides/buying-guide.html"
-                },
-                {
-                    "text": "House Price Index",
-                    "url": "/news/house-price-index"
-                }
-            ]
-        },
-        "staticMapUrl": "https://media.rightmove.co.uk/map/_generate?polygonLineColor=%232E8E89FF&polygonFillColor=%232E8E8914&width=278&height=246&longitude=-0.09489193650634122&latitude=51.414874553329426&mapPolygon=k%7DxxH%7CkPm%40%3Fk%40Dm%40Fk%40Lk%40Rk%40Ti%40Zg%40%5Cg%40b%40e%40f%40e%40h%40a%40l%40a%40p%40%5Dt%40%5Bv%40%5Bz%40W%7C%40U%7C%40Q%60AObAMdAKdAGfAEfAAfA%3FhABfADfAFfAJdALbANbAR%60AT%7C%40X%7C%40Xx%40%5Cv%40%5Ct%40%60%40n%40%60%40l%40d%40h%40d%40f%40f%40%60%40h%40%5Ch%40Zj%40Tj%40Nj%40Lj%40Fl%40Bl%40%3Fl%40Cj%40Ij%40Mj%40Qj%40Wh%40Yf%40_%40f%40a%40d%40g%40d%40k%40%60%40m%40%60%40q%40%5Cu%40%5Cw%40Xy%40V%7D%40T_APaAPcAJcAJgAFeADgA%40iA%3FgACgAEgAGgAKeAMeAOaASaAU_AW%7B%40%5B%7B%40%5Bw%40_%40s%40a%40q%40a%40m%40e%40i%40e%40e%40g%40a%40i%40_%40i%40Yi%40Uk%40Qm%40Kk%40Im%40C&signature=ikEawyrrranqGdeaJgGtZiALpTc=",
-        "mapViewUrl": "https://www.rightmove.co.uk/house-prices/search.html?showMapView=showMapView&housePricesMap=Map+View&locationIdentifier=POSTCODE%5E758914&propertyType=0"
-    },
-    "searchLocation": {
-        "displayName": "SE19 3DX",
-        "searchName": "se19-3dx",
-        "locationType": "POSTCODE",
-        "locationId": "758914"
-    },
-    "searchParameters": {
-        "radius": "0.25"
-    },
-    "searchParameterDefaults": {
-        "propertyType": "ANY",
-        "radius": "0.0",
-        "tenure": "ANY",
-        "propertyCategory": "ANY",
-        "sortBy": "DATE_SOLD",
-        "soldIn": "30"
-    },
-    "pagination": {
-        "current": 1,
-        "first": 1,
-        "last": 25,
-        "total": 604
-    },
-    "leadValuationModel": {
-        "agents": [
-            {
-                "customerId": 15629798,
-                "name": "Dulwich",
-                "displayAddress": "1C Calton Avenue,\r\nLondon,\r\nSE21 7DE",
-                "logoUrl": "https://media.rightmove.co.uk/company/clogo_16112_0007.jpeg",
-                "tradingName": "Knight Frank"
-            },
-            {
-                "customerId": 10920466,
-                "name": "Crystal Palace",
-                "displayAddress": "70 Church Road\r\nCrystal Palace\r\nLondon\r\nSE19 SEZ",
-                "logoUrl": "https://media.rightmove.co.uk/brand/brand_logo_30118_0005.jpeg",
-                "tradingName": "Martin & Co"
-            },
-            {
-                "customerId": 10903828,
-                "name": "Crystal Palace, London",
-                "displayAddress": "9-11 Church Road\r\nCrystal Palace\r\nLondon\r\nSE19 2TF",
-                "logoUrl": "https://media.rightmove.co.uk/company/clogo_28999_0000.png",
-                "tradingName": "iMove Property"
-            },
-            {
-                "customerId": 8038841,
-                "name": "Crystal Palace",
-                "displayAddress": "45-47 Westow Hill,\r\nLondon,\r\nSE19 1TS",
-                "logoUrl": "https://media.rightmove.co.uk/69k/68930/branch_logo_68930_0000.jpeg",
-                "tradingName": "Winkworth Crystal Palace"
-            },
-            {
-                "customerId": 40914,
-                "name": "Crystal Palace",
-                "displayAddress": "Crystal Palace Office Westow Street,\r\nLondon,\r\nSE19 3AH",
-                "logoUrl": "https://media.rightmove.co.uk/company/clogo_761_0016.png",
-                "tradingName": "Streets Ahead"
-            },
-            {
-                "customerId": 38688,
-                "name": "Norbury",
-                "displayAddress": "1449 London Road, London, SW16 4AQ",
-                "logoUrl": "https://media.rightmove.co.uk/brand/brand_logo_71570_0002.jpeg",
-                "tradingName": "Bairstow Eves"
-            }
-        ],
-        "postcode": {
-            "outcode": "SE19",
-            "incode": "3DX",
-            "outcodeId": 2319
-        }
-    },
-    "disclaimer": {
-        "showLandReg": true,
-        "showRos": false,
-        "loadDates": {
-            "landReg": {
-                "earliestTransaction": "1 January 1995",
-                "mostRecentTransaction": "28 July 2022",
-                "lastLoadDate": "12 September 2022"
-            },
-            "ros": {
-                "earliestTransaction": "18 October 1996",
-                "mostRecentTransaction": "29 July 2022",
-                "lastLoadDate": "12 September 2022"
-            }
-        }
-    },
-    "mortgageWidgetModel": {
-        "currentAverage": "£540,421",
-        "percentageChange": "4%",
-        "isIncrease": true
-    }
+	"results": {
+		"title": "House Prices in SE19 3DX",
+		"metaTagDescription": "Sold House Prices in SE19 3DX. Use Rightmove online house price checker tool to find out exactly how much properties sold for in SE19 3DX since 1995 (based on official Land Registry data).",
+		"containsScotland": false,
+		"resultCount": "15",
+		"properties": [
+			{
+				"address": "81, Menlo Gardens, London, Greater London SE19 3DX",
+				"propertyType": "Flat",
+				"bedrooms": 2,
+				"images": {
+					"imageUrl": "https://media.rightmove.co.uk/dir/225k/224555/94896578/224555_MEL200011_IMG_01_0000_max_135x100.jpg",
+					"mediumImageUrl": "https://media.rightmove.co.uk/dir/225k/224555/94896578/224555_MEL200011_IMG_01_0000_max_296x197.jpg",
+					"count": 13
+				},
+				"hasFloorPlan": true,
+				"transactions": [
+					{
+						"displayPrice": "£310,000",
+						"dateSold": "3 Sep 2020",
+						"tenure": "Leasehold",
+						"newBuild": false
+					},
+					{
+						"displayPrice": "£120,000",
+						"dateSold": "30 Nov 2010",
+						"tenure": "Leasehold",
+						"newBuild": false
+					}
+				],
+				"location": { "lat": 51.41487, "lng": -0.09489 },
+				"detailUrl": "https://www.rightmove.co.uk/house-prices/details/england-94896578-11693977?s=c3ec855a7c85acc5ee62106b5a32721a9fe1422a1c4bd34c877c0ee53657c1bc"
+			},
+			{
+				"address": "93, Menlo Gardens, London, Greater London SE19 3DX",
+				"propertyType": "Flat",
+				"bedrooms": 1,
+				"images": {
+					"imageUrl": "https://media.rightmove.co.uk/dir/12k/11433/71130611/11433_0131_HRT013109018_IMG_01_0003_max_135x100.jpg",
+					"mediumImageUrl": "https://media.rightmove.co.uk/dir/12k/11433/71130611/11433_0131_HRT013109018_IMG_01_0003_max_296x197.jpg",
+					"count": 4
+				},
+				"hasFloorPlan": true,
+				"transactions": [
+					{
+						"displayPrice": "£170,000",
+						"dateSold": "15 Jun 2018",
+						"tenure": "Leasehold",
+						"newBuild": false
+					},
+					{
+						"displayPrice": "£165,000",
+						"dateSold": "30 Nov 2015",
+						"tenure": "Leasehold",
+						"newBuild": false
+					},
+					{
+						"displayPrice": "£48,000",
+						"dateSold": "21 Dec 2000",
+						"tenure": "Leasehold",
+						"newBuild": false
+					},
+					{
+						"displayPrice": "£38,950",
+						"dateSold": "29 Oct 1999",
+						"tenure": "Leasehold",
+						"newBuild": false
+					}
+				],
+				"location": { "lat": 51.41487, "lng": -0.09489 },
+				"detailUrl": "https://www.rightmove.co.uk/house-prices/details/england-71130611-55966319?s=7012b6c80aa6b2af41021f5212734439abe8d919bb17e549de94e6c23f7f0e3e"
+			},
+			{
+				"address": "147, Menlo Gardens, London, Greater London SE19 3DX",
+				"propertyType": "Flat",
+				"bedrooms": 2,
+				"images": {
+					"imageUrl": "https://media.rightmove.co.uk/dir/106k/105764/70096064/105764_36635s_IMG_15_0000_max_135x100.jpg",
+					"mediumImageUrl": "https://media.rightmove.co.uk/dir/106k/105764/70096064/105764_36635s_IMG_15_0000_max_296x197.jpg",
+					"count": 18
+				},
+				"hasFloorPlan": true,
+				"transactions": [
+					{
+						"displayPrice": "£330,000",
+						"dateSold": "11 May 2018",
+						"tenure": "Leasehold",
+						"newBuild": false
+					},
+					{
+						"displayPrice": "£183,000",
+						"dateSold": "31 Mar 2010",
+						"tenure": "Leasehold",
+						"newBuild": false
+					},
+					{
+						"displayPrice": "£167,000",
+						"dateSold": "20 Mar 2006",
+						"tenure": "Leasehold",
+						"newBuild": false
+					},
+					{
+						"displayPrice": "£149,950",
+						"dateSold": "28 May 2004",
+						"tenure": "Leasehold",
+						"newBuild": false
+					}
+				],
+				"location": { "lat": 51.41487, "lng": -0.09489 },
+				"detailUrl": "https://www.rightmove.co.uk/house-prices/details/england-70096064-55966316?s=e1a0f9face93603d0f4110a50133cb7d9f4bd3205314c3e849c0eda2a90106d5"
+			},
+			{
+				"address": "103, Menlo Gardens, London, Greater London SE19 3DX",
+				"propertyType": "Flat",
+				"bedrooms": 0,
+				"images": {
+					"imageUrl": "https://media.rightmove.co.uk/dir/12k/11433/59446262/11433_0131_HRT013108189_IMG_01_0000_max_135x100.jpg",
+					"mediumImageUrl": "https://media.rightmove.co.uk/dir/12k/11433/59446262/11433_0131_HRT013108189_IMG_01_0000_max_296x197.jpg",
+					"count": 6
+				},
+				"hasFloorPlan": true,
+				"transactions": [
+					{
+						"displayPrice": "£180,000",
+						"dateSold": "24 Aug 2016",
+						"tenure": "Leasehold",
+						"newBuild": false
+					}
+				],
+				"location": { "lat": 51.41487, "lng": -0.09489 },
+				"detailUrl": "https://www.rightmove.co.uk/house-prices/details/england-59446262-89105643?s=34d4e402815a6609e42faf3db9dd2a415cc443cecba96fd739b1d38f009ee53d"
+			},
+			{
+				"address": "117, Menlo Gardens, London, Greater London SE19 3DX",
+				"propertyType": "Terraced",
+				"bedrooms": 2,
+				"images": {
+					"imageUrl": "https://media.rightmove.co.uk/dir/86k/85703/37485723/85703_2161477_IMG_06_0000_max_135x100.JPG",
+					"mediumImageUrl": "https://media.rightmove.co.uk/dir/86k/85703/37485723/85703_2161477_IMG_06_0000_max_296x197.JPG",
+					"count": 5
+				},
+				"hasFloorPlan": true,
+				"transactions": [
+					{
+						"displayPrice": "£321,000",
+						"dateSold": "20 Apr 2016",
+						"tenure": "Leasehold",
+						"newBuild": false
+					}
+				],
+				"location": { "lat": 51.41487, "lng": -0.09489 },
+				"detailUrl": "https://www.rightmove.co.uk/house-prices/details/england-37485723-72455403?s=fcc7e65c7536a48a32126a0f7b2816e55e9d2dd7279eaf3c367dad4cd1e45849"
+			},
+			{
+				"address": "83, Menlo Gardens, London, Greater London SE19 3DX",
+				"propertyType": "Flat",
+				"bedrooms": 0,
+				"images": {
+					"imageUrl": "https://media.rightmove.co.uk/dir/96k/95980/52723472/95980_33525-1_IMG_01_0000_max_135x100.jpg",
+					"mediumImageUrl": "https://media.rightmove.co.uk/dir/96k/95980/52723472/95980_33525-1_IMG_01_0000_max_296x197.jpg",
+					"count": 4
+				},
+				"hasFloorPlan": true,
+				"transactions": [
+					{
+						"displayPrice": "£150,000",
+						"dateSold": "17 Dec 2015",
+						"tenure": "Leasehold",
+						"newBuild": false
+					}
+				],
+				"location": { "lat": 51.41487, "lng": -0.09489 },
+				"detailUrl": "https://www.rightmove.co.uk/house-prices/details/england-52723472-72455400?s=748216074613744484f5b6f45a0f4c6df95c5424b56f55889fe92a83d21cc119"
+			},
+			{
+				"address": "111, Menlo Gardens, London, Greater London SE19 3DX",
+				"propertyType": "Flat",
+				"bedrooms": 2,
+				"images": {
+					"imageUrl": "https://media.rightmove.co.uk/dir/24k/23060/44449457/23060_ADD090935_IMG_00_0000_max_135x100.JPG",
+					"mediumImageUrl": "https://media.rightmove.co.uk/dir/24k/23060/44449457/23060_ADD090935_IMG_00_0000_max_296x197.JPG",
+					"count": 6
+				},
+				"hasFloorPlan": true,
+				"transactions": [
+					{
+						"displayPrice": "£235,000",
+						"dateSold": "28 Mar 2014",
+						"tenure": "Leasehold",
+						"newBuild": false
+					},
+					{
+						"displayPrice": "£91,000",
+						"dateSold": "16 Feb 2001",
+						"tenure": "Leasehold",
+						"newBuild": false
+					}
+				],
+				"location": { "lat": 51.41487, "lng": -0.09489 },
+				"detailUrl": "https://www.rightmove.co.uk/house-prices/details/england-44449457-72455394?s=6f9c5d43b2dba7ba4ffa89597d352f20a14bff68d7c17c73a7d2196930e712bf"
+			},
+			{
+				"address": "145, Menlo Gardens, London, Greater London SE19 3DX",
+				"propertyType": "Flat",
+				"bedrooms": 2,
+				"images": {
+					"imageUrl": "https://media.rightmove.co.uk/dir/194k/193388/80997552/193388_VES-SE19-001_IMG_00_0000_max_135x100.jpeg",
+					"mediumImageUrl": "https://media.rightmove.co.uk/dir/194k/193388/80997552/193388_VES-SE19-001_IMG_00_0000_max_296x197.jpeg",
+					"count": 19
+				},
+				"hasFloorPlan": true,
+				"transactions": [
+					{
+						"displayPrice": "£203,500",
+						"dateSold": "14 May 2013",
+						"tenure": "Leasehold",
+						"newBuild": false
+					},
+					{
+						"displayPrice": "£180,000",
+						"dateSold": "22 Jun 2007",
+						"tenure": "Leasehold",
+						"newBuild": false
+					}
+				],
+				"location": { "lat": 51.41487, "lng": -0.09489 },
+				"detailUrl": "https://www.rightmove.co.uk/house-prices/details/england-80997552-72455391?s=92cf489aedf7a18a3964dc9110231304576bf811223328995f80826c544c00e5"
+			},
+			{
+				"address": "113, Menlo Gardens, London, Greater London SE19 3DX",
+				"propertyType": "Flat",
+				"bedrooms": null,
+				"images": {
+					"imageUrl": "/spw/images/placeholder/no-image.svg",
+					"mediumImageUrl": "/spw/images/placeholder/no-image.svg",
+					"count": 0
+				},
+				"hasFloorPlan": false,
+				"transactions": [
+					{
+						"displayPrice": "£181,000",
+						"dateSold": "17 Aug 2007",
+						"tenure": "Leasehold",
+						"newBuild": false
+					},
+					{
+						"displayPrice": "£139,500",
+						"dateSold": "12 Feb 2007",
+						"tenure": "Leasehold",
+						"newBuild": false
+					}
+				],
+				"location": { "lat": 51.41487, "lng": -0.09489 },
+				"detailUrl": ""
+			},
+			{
+				"address": "95, Menlo Gardens, London, Greater London SE19 3DX",
+				"propertyType": "Flat",
+				"bedrooms": 0,
+				"images": {
+					"imageUrl": "https://media.rightmove.co.uk/dir/37k/36255/79443394/36255_104471_IMG_01_0000_max_135x100.jpeg",
+					"mediumImageUrl": "https://media.rightmove.co.uk/dir/37k/36255/79443394/36255_104471_IMG_01_0000_max_296x197.jpeg",
+					"count": 5
+				},
+				"hasFloorPlan": false,
+				"transactions": [
+					{
+						"displayPrice": "£130,000",
+						"dateSold": "18 May 2007",
+						"tenure": "Leasehold",
+						"newBuild": false
+					},
+					{
+						"displayPrice": "£28,000",
+						"dateSold": "10 Feb 1995",
+						"tenure": "Leasehold",
+						"newBuild": false
+					}
+				],
+				"location": { "lat": 51.41487, "lng": -0.09489 },
+				"detailUrl": "https://www.rightmove.co.uk/house-prices/details/england-79443394-72455376?s=b2f44a0794bb671a57a1c5357a77418667ee3b524bff812a62da7f5a7c7edc3c"
+			},
+			{
+				"address": "121, Menlo Gardens, London, Greater London SE19 3DX",
+				"propertyType": "Flat",
+				"bedrooms": 2,
+				"images": {
+					"imageUrl": "https://media.rightmove.co.uk/dir/24k/23060/41151115/23060_CP003653_IMG_00_0000_max_135x100.jpg",
+					"mediumImageUrl": "https://media.rightmove.co.uk/dir/24k/23060/41151115/23060_CP003653_IMG_00_0000_max_296x197.jpg",
+					"count": 5
+				},
+				"hasFloorPlan": true,
+				"transactions": [
+					{
+						"displayPrice": "£157,000",
+						"dateSold": "25 Sep 2006",
+						"tenure": "Leasehold",
+						"newBuild": false
+					},
+					{
+						"displayPrice": "£114,000",
+						"dateSold": "30 Aug 2001",
+						"tenure": "Leasehold",
+						"newBuild": false
+					}
+				],
+				"location": { "lat": 51.41487, "lng": -0.09489 },
+				"detailUrl": "https://www.rightmove.co.uk/house-prices/details/england-41151115-72455370?s=2081a80992e88ccd6bab15f5c6858823c006053e025537065bfd6ed6e6fadd70"
+			},
+			{
+				"address": "153, Menlo Gardens, London, Greater London SE19 3DX",
+				"propertyType": "Flat",
+				"bedrooms": null,
+				"images": {
+					"imageUrl": "/spw/images/placeholder/no-image.svg",
+					"mediumImageUrl": "/spw/images/placeholder/no-image.svg",
+					"count": 0
+				},
+				"hasFloorPlan": false,
+				"transactions": [
+					{
+						"displayPrice": "£73,500",
+						"dateSold": "25 Jun 1999",
+						"tenure": "Leasehold",
+						"newBuild": false
+					},
+					{
+						"displayPrice": "£54,000",
+						"dateSold": "7 Mar 1997",
+						"tenure": "Leasehold",
+						"newBuild": false
+					}
+				],
+				"location": { "lat": 51.41487, "lng": -0.09489 },
+				"detailUrl": ""
+			},
+			{
+				"address": "109, Menlo Gardens, London, Greater London SE19 3DX",
+				"propertyType": "Flat",
+				"bedrooms": 2,
+				"images": {
+					"imageUrl": "https://media.rightmove.co.uk/dir/24k/23060/120395261/23060_CRP220065_IMG_00_0000_max_135x100.jpeg",
+					"mediumImageUrl": "https://media.rightmove.co.uk/dir/24k/23060/120395261/23060_CRP220065_IMG_00_0000_max_296x197.jpeg",
+					"count": 14
+				},
+				"hasFloorPlan": true,
+				"transactions": [
+					{
+						"displayPrice": "£58,000",
+						"dateSold": "26 Aug 1997",
+						"tenure": "Leasehold",
+						"newBuild": false
+					}
+				],
+				"location": { "lat": 51.41487, "lng": -0.09489 },
+				"detailUrl": "https://www.rightmove.co.uk/house-prices/details/england-120395261-72455346?s=9b4543e35fdeb8b223e620f80e5498a981ef0e5aae06793b76306a66cf4ae290"
+			},
+			{
+				"address": "135, Menlo Gardens, London, Greater London SE19 3DX",
+				"propertyType": "Flat",
+				"bedrooms": 1,
+				"images": {
+					"imageUrl": "https://media.rightmove.co.uk/dir/15k/14167/68093314/14167_100502004754_IMG_01_0000_max_135x100.jpg",
+					"mediumImageUrl": "https://media.rightmove.co.uk/dir/15k/14167/68093314/14167_100502004754_IMG_01_0000_max_296x197.jpg",
+					"count": 6
+				},
+				"hasFloorPlan": false,
+				"transactions": [
+					{
+						"displayPrice": "£25,000",
+						"dateSold": "15 May 1997",
+						"tenure": "Leasehold",
+						"newBuild": false
+					},
+					{
+						"displayPrice": "£15,500",
+						"dateSold": "3 Jan 1997",
+						"tenure": "Leasehold",
+						"newBuild": false
+					}
+				],
+				"location": { "lat": 51.41487, "lng": -0.09489 },
+				"detailUrl": "https://www.rightmove.co.uk/house-prices/details/england-68093314-72455343?s=6c973af55ccb639551cceaa28b9939b01831a35b50fb3817b61f84d6c37d5330"
+			},
+			{
+				"address": "85, Menlo Gardens, London, Greater London SE19 3DX",
+				"propertyType": "Flat",
+				"bedrooms": null,
+				"images": {
+					"imageUrl": "/spw/images/placeholder/no-image.svg",
+					"mediumImageUrl": "/spw/images/placeholder/no-image.svg",
+					"count": 0
+				},
+				"hasFloorPlan": false,
+				"transactions": [
+					{
+						"displayPrice": "£14,250",
+						"dateSold": "10 Dec 1996",
+						"tenure": "Leasehold",
+						"newBuild": false
+					}
+				],
+				"location": { "lat": 51.41487, "lng": -0.09489 },
+				"detailUrl": ""
+			}
+		]
+	},
+	"sidebar": {
+		"blurb": [],
+		"nearbyLocations": {
+			"title": "House prices near SE19 3DX",
+			"links": [
+				{
+					"text": "House prices in CR0",
+					"url": "/house-prices/cr0.html"
+				},
+				{
+					"text": "House prices in SW16",
+					"url": "/house-prices/sw16.html"
+				},
+				{
+					"text": "House prices in BR3",
+					"url": "/house-prices/br3.html"
+				},
+				{
+					"text": "House prices in SW2",
+					"url": "/house-prices/sw2.html"
+				},
+				{
+					"text": "House prices in SW17",
+					"url": "/house-prices/sw17.html"
+				},
+				{
+					"text": "House prices in CR9",
+					"url": "/house-prices/cr9.html"
+				},
+				{
+					"text": "House prices in SE6",
+					"url": "/house-prices/se6.html"
+				}
+			]
+		},
+		"propertyValueLinks": {
+			"title": "What is your property worth?",
+			"links": [
+				{
+					"text": "Agent Property Valuation",
+					"url": "/property-valuation.html"
+				},
+				{
+					"text": "Market Trends for SE19 3DX",
+					"url": "/house-prices-in-my-area/marketTrendsTotalPropertiesSoldAndAveragePrice.html?searchLocation=SE19+3DX"
+				},
+				{
+					"text": "Price Comparison Report for SE19 3DX",
+					"url": "/house-value.html?searchLocation=SE19+3DX"
+				},
+				{
+					"text": "Estate agents in SE19 3DX",
+					"url": "/estate-agents/find.html?locationIdentifier=POSTCODE^758914"
+				},
+				{
+					"text": "Properties for sale in SE19 3DX",
+					"url": "/property-for-sale/find.html?locationIdentifier=POSTCODE^758914"
+				},
+				{
+					"text": "Properties to let in SE19 3DX",
+					"url": "/property-to-rent/find.html?locationIdentifier=POSTCODE^758914"
+				},
+				{
+					"text": "Selling guide",
+					"url": "/resources/property-guides/selling-guide.html"
+				},
+				{
+					"text": "Buying guide",
+					"url": "/resources/property-guides/buying-guide.html"
+				},
+				{
+					"text": "House Price Index",
+					"url": "/news/house-price-index"
+				}
+			]
+		},
+		"staticMapUrl": "https://media.rightmove.co.uk/map/_generate?polygonLineColor=%232E8E89FF&polygonFillColor=%232E8E8914&width=278&height=246&longitude=-0.09489&latitude=51.41487&mapPolygon=%7D%7DxxH%60pQ&signature=avHe3q_A2Qta0IPvlGn6hLLaB_M=",
+		"mapViewUrl": "https://www.rightmove.co.uk/house-prices/search.html?showMapView=showMapView&housePricesMap=Map+View&locationIdentifier=POSTCODE%5E758914&propertyType=0"
+	},
+	"searchLocation": {
+		"displayName": "SE19 3DX",
+		"searchName": "se19-3dx",
+		"locationType": "POSTCODE",
+		"locationId": "758914"
+	},
+	"searchParameters": {},
+	"searchParameterDefaults": {
+		"tenure": "ANY",
+		"propertyCategory": "ANY",
+		"sortBy": "DATE_SOLD",
+		"propertyType": "ANY",
+		"soldIn": "30",
+		"radius": "0.0"
+	},
+	"pagination": { "current": 1, "first": 1, "last": 1, "total": 15 },
+	"leadValuationModel": {
+		"agents": [
+			{
+				"customerId": 10920466,
+				"name": "Crystal Palace",
+				"displayAddress": "70 Church Road\r\nCrystal Palace\r\nLondon\r\nSE19 SEZ",
+				"logoUrl": "https://media.rightmove.co.uk/brand/brand_logo_30118_0005.jpeg",
+				"tradingName": "Martin & Co"
+			},
+			{
+				"customerId": 15629798,
+				"name": "Dulwich",
+				"displayAddress": "1C Calton Avenue,\r\nLondon,\r\nSE21 7DE",
+				"logoUrl": "https://media.rightmove.co.uk/company/clogo_16112_0007.jpeg",
+				"tradingName": "Knight Frank"
+			},
+			{
+				"customerId": 10903828,
+				"name": "Crystal Palace, London",
+				"displayAddress": "9-11 Church Road\r\nCrystal Palace\r\nLondon\r\nSE19 2TF",
+				"logoUrl": "https://media.rightmove.co.uk/company/clogo_28999_0000.png",
+				"tradingName": "iMove Property"
+			},
+			{
+				"customerId": 8038841,
+				"name": "Crystal Palace",
+				"displayAddress": "45-47 Westow Hill,\r\nLondon,\r\nSE19 1TS",
+				"logoUrl": "https://media.rightmove.co.uk/69k/68930/branch_logo_68930_0000.jpeg",
+				"tradingName": "Winkworth Crystal Palace"
+			},
+			{
+				"customerId": 38688,
+				"name": "Norbury",
+				"displayAddress": "1449 London Road, London, SW16 4AQ",
+				"logoUrl": "https://media.rightmove.co.uk/brand/brand_logo_71570_0002.jpeg",
+				"tradingName": "Bairstow Eves"
+			},
+			{
+				"customerId": 40914,
+				"name": "Crystal Palace",
+				"displayAddress": "Crystal Palace Office Westow Street,\r\nLondon,\r\nSE19 3AH",
+				"logoUrl": "https://media.rightmove.co.uk/company/clogo_761_0016.png",
+				"tradingName": "Streets Ahead"
+			}
+		],
+		"postcode": { "outcode": "SE19", "incode": "3DX", "outcodeId": 2319 }
+	},
+	"disclaimer": {
+		"showLandReg": true,
+		"showRos": false,
+		"loadDates": {
+			"landReg": {
+				"earliestTransaction": "1 January 1995",
+				"mostRecentTransaction": "28 July 2022",
+				"lastLoadDate": "12 September 2022"
+			},
+			"ros": {
+				"earliestTransaction": "18 October 1996",
+				"mostRecentTransaction": "29 July 2022",
+				"lastLoadDate": "12 September 2022"
+			}
+		}
+	},
+	"mortgageWidgetModel": {
+		"currentAverage": null,
+		"percentageChange": null,
+		"isIncrease": null
+	}
 }
