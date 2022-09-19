@@ -1,8 +1,8 @@
 {
   "name": "ioroot-advanced-property-search",
-  "productName": "Advanced Property Search",
-  "description": "Advanced Property Searc by IORoot.com",
-  "version": "0.1.7-alpha",
+  "productName": "APS",
+  "description": "Advanced Property Search by IORoot.com",
+  "version": "0.1.10-alpha",
   "private": true,
   "author": "Andy Pearson <andy@londonparkour.com>",
   "copyright": "© 2022, LondonParkour LTD.",

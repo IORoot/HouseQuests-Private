@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.10 (2022-09-19)
+
+- Added Intro modal
+- Use the package.json for version number
+- Neighbourhood Crime Ratings
+- Neighbourhood Renters vs Buyers
+
 
 ## 0.1.9 (2022-09-18)
 
@@ -7,11 +14,11 @@
 
 - Simple responsiveness on the drawers and main page.
 - Add schools to local area
-- Add Neibourhood rating:
+- Add Neighbourhood rating:
   - overall average property price
   - price change
   - number of properties
-
+  - Renters in postcode
 
 
 ## 0.1.8 (2022-09-15)

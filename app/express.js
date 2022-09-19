@@ -37,6 +37,8 @@ require('./services/zoopla/get_map_data_all')(app);
 
 require('./services/zoopla/get_property_data')(app);
 
+require('./services/zoopla/get_renters_data')(app);
+
 
 //Rightmove
 require('./services/rightmove/get_map_data')(app);

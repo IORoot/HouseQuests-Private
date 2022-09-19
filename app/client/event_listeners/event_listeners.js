@@ -27,6 +27,8 @@ import { listener_import } from "./listener_import.js";
 import { listener_searches_load } from "./listener_searches_load.js";
 import { listener_searches_save } from "./listener_searches_save.js";
 import { listener_searches_overwrite } from "./listener_searches_overwrite.js";
+import { listener_ratings_crimes } from "./listener_ratings_crimes.js";
+import { listener_ratings_renters } from "./listener_ratings_renters.js";
 
 import { filter_monochrome } from "./listener_filter_monochrome.js";
 import { filter_invert } from "./listener_filter_invert.js";
@@ -57,6 +59,8 @@ export function load_event_listeners(){
     listener_searches_save()
     listener_searches_load()
     listener_searches_overwrite()
+    listener_ratings_crimes()
+    listener_ratings_renters()
     
     filter_monochrome()
     filter_invert()

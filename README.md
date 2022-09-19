@@ -102,9 +102,8 @@ Different Shop Types:
       - [x] Crime ratings
           - Number against national average.
           - Type of crime
-      - [ ] Supermarket level
       - [ ] Number of renters in area vs owners
-      - [ ] [Zoopla Lookup](https://www.zoopla.co.uk/house-prices/se13-7aa/?q=SE137AA&search_source=house-prices)
+      - [x] [Zoopla Lookup](https://www.zoopla.co.uk/house-prices/se13-7aa/?q=SE137AA&search_source=house-prices)
       - [ ] [nethouseprices Lookup](https://nethouseprices.com/house-prices/se13%207aa)
       - [ ] [Postcode-level historical prices paid for local houses](https://landregistry.data.gov.uk/app/qonsole#)
       - [ ] [Standard property price reports ](https://www.gov.uk/guidance/price-paid-data-standard-reports)

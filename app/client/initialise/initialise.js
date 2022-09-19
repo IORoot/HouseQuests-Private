@@ -57,9 +57,9 @@ var totalMarkerCount = 0;
     const drawer = new Drawer(targetEl, options);
 
 
-// ┌─────────────────────────────────────┐
-// │                Popup                │
-// └─────────────────────────────────────┘
+    // ┌─────────────────────────────────────┐
+    // │                Popup                │
+    // └─────────────────────────────────────┘
 
     // https://openlayers.org/en/latest/examples/overlay.html
     const popupContainer = document.getElementById('popup');
@@ -83,11 +83,11 @@ var totalMarkerCount = 0;
 
 
 
-// ┌─────────────────────────────────────┐
-// │                                     │
-// │           Initialise Map            │
-// │                                     │
-// └─────────────────────────────────────┘
+    // ┌─────────────────────────────────────┐
+    // │                                     │
+    // │           Initialise Map            │
+    // │                                     │
+    // └─────────────────────────────────────┘
     var measurementToolSource = new ol.source.Vector();
     var measurementToolVector = new ol.layer.Vector({
         source: measurementToolSource,
@@ -133,3 +133,10 @@ var totalMarkerCount = 0;
         }),
 
     });
+
+    // ┌─────────────────────────────────────┐
+    // │         Set Version Numbers         │
+    // └─────────────────────────────────────┘
+    var packageJsonVersion = require('../package.json');
+    document.getElementById('version-intro').innerText = packageJsonVersion.productName + ' ' + packageJsonVersion.version
+    document.title = packageJsonVersion.productName + ' ' + packageJsonVersion.version
