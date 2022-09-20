@@ -26,7 +26,8 @@ ccc8f4e8fb7e8c9d5b52673faca84322cfed8e5b76b4634d978edf06f8e13332
 - [x] Setup simple authentication code system
 - [x] Move property details to right drawer and tabs.
 - [x] Basic Neighbourhood Rating
-- [ ] Intro Modal for AUTH Code
+- [x] Intro Modal for AUTH Code
+- [ ] Better URL handling for pasting inputs ( listings page rather than map page)
 - [ ] Reset Center of Map
 - [ ] National train map
 - [ ] Toggle Favourites on / off (different colours)
@@ -45,6 +46,7 @@ ccc8f4e8fb7e8c9d5b52673faca84322cfed8e5b76b4634d978edf06f8e13332
 - [ ] Updates and Changelog
 - [ ] Refactor
 - [ ] Debugging / Logging / API Trigger alerts
+- [ ] Kill-switch to stop everyone with particular version to force update.
 
 
 

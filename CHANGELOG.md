@@ -1,6 +1,10 @@
 # Changelog
 
 
+## 0.1.11 (2022-09-20)
+
+- Added Authentication access to intro modal.
+- External links to chrome for website link and streetview.
 
 ## 0.1.10 (2022-09-19)
 

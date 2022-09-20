@@ -30,6 +30,8 @@ import { listener_searches_overwrite } from "./listener_searches_overwrite.js";
 import { listener_ratings_crimes } from "./listener_ratings_crimes.js";
 import { listener_ratings_renters } from "./listener_ratings_renters.js";
 import { listener_toggle_intro_modal } from "./listener_toggle_intro_modal.js";
+import { listener_streetview } from "./listener_streetview.js";
+import { listener_website_link } from "./listener_website_link.js";
 
 import { filter_monochrome } from "./listener_filter_monochrome.js";
 import { filter_invert } from "./listener_filter_invert.js";
@@ -63,6 +65,8 @@ export function load_event_listeners(){
     listener_ratings_crimes()
     listener_ratings_renters()
     listener_toggle_intro_modal()
+    listener_streetview()
+    listener_website_link()
     
     filter_monochrome()
     filter_invert()

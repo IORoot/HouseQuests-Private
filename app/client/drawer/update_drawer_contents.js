@@ -69,7 +69,5 @@ export function update_drawer_contents(propertyDetails, source)
     document.getElementById("drawer-link").href = property.link;
     document.getElementById("drawer-link-text").innerHTML = source;
 
-    // Set Google Streetview
-    document.getElementById("drawer-google-streetview").href = 'https://www.google.com/maps/@?api=1&map_action=pano&viewpoint='+property.latitude+','+property.longitude
-    
+
 }
