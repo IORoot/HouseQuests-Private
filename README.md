@@ -25,7 +25,8 @@ ccc8f4e8fb7e8c9d5b52673faca84322cfed8e5b76b4634d978edf06f8e13332
     - [ ] Linux
 - [x] Setup simple authentication code system
 - [x] Move property details to right drawer and tabs.
-- [ ] Neighbourhood Rating
+- [x] Basic Neighbourhood Rating
+- [ ] Intro Modal for AUTH Code
 - [ ] Reset Center of Map
 - [ ] National train map
 - [ ] Toggle Favourites on / off (different colours)
@@ -40,7 +41,6 @@ ccc8f4e8fb7e8c9d5b52673faca84322cfed8e5b76b4634d978edf06f8e13332
 - [ ] Errors. Missing properties like: [https://www.rightmove.co.uk/properties/86419927#/?channel=RES_BUY](https://www.rightmove.co.uk/properties/86419927#/?channel=RES_BUY)
 - [ ] Debug Mode
 - [x] Responsive Layout
-- [ ] Intro Modal for AUTH Code
 - [ ] Website and Distribution
 - [ ] Updates and Changelog
 - [ ] Refactor

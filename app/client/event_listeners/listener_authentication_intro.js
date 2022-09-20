@@ -6,13 +6,13 @@
 
 import { request_authentication } from '../requests/request_authentication.js'
 
-export function listener_authentication(){
+export function listener_authentication_intro(){
 
-    const submitButton = document.getElementById('authentication-code-submit');
+    const submitButton = document.getElementById('intro-authentication-code-submit');
 
     submitButton.addEventListener('click', async function(event) { 
 
-        const authenticationCode = document.getElementById('authentication-code').value;
+        const authenticationCode = document.getElementById('intro-authentication-code').value;
 
         if (!authenticationCode)
         {

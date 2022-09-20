@@ -1,7 +1,7 @@
 
 export function intro_modal()
 {
-    // Get current state of toggle
+    // Get current state of toggle from localstorage
     let introModalToggleState = window.localStorage.getItem('introModalToggle');
 
     // Set the toggle html 'checked' to be the same as the value in localstorage
@@ -13,37 +13,41 @@ export function intro_modal()
     // set the modal menu element
     const targetEl = document.getElementById('popup-modal-intro');
     
-
     // options with default values
     const options = {
         placement: 'center',
         backdropClasses: 'bg-gray-900 bg-opacity-50 dark:bg-opacity-80 fixed inset-0 z-40',
-        onHide: () => {
-        },
-        onShow: () => {
-        },
-        onToggle: () => {
-        }
     };
 
+    // Create the modal
     var introModal = new Modal(targetEl, options);
 
-    console.log('introModalToggleState: ' + introModalToggleState)
-
+    // Show the modal as long as it hasn't been disabled.
     if (introModalToggleState == 'false' || introModalToggleState == null)
     {
         // show the modal
         introModal.show();
     }
 
-    // Close the Modal button
-    const popupModalIntroClose = document.getElementById('popup-modal-intro-close');
-    popupModalIntroClose.addEventListener('click', async function(event) {
-        introModal.hide();
-    });
+    console.log('authenticated: ' + authenticated)
 
-    const popupModalIntroX = document.getElementById('popup-modal-intro-x');
-    popupModalIntroX.addEventListener('click', async function(event) {
-        introModal.hide();
-    });
+    if ( authenticated ){
+
+        document.getElementById('authentication-status').innerHTML = '<span class="text-emerald-500">Authenticated</span>';
+
+        // Close the Modal button
+        const popupModalIntroClose = document.getElementById('popup-modal-intro-close');
+        popupModalIntroClose.addEventListener('click', async function(event) {
+            introModal.hide();
+        });
+
+        const popupModalIntroX = document.getElementById('popup-modal-intro-x');
+        popupModalIntroX.addEventListener('click', async function(event) {
+            introModal.hide();
+        });
+    }
+
+    if ( ! authenticated ){
+        document.getElementById('authentication-status').innerHTML = '<span class="text-red-500">Not Authenticated</span>';
+    }
 }
