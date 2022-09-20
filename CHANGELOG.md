@@ -6,6 +6,7 @@
 - Use the package.json for version number
 - Neighbourhood Crime Ratings
 - Neighbourhood Renters vs Buyers
+- Toggle intro modal
 
 
 ## 0.1.9 (2022-09-18)
