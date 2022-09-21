@@ -25,8 +25,6 @@ export function update_neighbourhood(propertyStatistics)
     // Clear results for next property
     neighbourhoodTable.innerHTML=''
 
-    console.log(propertyStatistics)
-
     // ┌─────────────────────────────────────┐
     // │            Average Price            │
     // │          of postcode area           │
