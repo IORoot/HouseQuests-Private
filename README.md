@@ -27,7 +27,7 @@ ccc8f4e8fb7e8c9d5b52673faca84322cfed8e5b76b4634d978edf06f8e13332
 - [x] Move property details to right drawer and tabs.
 - [x] Basic Neighbourhood Rating
 - [x] Intro Modal for AUTH Code
-- [ ] Better URL handling for pasting inputs ( listings page rather than map page)
+- [x] Better URL handling for pasting inputs ( listings page rather than map page)
 - [ ] Reset Center of Map
 - [ ] National train map
 - [ ] Toggle Favourites on / off (different colours)
@@ -36,7 +36,7 @@ ccc8f4e8fb7e8c9d5b52673faca84322cfed8e5b76b4634d978edf06f8e13332
     - AND / OR / NOT / XOR close to features
 - [ ] Changing highlightList colour multiple times keeps adding entries to localStorage array. Just replace current one, don't keep adding.
 - [ ] Tests!
-- [ ] Zoopla All not getting the right results?
+- [x] Zoopla All not getting the right results?
 - [ ] User Accounts - free / unlimited
 - [ ] Loading icon - subtle - in corner?
 - [ ] Errors. Missing properties like: [https://www.rightmove.co.uk/properties/86419927#/?channel=RES_BUY](https://www.rightmove.co.uk/properties/86419927#/?channel=RES_BUY)

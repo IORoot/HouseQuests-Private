@@ -5,7 +5,8 @@
 
 - Added Authentication access to intro modal.
 - External links to chrome for website link and streetview.
-- Checking on the pasted URLs.
+- Checking on the pasted search URLs.
+- Fixed Zoopla Get All
 
 ## 0.1.10 (2022-09-19)
 

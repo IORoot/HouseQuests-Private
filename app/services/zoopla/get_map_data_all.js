@@ -5,6 +5,7 @@ module.exports = function(app){
 
     const https = require('https');
     const axios = require('axios').default;
+    var url = require('url');
     
     app.post('/zooplaAllMap', async function (req, res) {
 
@@ -35,6 +36,13 @@ module.exports = function(app){
         totalCount = firstRoundResults.totalCount
         totalResults = firstRoundResults.markers
 
+        console.log('firstRoundResults')
+        console.log(firstRoundResults)
+
+        // Get url parts
+        const addressParts = url.parse(target, true);
+        console.log(addressParts.path)
+
         // ┌─────────────────────────────────────┐
         // │          REST OF THE RESULTS        │
         // └─────────────────────────────────────┘
@@ -49,7 +57,7 @@ module.exports = function(app){
                 method: 'post',
                 url: graphqlURL,
                 headers:{ 
-                    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36',
+                    // 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36',
                     'x-api-key': '3Vzj2wUfaP3euLsV4NV9h3UAVUR3BoWd5clv9Dvu',
                     'Content-Type': 'application/json'
                 },
@@ -57,7 +65,7 @@ module.exports = function(app){
                 data: { "operationName": "getListingMapView",
                         "variables": 
                             { 
-                                "path": "/for-sale/map/property/london/south-east/?beds_max=3&beds_min=1&feature=has_garden&is_auction=false&is_retirement_home=false&is_shared_ownership=false&keywords=garden&new_homes=exclude&page_size=100&price_max=325000&price_min=275000&property_sub_type=semi_detached&property_sub_type=flats&property_sub_type=bungalow&property_sub_type=terraced&property_sub_type=detached&view_type=map&q=South%20East%20London&radius=0&results_sort=recommended&search_source=refine&polyenc=quzyH%7D%60eF%3F~siMxtx%40%3F%3F_tiM&hidePoly=true&pn="+inteval
+                                "path": addressParts.path+"&pn="+inteval
                             },
                             "query": "fragment listingFragment on Listing {\n  numberOfVideos\n  numberOfImages\n  numberOfFloorPlans\n  numberOfViews\n  listingId\n  title\n  publishedOnLabel\n  publishedOn\n  availableFrom\n  priceDrop {\n    lastPriceChangeDate\n    percentageChangeLabel\n    __typename\n  }\n  isPremium\n  highlights {\n    description\n    label\n    url\n    __typename\n  }\n  otherPropertyImages {\n    small\n    large\n    caption\n    __typename\n  }\n  branch {\n    name\n    branchDetailsUri\n    phone\n    logoUrl\n    __typename\n  }\n  features {\n    content\n    iconId\n    __typename\n  }\n  image {\n    src\n    caption\n    responsiveImgList {\n      width\n      src\n      __typename\n    }\n    __typename\n  }\n  transports {\n    title\n    poiType\n    distanceInMiles\n    features {\n      zone\n      tubeLines\n      __typename\n    }\n    __typename\n  }\n  flag\n  listingId\n  priceTitle\n  shortPriceTitle\n  price\n  address\n  tags {\n    content\n    __typename\n  }\n  listingUris {\n    contact\n    detail\n    __typename\n  }\n  location {\n    coordinates {\n      latitude\n      longitude\n      __typename\n    }\n    __typename\n  }\n  __typename\n}\n\nquery getListingMapView($path: String!) {\n  searchResults(path: $path) {\n    analyticsTaxonomy {\n      activity\n      areaName\n      bedsMax\n      bedsMin\n      brand\n      countryCode\n      countyAreaName\n      currencyCode\n      emailAllFormShown\n      emailAllTotalAgents\n      expandedResultsCount\n      listingsCategory\n      location\n      outcode\n      outcodes\n      page\n      postalArea\n      priceMax\n      priceMin\n      propertyType\n      radius\n      radiusAutoexpansion\n      regionName\n      resultsSort\n      searchGuid\n      searchIdentifier\n      searchLocation\n      searchResultsCount\n      section\n      totalResults\n      url\n      viewType\n      __typename\n    }\n    analyticsEcommerce {\n      currencyCode\n      impressions {\n        id\n        list\n        position\n        variant\n        __typename\n      }\n      __typename\n    }\n    metaInfo {\n      title\n      description\n      canonicalUri\n      __typename\n    }\n    pagination {\n      pageNumber\n      totalResults\n      totalResultsWasLimited\n      __typename\n    }\n    listings {\n      regular {\n        ...listingFragment\n        __typename\n      }\n      featured {\n        ...listingFragment\n        __typename\n      }\n      extended {\n        ...listingFragment\n        __typename\n      }\n      __typename\n    }\n    filters {\n      fields {\n        group\n        fieldName\n        label\n        isRequired\n        inputType\n        placeholder\n        allowMultiple\n        options\n        value\n        __typename\n      }\n      __typename\n    }\n    sortOrder {\n      currentSortOrder\n      options {\n        i18NLabelKey\n        value\n        __typename\n      }\n      __typename\n    }\n    seoBlurb {\n      category\n      transactionType\n      __typename\n    }\n    links {\n      saveSearch\n      createAlert\n      __typename\n    }\n    polygonV2(path: $path) {\n      polygons\n      radius\n      geoData {\n        coordinates\n        __typename\n      }\n      geoType\n      __typename\n    }\n    polyenc\n    __typename\n  }\n}\n"
                         },
