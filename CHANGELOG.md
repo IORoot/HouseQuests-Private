@@ -7,6 +7,8 @@
 - External links to chrome for website link and streetview.
 - Checking on the pasted search URLs.
 - Fixed Zoopla Get All
+- Added Free / Premium settings with removal of features without being authenticated.
+- 
 
 ## 0.1.10 (2022-09-19)
 

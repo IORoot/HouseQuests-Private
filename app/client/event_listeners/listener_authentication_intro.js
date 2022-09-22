@@ -16,7 +16,6 @@ export function listener_authentication_intro(){
 
         if (!authenticationCode)
         {
-            console.log('no code')
             return
         }
 

@@ -16,6 +16,12 @@ ccc8f4e8fb7e8c9d5b52673faca84322cfed8e5b76b4634d978edf06f8e13332
 
 
 ##  2. <a name='ThingsIwanttodofirst'></a>Things I want to do first
+- [x] User Accounts - free / unlimited
+- [x] Free account - only 200 exclusions
+- [ ] Loading icon - subtle - in corner?
+- [ ] Website and Distribution
+- [ ] Updates and Changelog
+- [ ] refresh button
 - [x] Electron App / Deployment
   - [x] Move requests to client-side
   - [ ] Build to
@@ -28,6 +34,8 @@ ccc8f4e8fb7e8c9d5b52673faca84322cfed8e5b76b4634d978edf06f8e13332
 - [x] Basic Neighbourhood Rating
 - [x] Intro Modal for AUTH Code
 - [x] Better URL handling for pasting inputs ( listings page rather than map page)
+- [x] Responsive Layout
+- [x] Zoopla All not getting the right results?
 - [ ] Reset Center of Map
 - [ ] National train map
 - [ ] Toggle Favourites on / off (different colours)
@@ -36,18 +44,14 @@ ccc8f4e8fb7e8c9d5b52673faca84322cfed8e5b76b4634d978edf06f8e13332
     - AND / OR / NOT / XOR close to features
 - [ ] Changing highlightList colour multiple times keeps adding entries to localStorage array. Just replace current one, don't keep adding.
 - [ ] Tests!
-- [x] Zoopla All not getting the right results?
-- [ ] User Accounts - free / unlimited
-- [ ] Loading icon - subtle - in corner?
 - [ ] Errors. Missing properties like: [https://www.rightmove.co.uk/properties/86419927#/?channel=RES_BUY](https://www.rightmove.co.uk/properties/86419927#/?channel=RES_BUY)
-- [ ] Debug Mode
-- [x] Responsive Layout
-- [ ] Website and Distribution
-- [ ] Updates and Changelog
 - [ ] Refactor
 - [ ] Debugging / Logging / API Trigger alerts
 - [ ] Kill-switch to stop everyone with particular version to force update.
-- [ ] refresh button
+- [ ] closest tube/train station
+- [ ] Tailwind library not CDN
+- [x] Count of exclusions
+- [ ] Clear all exclusions
 
 
 

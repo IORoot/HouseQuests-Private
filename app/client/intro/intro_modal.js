@@ -31,20 +31,20 @@ export function intro_modal()
 
     console.log('authenticated: ' + authenticated)
 
+    // Close the Modal button
+    const popupModalIntroClose = document.getElementById('popup-modal-intro-close');
+    popupModalIntroClose.addEventListener('click', async function(event) {
+        introModal.hide();
+    });
+
+    const popupModalIntroX = document.getElementById('popup-modal-intro-x');
+    popupModalIntroX.addEventListener('click', async function(event) {
+        introModal.hide();
+    });
+
+    // Authentication message
     if ( authenticated ){
-
         document.getElementById('authentication-status').innerHTML = '<span class="text-emerald-500">Authenticated</span>';
-
-        // Close the Modal button
-        const popupModalIntroClose = document.getElementById('popup-modal-intro-close');
-        popupModalIntroClose.addEventListener('click', async function(event) {
-            introModal.hide();
-        });
-
-        const popupModalIntroX = document.getElementById('popup-modal-intro-x');
-        popupModalIntroX.addEventListener('click', async function(event) {
-            introModal.hide();
-        });
     }
 
     if ( ! authenticated ){

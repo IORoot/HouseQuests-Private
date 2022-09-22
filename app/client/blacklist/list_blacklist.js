@@ -14,10 +14,16 @@ export function list_blacklist(){
     if (blacklist){
 
         // newest at top.
-        let revered = blacklist.reverse()
+        var reversed = blacklist.reverse()
+
+        // If not authenticated, only list the first 100
+        if ( ! authenticated )
+        {
+            reversed = reversed.slice(0, numberOfExclusionsForFree);
+        }
 
         // Loop through markers, checking if any in blacklist.
-        revered.forEach(function(marker, index) {
+        reversed.forEach(function(marker, index) {
 
             let markerID = marker[0];
             let markerSource = marker[1];
@@ -52,4 +58,8 @@ export function list_blacklist(){
     }
 
     document.getElementById("blacklist").innerHTML = blacklistItems;
+
+    document.getElementById("blacklist-count").innerText = reversed.length;
+
+
 }

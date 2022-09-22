@@ -12,6 +12,13 @@ export function check_blacklist(markers)
 
     if (!blacklist){ return markers }
 
+    // if not authenticated, only show the first 100.
+    if ( ! authenticated )
+    {
+        blacklist = blacklist.slice(0, numberOfExclusionsForFree);
+    }
+
+
     // Create an array of just the IDs. (remove the source.)
     var blacklistIDs = []
     blacklist.forEach(function(blacklistItem, index){

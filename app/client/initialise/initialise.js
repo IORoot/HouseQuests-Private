@@ -7,6 +7,7 @@
 
 // Authentication
 var authenticated = false
+var numberOfExclusionsForFree = 200
 
 // Icons
 var icon_rightmove = "https://svg-rewriter.sachinraja.workers.dev/?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fnpm%2F%40mdi%2Fsvg%406.7.96%2Fsvg%2Fhome-circle.svg&fill=%230284C7&width=20px&height=20px";
