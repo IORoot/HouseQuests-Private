@@ -8,6 +8,8 @@ import { load_layer_tube_lines } from "../map_layers/load_layer_tube_lines.js";
 import { load_layer_tube_stations } from "../map_layers/load_layer_tube_stations.js";
 import { load_layer_train_lines } from "../map_layers/load_layer_train_lines.js";
 import { load_layer_train_stations } from "../map_layers/load_layer_train_stations.js";
+import { load_layer_national_rail } from "../map_layers/load_layer_national_rail.js";
+import { load_layer_national_rail_stations } from "../map_layers/load_layer_national_rail_stations.js";
 import { load_layer_crime_boroughs } from "../map_layers/load_layer_crime_boroughs.js";
 import { load_layer_bus_routes } from "../map_layers/load_layer_bus_routes.js";
 import { load_layer_schools_academies } from "../map_layers/load_layer_schools_academies.js";
@@ -76,6 +78,29 @@ export function listener_toggle_layers(){
         button_ring_toggle(this)
         toggle_layer('train-stations')
     });
+
+
+    const toggleNationalRail = document.getElementById('toggle-national-rail');
+    toggleNationalRail.addEventListener('click', async function(event) {
+        if (!this.dataset.loaded){
+            load_layer_national_rail()
+            this.dataset.loaded = "loaded"
+        }
+        button_ring_toggle(this)
+        toggle_layer('national-rail')
+    });
+
+
+    const toggleNationalRailStations = document.getElementById('toggle-national-rail-stations');
+    toggleNationalRailStations.addEventListener('click', async function(event) {
+        if (!this.dataset.loaded){
+            load_layer_national_rail_stations()
+            this.dataset.loaded = "loaded"
+        }
+        button_ring_toggle(this)
+        toggle_layer('national-rail-stations')
+    });
+
 
     const toggleCrimeBoroughs = document.getElementById('toggle-crime-boroughs');
     toggleCrimeBoroughs.addEventListener('click', async function(event) {

@@ -90,7 +90,7 @@ export function listener_map(){
 
 
 
-            /**
+        /**
          * Click on Train Line
          */
         if (marker.type == 'tube_line')
@@ -145,6 +145,47 @@ export function listener_map(){
         }
 
 
+
+
+        /**
+         * Click on National Rail
+         */
+        if (marker.railway == "rail")
+        {
+            overlay.setPosition(event.coordinate);
+        
+            var popupHTML = '';
+            popupHTML += '<div class="flex flex-col gap-2">';
+                popupHTML += '<div class="text-md text-orange-700">National Rail Line</div>'
+                popupHTML += '<div class="text-sm">Operator: '+marker.operator+'</div>'
+                popupHTML += '<div class="text-sm">Name: '+marker.name+'</div>'
+            popupHTML += '</div>';
+
+            popupContent.innerHTML = popupHTML;
+        }
+
+
+
+
+        /**
+         * Click on National Rail Station
+         */
+        if (marker.railway == "station")
+        {
+            overlay.setPosition(event.coordinate);
+        
+            var popupHTML = '';
+            popupHTML += '<div class="flex flex-col gap-2">';
+                popupHTML += '<div class="text-md text-orange-500">National Rail Station</div>'
+                popupHTML += '<div class="text-sm">Name: '+marker.name+'</div>'
+                popupHTML += '<div class="text-sm">Operator: '+marker.operator+'</div>'
+                popupHTML += '<div class="text-sm">Network: '+marker.network+'</div>'
+                popupHTML += '<div class="text-sm">Line: '+marker.line+'</div>'
+                popupHTML += '<div class="text-sm">Platforms: '+marker.platforms+'</div>'
+            popupHTML += '</div>';
+
+            popupContent.innerHTML = popupHTML;
+        }
 
 
 

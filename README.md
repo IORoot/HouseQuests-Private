@@ -197,17 +197,12 @@ Different Shop Types:
       - [ ] [Ofsted data view searcher](https://public.tableau.com/app/profile/ofsted/viz/Dataview/DataViewsurvey)
       - [x] [Police API](https://data.police.uk/docs/)
       - [ ] [Coffee](http://overpass-turbo.eu/)
-      - [x] [TFL API](https://api.tfl.gov.uk/)
-      - [x] [Tube Map](http://www.tflmap.com/)
+
       - [ ] [Access to Jobs commuting](https://www.trustforlondon.org.uk/data/access-to-work-in-london-by-public-and-personal-transport/)
-      - [ ] [Tube map ZONES](https://github.com/oobrien/vis/blob/master/tube/data/zones1to6.json)
-      - [x] [Tube Map JSON Data](https://github.com/oobrien/vis/tree/master/tube/data)
-      - [x] [Live Tube Map](http://traintimes.org.uk/map/tube/)
-      - [x] [TFL API Example requests](https://content.tfl.gov.uk/example-api-requests.pdf)
-      - [x] [London Train Stations](https://www.doogal.co.uk/london_stations)
-      - [x] [Rail Lines](https://maps.walkingclub.org.uk/rail/rail_lines_google_map.shtml)
-      - [x] [GOV Transport Access / Nodes](https://www.gov.uk/government/publications/national-public-transport-access-node-schema)
-      - [x] [GOV NaPTAN Data](https://data.3dhub.org.uk/dataset/national-public-transport-access-nodes-naptan-bus-rail-and-tram-stops)
+
+
+
+
       - [x] [LIVE Train Times](http://traintimes.org.uk/map/#lbg)
       - [ ] [City of London Mapservers ArcGIS REST Service](https://www.mapping.cityoflondon.gov.uk/arcgis/rest/services))
 
@@ -223,8 +218,21 @@ Different Shop Types:
       - [ ] Estate Agent Link
 
 
+    - Tube Map
+      - [x] [TFL API](https://api.tfl.gov.uk/)
+      - [x] [Tube Map](http://www.tflmap.com/)
+      - [ ] [Tube map ZONES](https://github.com/oobrien/vis/blob/master/tube/data/zones1to6.json)
+      - [x] [Tube Map JSON Data](https://github.com/oobrien/vis/)
+      - [x] [Live Tube Map](http://traintimes.org.uk/map/tube/)
+      - [x] [TFL API Example requests](https://content.tfl.gov.uk/example-api-requests.pdf)
 
-
+    - National Rail
+      - [x] [London Train Stations](https://www.doogal.co.uk/london_stations)
+      - [x] [Rail Lines](https://maps.walkingclub.org.uk/rail/rail_lines_google_map.shtml)  
+      - [x] [GOV Transport Access / Nodes](https://www.gov.uk/government/publications/national-public-transport-access-node-schema)
+      - [x] [GOV NaPTAN Data](https://data.3dhub.org.uk/dataset/national-public-transport-access-nodes-naptan-bus-rail-and-tram-stops)
+      - [ ] [https://www.openrailwaymap.org/](https://www.openrailwaymap.org/)
+      - [ ] [https://nominatim.openstreetmap.org/ui/search.html](https://nominatim.openstreetmap.org/ui/search.html) (used to find locations on overpass turbo)
 
 
 
