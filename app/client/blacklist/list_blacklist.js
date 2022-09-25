@@ -59,7 +59,9 @@ export function list_blacklist(){
 
     document.getElementById("blacklist").innerHTML = blacklistItems;
 
-    document.getElementById("blacklist-count").innerText = reversed.length;
-
+    if (reversed)
+    {
+        document.getElementById("blacklist-count").innerText = reversed.length;
+    }
 
 }

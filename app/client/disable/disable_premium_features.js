@@ -35,6 +35,7 @@ export function disable_premium_features()
     clone_and_recolour('load-local-schools')
     clone_and_recolour('load-neighbourhood-crimes')
     clone_and_recolour('load-neighbourhood-renters')
+    clone_and_recolour('introModalToggle')
 
 }
 

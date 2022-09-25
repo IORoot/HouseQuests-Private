@@ -1,5 +1,6 @@
 
 import { request_authentication } from '../requests/request_authentication.js' 
+import { validate_authentication } from './validate_authentication.js' 
 
 export async function check_authentication(authenticationCode) {
 
@@ -12,10 +13,13 @@ export async function check_authentication(authenticationCode) {
     authenticationField.value = savedAuthenticationCode
     authenticationIntroField.value = savedAuthenticationCode
 
-    let authenticationStatus = await request_authentication(savedAuthenticationCode)
-
-    if (authenticationStatus){
-        authenticated = authenticationStatus
+    let authenticationData = await request_authentication(savedAuthenticationCode)
+    
+    // If there is no response or false
+    if (!authenticationData){
+        return
     }
+
+    authenticated = validate_authentication(authenticationData)
 
 }

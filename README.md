@@ -18,10 +18,25 @@ ccc8f4e8fb7e8c9d5b52673faca84322cfed8e5b76b4634d978edf06f8e13332
 ##  2. <a name='ThingsIwanttodofirst'></a>Things I want to do first
 - [x] User Accounts - free / unlimited
 - [x] Free account - only 200 exclusions
+- [x] Purchases and enabling - auth 
+  - [x] Valid-until date
+  - [x] Enabled / Disabled
+  - [x] Name is set
+  - [x] PM2 needs reloading every time the secretkeys change? How to dynamically read without reload? --watch
 - [ ] Loading icon - subtle - in corner?
+- [x] Kill-switch to stop everyone with particular version to force update. 'enabled:true/false'
+- [x] refresh button
+- [ ] Clear all exclusions
+  - [ ] source specific
+- [x] Link to Goto zoopla / rightmove / onthemarket map search page
 - [ ] Website and Distribution
+  - [ ] Wireframe
+  - [ ] Design
+  - [ ] Build
+    - [ ] Modern container deployment to Netlify / vercel? 
+    - [ ] Svelte / Next.js / Gatsby 
+  - [ ] Deployment pipelines
 - [ ] Updates and Changelog
-- [ ] refresh button
 - [x] Electron App / Deployment
   - [x] Move requests to client-side
   - [ ] Build to
@@ -36,22 +51,19 @@ ccc8f4e8fb7e8c9d5b52673faca84322cfed8e5b76b4634d978edf06f8e13332
 - [x] Better URL handling for pasting inputs ( listings page rather than map page)
 - [x] Responsive Layout
 - [x] Zoopla All not getting the right results?
-- [ ] Reset Center of Map
-- [ ] National train map
+- [x] Count of exclusions
+- [x] National train map
 - [ ] Toggle Favourites on / off (different colours)
 - [ ] Custom Notes
-- [ ] Advanced location filtering. 
-    - AND / OR / NOT / XOR close to features
 - [ ] Changing highlightList colour multiple times keeps adding entries to localStorage array. Just replace current one, don't keep adding.
 - [ ] Tests!
 - [ ] Errors. Missing properties like: [https://www.rightmove.co.uk/properties/86419927#/?channel=RES_BUY](https://www.rightmove.co.uk/properties/86419927#/?channel=RES_BUY)
 - [ ] Refactor
 - [ ] Debugging / Logging / API Trigger alerts
-- [ ] Kill-switch to stop everyone with particular version to force update.
 - [ ] closest tube/train station
 - [ ] Tailwind library not CDN
-- [x] Count of exclusions
-- [ ] Clear all exclusions
+- [ ] Reset Center of Map
+
 
 
 

@@ -1,11 +1,20 @@
 # Changelog
 
+## 0.1.13 (2022-09-25)
+- Added ol-ext to control colours of map
+- Got monochrome, sepia, dark, invert working
+- refresh page button
+- Authentication now has checks for
+  - enabled / disabled state
+  - name is set
+  - valid-until date has not passed.
+- Add buttons to goto the search page in chrome.
+- Truncate buttons for exclude list.
+
 ## 0.1.12 (2022-09-23)
 
 - National Rail Lines (England)
 - National Rail Stations (England)
-
-
 
 ## 0.1.11 (2022-09-20)
 

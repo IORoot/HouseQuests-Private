@@ -29,7 +29,7 @@ export function intro_modal()
         introModal.show();
     }
 
-    console.log('authenticated: ' + authenticated)
+    // console.log('authenticated: ' + authenticated)
 
     // Close the Modal button
     const popupModalIntroClose = document.getElementById('popup-modal-intro-close');

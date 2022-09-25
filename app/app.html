@@ -7,6 +7,7 @@
         <link rel="stylesheet" type="text/css" href="./views/style.css" />
         <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
         <script src="./lib/v6.15.1-dist/ol.js"></script>
+        <script src="./lib/ol-ext/ol-ext.min.js"></script>
 
         <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
@@ -105,6 +106,10 @@
                                         <button id="zooplaGetAllModal" class="ml-auto block text-white bg-purple-700 hover:bg-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center" type="button" data-modal-toggle="popup-modal-zoopla-getall">
                                             <svg class="w-4 h-4 fill-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9,11.5A2.5,2.5 0 0,0 11.5,9A2.5,2.5 0 0,0 9,6.5A2.5,2.5 0 0,0 6.5,9A2.5,2.5 0 0,0 9,11.5M9,2C12.86,2 16,5.13 16,9C16,14.25 9,22 9,22C9,22 2,14.25 2,9A7,7 0 0,1 9,2M15,17H18V14H20V17H23V19H20V22H18V19H15V17Z"/></svg>
                                         </button>
+
+                                        <button id="zoopla-goto-search" class="block text-white bg-purple-700 hover:bg-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center" type="button">
+                                            <svg class="w-4 h-4 fill-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
+                                        </button>
                                     </div>
                                 </div>
             
@@ -122,9 +127,13 @@
                                         
                                         <label for="rightmoveInputToggle" class="inline-flex relative items-center mr-5 cursor-pointer">
                                             <input type="checkbox" value="" id="rightmoveInputToggle" class="sr-only peer" checked>
-                                            <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-teal-300  peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-teal-600"></div>
+                                            <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-teal-300  peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-2 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-teal-600"></div>
                                         </label>
                                         <div id="rightmoveInputCount" class="text-cyan-500 text-sm my-auto"></div>
+
+                                        <button id="rightmove-goto-search" class="ml-auto block text-white bg-cyan-500 hover:bg-cyan-600 font-medium rounded-lg text-sm px-5 py-2.5 text-center" type="button">
+                                            <svg class="w-4 h-4 fill-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
+                                        </button>
                                     </div>
                                 </div>
             
@@ -141,10 +150,16 @@
                                     <div class="flex flex-row gap-2">
                                         <label for="onthemarketInputToggle" class="inline-flex relative items-center mr-5 cursor-pointer">
                                             <input type="checkbox" value="" id="onthemarketInputToggle" class="sr-only peer" checked>
-                                            <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-red-300  peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-red-600"></div>
+                                            <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-red-300  peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-2 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-red-600"></div>
                                         </label>
                                         <div id="onthemarketInputCount" class="text-rose-500 text-sm my-auto"></div>
+
+
+                                        <button id="onthemarket-goto-search" class="ml-auto block text-white bg-rose-500 hover:bg-rose-600 font-medium rounded-lg text-sm px-5 py-2.5 text-center" type="button">
+                                            <svg class="w-4 h-4 fill-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
+                                        </button>
                                     </div>
+
                                 </div>
             
                             </div>
@@ -158,6 +173,7 @@
                         
                         <div class="flex flex-row gap-2">
                             <button id="clear-all-markers" type="button" class="w-1/2 md:w-1/4 lg:1/6  text-white bg-gradient-to-r from-orange-500 via-orange-600 to-orange-700 hover:bg-gradient-to-br font-regular rounded-lg text-sm px-5 py-2.5 text-center mb-2"><svg class="w-4 h-4 fill-white m-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9,2C5.14,2 2,5.14 2,9C2,14.25 9,22 9,22C9,22 16,14.25 16,9A7,7 0 0,0 9,2M9,6.5A2.5,2.5 0 0,1 11.5,9A2.5,2.5 0 0,1 9,11.5A2.5,2.5 0 0,1 6.5,9A2.5,2.5 0 0,1 9,6.5M16.58,14.16L15.17,15.58L17.58,18L15.17,20.41L16.58,21.82L19,19.41L21.41,21.82L22.83,20.41L20.41,18L22.83,15.58L21.41,14.16L19,16.58"/></svg><span class="m-auto">Clear Searches</span></button>
+                            <button id="refresh-page" type="button" class="w-1/2 md:w-1/4 lg:1/6  text-white bg-gradient-to-r from-green-500 via-green-600 to-green-700 hover:bg-gradient-to-br font-regular rounded-lg text-sm px-5 py-2.5 text-center mb-2"><svg class="w-4 h-4 fill-white m-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.65,6.35C16.2,4.9 14.21,4 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20C15.73,20 18.84,17.45 19.73,14H17.65C16.83,16.33 14.61,18 12,18A6,6 0 0,1 6,12A6,6 0 0,1 12,6C13.66,6 15.14,6.69 16.22,7.78L13,11H20V4L17.65,6.35Z"/></svg><span class="m-auto">Refresh Page</span></button>
                         </div>
 
                     </div>
@@ -234,6 +250,12 @@
 
                         <p class="col-span-2 text-xs text-gray-500 mb-4">Number of exclusions : <span id="blacklist-count">0</span></p>
                         
+                        <div class="flex flex-row gap-4">
+                            <button id="truncate-zoopla-blacklist" data-toggle="" type="button" class="text-white bg-gradient-to-r from-purple-700 to-purple-900 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Remove All Zoopla Exclusions</button>
+                            <button id="truncate-rightmove-blacklist" data-toggle="" type="button" class="text-white bg-gradient-to-r from-cyan-700 to-cyan-900 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Remove All Rightmove Exclusions</button>
+                            <button id="truncate-onthemarket-blacklist" data-toggle="" type="button" class="text-white bg-gradient-to-r from-rose-700 to-rose-900 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Remove All OnTheMarket Exclusions</button>
+                            <button id="truncate-all-blacklist" data-toggle="" type="button" class="text-white bg-gradient-to-r from-gray-800  to-black hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Remove All Exclusions</button>
+                        </div>
                     </div>
 
 

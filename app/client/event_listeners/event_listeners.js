@@ -32,6 +32,9 @@ import { listener_ratings_renters } from "./listener_ratings_renters.js";
 import { listener_toggle_intro_modal } from "./listener_toggle_intro_modal.js";
 import { listener_streetview } from "./listener_streetview.js";
 import { listener_website_link } from "./listener_website_link.js";
+import { listener_refresh_page } from "./listener_refresh_page.js";
+import { listener_goto_search_url } from "./listener_goto_search_url.js";
+import { listener_blacklist_truncate } from "./listener_blacklist_truncate.js";
 
 import { filter_monochrome } from "./listener_filter_monochrome.js";
 import { filter_invert } from "./listener_filter_invert.js";
@@ -67,6 +70,9 @@ export function load_event_listeners(){
     listener_toggle_intro_modal()
     listener_streetview()
     listener_website_link()
+    listener_refresh_page()
+    listener_goto_search_url()
+    listener_blacklist_truncate()
     
     filter_monochrome()
     filter_invert()

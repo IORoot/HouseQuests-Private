@@ -111,16 +111,15 @@ var totalMarkerCount = 0;
         title: 'measurementTool',
     });
 
-    var sourceOSM = new ol.source.OSM();
 
+    var openStreetMap = new ol.layer.Tile({ source: new ol.source.OSM() })
+    
     map = new ol.Map({
         target: 'map',
 
         // Use new OSM OpenSourceMap
         layers: [
-            new ol.layer.Tile({
-                source: sourceOSM
-            }),
+            openStreetMap,
             measurementToolVector
         ],
 

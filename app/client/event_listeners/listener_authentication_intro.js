@@ -5,6 +5,7 @@
 // └─────────────────────────────────────┘
 
 import { request_authentication } from '../requests/request_authentication.js'
+import { validate_authentication } from '../authentication/validate_authentication.js' 
 
 export function listener_authentication_intro(){
 
@@ -23,14 +24,17 @@ export function listener_authentication_intro(){
         window.localStorage.setItem('authenticationCode', authenticationCode)
         
         // Get authentication status
-        let authenticationStatus = await request_authentication(authenticationCode)
+        let authenticationData = await request_authentication(authenticationCode)
 
         // Authenticated! 
-        if (authenticationStatus){
-            window.localStorage.setItem('authenticationCode', authenticationCode)
-            authenticated = authenticationStatus
+        if (!authenticationData){
+            return
         }
 
+        window.localStorage.setItem('authenticationCode', authenticationCode)
+
+        authenticated = validate_authentication(authenticationData)
+        
         location.reload();
 
     });
