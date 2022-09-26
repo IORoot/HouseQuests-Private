@@ -12,8 +12,9 @@ const beforeEach = function() {
   return this.app.start();
 };
 
-const afterEach = function() {
+const afterEach = function(done) {
   if (this.app && this.app.isRunning()) {
+    done()
     return this.app.stop();
   }
   return undefined;
