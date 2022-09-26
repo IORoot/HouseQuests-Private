@@ -9,6 +9,8 @@ import { shop_colour_filter } from '../shops/shop_colour_filter.js'
 
 export function load_openpass_results(title, markerdata, fill, stroke){
 
+    show_spinner()
+
     let featuresList = [];
     var defaultColour = fill
     var defaultStroke = stroke
@@ -140,4 +142,5 @@ export function load_openpass_results(title, markerdata, fill, stroke){
     // Add layer to map
     map.addLayer(layer); 
 
+    hide_spinner()
 }

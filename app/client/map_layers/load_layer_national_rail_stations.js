@@ -24,6 +24,8 @@ function rail_stations_style_Lines(feature) {
 export async function load_layer_national_rail_stations()
 {
 
+    show_spinner()
+
     const json_national_rail = await fetch('./maps/national_rail/national_rail_stations.geojson', {method: 'GET'})
     .then(response => response.json())
     .catch(error => console.log("ERROR loading /maps/national_rail/national_rail_stations.geojson file."+error));
@@ -55,4 +57,5 @@ export async function load_layer_national_rail_stations()
     // Add to map.
     map.addLayer(national_rail);
 
+    hide_spinner()
 }

@@ -13,6 +13,8 @@ export function listener_show_crimes()
 
     propertyCrimesButton.addEventListener('click', async function(event) {
 
+        show_spinner()
+
         // Get current ID.
         const propertyLongitude = document.getElementById('drawer-longitude').dataset.longitude;
         const propertyLatitude = document.getElementById('drawer-latitude').dataset.latitude;
@@ -32,7 +34,7 @@ export function listener_show_crimes()
 
         load_crime_layer(crimeMarkers);
 
-
+        hide_spinner()
     });
 
 

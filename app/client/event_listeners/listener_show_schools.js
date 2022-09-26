@@ -17,6 +17,8 @@ export function listener_show_schools()
 
     propertyButton.addEventListener('click', async function(event) {
         
+        show_spinner()
+
         // Get current ID.
         const propertyLongitude = parseFloat(document.getElementById('drawer-longitude').dataset.longitude);
         const propertyLatitude = parseFloat(document.getElementById('drawer-latitude').dataset.latitude);
@@ -52,6 +54,7 @@ export function listener_show_schools()
 
         load_openpass_results('local-school', openpassResults, "rgba(252, 211, 77, 1.0)", "rgba(245, 245, 245, 1.0)")
 
+        hide_spinner()
     });
 
 }

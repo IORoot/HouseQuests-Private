@@ -17,6 +17,8 @@ export function listener_show_coffee()
 
     propertyButton.addEventListener('click', async function(event) {
         
+        show_spinner()
+
         // Get current ID.
         const propertyLongitude = parseFloat(document.getElementById('drawer-longitude').dataset.longitude);
         const propertyLatitude = parseFloat(document.getElementById('drawer-latitude').dataset.latitude);
@@ -52,6 +54,8 @@ export function listener_show_coffee()
 
         load_openpass_results('local-coffee', openpassResults, "rgba(120, 53, 15, 1.0)", "rgba(245, 158, 11, 1.0)")
 
+        hide_spinner()
+        
     });
 
 }

@@ -1,4 +1,3 @@
-
 // ┌─────────────────────────────────────┐
 // │                                     │
 // │           Global Variables          │
@@ -37,106 +36,123 @@ var currentProperty;
 // Total count of markers
 var totalMarkerCount = 0;
 
+
+
 // ┌─────────────────────────────────────┐
 // │                                     │
 // │       Initialise the Drawer         │
 // │                                     │
 // └─────────────────────────────────────┘
 
+const options = {
+    placement: 'right',
+    backdrop: false,
+    bodyScrolling: false,
+    edge: false,
+    edgeOffset: '',
+    backdropClasses: 'bg-gray-900 bg-opacity-50 fixed inset-0 z-30',
+};
 
-    const options = {
-        placement: 'right',
-        backdrop: false,
-        bodyScrolling: false,
-        edge: false,
-        edgeOffset: '',
-        backdropClasses: 'bg-gray-900 bg-opacity-50 fixed inset-0 z-30',
-    };
+const targetEl = document.getElementById('drawer');
 
-    const targetEl = document.getElementById('drawer');
-
-    const drawer = new Drawer(targetEl, options);
+const drawer = new Drawer(targetEl, options);
 
 
-    // ┌─────────────────────────────────────┐
-    // │                Popup                │
-    // └─────────────────────────────────────┘
+// ┌─────────────────────────────────────┐
+// │                Popup                │
+// └─────────────────────────────────────┘
 
-    // https://openlayers.org/en/latest/examples/overlay.html
-    const popupContainer = document.getElementById('popup');
-    const popupContent = document.getElementById('popup-content');
-    const popupCloser = document.getElementById('popup-closer');
+// https://openlayers.org/en/latest/examples/overlay.html
+const popupContainer = document.getElementById('popup');
+const popupContent = document.getElementById('popup-content');
+const popupCloser = document.getElementById('popup-closer');
 
-    const overlay = new ol.Overlay({
-        element: popupContainer,
-        autoPan: {
-            animation: {
-                duration: 250,
-            },
+const overlay = new ol.Overlay({
+    element: popupContainer,
+    autoPan: {
+        animation: {
+            duration: 250,
         },
-    });
+    },
+});
 
-    popupCloser.onclick = function () {
-        overlay.setPosition(undefined);
-        popupCloser.blur();
-        return false;
-    };
+popupCloser.onclick = function () {
+    overlay.setPosition(undefined);
+    popupCloser.blur();
+    return false;
+};
 
 
 
-    // ┌─────────────────────────────────────┐
-    // │                                     │
-    // │           Initialise Map            │
-    // │                                     │
-    // └─────────────────────────────────────┘
-    var measurementToolSource = new ol.source.Vector();
-    var measurementToolVector = new ol.layer.Vector({
-        source: measurementToolSource,
-        style: new ol.style.Style({
+// ┌─────────────────────────────────────┐
+// │                                     │
+// │           Initialise Map            │
+// │                                     │
+// └─────────────────────────────────────┘
+var measurementToolSource = new ol.source.Vector();
+var measurementToolVector = new ol.layer.Vector({
+    source: measurementToolSource,
+    style: new ol.style.Style({
+        fill: new ol.style.Fill({
+            color: 'rgba(255, 255, 255, 0.2)',
+        }),
+        stroke: new ol.style.Stroke({
+            color: 'rgba(225, 29, 72, 1.0)',
+            width: 2,
+        }),
+        image: new ol.style.Circle({
+            radius: 7,
             fill: new ol.style.Fill({
-                color: 'rgba(255, 255, 255, 0.2)',
-            }),
-            stroke: new ol.style.Stroke({
                 color: 'rgba(225, 29, 72, 1.0)',
-                width: 2,
-            }),
-            image: new ol.style.Circle({
-                radius: 7,
-                fill: new ol.style.Fill({
-                    color: 'rgba(225, 29, 72, 1.0)',
-                }),
             }),
         }),
-        name: 'measurementTool',
-        title: 'measurementTool',
-    });
+    }),
+    name: 'measurementTool',
+    title: 'measurementTool',
+});
 
 
-    var openStreetMap = new ol.layer.Tile({ source: new ol.source.OSM() })
-    
-    map = new ol.Map({
-        target: 'map',
+var openStreetMap = new ol.layer.Tile({ source: new ol.source.OSM() })
 
-        // Use new OSM OpenSourceMap
-        layers: [
-            openStreetMap,
-            measurementToolVector
-        ],
+map = new ol.Map({
+    target: 'map',
 
-        // Popup overlays
-        overlays: [overlay],
+    // Use new OSM OpenSourceMap
+    layers: [
+        openStreetMap,
+        measurementToolVector
+    ],
 
-        // Default view
-        view: new ol.View({
-            center: ol.proj.fromLonLat([0.0098,51.4934]),
-            zoom: 12
-        }),
+    // Popup overlays
+    overlays: [overlay],
 
-    });
+    // Default view
+    view: new ol.View({
+        center: ol.proj.fromLonLat([0.0098,51.4934]),
+        zoom: 12
+    }),
 
-    // ┌─────────────────────────────────────┐
-    // │         Set Version Numbers         │
-    // └─────────────────────────────────────┘
-    var packageJsonVersion = require('../package.json');
-    document.getElementById('version-intro').innerText = packageJsonVersion.productName + ' ' + packageJsonVersion.version
-    document.title = packageJsonVersion.productName + ' ' + packageJsonVersion.version
+});
+
+// ┌─────────────────────────────────────┐
+// │         Set Version Numbers         │
+// └─────────────────────────────────────┘
+var packageJsonVersion = require('../package.json');
+document.getElementById('version-intro').innerText = packageJsonVersion.productName + ' ' + packageJsonVersion.version
+document.title = packageJsonVersion.productName + ' ' + packageJsonVersion.version
+
+document.getElementById('intro-description').innerHTML = packageJsonVersion.description
+
+
+// ┌─────────────────────────────────────┐
+// │         Spinner Functions           │
+// └─────────────────────────────────────┘
+function show_spinner()
+{
+    document.getElementById('loading-spinner').classList.remove("hidden")
+}
+
+function hide_spinner()
+{
+    document.getElementById('loading-spinner').classList.add("hidden")
+}

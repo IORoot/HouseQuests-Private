@@ -4,6 +4,7 @@
 
 export async function load_layer_supermarkets()
 {
+    show_spinner()
 
     const json_supermarkets = await fetch('./maps/supermarkets/supermarkets.json', {method: 'GET'})
     .then(response => response.json())
@@ -45,4 +46,5 @@ export async function load_layer_supermarkets()
     // Add to map.
     map.addLayer(supermarkets);
 
+    hide_spinner()
 }

@@ -1,8 +1,8 @@
 {
   "name": "ioroot-advanced-property-search",
   "productName": "APS",
-  "description": "Advanced Property Search by IORoot.com",
-  "version": "0.1.13",
+  "description": "Introducing the Windows version!<br/><br/><ul class=\"list-disc\"><li>Map colour filtering (Dark / Invert / Sepia / Monochrome)</li><li>Quick link to search pages</li><li>New Authentication checks</li><li>Exclude list removal buttons</li><li>Windows deployment version!</li></ul>",
+  "version": "0.1.14",
   "private": true,
   "author": "Andy Pearson <andy@londonparkour.com>",
   "copyright": "© 2022, LondonParkour LTD.",
@@ -57,6 +57,7 @@
     "fs-jetpack": "^4.1.0",
     "node-json-transform": "^1.1.2",
     "preline": "^1.1.2",
+    "webpack-node-externals": "^3.0.0",
     "yargs": "^17.5.1"
   },
   "devDependencies": {
@@ -75,7 +76,6 @@
     "style-loader": "^2.0.0",
     "webpack": "^5.30.0",
     "webpack-cli": "^4.6.0",
-    "webpack-merge": "^5.7.3",
-    "webpack-node-externals": "^3.0.0"
+    "webpack-merge": "^5.7.3"
   }
 }

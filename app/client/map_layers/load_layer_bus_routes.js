@@ -5,6 +5,8 @@
 export async function load_layer_bus_routes()
 {
     
+    show_spinner()
+
     const json_bus_routes = await fetch('./maps/buses/london_buses.json', {method: 'GET'})
     .then(response => response.json())
     .catch(error => console.log("ERROR loading /maps/buses/london_buses.json file."+error));
@@ -43,4 +45,5 @@ export async function load_layer_bus_routes()
     // Add to map.
     map.addLayer(bus_routes);
 
+    hide_spinner()
 }

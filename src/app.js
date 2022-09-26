@@ -14,6 +14,8 @@ import { check_authentication } from "../app/client/authentication/check_authent
 import { intro_modal } from "../app/client/intro/intro_modal.js";
 import { disable_premium_features } from "../app/client/disable/disable_premium_features.js";
 
+show_spinner()
+
 await check_authentication()
 listener_authentication()
 listener_authentication_intro()
@@ -40,3 +42,5 @@ if (!authenticated)
     load_event_listeners_free()
     disable_premium_features()
 }
+
+hide_spinner()

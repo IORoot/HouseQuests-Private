@@ -24,6 +24,8 @@ function tube_style_Lines(feature) {
 export async function load_layer_tube_lines()
 {
 
+    show_spinner()
+
     const json_tube_lines = await fetch('./maps/tfl/tube_lines.json', {method: 'GET'})
     .then(response => response.json())
     .catch(error => console.log("ERROR loading /maps/tfl/tube_lines.json file."+error));
@@ -56,4 +58,5 @@ export async function load_layer_tube_lines()
     // Add to map.
     map.addLayer(tube_lines);
 
+    hide_spinner()
 }

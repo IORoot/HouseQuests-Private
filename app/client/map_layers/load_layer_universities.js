@@ -1,5 +1,6 @@
 export async function load_layer_universities()
 {
+    show_spinner()
 
     const json_universities = await fetch('./maps/university/universities.json', {method: 'GET'})
     .then(response => response.json())
@@ -67,4 +68,5 @@ export async function load_layer_universities()
     // Add layer to map
     map.addLayer(layer); 
 
+    hide_spinner()
 }

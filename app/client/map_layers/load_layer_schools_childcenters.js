@@ -4,7 +4,8 @@
 
 export async function load_layer_schools_childcenters()
 {
-    
+    show_spinner()
+
     const json_child_centers = await fetch('./maps/schools/children_centers.json', {method: 'GET'})
     .then(response => response.json())
     .catch(error => console.log("ERROR loading /maps/schools/children_centers.json file."+error));
@@ -48,4 +49,5 @@ export async function load_layer_schools_childcenters()
     // Add to map.
     map.addLayer(child_centers);
 
+    hide_spinner()
 }

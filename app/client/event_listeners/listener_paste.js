@@ -9,31 +9,39 @@ var url = require('url');
 
 export function listener_paste(){
 
+
     const zooplaInput = document.getElementById('zooplaInput');
     zooplaInput.addEventListener('paste', function(event) {
+
+        show_spinner()
         let pastedURL = event.clipboardData.getData('text/plain');
         if ( ! checkZooplaInput(pastedURL) ){ 
             return
         }
         request_markers(pastedURL, 'zoopla')
+        hide_spinner()
     });
 
     const rightmoveInput = document.getElementById('rightmoveInput');
     rightmoveInput.addEventListener('paste', async function(event) {
+        show_spinner()
         let pastedURL = event.clipboardData.getData('text/plain');
         if ( ! checkRightmoveInput(pastedURL) ){ 
             return
         }
         request_markers(pastedURL, 'rightmove')
+        hide_spinner()
     });
 
     const onthemarketInput = document.getElementById('onthemarketInput');
     onthemarketInput.addEventListener('paste', async function(event) {
+        show_spinner()
         let pastedURL = event.clipboardData.getData('text/plain');
         if ( ! checkOnTheMarketInput(pastedURL) ){ 
             return
         }
         request_markers(pastedURL, 'onthemarket')
+        hide_spinner()
     });
 
 }

@@ -13,6 +13,8 @@ export function listener_ratings_crimes()
 
     propertyNeighbourhoodCrimesButton.addEventListener('click', async function(event) {
 
+        show_spinner()
+
         // Get current ID.
         const propertyLongitude = document.getElementById('drawer-longitude').dataset.longitude;
         const propertyLatitude = document.getElementById('drawer-latitude').dataset.latitude;
@@ -68,6 +70,8 @@ export function listener_ratings_crimes()
         // │     Update Neighbourhood Crimes     │
         // └─────────────────────────────────────┘
         crime_groupings(crimeMarkers)
+
+        hide_spinner()
     });
 
 }

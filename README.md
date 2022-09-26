@@ -29,6 +29,7 @@ ccc8f4e8fb7e8c9d5b52673faca84322cfed8e5b76b4634d978edf06f8e13332
 - [x] Clear all exclusions
   - [x] source specific
 - [x] Link to Goto zoopla / rightmove / onthemarket map search page
+- [x] Message on Intro screen is from the description in package.json
 - [ ] Website and Distribution
   - [ ] Wireframe
   - [ ] Design
@@ -38,13 +39,13 @@ ccc8f4e8fb7e8c9d5b52673faca84322cfed8e5b76b4634d978edf06f8e13332
   - [ ] Deployment pipelines
 - [ ] Updates and Changelog
 - [ ] Error messages for auth - date expired, etc...
+- [ ] obfuscation
 - [x] Electron App / Deployment
   - [x] Move requests to client-side
-  - [ ] Build to
+  - [x] Build to
     - [x] Mac ARM
     - [x] Max x86
-    - [ ] Windows
-    - [ ] Linux
+    - [x] Windows
 - [x] Setup simple authentication code system
 - [x] Move property details to right drawer and tabs.
 - [x] Basic Neighbourhood Rating
@@ -64,6 +65,8 @@ ccc8f4e8fb7e8c9d5b52673faca84322cfed8e5b76b4634d978edf06f8e13332
 - [ ] closest tube/train station
 - [ ] Tailwind library not CDN
 - [ ] Reset Center of Map
+- [ ] Demo searches and markers packaged.
+- [ ] Don't check auth on every reload
 
 
 

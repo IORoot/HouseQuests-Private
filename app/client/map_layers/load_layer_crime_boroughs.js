@@ -32,6 +32,8 @@ function crime_style(feature) {
 export async function load_layer_crime_boroughs()
 {
 
+    show_spinner()
+
     const json_crime_spots = await fetch('./maps/crime/crime-boroughs-2018.json', {method: 'GET'})
     .then(response => response.json())
     .catch(error => console.log("ERROR loading /maps/crime/crime-boroughs-2018.json file."+error));
@@ -64,4 +66,5 @@ export async function load_layer_crime_boroughs()
     // Add to map.
     map.addLayer(crime_spots);
 
+    hide_spinner()
 }

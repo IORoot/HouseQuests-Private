@@ -49,6 +49,9 @@ export function listener_map(){
          */
         if (marker.type == 'property')
         {
+
+            show_spinner()
+
             // Reset the old highlighted property back to original colour
             reset_property_colour(marker.ID)
 
@@ -68,6 +71,8 @@ export function listener_map(){
 
             // Open the drawer
             drawer.show();
+
+            hide_spinner()
         }
 
 

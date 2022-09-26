@@ -23,6 +23,7 @@ function train_style_Lines(feature) {
 
 export async function load_layer_train_lines()
 {
+    show_spinner()
 
     const json_train_lines = await fetch('./maps/london_rail/train_lines.json', {method: 'GET'})
     .then(response => response.json())
@@ -55,4 +56,5 @@ export async function load_layer_train_lines()
     // Add to map.
     map.addLayer(underground_lines);
 
+    hide_spinner()
 }

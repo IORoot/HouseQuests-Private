@@ -1,6 +1,8 @@
 export async function load_layer_tube_stations()
 {
 
+    show_spinner()
+
     const json_tube_stations = await fetch('./maps/tfl/tube_stations.json', {method: 'GET'})
     .then(response => response.json())
     .catch(error => console.log("ERROR loading /maps/tfl/tube_stations.json file."+error));
@@ -62,4 +64,5 @@ export async function load_layer_tube_stations()
     // Add layer to map
     map.addLayer(layer); 
 
+    hide_spinner()
 }

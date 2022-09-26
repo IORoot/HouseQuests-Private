@@ -7,6 +7,8 @@
 
 export function load_crime_layer(markerdata){
 
+    show_spinner()
+
     let featuresList = [];
 
     markerdata.forEach( 
@@ -67,4 +69,5 @@ export function load_crime_layer(markerdata){
     // Add layer to map
     map.addLayer(layer); 
 
+    hide_spinner()
 }

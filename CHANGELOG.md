@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.14 (2022-09-26)
+
+- Intro Modal has package.json description.
+- loader spinner icon
+- 
+
+
 ## 0.1.13 (2022-09-25)
 - Added ol-ext to control colours of map
 - Got monochrome, sepia, dark, invert working
@@ -10,6 +17,7 @@
   - valid-until date has not passed.
 - Add buttons to goto the search page in chrome.
 - Truncate buttons for exclude list.
+- Windows!
 
 ## 0.1.12 (2022-09-23)
 
