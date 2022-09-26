@@ -2,7 +2,7 @@
   "name": "ioroot-advanced-property-search",
   "productName": "APS",
   "description": "Advanced Property Search by IORoot.com",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "private": true,
   "author": "Andy Pearson <andy@londonparkour.com>",
   "copyright": "© 2022, LondonParkour LTD.",
@@ -26,6 +26,13 @@
             "x64",
             "arm64"
           ]
+        }
+      ]
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis"
         }
       ]
     },

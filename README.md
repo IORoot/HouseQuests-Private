@@ -26,8 +26,8 @@ ccc8f4e8fb7e8c9d5b52673faca84322cfed8e5b76b4634d978edf06f8e13332
 - [ ] Loading icon - subtle - in corner?
 - [x] Kill-switch to stop everyone with particular version to force update. 'enabled:true/false'
 - [x] refresh button
-- [ ] Clear all exclusions
-  - [ ] source specific
+- [x] Clear all exclusions
+  - [x] source specific
 - [x] Link to Goto zoopla / rightmove / onthemarket map search page
 - [ ] Website and Distribution
   - [ ] Wireframe
@@ -37,6 +37,7 @@ ccc8f4e8fb7e8c9d5b52673faca84322cfed8e5b76b4634d978edf06f8e13332
     - [ ] Svelte / Next.js / Gatsby 
   - [ ] Deployment pipelines
 - [ ] Updates and Changelog
+- [ ] Error messages for auth - date expired, etc...
 - [x] Electron App / Deployment
   - [x] Move requests to client-side
   - [ ] Build to
