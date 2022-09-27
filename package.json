@@ -36,6 +36,12 @@
         }
       ]
     },
+    "nsis": {
+			"differentialPackage": false
+		},
+		"dmg": {
+			"writeUpdateInfo": false
+		},
     "publish": null
   },
   "scripts": {

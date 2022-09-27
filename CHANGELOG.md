@@ -4,7 +4,7 @@
 
 - Intro Modal has package.json description.
 - loader spinner icon
-- 
+- DevTools removed
 
 
 ## 0.1.13 (2022-09-25)

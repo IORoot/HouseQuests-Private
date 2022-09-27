@@ -23,7 +23,7 @@ ccc8f4e8fb7e8c9d5b52673faca84322cfed8e5b76b4634d978edf06f8e13332
   - [x] Enabled / Disabled
   - [x] Name is set
   - [x] PM2 needs reloading every time the secretkeys change? How to dynamically read without reload? --watch
-- [ ] Loading icon - subtle - in corner?
+- [x] Loading icon - subtle - in corner?
 - [x] Kill-switch to stop everyone with particular version to force update. 'enabled:true/false'
 - [x] refresh button
 - [x] Clear all exclusions
@@ -39,7 +39,11 @@ ccc8f4e8fb7e8c9d5b52673faca84322cfed8e5b76b4634d978edf06f8e13332
   - [ ] Deployment pipelines
 - [ ] Updates and Changelog
 - [ ] Error messages for auth - date expired, etc...
-- [ ] obfuscation
+- [ ] Search tags = show the filters used in the search.
+- [ ] Tailwind library not CDN
+- [ ] Don't check auth on every reload
+- [ ] Demo searches and markers packaged.
+- [x] Disable DevTools
 - [x] Electron App / Deployment
   - [x] Move requests to client-side
   - [x] Build to
@@ -57,17 +61,15 @@ ccc8f4e8fb7e8c9d5b52673faca84322cfed8e5b76b4634d978edf06f8e13332
 - [x] National train map
 - [ ] Toggle Favourites on / off (different colours)
 - [ ] Custom Notes
-- [ ] Changing highlightList colour multiple times keeps adding entries to localStorage array. Just replace current one, don't keep adding.
 - [ ] Tests!
-- [ ] Errors. Missing properties like: [https://www.rightmove.co.uk/properties/86419927#/?channel=RES_BUY](https://www.rightmove.co.uk/properties/86419927#/?channel=RES_BUY)
 - [ ] Refactor
 - [ ] Debugging / Logging / API Trigger alerts
 - [ ] closest tube/train station
-- [ ] Tailwind library not CDN
 - [ ] Reset Center of Map
-- [ ] Demo searches and markers packaged.
-- [ ] Don't check auth on every reload
+- [ ] obfuscation
 
+- [ ] Fix - Changing highlightList colour multiple times keeps adding entries to localStorage array. Just replace current one, don't keep adding.
+- [ ] Fix - Errors. Missing properties like: [https://www.rightmove.co.uk/properties/86419927#/?channel=RES_BUY](https://www.rightmove.co.uk/properties/86419927#/?channel=RES_BUY)
 
 
 
