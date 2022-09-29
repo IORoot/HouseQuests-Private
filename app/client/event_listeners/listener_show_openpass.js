@@ -10,13 +10,20 @@ import * as geo from '../../lib/geolocation-utils/geo.js'
 import { request_overpass_api } from '../requests/request_overpass_api.js'
 import { load_openpass_results } from '../map_layers/load_openpass_results.js'
 
-export function listener_show_convenience()
+export function listener_show_openpass(openpassRequest)
 {
+    
+    let layerID = openpassRequest.layerID
+    let buttonID = openpassRequest.buttonID
+    let openpassKey = openpassRequest.openpassKey
+    let openpassValue = openpassRequest.openpassValue
+    let fill = openpassRequest.fill
+    let stroke = openpassRequest.stroke
 
-    const propertyShopsButton = document.getElementById('load-local-convenience');
+    const button = document.getElementById(buttonID);
 
-    propertyShopsButton.addEventListener('click', async function(event) {
-        
+    button.addEventListener('click', async function(event) {
+
         show_spinner()
 
         // Get current ID.
@@ -43,17 +50,17 @@ export function listener_show_convenience()
         };
 
         let query = '';
-        query += '('    
-        query += 'node["shop"="convenience"]('+south+','+west+','+north+','+east+');'
-        query += 'way["shop"="convenience"]('+south+','+west+','+north+','+east+');'
-        query += 'relation["shop"="convenience"]('+south+','+west+','+north+','+east+');'
+        query += '('
+        query += 'node["'+openpassKey+'"="'+openpassValue+'"]('+south+','+west+','+north+','+east+');'
+        query += 'way["'+openpassKey+'"="'+openpassValue+'"]('+south+','+west+','+north+','+east+');'
+        query += 'relation["'+openpassKey+'"="'+openpassValue+'"]('+south+','+west+','+north+','+east+');'
         query += ');'
         query += 'out;>;out skel qt;'
 
         const openpassResults = await request_overpass_api(openpassBoundingBox, query)
 
-        load_openpass_results('local-convenience',openpassResults, "rgba(255, 255, 255, 1.0)", "rgba(0, 0, 0, 1.0)")
-
+        load_openpass_results(layerID, openpassResults, fill, stroke)
+        
         hide_spinner()
     });
 

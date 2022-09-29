@@ -30,6 +30,15 @@ ccc8f4e8fb7e8c9d5b52673faca84322cfed8e5b76b4634d978edf06f8e13332
   - [x] source specific
 - [x] Link to Goto zoopla / rightmove / onthemarket map search page
 - [x] Message on Intro screen is from the description in package.json
+- [x] Property Layers
+  - [x] Gyms
+  - [x] Post Office
+  - [x] Train Station
+  - [x] Bus Stop
+  - [x] Airports
+  - [x] Hospital
+  - [x] Doctor
+- [ ] Name? APS is shit.
 - [ ] Website and Distribution
   - [ ] Wireframe
   - [ ] Design
@@ -39,10 +48,31 @@ ccc8f4e8fb7e8c9d5b52673faca84322cfed8e5b76b4634d978edf06f8e13332
   - [ ] Deployment pipelines
 - [ ] Updates and Changelog
 - [ ] Error messages for auth - date expired, etc...
-- [ ] Search tags = show the filters used in the search.
+- [ ] Search tags = show the filters used in the search. Potentially change them?
 - [ ] Tailwind library not CDN
 - [ ] Don't check auth on every reload
-- [ ] Demo searches and markers packaged.
+- [ ] Demo searches and markers packaged with app
+- [ ] Neighbourhood
+  - [ ] Socio-economic demographic of area
+  - [ ] Ethnicity Percentages
+- [ ] BMV = Base Market Value
+  - [ ] Whats the price of another 2-bed in location. 
+  - [ ] 3-bed / 4-bed / etc...
+  - [ ] Rental Potential
+  - [ ] Distance to Stations
+  - [ ] Distance to University
+- [ ] Price Model
+  - [ ] One-off payment
+  - [ ] Subscription per month
+  - [ ] Adverts
+  - [ ] Adverts + Subscription to remove
+  - [ ] Adverts + One-off payment to remove
+  - [ ] Time-based usage - Use 5 features per day? Layers, etc...
+- [ ] CheckMyStreet Data - https://www.checkmystreet.co.uk/Information/Postcode/SE13-7AA/Marsala-Road/London
+- [ ] New Source - PurpleBricks (People without an estate agent)
+- [ ] Locrating.com - School catchment areas
+- [ ] Zoopla - get all automatically (limit to 5 pages?)
+- [ ] Icons instead of dots
 - [x] Disable DevTools
 - [x] Electron App / Deployment
   - [x] Move requests to client-side
@@ -67,11 +97,11 @@ ccc8f4e8fb7e8c9d5b52673faca84322cfed8e5b76b4634d978edf06f8e13332
 - [ ] closest tube/train station
 - [ ] Reset Center of Map
 - [ ] obfuscation
-
 - [ ] Fix - Changing highlightList colour multiple times keeps adding entries to localStorage array. Just replace current one, don't keep adding.
 - [ ] Fix - Errors. Missing properties like: [https://www.rightmove.co.uk/properties/86419927#/?channel=RES_BUY](https://www.rightmove.co.uk/properties/86419927#/?channel=RES_BUY)
-
-
+- [ ] Create custom netlify function for SVG colours / icons
+- [ ] PM2.5 Pollution Levels
+- [ ] Probates / Refurbs / Auctions
 
 
 
@@ -89,9 +119,6 @@ For example:
 
 Different Tag types:
 [https://wiki.openstreetmap.org/wiki/Map_features](https://wiki.openstreetmap.org/wiki/Map_features)
-
-Different Shop Types:
-[https://wiki.openstreetmap.org/wiki/Key:shop#Food,_beverages](https://wiki.openstreetmap.org/wiki/Key:shop#Food,_beverages)
 
 
 

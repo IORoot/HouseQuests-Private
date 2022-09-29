@@ -2,8 +2,9 @@
 export function remove_vector_layers(name)
 {
 
+
     // Get all layers
-    let layersCollection = map.getLayers();
+    let layersCollection = [...map.getLayers().getArray()]
 
     // loop through layers
     layersCollection.forEach(function(layer, index){

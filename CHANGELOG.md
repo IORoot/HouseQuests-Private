@@ -5,6 +5,17 @@
 - Intro Modal has package.json description.
 - loader spinner icon
 - DevTools removed
+- Improved OnTheMarket SearchURL Handling
+- Clear Search works on all layers
+- Add following local area searches
+  - Gyms
+  - Post Office
+  - Train Station
+  - Bus Stop
+  - Airport
+  - Hospital
+  - Doctor
+- Created a generic openpass searcher for local area
 
 
 ## 0.1.13 (2022-09-25)

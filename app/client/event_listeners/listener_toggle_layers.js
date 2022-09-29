@@ -209,4 +209,46 @@ export function listener_toggle_layers(){
         button_ring_toggle(this)
         toggle_layer('local-school')
     });
+
+    const toggleLocalGyms = document.getElementById('toggle-local-gyms');
+    toggleLocalGyms.addEventListener('click', async function(event) {
+        button_ring_toggle(this)
+        toggle_layer('local-gyms')
+    });
+
+    const toggleLocalPostOffice = document.getElementById('toggle-local-post-office');
+    toggleLocalPostOffice.addEventListener('click', async function(event) {
+        button_ring_toggle(this)
+        toggle_layer('local-post-office')
+    });
+
+    const toggleLocalStation = document.getElementById('toggle-local-station');
+    toggleLocalStation.addEventListener('click', async function(event) {
+        button_ring_toggle(this)
+        toggle_layer('local-station')
+    });
+
+    const toggleLocalBusStop = document.getElementById('toggle-local-bus-stop');
+    toggleLocalBusStop.addEventListener('click', async function(event) {
+        button_ring_toggle(this)
+        toggle_layer('local-bus-stop')
+    });
+
+    const toggleLocalAirport = document.getElementById('toggle-local-airport');
+    toggleLocalAirport.addEventListener('click', async function(event) {
+        button_ring_toggle(this)
+        toggle_layer('local-airport')
+    });
+
+    const toggleLocalDoctor = document.getElementById('toggle-local-doctor');
+    toggleLocalDoctor.addEventListener('click', async function(event) {
+        button_ring_toggle(this)
+        toggle_layer('local-doctor')
+    });
+
+    const toggleLocalHospital = document.getElementById('toggle-local-hospital');
+    toggleLocalHospital.addEventListener('click', async function(event) {
+        button_ring_toggle(this)
+        toggle_layer('local-hospital')
+    });
 }

@@ -25,15 +25,12 @@ module.exports = function(app){
         })
         .then(function (response) {
 
-            // data = response.data;
             var $ = cheerio.load(response.data);
         
             var modeldata = $('script:contains("jsonModel")').text().split(';');
-        
+
             var data = modeldata.toString().replace('window.jsonModel = ', '');
-            
             data = data.substring(0, data.indexOf('window.jsonModel.propertyTypeOptions') );
-        
             data = JSON.parse(data);
             data = Array.from(data.properties);
         

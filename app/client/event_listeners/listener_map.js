@@ -296,7 +296,6 @@ export function listener_map(){
          */
         if (marker.type == 'local-school')
         {
-            console.log(marker)
             overlay.setPosition(event.coordinate);
 
             var popupHTML = '';
@@ -317,6 +316,161 @@ export function listener_map(){
 
         }
 
+
+        /**
+         * Click on Openpass School
+         * 
+         */
+        if (marker.type == 'local-gyms')
+        {
+            overlay.setPosition(event.coordinate);
+
+            var popupHTML = '';
+            popupHTML += '<div class="flex flex-col gap-2">';
+            popupHTML += '<div class="text-xs text-gray-800">Gym</div>'
+            popupHTML += '<div class="text-md text-gray-700">'+marker.name+'</div>'
+            popupHTML += '<a href="'+marker.contact+'" class="text-sm underline text-blue-500" target="_blank">'+marker.contact+'</a>'
+            popupHTML += '<div class="text-xs bg-stone-100 p-2 rounded m-1 flex flex-col">'+marker.number
+                popupHTML += '<div>'+marker.street+ '</div>'
+                popupHTML += '<div>'+marker.city+ '</div>'
+                popupHTML += '<div>'+marker.postcode+ '</div>'
+            popupHTML += '</div>'
+        popupHTML += '</div>';
+
+            popupContent.innerHTML = popupHTML;
+        }
+
+
+
+        /**
+         * Click on Openpass Post Office
+         * 
+         */
+        if (marker.type == 'local-post-office')
+        {
+            overlay.setPosition(event.coordinate);
+
+            var popupHTML = '';
+            popupHTML += '<div class="flex flex-col gap-2">';
+            popupHTML += '<div class="text-xs text-red-400">Post Office</div>'
+            popupHTML += '<div class="text-md text-gray-700">'+marker.name+'</div>'
+            popupHTML += '<a href="'+marker.contact+'" class="text-sm underline text-blue-500" target="_blank">'+marker.contact+'</a>'
+            popupHTML += '<div class="text-xs bg-stone-100 p-2 rounded m-1 flex flex-col">'+marker.number
+                popupHTML += '<div>'+marker.street+ '</div>'
+                popupHTML += '<div>'+marker.city+ '</div>'
+                popupHTML += '<div>'+marker.postcode+ '</div>'
+            popupHTML += '</div>'
+        popupHTML += '</div>';
+
+            popupContent.innerHTML = popupHTML;
+        }
+
+
+        /**
+         * Click on Openpass Station
+         * 
+         */
+        if (marker.type == 'local-station')
+        {
+            overlay.setPosition(event.coordinate);
+            var popupHTML = '';
+            popupHTML += '<div class="flex flex-col gap-2">';
+            popupHTML += '<div class="text-xs text-blue-400">Tube/Train Station</div>'
+            popupHTML += '<div class="text-md text-gray-700">'+marker.name+'</div>'
+        popupHTML += '</div>';
+
+            popupContent.innerHTML = popupHTML;
+        }
+
+
+
+        /**
+         * Click on Openpass Airport
+         * 
+         */
+        if (marker.type == 'local-airport')
+        {
+            overlay.setPosition(event.coordinate);
+            console.log(marker)
+            var popupHTML = '';
+            popupHTML += '<div class="flex flex-col gap-2">';
+            popupHTML += '<div class="text-xs text-sky-400">Airport</div>'
+            popupHTML += '<div class="text-md text-gray-700">'+marker.name+'</div>'
+            popupHTML += '<a href="'+marker.website+'" class="text-xs underline text-blue-500" target="_blank">'+marker.website+'</a>'
+        popupHTML += '</div>';
+
+            popupContent.innerHTML = popupHTML;
+        }
+
+
+
+        /**
+         * Click on Openpass Doctor
+         * 
+         */
+        if (marker.type == 'local-doctor')
+        {
+            overlay.setPosition(event.coordinate);
+            var popupHTML = '';
+            popupHTML += '<div class="flex flex-col gap-2">';
+            popupHTML += '<div class="text-xs text-rose-400">Doctor</div>'
+            popupHTML += '<div class="text-md text-gray-700">'+marker.name+'</div>'
+            popupHTML += '<div class="text-md text-gray-700">Hours: '+marker.hours+'</div>'
+            popupHTML += '<a href="'+marker.website+'" class="text-xs underline text-blue-500" target="_blank">'+marker.website+'</a>'
+            popupHTML += '<div class="text-xs bg-stone-100 p-2 rounded m-1 flex flex-col">'+marker.number
+                popupHTML += '<div>'+marker.street+ '</div>'
+                popupHTML += '<div>'+marker.city+ '</div>'
+                popupHTML += '<div>'+marker.postcode+ '</div>'
+            popupHTML += '</div>'
+        popupHTML += '</div>';
+
+            popupContent.innerHTML = popupHTML;
+        }
+
+
+        /**
+         * Click on Openpass Doctor
+         * 
+         */
+        if (marker.type == 'local-hospital')
+        {
+            overlay.setPosition(event.coordinate);
+            console.log(marker)
+            var popupHTML = '';
+            popupHTML += '<div class="flex flex-col gap-2">';
+            popupHTML += '<div class="text-xs text-red-400">Hospital</div>'
+            popupHTML += '<div class="text-md text-gray-700">'+marker.name+'</div>'
+            popupHTML += '<a href="'+marker.website+'" class="text-xs underline text-blue-500" target="_blank">'+marker.website+'</a>'
+            popupHTML += '<div class="text-xs bg-stone-100 p-2 rounded m-1 flex flex-col">'+marker.number
+                popupHTML += '<div>'+marker.street+ '</div>'
+                popupHTML += '<div>'+marker.city+ '</div>'
+                popupHTML += '<div>'+marker.postcode+ '</div>'
+            popupHTML += '</div>'
+        popupHTML += '</div>';
+
+            popupContent.innerHTML = popupHTML;
+        }
+
+
+
+        /**
+         * Click on Openpass Bus Stop
+         * 
+         */
+        if (marker.type == 'local-bus-stop')
+        {
+            overlay.setPosition(event.coordinate);
+            console.log(marker)
+            var popupHTML = '';
+            popupHTML += '<div class="flex flex-col gap-2">';
+            popupHTML += '<div class="text-xs text-green-700">Bus Stop</div>'
+            popupHTML += '<div class="text-md text-gray-700">'+marker.name+'</div>'
+        popupHTML += '</div>';
+
+            popupContent.innerHTML = popupHTML;
+        }
+
+        
 
         /**
          * Click on Universities

@@ -6,22 +6,53 @@ module.exports = function(app){
     var { transform } = require("node-json-transform");
 
     // ┌─────────────────────────────────────┐
-    // │            RIGHTMOVE MAP            │
+    // │            ONTHEMARKET MAP          │
     // └─────────────────────────────────────┘
     app.post('/onthemarketMap', (req, res) => {
 
-        const requestURL = new URL(req.body)
+        const requestURL = url.parse(req.body, true)
 
+        // Split the pathname into an array
+        if (!requestURL.pathname){ return }
         let pathparts = requestURL.pathname.split('/');
+
+
+        // SEARCH-TYPE Get the first path part (which should be the search-type)
         let searchType = pathparts[1]
-        let numBeds = pathparts[2].charAt(0)
+        if (!searchType){ return }
+        if (searchType !== 'to-rent' && searchType !== 'for-sale'){ return }
+        
+
+        // PROPERTY-TYPE & Number of Beds
+        let propertyType = pathparts[2]
+        if (!propertyType){ return }
+        let firstCharacter = propertyType.charAt(0)
+        let numBeds = null
+        if (firstCharacter >= '0' && firstCharacter <= '9') { numBeds = firstCharacter }
+
+
+        // LOCATION ID
         let locationID = pathparts[3]
 
+        // Construct the correct URL
         let constructedURL = 'https://www.onthemarket.com/map/show-pins/'
-        constructedURL += '?search-type='+searchType;
-        constructedURL += '&min-bedrooms='+numBeds;
-        constructedURL += '&location-id='+locationID;
-        constructedURL += '&'+requestURL.searchParams.toString()
+
+        if (searchType){
+            constructedURL += '?search-type='+searchType;
+        }
+        
+        if (numBeds){
+            constructedURL += '&min-bedrooms='+numBeds;
+        }
+        
+        if (locationID){
+            constructedURL += '&location-id='+locationID;
+        }
+        
+        if (requestURL.search){
+            constructedURL += '&'+requestURL.search.toString()
+        }
+        
 
         // At instance level ignore SSL cert issues.
         const agent = new https.Agent({  
