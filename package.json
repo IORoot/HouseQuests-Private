@@ -7,6 +7,7 @@
   "author": "Andy Pearson <andy@londonparkour.com>",
   "copyright": "© 2022, LondonParkour LTD.",
   "homepage": "http://ioroot.com",
+  "repository": "github:IORoot/APS",
   "main": "app/main.js",
   "build": {
     "appId": "com.electron.ioroot.advancedpropertysearch",
@@ -26,7 +27,8 @@
             "arm64"
           ]
         }
-      ]
+      ],
+      "publish": ["github"]
     },
     "win": {
       "target": [
