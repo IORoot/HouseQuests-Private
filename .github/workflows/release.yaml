@@ -79,8 +79,10 @@ jobs:
 
       - name: List
         run: |
-          ls -laR
-          
+          ls -la
+          pwd
+          ls -la /home/runner/work/APS/APS/
+
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -99,7 +101,7 @@ jobs:
         uses: nanoufo/action-upload-artifacts-and-release-assets@main
         with:
           path: |
-            ${{steps.download.outputs.download-path}}/*
+            /home/runner/work/APS/APS/*
           upload-release-files: true
           if-no-files-found: error
           release-upload-url: ${{ steps.create_release.outputs.upload_url }} 
