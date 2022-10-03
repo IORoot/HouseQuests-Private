@@ -81,7 +81,10 @@ jobs:
         run: |
           ls -la
           pwd
-          ls -la ./artifacts
+          mkdir artifacts
+          mv macOS-latest artifacts/
+          mv windows-latest artifacts/
+          ls -laR ./artifacts
 
       - name: Create Release
         id: create_release
@@ -101,7 +104,7 @@ jobs:
         uses: nanoufo/action-upload-artifacts-and-release-assets@main
         with:
           path: |
-            /home/runner/work/APS/APS/*
+            artifacts/*
           upload-release-files: true
           if-no-files-found: error
           release-upload-url: ${{ steps.create_release.outputs.upload_url }} 
