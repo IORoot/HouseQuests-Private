@@ -54,18 +54,18 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Use Node.js 10.x
+      - name: Use Node.js 18.x
         uses: actions/setup-node@v1
         with:
-          node-version: 10.x
+          node-version: 18.x
 
-      - name: yarn install
+      - name: npm install
         run: |
-          yarn install
+          npm install
 
       - name: Publish
         run: |
-          yarn run release
+          npm run release
 
       - name: Cleanup artifacts
         run: |
