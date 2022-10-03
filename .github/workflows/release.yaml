@@ -71,17 +71,16 @@ jobs:
     needs: build
     steps:
 
-      - name: List
-        run: |
-          ls -laR
-
       - uses: actions/download-artifact@master
-      
+        id: download
 
       - name: Checkout code
         uses: actions/checkout@v2
 
-
+      - name: List
+        run: |
+          ls -laR
+          
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -100,7 +99,7 @@ jobs:
         uses: nanoufo/action-upload-artifacts-and-release-assets@main
         with:
           path: |
-            artifacts/*
+            ${{steps.download.outputs.download-path}}/*
           upload-release-files: true
           if-no-files-found: error
           release-upload-url: ${{ steps.create_release.outputs.upload_url }} 
