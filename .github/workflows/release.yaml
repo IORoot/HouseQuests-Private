@@ -11,37 +11,8 @@ on:
 
 jobs:
 
-  # release:
-  #   runs-on: ${{ matrix.os }}
-
-  #   strategy:
-  #     matrix:
-  #       os: [macos-latest]
-  #       # os: [macos-latest, windows-latest]
-
-  #   steps:
-  #     - name: Check out Git repository
-  #       uses: actions/checkout@v1
-
-  #     - name: Install Node.js, NPM and Yarn
-  #       uses: actions/setup-node@v1
-  #       with:
-  #         node-version: 18
-
-  #     - name: Build/release Electron app
-  #       uses: samuelmeuli/action-electron-builder@v1
-  #       with:
-  #         # GitHub token, automatically provided to the action
-  #         # (No need to define this secret in the repo settings)
-  #         github_token: ${{ secrets.GITHUB_TOKEN }}
-
-  #         # If the commit is tagged with a version (e.g. "v1.0.0"),
-  #         # release the app after building
-  #         release: true
-
-
   build:
-    name: Create Release
+    name: Build Applications
 
     runs-on: ${{ matrix.os }}
 
@@ -90,6 +61,24 @@ jobs:
         with:
           name: ${{ matrix.os }}
           path: artifacts
+
+
+
+  release:
+
+    name: Build Release
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+
+      - uses: actions/download-artifact@master
+        with:
+          name: my-artifacts
+          path: artifacts/
+          
+
+      - name: Checkout code
+        uses: actions/checkout@v2
 
 
       - name: Create Release
