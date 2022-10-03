@@ -65,7 +65,7 @@ jobs:
 
       - name: Publish
         run: |
-          npm run release
+          npm run build
 
       - name: Cleanup artifacts
         run: |
