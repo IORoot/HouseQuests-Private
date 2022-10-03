@@ -57,6 +57,8 @@ git push --tags
 
 The automated github action will build the windows and mac distributable files and add it onto the 'releases' page.
 
+Note that a release will **NOT** run the tests before releasing.
+
 
 
 
