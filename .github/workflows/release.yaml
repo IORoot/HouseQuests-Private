@@ -71,17 +71,19 @@ jobs:
     needs: build
     steps:
 
-      - uses: actions/download-artifact@master
-        id: download
-
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - uses: actions/download-artifact@master
+        id: download
+
       - name: List
         run: |
+          mkdir artifacts
+          mv *.zip artifacts
           ls -la
           pwd
-          ls -la /home/runner/work/APS/APS/
+          ls -la ./artifacts
 
       - name: Create Release
         id: create_release
