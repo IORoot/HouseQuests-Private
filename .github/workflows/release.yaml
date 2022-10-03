@@ -29,7 +29,7 @@ jobs:
           node-version: 18
 
       - name: Build/release Electron app
-        uses: samuelmeuli/action-electron-builder@v1.6.0
+        uses: samuelmeuli/action-electron-builder@v1
         with:
           # GitHub token, automatically provided to the action
           # (No need to define this secret in the repo settings)
@@ -40,7 +40,7 @@ jobs:
           release: true
 
           # use `npm run release` instead of build
-          # build_script_name: release
+          build_script_name: release
 
 
 
