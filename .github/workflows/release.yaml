@@ -71,11 +71,12 @@ jobs:
     needs: build
     steps:
 
+      - name: List
+        run: |
+          ls -laR
+
       - uses: actions/download-artifact@master
-        with:
-          name: my-artifacts
-          path: artifacts/
-          
+      
 
       - name: Checkout code
         uses: actions/checkout@v2
