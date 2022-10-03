@@ -43,8 +43,9 @@ git tag v0.1.15      # Add a tag to current branch
 
 Other commands:
 ```bash
-git tag             # List all tags on current branch
-git tag -d <NAME>   # Delete tag
+git tag            					# List all tags on current branch
+git tag -d <NAME>   				# Delete tag
+git push origin :refs/tags/v0.1.16	# Delete tag on github (delete local first)
 ```
 
 2. Push the tags to github
