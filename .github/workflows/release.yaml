@@ -79,8 +79,6 @@ jobs:
 
       - name: List
         run: |
-          mkdir artifacts
-          mv *.zip artifacts
           ls -la
           pwd
           ls -la ./artifacts
