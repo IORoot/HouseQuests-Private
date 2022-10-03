@@ -1,5 +1,23 @@
 # Changelog
 
+
+## 0.1.16 (2022-10-03)
+
+Release Management on github
+
+- Automation of releases through github
+- Links to express server for releases
+- Github action to automate process
+
+## 0.1.15 (2022-09-29)
+
+Cleanup and inclusion of Lewis onto the team.
+
+- Small changes of HTML
+- Cleanup of code.
+- Start of release management
+
+
 ## 0.1.14 (2022-09-26)
 
 - Intro Modal has package.json description.

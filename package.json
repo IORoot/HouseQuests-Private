@@ -1,8 +1,8 @@
 {
   "name": "ioroot-advanced-property-search",
   "productName": "APS",
-  "description": "Introducing the Windows version!<br/><br/><ul class=\"list-disc\"><li>Map colour filtering (Dark / Invert / Sepia / Monochrome)</li><li>Quick link to search pages</li><li>New Authentication checks</li><li>Exclude list removal buttons</li><li>Windows deployment version!</li></ul>",
-  "version": "0.1.15",
+  "description": "The automatic release management.<br/><br/><ul class=\"list-disc\"><li>Publishes to github and wiki.</li></ul>",
+  "version": "0.1.16",
   "private": true,
   "author": "Andy Pearson <andy@londonparkour.com>",
   "copyright": "© 2022, LondonParkour LTD.",
