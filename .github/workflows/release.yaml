@@ -74,8 +74,8 @@ jobs:
       - name: Cleanup artifacts
         if: matrix.os != 'windows-latest'
         run: |
-          mkdir artifacts
-          mv "dist/(*.exe,*.deb,*.AppImage,*.dmg)" artifacts || true
+          npx rimraf "dist/!(*.exe|*.deb|*.AppImage|*.dmg)"
+          mv dist artifacts
 
 
       - name: Cleanup artifacts Win
