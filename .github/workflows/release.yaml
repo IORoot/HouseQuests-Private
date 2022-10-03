@@ -126,10 +126,10 @@ jobs:
       #     asset_content_type: application/octet-stream
 
 
-
-      - name: Upload Release Assets
-        uses: fnkr/github-action-ghr@v1
-        env:
-          GHR_DELETE: true
-          GHR_PATH: dist/
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Create GitHub release
+      uses: Roang-zero1/github-upload-release-artifacts-action@master
+      with:
+        args:
+        - dist/
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
