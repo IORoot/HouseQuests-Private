@@ -38,7 +38,7 @@ jobs:
           # If the commit is tagged with a version (e.g. "v1.0.0"),
           # release the app after building
           release: ${{ startsWith(github.ref, 'refs/tags/v') }}
-          # args: "-c.snap.publish=github"
+          args: "-c.snap.publish=github"
 
           # use `npm run release` instead of build
           # build_script_name: release
