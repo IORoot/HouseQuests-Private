@@ -27,8 +27,7 @@
             "arm64"
           ]
         }
-      ],
-      "publish": ["github"]
+      ]
     },
     "win": {
       "target": [
