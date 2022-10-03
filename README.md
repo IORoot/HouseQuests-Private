@@ -31,6 +31,7 @@ npm run release
 ```
 This will place all new distribution files into the `./dist` folder.
 
+
 ###  3.1. <a name='Publishreleaseongithub'></a>Publish release on github 
 
 This is a multi-step process.
@@ -53,6 +54,10 @@ git push origin :refs/tags/v0.1.16	# Delete tag on github (delete local first)
 ```bash
 git push --tags
 ```
+
+The automated github action will build the windows and mac distributable files and add it onto the 'releases' page.
+
+
 
 
 
