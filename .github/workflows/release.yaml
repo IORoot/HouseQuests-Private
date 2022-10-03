@@ -69,13 +69,11 @@ jobs:
       - name: Publish
         run: |
           npm run build
-          ls -la
 
 
       - name: Cleanup artifacts
         run: |
           npx rimraf "dist/!(*.exe|*.deb|*.AppImage|*.dmg)"
-          ls -la dist/
 
 
       - name: Upload artifacts
