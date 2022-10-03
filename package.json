@@ -21,7 +21,7 @@
     "mac": {
       "target": [
         {
-          "target": "default",
+          "target": "dmg",
           "arch": [
             "x64",
             "arm64"
@@ -51,7 +51,7 @@
     "pree2e": "webpack --config=build/webpack.app.config.js --env=test && webpack --config=build/webpack.e2e.config.js --env=test",
     "e2e": "mocha temp/e2e.js --require source-map-support/register",
     "test": "npm run unit && npm run e2e",
-    "start": "node build/start.js",
+    "start": "node build/start.js --inspect=5858 --remote-debugging-port=9223",
     "release": "npm test && webpack --config=build/webpack.app.config.js --env=production && electron-builder"
   },
   "dependencies": {
