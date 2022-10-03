@@ -126,10 +126,10 @@ jobs:
       #     asset_content_type: application/octet-stream
 
 
-    - name: Create GitHub release
-      uses: Roang-zero1/github-upload-release-artifacts-action@master
-      with:
-        args:
-        - dist/
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Create GitHub release
+        uses: Roang-zero1/github-upload-release-artifacts-action@master
+        with:
+          args:
+          - dist/
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
