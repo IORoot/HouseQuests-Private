@@ -55,21 +55,15 @@ jobs:
         uses: actions/checkout@v2
 
 
-
-
       - name: Use Node.js 18.x
         uses: actions/setup-node@v1
         with:
           node-version: 18.x
 
 
-
-
       - name: npm install
         run: |
           npm install
-
-
 
 
       - name: Publish
@@ -78,14 +72,10 @@ jobs:
           ls -la
 
 
-
-
       - name: Cleanup artifacts
         run: |
           npx rimraf "dist/!(*.exe|*.deb|*.AppImage|*.dmg)"
           ls -la dist/
-
-
 
 
       - name: Upload artifacts
@@ -93,8 +83,6 @@ jobs:
         with:
           name: ${{ matrix.os }}
           path: dist
-
-
 
 
       - name: Create Release
@@ -114,23 +102,13 @@ jobs:
 
 
 
-      # - name: Upload Release Asset
-      #   id: upload-release-asset 
-      #   uses: actions/upload-release-asset@v1
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #   with:
-      #     upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
-      #     asset_path: ./APS-${{ github.ref_name }}-arm64.dmg
-      #     asset_name: APS-${{ github.ref_name }}-arm64.dmg
-      #     asset_content_type: application/octet-stream
-
       - name: Upload artifact and release
         uses: nanoufo/action-upload-artifacts-and-release-assets@main
         with:
           path: |
             dist/*
           upload-release-files: true
+          if-no-files-found: error
           release-upload-url: ${{ steps.create_release.outputs.upload_url }} 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
