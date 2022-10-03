@@ -125,11 +125,12 @@ jobs:
       #     asset_name: APS-${{ github.ref_name }}-arm64.dmg
       #     asset_content_type: application/octet-stream
 
-
-      - name: Create GitHub release
-        uses: Roang-zero1/github-upload-release-artifacts-action@master
+      - name: Upload artifact and release
+        uses: nanoufo/action-upload-artifacts-and-release-assets@main
         with:
-          args:
-          - dist/
+          path: |
+            dist/*
+          upload-release-files: true
+          release-upload-url: ${{ steps.create_release.outputs.upload_url }} 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
