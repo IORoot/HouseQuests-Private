@@ -1,0 +1,51 @@
+<div class="hidden" id="detailsTabContent" role="tabpanel" aria-labelledby="details-tab">
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mr-10">
+        <h5 id="drawer-source" class="inline-flex items-center mb-4 text-sm font-light text-gray-500 capitalize" data-source="">Source</h5>
+        <h5 id="drawer-id" class="inline-flex items-center mb-4 text-sm font-light text-gray-500 ml-auto" data-id="">ID</h5>
+        <h5 id="drawer-longitude" class="inline-flex items-center mb-4 text-sm font-light text-gray-500 ml-auto" data-lng="">LNG</h5>
+        <h5 id="drawer-latitude" class="inline-flex items-center mb-4 text-sm font-light text-gray-500 ml-auto" data-lat="">LAT</h5>
+    </div>
+
+    <div class="text-lg mb-2 text-gray-800">Property Details</div>
+
+    <div class="flex flex-col gap-2 p-4 bg-yellow-200 rounded-xl mb-4 overflow-scroll">
+
+        <table class="w-full text-sm text-left text-gray-500 ">
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                <tr>
+                    <th scope="col" class="py-3 px-6">
+                        Metric
+                    </th>
+                    <th scope="col" class="py-3 px-6">
+                        Result
+                    </th>
+                    <th scope="col" class="py-3 px-6">
+                        3rd Party Tool
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-white border-b  " id="details-property-address-house-number" data-loaded=""></tr>
+                <tr class="bg-white border-b  " id="details-property-address-road" data-loaded=""></tr>
+                <tr class="bg-white border-b  " id="details-property-address-neighbourhood" data-loaded=""></tr>
+                <tr class="bg-white border-b  " id="details-property-address-district" data-loaded=""></tr>
+                <tr class="bg-white border-b  " id="details-property-address-city" data-loaded=""></tr>
+                <tr class="bg-white border-b  " id="details-property-address-county" data-loaded=""></tr>
+                <tr class="bg-white border-b  " id="details-property-address-postcode" data-loaded=""></tr>
+                <tr class="bg-white border-b  " id="details-property-area" data-loaded=""></tr>
+                <tr class="bg-white border-b  " id="details-property-broadband2" data-loaded=""></tr>
+                <tr class="bg-white border-b  " id="details-property-council-tax" data-loaded=""></tr>
+                <tr class="bg-white border-b  " id="details-property-epc" data-loaded=""></tr>
+                <tr class="bg-white border-b  " id="details-property-postcode" data-loaded=""></tr>
+                <tr class="bg-white border-b  " id="details-property-schools" data-loaded=""></tr>
+                <tr class="bg-white border-b  " id="details-property-tenure" data-loaded=""></tr>
+                <tr class="bg-white border-b  " id="details-property-trains" data-loaded=""></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="details-property-crimes" data-loaded="" class="mb-4"></div>
+
+    <div id="details-property-broadband" data-loaded="" class="mb-4"></div>
+</div>

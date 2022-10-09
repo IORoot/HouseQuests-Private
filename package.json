@@ -38,11 +38,11 @@
       ]
     },
     "nsis": {
-			"differentialPackage": false
-		},
-		"dmg": {
-			"writeUpdateInfo": false
-		},
+      "differentialPackage": false
+    },
+    "dmg": {
+      "writeUpdateInfo": false
+    },
     "publish": null
   },
   "scripts": {
@@ -52,9 +52,11 @@
     "pree2e": "webpack --config=build/webpack.app.config.js --env=test && webpack --config=build/webpack.e2e.config.js --env=test",
     "e2e": "mocha temp/e2e.js --require source-map-support/register",
     "test": "npm run unit && npm run e2e",
-    "start": "node build/start.js --inspect=5858 --remote-debugging-port=9223",
-    "release": "npm test && webpack --config=build/webpack.app.config.js --env=production && electron-builder",
-    "build": "webpack --config=build/webpack.app.config.js --env=production && electron-builder"
+    "start": "npm run compile && node build/start.js --inspect=5858 --remote-debugging-port=9223",
+    "release": "npm run compile && npm test && webpack --config=build/webpack.app.config.js --env=production && electron-builder",
+    "build": "npm run compile && webpack --config=build/webpack.app.config.js --env=production && electron-builder",
+    "compile": "html-includes --src src --dest app",
+    "compile:min": "html-includes --src src --dest app --minify"
   },
   "dependencies": {
     "axios": "^0.27.2",
@@ -78,6 +80,7 @@
     "electron-builder": "^23.3.3",
     "electron-log": "^4.4.8",
     "electron-mocha": "^10.0.0",
+    "html-includes": "^4.4.1",
     "mocha": "^8.3.2",
     "source-map-support": "^0.5.6",
     "spectron": "^15.0.0",
