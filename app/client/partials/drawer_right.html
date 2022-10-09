@@ -1,0 +1,285 @@
+<div data-drawer-target="drawer" data-drawer-placement="right" class="invisible hidden">Used to init drawer</div>
+<div id="drawer" class="overflow-y-auto fixed z-40 p-4 w-1/2 h-screen bg-white " tabindex="-1" aria-labelledby="drawer-label">
+    
+    <button type="button" data-drawer-dismiss="drawer" aria-controls="drawer" aria-controls="drawer-navigation" class="absolute top-2.5 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 inline-flex items-center  z-10" >
+        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        <span class="sr-only">Close menu</span>
+    </button>
+
+
+    <!-- 
+    ┌─────────────────────────────────────┐
+    │                Tabs                 │
+    └─────────────────────────────────────┘
+    -->
+    <div class="mb-4 border-b border-gray-200 ">
+    <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="drawerTabs" data-tabs-toggle="#drawerTabContent" role="tablist">
+        <li class="mr-2" role="presentation">
+            <button class="inline-block p-4 rounded-t-lg border-b-2" id="currentproperty-tab" data-tabs-target="#currentpropertyTabContent" type="button" role="tab" aria-controls="currentproperty" aria-selected="false">Property</button>
+        </li>
+        <li class="mr-2" role="presentation">
+            <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 " id="details-tab" data-tabs-target="#detailsTabContent" type="button" role="tab" aria-controls="details" aria-selected="false">Details</button>
+        </li>
+        <li class="mr-2" role="presentation">
+            <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 " id="local-tab" data-tabs-target="#localTabContent" type="button" role="tab" aria-controls="local" aria-selected="false">Local Area</button>
+        </li>
+        <li class="mr-2" role="presentation">
+            <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 " id="local-tab" data-tabs-target="#neighbourhoodTabContent" type="button" role="tab" aria-controls="neighbourhood" aria-selected="false">Neighbourhood Rating</button>
+        </li>
+    </ul>
+</div>
+
+
+    <!-- 
+    ┌─────────────────────────────────────┐
+    │              Property               │
+    └─────────────────────────────────────┘
+    -->
+    <div id="drawerTabContent">
+    <div class="hidden" id="currentpropertyTabContent" role="tabpanel" aria-labelledby="currentproperty-tab">
+        <div class="flex flex-col gap-2">
+
+            <h5 id="drawer-title" class="inline-flex items-center mb-4 text-base font-semibold text-gray-800 capitalize "></h5>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-4">
+                <a href="#" id="drawer-exclude" class="py-2 px-4 text-xs font-medium text-center text-gray-100 bg-black rounded-lg border border-gray-800  hover:bg-gray-800 hover:text-white"><svg class="w-6 h-6 mx-auto fill-slate-100" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.6 14.2L15.2 15.6L17.6 18L15.2 20.4L16.6 21.8L19 19.4L21.4 21.8L22.8 20.4L20.4 18L22.8 15.6L21.4 14.2L19 16.6M9 6.5C10.4 6.5 11.5 7.6 11.5 9S10.4 11.5 9 11.5 6.5 10.4 6.5 9 7.6 6.5 9 6.5M9 2C12.9 2 16 5.1 16 9C16 14.2 9 22 9 22S2 14.2 2 9C2 5.1 5.1 2 9 2M9 4C6.2 4 4 6.2 4 9C4 10 4 12 9 18.7C14 12 14 10 14 9C14 6.2 11.8 4 9 4Z"/></svg> Exclude</a>
+                <button id="drawer-favourite" type="button" data-modal-toggle="popup-modal" class="block text-white bg-emerald-700 hover:bg-emerald-800 focus:ring-4  focus:ring-emerald-300 font-medium rounded-lg text-xs px-5 py-2.5 text-center" ><svg class="w-6 h-6 mx-auto fill-slate-100" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.5,12A1.5,1.5 0 0,1 16,10.5A1.5,1.5 0 0,1 17.5,9A1.5,1.5 0 0,1 19,10.5A1.5,1.5 0 0,1 17.5,12M14.5,8A1.5,1.5 0 0,1 13,6.5A1.5,1.5 0 0,1 14.5,5A1.5,1.5 0 0,1 16,6.5A1.5,1.5 0 0,1 14.5,8M9.5,8A1.5,1.5 0 0,1 8,6.5A1.5,1.5 0 0,1 9.5,5A1.5,1.5 0 0,1 11,6.5A1.5,1.5 0 0,1 9.5,8M6.5,12A1.5,1.5 0 0,1 5,10.5A1.5,1.5 0 0,1 6.5,9A1.5,1.5 0 0,1 8,10.5A1.5,1.5 0 0,1 6.5,12M12,3A9,9 0 0,0 3,12A9,9 0 0,0 12,21A1.5,1.5 0 0,0 13.5,19.5C13.5,19.11 13.35,18.76 13.11,18.5C12.88,18.23 12.73,17.88 12.73,17.5A1.5,1.5 0 0,1 14.23,16H16A5,5 0 0,0 21,11C21,6.58 16.97,3 12,3Z"/></svg> Marker Colour</button>
+                <a href="#" id="drawer-google-streetview" class="inline-flex items-center py-2 px-4 text-xs font-medium text-center text-white bg-yellow-600 rounded-lg hover:bg-yellow-800"><span class="m-auto"><svg class="w-6 h-6 mx-auto fill-slate-100" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M11.95,9.27C13.96,9.27 15.59,7.64 15.59,5.63C15.59,3.63 13.96,2 11.95,2C9.94,2 8.32,3.63 8.32,5.63C8.32,7.64 9.94,9.27 11.95,9.27M9.36,12.97C9.36,12.97 8.27,15.94 7.96,16.5C7.85,16.71 7.87,16.77 7.6,16.77C7.33,16.77 6.91,16.5 6.91,16.5C6.91,16.5 6.71,16.37 6.79,16.14C7.03,15.4 8.12,11.08 8.35,10.25C8.6,9.36 9.28,9.39 9.28,9.39H9.93L12.03,13.04L14.14,9.39H14.92C14.92,9.39 15.23,9.43 15.46,9.7C15.7,9.97 15.75,10.44 15.75,10.44L17.14,15.84C17.14,15.84 17.24,16.22 17.21,16.33C17.17,16.5 17.08,16.5 17.08,16.5C17.08,16.5 16.69,16.62 16.47,16.69C16.07,16.82 16,16.44 16,16.44L14.7,13.04L14.55,22H12.6L12.27,16.89C12.27,16.89 12.21,16.76 12.03,16.76C11.86,16.76 11.8,16.89 11.8,16.89L11.45,22H9.5L9.37,12.97H9.36Z"/></svg> Streetview</a>
+                <a href="#" id="drawer-link" class="inline-flex flex-col items-center py-2 px-4 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800"><svg class="w-6 h-6 mx-auto fill-slate-100" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"/></svg><div id="drawer-link-text" class="m-auto">Property</div></a>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mb-4 text-center text-sm text-gray-700">
+                <div id="drawer-price" class="text-semibold bg-slate-100 rounded p-2 flex flex-col align-center justify-center">PRICE</div>
+                <div id="drawer-bedrooms" class="text-semibold bg-slate-100 rounded p-2 flex flex-col align-center justify-center">BEDROOMS</div>
+                <div id="drawer-tenure" class="text-semibold bg-slate-100 rounded p-2 flex flex-col align-center justify-center">TENURE</div>
+                <div id="drawer-station" class="text-semibold bg-slate-100 rounded p-2 flex flex-col align-center justify-center">STATION</div>
+            </div>
+
+            <div id="drawer-inspector-words" class="rounded bg-slate-100 p-2 mb-4 flex flex-row flex-wrap gap-2"></div>
+
+            <div>
+                <div id="drawer-image-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mb-4"></div>
+                <div id="drawer-floorplan" class="mb-4 bg-slate-200 flex flex-row"></div>
+                <div id="drawer-contents"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- 
+    ┌─────────────────────────────────────┐
+    │               Details               │
+    └─────────────────────────────────────┘
+    -->
+    <div class="hidden" id="detailsTabContent" role="tabpanel" aria-labelledby="details-tab">
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mr-10">
+        <h5 id="drawer-source" class="inline-flex items-center mb-4 text-sm font-light text-gray-500 capitalize" data-source="">Source</h5>
+        <h5 id="drawer-id" class="inline-flex items-center mb-4 text-sm font-light text-gray-500 ml-auto" data-id="">ID</h5>
+        <h5 id="drawer-longitude" class="inline-flex items-center mb-4 text-sm font-light text-gray-500 ml-auto" data-lng="">LNG</h5>
+        <h5 id="drawer-latitude" class="inline-flex items-center mb-4 text-sm font-light text-gray-500 ml-auto" data-lat="">LAT</h5>
+    </div>
+
+    <div class="text-lg mb-2 text-gray-800">Property Details</div>
+
+    <div class="flex flex-col gap-2 p-4 bg-yellow-200 rounded-xl mb-4 overflow-scroll">
+
+        <table class="w-full text-sm text-left text-gray-500 ">
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                <tr>
+                    <th scope="col" class="py-3 px-6">
+                        Metric
+                    </th>
+                    <th scope="col" class="py-3 px-6">
+                        Result
+                    </th>
+                    <th scope="col" class="py-3 px-6">
+                        3rd Party Tool
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-white border-b  " id="details-property-address-house-number" data-loaded=""></tr>
+                <tr class="bg-white border-b  " id="details-property-address-road" data-loaded=""></tr>
+                <tr class="bg-white border-b  " id="details-property-address-neighbourhood" data-loaded=""></tr>
+                <tr class="bg-white border-b  " id="details-property-address-district" data-loaded=""></tr>
+                <tr class="bg-white border-b  " id="details-property-address-city" data-loaded=""></tr>
+                <tr class="bg-white border-b  " id="details-property-address-county" data-loaded=""></tr>
+                <tr class="bg-white border-b  " id="details-property-address-postcode" data-loaded=""></tr>
+                <tr class="bg-white border-b  " id="details-property-area" data-loaded=""></tr>
+                <tr class="bg-white border-b  " id="details-property-broadband2" data-loaded=""></tr>
+                <tr class="bg-white border-b  " id="details-property-council-tax" data-loaded=""></tr>
+                <tr class="bg-white border-b  " id="details-property-epc" data-loaded=""></tr>
+                <tr class="bg-white border-b  " id="details-property-postcode" data-loaded=""></tr>
+                <tr class="bg-white border-b  " id="details-property-schools" data-loaded=""></tr>
+                <tr class="bg-white border-b  " id="details-property-tenure" data-loaded=""></tr>
+                <tr class="bg-white border-b  " id="details-property-trains" data-loaded=""></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="details-property-crimes" data-loaded="" class="mb-4"></div>
+
+    <div id="details-property-broadband" data-loaded="" class="mb-4"></div>
+</div>
+
+
+
+    <!-- 
+    ┌─────────────────────────────────────┐
+    │             Local Area              │
+    └─────────────────────────────────────┘
+    -->
+    <div class="hidden" id="localTabContent" role="tabpanel" aria-labelledby="local-tab">
+    <div class="flex flex-col gap-2">
+        <div class="text-lg mb-2 text-gray-800">Local Area</div>
+        <p class="col-span-2 text-xs text-gray-500 mb-4">Find services within the vicinity (1km) of this property.</p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-4">
+            
+            <div class="flex flex-col gap-1">
+                <a href="#" id="load-local-crimes" class="py-2 px-4 text-xs font-medium text-center text-gray-100 bg-red-500 rounded-lg border border-gray-200  hover:bg-red-700 hover:text-red-300"><svg class="w-6 h-6 mx-auto fill-slate-100" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 4L20 2C18.85 2.64 17.4 3 16 3C14.6 3 13.14 2.63 12 2C10.86 2.63 9.4 3 8 3C6.6 3 5.15 2.64 4 2L2 4C2 4 4 6 4 8S2 14 2 16C2 20 12 22 12 22S22 20 22 16C22 14 20 10 20 8S22 4 22 4M15.05 16.45L11.97 14.59L8.9 16.45L9.72 12.95L7 10.61L10.58 10.3L11.97 7L13.37 10.29L16.95 10.6L14.23 12.94L15.05 16.45Z"/></svg> Local Crimes</a>
+                <label for="toggle-local-crimes" class="inline-flex relative items-center cursor-pointer mx-auto">
+                    <input type="checkbox" value="" id="toggle-local-crimes" class="sr-only peer" checked>
+                    <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-gray-300  peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-gray-600"></div>
+                </label>
+            </div>                     
+            
+            <div class="flex flex-col gap-1">
+                <a href="#" id="load-local-supermarkets" data-loaded="" class="py-2 px-4 text-xs font-medium text-center text-gray-100 bg-lime-500 rounded-lg border border-gray-200  hover:bg-lime-700 hover:text-lime-300"><svg class="w-6 h-6 mx-auto fill-slate-100" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z"/></svg>Supermarkets</a>
+                <label for="toggle-local-supermarkets" class="inline-flex relative items-center cursor-pointer mx-auto">
+                    <input type="checkbox" value="" id="toggle-local-supermarkets" class="sr-only peer" checked>
+                    <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-gray-300  peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-gray-600"></div>
+                </label>
+            </div>                     
+            
+            <div class="flex flex-col gap-1">
+                <a href="#" id="load-local-convenience" data-loaded="" class="py-2 px-4 text-xs font-medium text-center text-gray-100 bg-lime-500 rounded-lg border border-gray-200  hover:bg-lime-700 hover:text-lime-300"><svg class="w-6 h-6 mx-auto fill-slate-100" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z"/></svg>Convenience Stores</a>
+                <label for="toggle-local-convenience" class="inline-flex relative items-center cursor-pointer mx-auto">
+                    <input type="checkbox" value="" id="toggle-local-convenience" class="sr-only peer" checked>
+                    <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-gray-300  peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-gray-600"></div>
+                </label>
+            </div>                     
+            
+            <div class="flex flex-col gap-1">
+                <a href="#" id="load-local-coffee" data-loaded="" class="py-2 px-4 text-xs font-medium text-center text-gray-100 bg-amber-900 rounded-lg border border-gray-200  hover:bg-amber-700 hover:text-amber-300"><svg class="w-6 h-6 mx-auto fill-slate-100" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M2,21H20V19H2M20,8H18V5H20M20,3H4V13A4,4 0 0,0 8,17H14A4,4 0 0,0 18,13V10H20A2,2 0 0,0 22,8V5C22,3.89 21.1,3 20,3Z"/></svg>Cafe / Coffee</a>
+                <label for="toggle-local-coffee" class="inline-flex relative items-center cursor-pointer mx-auto">
+                    <input type="checkbox" value="" id="toggle-local-coffee" class="sr-only peer" checked>
+                    <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-gray-300  peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-gray-600"></div>
+                </label>
+            </div>    
+
+            <div class="flex flex-col gap-1">
+                <a href="#" id="load-local-schools" data-loaded="" class="py-2 px-4 text-xs font-medium text-center text-gray-900 bg-yellow-300 rounded-lg border border-gray-200  hover:bg-yellow-700 hover:text-yellow-300"><svg class="w-6 h-6 mx-auto fill-slate-100" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"/></svg>Schools</a>
+                <label for="toggle-local-schools" class="inline-flex relative items-center cursor-pointer mx-auto">
+                    <input type="checkbox" value="" id="toggle-local-schools" class="sr-only peer" checked>
+                    <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-gray-300  peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-gray-600"></div>
+                </label>
+            </div>
+            
+            <div class="flex flex-col gap-1">
+                <a href="#" id="load-local-gyms" data-loaded="" class="py-2 px-4 text-xs font-medium text-center text-gray-200 bg-gray-800 rounded-lg border border-gray-200  hover:bg-gray-600 hover:text-gray-300"><svg class="w-6 h-6 mx-auto fill-slate-100" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.57,14.86L22,13.43L20.57,12L17,15.57L8.43,7L12,3.43L10.57,2L9.14,3.43L7.71,2L5.57,4.14L4.14,2.71L2.71,4.14L4.14,5.57L2,7.71L3.43,9.14L2,10.57L3.43,12L7,8.43L15.57,17L12,20.57L13.43,22L14.86,20.57L16.29,22L18.43,19.86L19.86,21.29L21.29,19.86L19.86,18.43L22,16.29L20.57,14.86Z"/></svg>Gyms</a>
+                <label for="toggle-local-gyms" class="inline-flex relative items-center cursor-pointer mx-auto">
+                    <input type="checkbox" value="" id="toggle-local-gyms" class="sr-only peer" checked>
+                    <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-gray-300  peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-gray-600"></div>
+                </label>
+            </div>
+            
+            <div class="flex flex-col gap-1">
+                <a href="#" id="load-local-post-office" data-loaded="" class="py-2 px-4 text-xs font-medium text-center text-gray-200 bg-red-500 rounded-lg border border-gray-200  hover:bg-red-700 hover:text-gray-300"><svg class="w-6 h-6 mx-auto fill-slate-100" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/></svg>Post Office</a>
+                <label for="toggle-local-post-office" class="inline-flex relative items-center cursor-pointer mx-auto">
+                    <input type="checkbox" value="" id="toggle-local-post-office" class="sr-only peer" checked>
+                    <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-gray-300  peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-gray-600"></div>
+                </label>
+            </div>
+
+            <div class="flex flex-col gap-1">
+                <a href="#" id="load-local-station" data-loaded="" class="py-2 px-4 text-xs font-medium text-center text-gray-200 bg-blue-500 rounded-lg border border-gray-200  hover:bg-blue-700 hover:text-gray-300"><svg class="w-6 h-6 mx-auto fill-slate-100" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.5,15A1,1 0 0,1 9.5,16A1,1 0 0,1 8.5,17A1,1 0 0,1 7.5,16A1,1 0 0,1 8.5,15M7,9H17V14H7V9M15.5,15A1,1 0 0,1 16.5,16A1,1 0 0,1 15.5,17A1,1 0 0,1 14.5,16A1,1 0 0,1 15.5,15M18,15.88V9C18,6.38 15.32,6 12,6C9,6 6,6.37 6,9V15.88A2.62,2.62 0 0,0 8.62,18.5L7.5,19.62V20H9.17L10.67,18.5H13.5L15,20H16.5V19.62L15.37,18.5C16.82,18.5 18,17.33 18,15.88M17.8,2.8C20.47,3.84 22,6.05 22,8.86V22H2V8.86C2,6.05 3.53,3.84 6.2,2.8C8,2.09 10.14,2 12,2C13.86,2 16,2.09 17.8,2.8Z"/></svg>Train/Tube Station</a>
+                <label for="toggle-local-station" class="inline-flex relative items-center cursor-pointer mx-auto">
+                    <input type="checkbox" value="" id="toggle-local-station" class="sr-only peer" checked>
+                    <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-gray-300  peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-gray-600"></div>
+                </label>
+            </div>
+
+            <div class="flex flex-col gap-1">
+                <a href="#" id="load-local-bus-stop" data-loaded="" class="py-2 px-4 text-xs font-medium text-center text-gray-200 bg-green-500 rounded-lg border border-gray-200  hover:bg-green-700 hover:text-gray-300"><svg class="w-6 h-6 mx-auto fill-slate-100" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3,4C1.89,4 1,4.89 1,6V17H3A3,3 0 0,0 6,20A3,3 0 0,0 9,17H15A3,3 0 0,0 18,20A3,3 0 0,0 21,17H23V14C23,12.89 22.11,12 21,12H19V9.5H23V6C23,4.89 22.11,4 21,4H3M2.5,5.5H6.5V8H2.5V5.5M8,5.5H12V8H8V5.5M13.5,5.5H17.5V8H13.5V5.5M19,5.5H21.5V8H19V5.5M13.5,9.5H17.5V12H13.5V9.5M2.5,9.5H6.5V12H2.5V9.5M8,9.5H12V12H8V9.5M6,15.5A1.5,1.5 0 0,1 7.5,17A1.5,1.5 0 0,1 6,18.5A1.5,1.5 0 0,1 4.5,17A1.5,1.5 0 0,1 6,15.5M18,15.5A1.5,1.5 0 0,1 19.5,17A1.5,1.5 0 0,1 18,18.5A1.5,1.5 0 0,1 16.5,17A1.5,1.5 0 0,1 18,15.5Z"/></svg>Bus Stops</a>
+                <label for="toggle-local-bus-stop" class="inline-flex relative items-center cursor-pointer mx-auto">
+                    <input type="checkbox" value="" id="toggle-local-bus-stop" class="sr-only peer" checked>
+                    <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-gray-300  peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-gray-600"></div>
+                </label>
+            </div>
+
+            <div class="flex flex-col gap-1">
+                <a href="#" id="load-local-airport" data-loaded="" class="py-2 px-4 text-xs font-medium text-center text-gray-200 bg-sky-400 rounded-lg border border-gray-200  hover:bg-sky-600 hover:text-gray-300"><svg class="w-6 h-6 mx-auto fill-slate-100" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21,16V14L13,9V3.5A1.5,1.5 0 0,0 11.5,2A1.5,1.5 0 0,0 10,3.5V9L2,14V16L10,13.5V19L8,20.5V22L11.5,21L15,22V20.5L13,19V13.5L21,16Z"/></svg>Airport</a>
+                <label for="toggle-local-airport" class="inline-flex relative items-center cursor-pointer mx-auto">
+                    <input type="checkbox" value="" id="toggle-local-airport" class="sr-only peer" checked>
+                    <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-gray-300  peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-gray-600"></div>
+                </label>
+            </div>
+
+            <div class="flex flex-col gap-1">
+                <a href="#" id="load-local-doctor" data-loaded="" class="py-2 px-4 text-xs font-medium text-center text-gray-200 bg-rose-400 rounded-lg border border-gray-200  hover:bg-rose-600 hover:text-gray-300"><svg class="w-6 h-6 mx-auto fill-slate-100" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19,8C19.56,8 20,8.43 20,9A1,1 0 0,1 19,10C18.43,10 18,9.55 18,9C18,8.43 18.43,8 19,8M2,2V11C2,13.96 4.19,16.5 7.14,16.91C7.76,19.92 10.42,22 13.5,22A6.5,6.5 0 0,0 20,15.5V11.81C21.16,11.39 22,10.29 22,9A3,3 0 0,0 19,6A3,3 0 0,0 16,9C16,10.29 16.84,11.4 18,11.81V15.41C18,17.91 16,19.91 13.5,19.91C11.5,19.91 9.82,18.7 9.22,16.9C12,16.3 14,13.8 14,11V2H10V5H12V11A4,4 0 0,1 8,15A4,4 0 0,1 4,11V5H6V2H2Z"/></svg>Doctor</a>
+                <label for="toggle-local-doctor" class="inline-flex relative items-center cursor-pointer mx-auto">
+                    <input type="checkbox" value="" id="toggle-local-doctor" class="sr-only peer" checked>
+                    <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-gray-300  peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-gray-600"></div>
+                </label>
+            </div>
+
+            <div class="flex flex-col gap-1">
+                <a href="#" id="load-local-hospital" data-loaded="" class="py-2 px-4 text-xs font-medium text-center text-gray-200 bg-rose-500 rounded-lg border border-gray-200  hover:bg-rose-700 hover:text-gray-300"><svg class="w-6 h-6 mx-auto fill-slate-100" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18,14H14V18H10V14H6V10H10V6H14V10H18M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3Z"/></svg>Hospital</a>
+                <label for="toggle-local-hospital" class="inline-flex relative items-center cursor-pointer mx-auto">
+                    <input type="checkbox" value="" id="toggle-local-hospital" class="sr-only peer" checked>
+                    <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-gray-300  peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-gray-600"></div>
+                </label>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+    <!-- 
+    ┌─────────────────────────────────────┐
+    │            Neighbourhood            │
+    └─────────────────────────────────────┘
+    -->
+    <div class="hidden" id="neighbourhoodTabContent" role="tabpanel" aria-labelledby="neighbourhood-tab">
+    <div class="flex flex-col gap-2">
+        <div class="text-lg mb-2 text-gray-800">Neighbourhood Rating</div>
+        <p class="col-span-2 text-xs text-gray-500 mb-4">A general guide of living in this postcode.</p>
+
+        <div class="flex flex-col gap-2 p-4 bg-gray-800 rounded-xl mb-4 overflow-scroll">
+
+            <table class="w-full text-sm text-left text-gray-500">
+                <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                    <tr>
+                        <th scope="col" class="py-3 px-6">
+                            Description
+                        </th>
+                        <th scope="col" class="py-3 px-6">
+                            Value
+                        </th>
+                        <th scope="col" class="py-3 px-6">
+                            Rating
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="neighbourhood-results-table">
+                    
+                </tbody>
+            </table>
+
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div class="text-lg mb-2 text-gray-800">Load More Data</div>
+            <p class="col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-4 text-xs text-gray-500 ">Click each button to get more ratings for that subject.</p>
+            <a href="#" id="load-neighbourhood-crimes" class="py-2 px-4 text-xs font-medium text-center text-gray-100 bg-red-500 rounded-lg border border-gray-200  hover:bg-red-700 hover:text-red-300"><svg class="w-6 h-6 mx-auto fill-slate-100" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 4L20 2C18.85 2.64 17.4 3 16 3C14.6 3 13.14 2.63 12 2C10.86 2.63 9.4 3 8 3C6.6 3 5.15 2.64 4 2L2 4C2 4 4 6 4 8S2 14 2 16C2 20 12 22 12 22S22 20 22 16C22 14 20 10 20 8S22 4 22 4M15.05 16.45L11.97 14.59L8.9 16.45L9.72 12.95L7 10.61L10.58 10.3L11.97 7L13.37 10.29L16.95 10.6L14.23 12.94L15.05 16.45Z"/></svg> Crime Ratings</a>
+            <a href="#" id="load-neighbourhood-renters" class="py-2 px-4 text-xs font-medium text-center text-gray-100 bg-sky-500 rounded-lg border border-gray-200  hover:bg-sky-700 hover:text-sky-300"><svg class="w-6 h-6 mx-auto fill-slate-100" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.5,2C8.46,2 10.13,3.25 10.74,5H22V8H18V11H15V8H10.74C10.13,9.75 8.46,11 6.5,11C4,11 2,9 2,6.5C2,4 4,2 6.5,2M6.5,5A1.5,1.5 0 0,0 5,6.5A1.5,1.5 0 0,0 6.5,8A1.5,1.5 0 0,0 8,6.5A1.5,1.5 0 0,0 6.5,5M6.5,13C8.46,13 10.13,14.25 10.74,16H22V19H20V22H18V19H16V22H13V19H10.74C10.13,20.75 8.46,22 6.5,22C4,22 2,20 2,17.5C2,15 4,13 6.5,13M6.5,16A1.5,1.5 0 0,0 5,17.5A1.5,1.5 0 0,0 6.5,19A1.5,1.5 0 0,0 8,17.5A1.5,1.5 0 0,0 6.5,16Z"/></svg> Renters vs Buyers</a>
+        </div>
+    </div>
+</div>
+
+</div>
