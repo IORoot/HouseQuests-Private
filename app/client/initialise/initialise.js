@@ -57,7 +57,9 @@
     // Total count of markers
     var totalMarkerCount = 0;
 
-
+    // Advert Timer
+    var advertRepeats = 360000
+    var advertButtonEnable = 5000
 
     // ┌─────────────────────────────────────┐
     // │                                     │

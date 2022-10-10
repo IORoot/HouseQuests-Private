@@ -12,6 +12,7 @@ Release Management on github
 - Removed accordion coming-soon items
 - Recoloured search sections
 - Added all Icons to local area layers
+- Started developing AdSense integration
 
 ## 0.1.15 (2022-09-29)
 
