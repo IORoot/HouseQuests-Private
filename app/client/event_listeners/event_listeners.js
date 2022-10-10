@@ -79,8 +79,9 @@ export function load_event_listeners(){
         'buttonID':     'load-local-gyms',
         'openpassKey':  'leisure',
         'openpassValue':'fitness_centre',
-        'fill':         'rgba(30,30,30, 1.0)',
-        'stroke':       'rgba(120, 0, 0, 1.0)',
+        'fill':         '1e1e1e',
+        'stroke':       '780000',
+        'iconStyle':    icon_local_gym
     })
 
     // Convenience stores
@@ -89,8 +90,9 @@ export function load_event_listeners(){
         'buttonID':     'load-local-convenience',
         'openpassKey':  'shop',
         'openpassValue':'convenience',
-        'fill':         'rgba(255, 255, 255, 1.0)',
-        'stroke':       'rgba(0, 0, 0, 1.0)',
+        'fill':         'ffffff',
+        'stroke':       '000000',
+        'iconStyle':    icon_local_convenience
     })
 
     // Coffee
@@ -99,8 +101,9 @@ export function load_event_listeners(){
         'buttonID':     'load-local-coffee',
         'openpassKey':  'amenity',
         'openpassValue':'cafe',
-        'fill':         'rgba(120, 53, 15, 1.0)',
-        'stroke':       'rgba(245, 158, 11, 1.0)',
+        'fill':         '78350f',
+        'stroke':       'f59e0b',
+        'iconStyle':    icon_local_cafe
     })
 
     // Schools
@@ -109,8 +112,9 @@ export function load_event_listeners(){
         'buttonID':     'load-local-schools',
         'openpassKey':  'amenity',
         'openpassValue':'school',
-        'fill':         'rgba(252, 211, 77, 1.0)',
-        'stroke':       'rgba(245, 245, 245, 1.0)',
+        'fill':         'fcd34d',
+        'stroke':       'f5f5f5',
+        'iconStyle':    icon_local_school
     })
 
     // Supermarkets
@@ -119,8 +123,9 @@ export function load_event_listeners(){
         'buttonID':     'load-local-supermarkets',
         'openpassKey':  'shop',
         'openpassValue':'supermarket',
-        'fill':         'rgba(255, 255, 255, 1.0)',
-        'stroke':       'rgba(0, 0, 0, 1.0)',
+        'fill':         'ffffff',
+        'stroke':       '000000',
+        'iconStyle':    icon_local_supermarket
     })
 
     // Post-Office
@@ -129,8 +134,9 @@ export function load_event_listeners(){
         'buttonID':     'load-local-post-office',
         'openpassKey':  'amenity',
         'openpassValue':'post_office',
-        'fill':         'rgba(255, 0, 0, 1.0)',
-        'stroke':       'rgba(0, 0, 0, 1.0)',
+        'fill':         'ff0000',
+        'stroke':       '000000',
+        'iconStyle':    icon_local_post
     })
 
     // Train/Tube Station
@@ -139,8 +145,9 @@ export function load_event_listeners(){
         'buttonID':     'load-local-station',
         'openpassKey':  'public_transport',
         'openpassValue':'station',
-        'fill':         'rgba(0, 0, 240, 1.0)',
-        'stroke':       'rgba(255, 255, 255, 1.0)',
+        'fill':         '0000f0',
+        'stroke':       'ffffff',
+        'iconStyle':    icon_local_station
     })
 
     // Bus Stop
@@ -149,8 +156,9 @@ export function load_event_listeners(){
         'buttonID':     'load-local-bus-stop',
         'openpassKey':  'public_transport',
         'openpassValue':'platform',
-        'fill':         'rgba(0, 240, 0, 1.0)',
-        'stroke':       'rgba(255, 255, 255, 1.0)',
+        'fill':         '00f000',
+        'stroke':       'ffffff',
+        'iconStyle':    icon_local_bus
     })
 
     // Airport
@@ -159,8 +167,9 @@ export function load_event_listeners(){
         'buttonID':     'load-local-airport',
         'openpassKey':  'aeroway',
         'openpassValue':'aerodrome',
-        'fill':         'rgba(120, 120, 0, 1.0)',
-        'stroke':       'rgba(5, 150, 255, 1.0)',
+        'fill':         '787800',
+        'stroke':       '0596ff',
+        'iconStyle':    icon_local_airport
     })
 
     // Doctor
@@ -169,8 +178,9 @@ export function load_event_listeners(){
         'buttonID':     'load-local-doctor',
         'openpassKey':  'amenity',
         'openpassValue':'doctors',
-        'fill':         'rgba(255, 255, 255, 1.0)',
-        'stroke':       'rgba(230, 0, 0, 1.0)',
+        'fill':         'ffffff',
+        'stroke':       'e60000',
+        'iconStyle':    icon_local_doctor
     })
 
     // Hospital
@@ -179,7 +189,8 @@ export function load_event_listeners(){
         'buttonID':     'load-local-hospital',
         'openpassKey':  'amenity',
         'openpassValue':'hospital',
-        'fill':         'rgba(255, 200, 200, 1.0)',
-        'stroke':       'rgba(230, 0, 0, 1.0)',
+        'fill':         'ffc8c8',
+        'stroke':       'e60000',
+        'iconStyle':    icon_local_hospital
     })
 }

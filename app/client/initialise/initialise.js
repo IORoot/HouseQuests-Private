@@ -16,6 +16,25 @@
     var icon_zooplaAll = icon_zoopla;
     var icon_onthemarket = "https://svg-rewriter.sachinraja.workers.dev/?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fnpm%2F%40mdi%2Fsvg%406.7.96%2Fsvg%2Fhome-map-marker.svg&fill=%23E11D48&width=20px&height=20px";
 
+    // Local Area Icons
+    // mdi-Icon name, size (px), HEX fill colour (not rgba) , HEX stroke colour (not rgba), stroke-width
+    var icon_local_crimes =         ['police-badge', 10, '991B1B', 'FFFFFF']
+    var icon_local_supermarket =    ['cart', 15, '16A34A', '000000', 1]
+    var icon_local_convenience =    ['basket', 15, '16A34A', '000000', 1]
+    var icon_local_cafe =           ['coffee', 15, '78350f', 'f59e0b', 1]
+    var icon_local_gym =            ['dumbbell', 15, '1e1e1e', '780000', 1]
+    var icon_local_school =         ['school', 15, 'fcd34d', '040404', 1]
+    var icon_local_post =           ['email', 15, 'ff0000', '000000', 1]
+    var icon_local_station =        ['subway', 15, '0000f0', 'ffffff', 1]
+    var icon_local_bus =            ['bus-double-decker', 15, '00f000', '000000', 1]
+    var icon_local_airport =        ['airplane', 15, '787800', '0596ff', 1]
+    var icon_local_doctor =         ['stethoscope', 15, 'ffffff', 'e60000', 1]
+    var icon_local_hospital =       ['hospital-box', 15, 'ffc8c8', 'e60000', 1]
+    var icon_local_default =        ['map-marker', 15, 'DC2626', 'FFFFFF']
+
+    // County-Area Icons
+    var icon_country_supermarket = ['cart', 15, '16A34A', '000000']
+
     // Colours
     var hex_rightmove   = '0284C7'
     var hex_zoopla      = '4C1D95'

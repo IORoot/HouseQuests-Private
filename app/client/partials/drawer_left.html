@@ -38,7 +38,7 @@
     <div class="hidden" id="searchTabContent" role="tabpanel" aria-labelledby="search-tab">
         <div class="flex flex-col gap-2">
 
-            <div id="accordion-collapse" data-accordion="collapse">
+            <div class="mb-10" id="accordion-collapse" data-accordion="collapse">
 
                 <h2 id="accordion-collapse-heading-1">
                     <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl hover:bg-gray-500 hover:text-gray-200" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
@@ -137,7 +137,7 @@
                     </div>
                 </div>
 
-
+<!-- 
                 <h2 id="accordion-collapse-heading-2">
                     <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 hover:bg-gray-500 hover:text-gray-200 " data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
                         <span>Single Property Search</span>
@@ -146,7 +146,7 @@
                 </h2>
                 <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
                     <div class="p-5 font-light border border-b-0 border-gray-200">
-                        <p class="mb-2 text-gray-500 dark:text-gray-400">HOLDER</p>
+                        <p class="mb-2 text-gray-500 dark:text-gray-400">Coming Soon</p>
                     </div>
                 </div>
 
@@ -160,9 +160,9 @@
                 </h2>
                 <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
                     <div class="p-5 font-light border border-t-0 border-gray-200">
-                        <p class="mb-2 text-gray-500 dark:text-gray-400">HOLDER</p>
+                        <p class="mb-2 text-gray-500 dark:text-gray-400">Coming Soon</p>
                     </div>
-                </div>
+                </div> -->
             </div>
 
 
@@ -203,8 +203,7 @@
             <button id="toggle-bus-routes" data-loaded="" type="button" class="flex flex-col w-full text-white ring-gray-600 bg-gradient-to-r from-orange-500 via-orange-600 to-orange-700 hover:bg-gradient-to-br font-regular rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"><svg class="w-4 h-4 fill-white m-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 7V16C22 16.71 21.62 17.36 21 17.72V19.25C21 19.66 20.66 20 20.25 20H19.75C19.34 20 19 19.66 19 19.25V18H12V19.25C12 19.66 11.66 20 11.25 20H10.75C10.34 20 10 19.66 10 19.25V17.72C9.39 17.36 9 16.71 9 16V7C9 4 12 4 15.5 4S22 4 22 7M13 15C13 14.45 12.55 14 12 14S11 14.45 11 15 11.45 16 12 16 13 15.55 13 15M20 15C20 14.45 19.55 14 19 14S18 14.45 18 15 18.45 16 19 16 20 15.55 20 15M20 7H11V11H20V7M7 9.5C6.97 8.12 5.83 7 4.45 7.05C3.07 7.08 1.97 8.22 2 9.6C2.03 10.77 2.86 11.77 4 12V20H5V12C6.18 11.76 7 10.71 7 9.5Z"/></svg><span class="m-auto">London Bus Routes</span></button>
             <button id="toggle-supermarkets" data-loaded="" type="button" class="flex flex-col w-full text-white ring-gray-600 bg-gradient-to-r from-lime-400 via-lime-500 to-lime-600 hover:bg-gradient-to-br font-regular rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"><svg class="w-4 h-4 fill-white m-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z"/></svg><span class="m-auto">London Supermarkets</span></button>
             <button id="toggle-universities" data-loaded="" type="button" class="flex flex-col w-full text-white ring-gray-600 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 hover:bg-gradient-to-br font-regular rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"><svg class="w-4 h-4 fill-white m-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"/></svg><span class="m-auto">University</span></button>
-            <button id="toggle-schools-academies" data-loaded="" type="button" class="flex flex-col w-full text-white ring-gray-600 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 hover:bg-gradient-to-br font-regular rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"><svg class="w-4 h-4 fill-white m-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3L1 9L5 11.18V17.18L12 21L19 17.18V11.18L21 10.09V17H23V9L12 3M18.82 9L12 12.72L5.18 9L12 5.28L18.82 9M17 16L12 18.72L7 16V12.27L12 15L17 12.27V16Z"/></svg><span class="m-auto">Free Schools</span></button>
-            <button id="toggle-schools-statefunded" data-loaded="" type="button" class="flex flex-col w-full text-white ring-gray-600 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 hover:bg-gradient-to-br font-regular rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"><svg class="w-4 h-4 fill-white m-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3L1 9L5 11.18V17.18L12 21L19 17.18V11.18L21 10.09V17H23V9L12 3M18.82 9L12 12.72L5.18 9L12 5.28L18.82 9M17 16L12 18.72L7 16V12.27L12 15L17 12.27V16Z"/></svg><span class="m-auto">Funded Schools</span></button>
+            <button id="toggle-schools" data-loaded="" type="button" class="flex flex-col w-full text-white ring-gray-600 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 hover:bg-gradient-to-br font-regular rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"><svg class="w-4 h-4 fill-white m-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3L1 9L5 11.18V17.18L12 21L19 17.18V11.18L21 10.09V17H23V9L12 3M18.82 9L12 12.72L5.18 9L12 5.28L18.82 9M17 16L12 18.72L7 16V12.27L12 15L17 12.27V16Z"/></svg><span class="m-auto">Schools</span></button>
             <button id="toggle-schools-childcenters" data-loaded="" type="button" class="flex flex-col w-full text-white ring-gray-600 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 hover:bg-gradient-to-br font-regular rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"><svg class="w-4 h-4 fill-white m-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3L1 9L5 11.18V17.18L12 21L19 17.18V11.18L21 10.09V17H23V9L12 3M18.82 9L12 12.72L5.18 9L12 5.28L18.82 9M17 16L12 18.72L7 16V12.27L12 15L17 12.27V16Z"/></svg><span class="m-auto">Child Centers</span></button>
             <button id="toggle-crime-boroughs" data-loaded="" type="button" class="flex flex-col w-full text-white ring-gray-600 bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br font-regular rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"><svg class="w-4 h-4 fill-white m-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.62,2C23.97,7.61 12.47,20.15 12.47,20.15L9.6,17.28L4.91,22L2.77,19.86L20.62,2Z"/></svg><span class="m-auto">Crime Boroughs</span></button>
         </div>

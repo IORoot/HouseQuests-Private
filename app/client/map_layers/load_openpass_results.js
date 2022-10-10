@@ -6,14 +6,13 @@
 // └─────────────────────────────────────┘
 
 import { shop_colour_filter } from '../shops/shop_colour_filter.js'
+import { set_icon_style } from '../icons/set_icon_style.js'
 
-export function load_openpass_results(title, markerdata, fill, stroke){
+export function load_openpass_results(title, markerdata, iconStyle){
 
     show_spinner()
 
     let featuresList = [];
-    var defaultColour = fill
-    var defaultStroke = stroke
     
     markerdata.elements.forEach( 
 
@@ -57,13 +56,18 @@ export function load_openpass_results(title, markerdata, fill, stroke){
             let hours       = element.tags['opening_hours'] ?? ""
 
             // filter colours
+            let defaultColour = iconStyle[2]
+            let defaultStroke = iconStyle[3]
+
             let markerColours = shop_colour_filter(name,defaultColour,defaultStroke)
 
             if (brand !== ""){
                 markerColours = shop_colour_filter(brand,defaultColour,defaultStroke)
             }
+            // Set Icon Style to new colours
+            iconStyle[2] = markerColours[0]
+            iconStyle[3] = markerColours[1]
 
-            
             // create a new feature
             const feature = new ol.Feature({
                 geometry: new ol.geom.Point(
@@ -80,44 +84,13 @@ export function load_openpass_results(title, markerdata, fill, stroke){
                 website: website,
                 hours: hours,
                 type: type,
-                colour: defaultColour,
-                stroke: defaultStroke,
+                colour: markerColours[0],
+                stroke: markerColours[1],
                 longitude: element.lon,
                 latitude: element.lat,
             })
-            
 
-            feature.setStyle(
-                new ol.style.Style({
-
-                    // square shape
-                    
-                    // image: new ol.style.RegularShape({
-                    //     fill: new ol.style.Fill({
-                    //         color: markerColours[0]
-                    //     }),
-                    //     stroke: new ol.style.Stroke({
-                    //         color: markerColours[1],
-                    //         width: 2,
-                    //     }),
-                    //     points: 4,
-                    //     radius: 5,
-                    //     angle: Math.PI / 4,
-                    // }),
-                    
-                    image: new ol.style.Circle({ 
-                        fill: new ol.style.Fill({
-                            color: markerColours[0]
-                        }),
-                        radius: 5,
-                        stroke: new ol.style.Stroke({
-                            color: markerColours[1],
-                            width: 2,
-                        }),
-                    }),
-                    
-                })
-            );
+            feature.setStyle(set_icon_style(iconStyle));
 
             featuresList.push(feature);
 
