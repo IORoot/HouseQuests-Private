@@ -58,7 +58,6 @@ export function listener_map(){
             // Highlight new property
             change_icon(marker.ID, hex_highlighted)
 
-
             // update the right drawer contents with results.
             var propertyDetails = await load_property_details(marker)
             update_drawer_contents(propertyDetails, marker.source)
@@ -435,7 +434,6 @@ export function listener_map(){
         if (marker.type == 'local-hospital')
         {
             overlay.setPosition(event.coordinate);
-            console.log(marker)
             var popupHTML = '';
             popupHTML += '<div class="flex flex-col gap-2">';
             popupHTML += '<div class="text-xs text-red-400">Hospital</div>'

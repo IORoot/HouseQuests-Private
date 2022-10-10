@@ -5,81 +5,80 @@ export function shop_colour_filter(brand, defaultColour, defaultStroke)
 
     let regex = new RegExp(".*planet organic.*",'i');
     if (regex.test(brand)) {
-        defaultColour = "rgba(0, 0, 0, 1.0)"
-        defaultStroke = "rgba(255, 255, 255, 1.0)"
+        defaultColour = "000000"
+        defaultStroke = "ffffff"
     }
 
     regex = new RegExp(".*tesco.*",'i');
     if (regex.test(brand)) {
-        defaultColour = "rgba(0, 83, 159, 1.0)"
-        defaultStroke = "rgba(229, 42, 34, 1.0)"
+        defaultColour = "00539f"
+        defaultStroke = "e52a22"
     }
 
     regex = new RegExp(".*co-op.*",'i');
     if (regex.test(brand)) {
-        defaultColour = "rgba(2, 177, 231, 1.0)"
-        defaultStroke = "rgba(255, 255, 255, 1.0)"
+        defaultColour = "02b1e7"
+        defaultStroke = "ffffff"
     }
 
     regex = new RegExp(".*cooperative.*",'i');
     if (regex.test(brand)) {
-        defaultColour = "rgba(2, 177, 231, 1.0)"
-        defaultStroke = "rgba(255, 255, 255, 1.0)"
+        defaultColour = "02b1e7"
+        defaultStroke = "ffffff"
     }
 
     regex = new RegExp(".*Co-operative.*",'i');
     if (regex.test(brand)) {
-        defaultColour = "rgba(2, 177, 231, 1.0)"
-        defaultStroke = "rgba(255, 255, 255, 1.0)"
+        defaultColour = "02b1e7"
+        defaultStroke = "ffffff"
     }
 
     regex = new RegExp(".*lidl.*",'i');
     if (regex.test(brand)) {
-        defaultColour = "rgba(255, 240, 0, 1.0)"
-        defaultStroke = "rgba(2, 79, 170, 1.0)"
+        defaultColour = "fff000"
+        defaultStroke = "024faa"
     }
 
     regex = new RegExp(".*aldi.*",'i');
     if (regex.test(brand)) {
-        defaultColour = "rgba(1, 0, 97, 1.0)"
-        defaultStroke = "rgba(247, 205, 4, 1.0)"
+        defaultColour = "010061"
+        defaultStroke = "f7cd04"
     }
 
     regex = new RegExp(".*asda.*",'i');
     if (regex.test(brand)) {
-        defaultColour = "rgba(104, 165, 27, 1.0)"
-        defaultStroke = "rgba(255, 255, 255, 1.0)"
+        defaultColour = "68a51b"
+        defaultStroke = "ffffff"
     }
 
-    console.log(brand)
     regex = new RegExp(".*sainsbury.*",'i');
     if (regex.test(brand)) {
-        defaultColour = "rgba(240, 108, 2, 1.0)"
-        defaultStroke = "rgba(255, 255, 255, 1.0)"
+        defaultColour = "f06c02"
+        defaultStroke = "ffffff"
     }
 
     regex = new RegExp(".*spencer.*",'i');
     if (regex.test(brand)) {
-        defaultColour = "rgba(188, 215, 85, 1.0)"
-        defaultStroke = "rgba(0, 0, 0, 1.0)"
+        defaultColour = "bcd755"
+        defaultStroke = "000000"
     }
 
     regex = new RegExp(".*M&S.*",'i');
     if (regex.test(brand)) {
-        defaultColour = "rgba(188, 215, 85, 1.0)"
-        defaultStroke = "rgba(0, 0, 0, 1.0)"
+        defaultColour = "bcd755"
+        defaultStroke = "000000"
     }
 
     regex = new RegExp(".*waitrose.*",'i');
     if (regex.test(brand)) {
-        defaultColour = "rgba(93, 128, 25, 1.0)"
-        defaultStroke = "rgba(255, 255, 255, 1.0)"
+        defaultColour = "5d8019"
+        defaultStroke = "ffffff"
     }
 
     regex = new RegExp("Nisa.*",'i');
     if (regex.test(brand)) {
-        defaultColour = "rgba(37, 48, 59, 1.0)"
-        defaultStroke = "rgba(254, 201, 18, 1.0)"
+        defaultColour = "25303b"
+        defaultStroke = "fec912"
     }
 
     let palette = [defaultColour, defaultStroke]

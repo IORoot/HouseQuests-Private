@@ -17,8 +17,7 @@ export function listener_show_openpass(openpassRequest)
     let buttonID = openpassRequest.buttonID
     let openpassKey = openpassRequest.openpassKey
     let openpassValue = openpassRequest.openpassValue
-    let fill = openpassRequest.fill
-    let stroke = openpassRequest.stroke
+    let iconStyle = openpassRequest.iconStyle
 
     const button = document.getElementById(buttonID);
 
@@ -59,7 +58,7 @@ export function listener_show_openpass(openpassRequest)
 
         const openpassResults = await request_overpass_api(openpassBoundingBox, query)
 
-        load_openpass_results(layerID, openpassResults, fill, stroke)
+        load_openpass_results(layerID, openpassResults, iconStyle)
         
         hide_spinner()
     });

@@ -2,6 +2,8 @@
  * Vector supermarket Route map Layer
  */
 
+ import { set_icon_style } from '../icons/set_icon_style.js'
+
 export async function load_layer_supermarkets()
 {
     show_spinner()
@@ -29,15 +31,7 @@ export async function load_layer_supermarkets()
     let supermarkets = new ol.layer.Vector({
         declutter: false,
         source: jsonSource_supermarketLines,
-        style: [new ol.style.Style({
-            stroke: new ol.style.Stroke({
-                color: "rgba(28, 25, 23, 1.0)",
-                width: 2,
-            }),
-            fill: new ol.style.Fill({
-                color: "rgba(234, 88, 12, 1.0)",
-            }),
-        })],
+        style: [set_icon_style(icon_country_supermarket)],
         name: "supermarkets",
         title: 'supermarkets',
         visible: true

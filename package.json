@@ -1,8 +1,8 @@
 {
   "name": "ioroot-advanced-property-search",
   "productName": "APS",
-  "description": "The automatic release management.<br/><br/><ul class=\"list-disc\"><li>Publishes to github and wiki.</li></ul>",
-  "version": "0.1.15",
+  "description": "The automatic release management.<br/><br/><ul class=\"list-disc\"><li>HTML Partials.</li><li>New wiki website.</li></ul>",
+  "version": "0.1.16",
   "private": true,
   "author": "Andy Pearson <andy@londonparkour.com>",
   "copyright": "© 2022, LondonParkour LTD.",

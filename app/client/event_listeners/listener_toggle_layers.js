@@ -144,25 +144,16 @@ export function listener_toggle_layers(){
     });
 
 
-    const toggleSchoolAcademies = document.getElementById('toggle-schools-academies');
-    toggleSchoolAcademies.addEventListener('click', async function(event) {
-        if (!this.dataset.loaded){
-            load_layer_schools_academies()
-            this.dataset.loaded = "loaded"
-        }
-        button_ring_toggle(this)
-        toggle_layer('schools-academies')
-    });
-
-
-    const toggleSchoolStateFunded = document.getElementById('toggle-schools-statefunded');
+    const toggleSchoolStateFunded = document.getElementById('toggle-schools');
     toggleSchoolStateFunded.addEventListener('click', async function(event) {
         if (!this.dataset.loaded){
+            load_layer_schools_academies()
             load_layer_schools_statefunded()
             this.dataset.loaded = "loaded"
         }
         button_ring_toggle(this)
         toggle_layer('schools-statefunded')
+        toggle_layer('schools-academies')
     });
 
 

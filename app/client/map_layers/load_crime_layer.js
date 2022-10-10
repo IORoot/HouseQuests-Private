@@ -5,6 +5,8 @@
 // │                                     │
 // └─────────────────────────────────────┘
 
+import { set_icon_style } from '../icons/set_icon_style.js'
+
 export function load_crime_layer(markerdata){
 
     show_spinner()
@@ -36,14 +38,7 @@ export function load_crime_layer(markerdata){
             })
 
             feature.setStyle(
-                new ol.style.Style({
-                    image: new ol.style.Circle({ 
-                        fill: new ol.style.Fill({
-                            color: "rgba(127, 29, 29, 1.0)"
-                        }),
-                        radius: 2,
-                    }),
-                })
+                set_icon_style(icon_local_crimes)
             );
 
             featuresList.push(feature);
