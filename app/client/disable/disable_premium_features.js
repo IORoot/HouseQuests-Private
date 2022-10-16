@@ -2,7 +2,6 @@
 export function disable_premium_features()
 {
 
-    clone_and_recolour('zooplaGetAllModal')
     clone_and_recolour('clear-all-markers')
     clone_and_recolour('toggle-tube-stations')
     clone_and_recolour('toggle-train-lines')

@@ -65,7 +65,7 @@ app.on("ready", () => {
   );
 
   if (env.name === "development") {
-    mainWindow.openDevTools();
+    // mainWindow.openDevTools();
   }
 });
 

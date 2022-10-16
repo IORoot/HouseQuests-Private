@@ -1,101 +1,44 @@
 <div id="popup-modal-intro" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full">
-    <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
+    <div class="relative p-4 w-full max-w-2xl h-full md:h-auto shadow">
 
         <!-- Modal content -->
-        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+        <div class="relative bg-orange-100 rounded-t-xl">
+
             <!-- Modal header -->
-            <div class="flex justify-between items-start p-5 rounded-t border-b dark:border-gray-600">
-                <h3 class="text-xl font-semibold text-gray-900 lg:text-2xl dark:text-white">
-                    Welcome to <span id="version-intro"></span>!
+            <div class="flex justify-between items-start p-5 rounded-t border-b-4 border-orange-300 bg-emerald-900">
+                <h3 class="flex flex-row gap-4">
+                    <img class="w-16 h-16 mx-auto" src="./client/images/icon.png" >
+                    <div class="text-xl font-semibold text-orange-100 lg:text-2xl w-full m-auto">Welcome to <span id="version-intro"></span>!</div>
                 </h3>
-                <button type="button" id="popup-modal-intro-x" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white">
+                <button type="button" id="popup-modal-intro-x" class="text-orange-300 bg-transparent hover:bg-orange-700 hover:text-white rounded-lg text-sm p-1.5 ml-auto inline-flex items-center">
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>  
                 </button>
             </div>
 
 
-
             <!-- Modal body -->
-            <div class="p-6 grid grid-cols-3 gap-4">
+            <div class="p-6 flex flex-col gap-4">
 
-                <div class="col-span-3 flex flex-row gap-4">
-                    <img class="w-40 h-40 mx-auto" src="./client/images/icon.png" >
-                    <div class="flex flex-col gap-2">
-                        <p class="text-base leading-relaxed text-gray-500 dark:text-gray-200">Advanced Property Searcher</p>
-                        <p id="intro-description" class="text-xs leading-relaxed text-gray-500 dark:text-gray-400"></p> 
-                    </div>
-                </div>
-
-
-                <div class="col-span-3 border-b pb-5 dark:border-gray-600">
-                    <div class="text-sm font-semibold text-gray-300 capitalize mb-2 flex flex-row gap-2 mr-2">
-                        <span>Authentication Code : </span>
-                        <span class="my-auto text-xs font-light" id="authentication-status"></span>
-                    </div>
-                    
-                    
-                    <div class="flex flex-row gap-2">
-                        <input type="text" id="intro-authentication-code" class="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="64-Character Purchase Code" required>
-                        <button type="button" id="intro-authentication-code-submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 focus:outline-none ">Access</button>
-                    </div>
-                </div>
-
-
+                <!-- Authenitcation Code  -->
+                ${require('./modal_intro/authentication_code.html')}
                 
-                <div class="col-span-3 grid grid-cols-2 gap-2">
+                <div class="grid grid-cols-2 gap-4">
 
-                    <div class="p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-                        
-                        <a href="#">
-                            <h5 class="mb-2 text-2xl font-light tracking-tight text-gray-900 dark:text-white flex flex-row gap-4"><svg class="w-8 h-8 text-gray-500 dark:text-gray-400" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M16.5,5.5A2,2 0 0,0 18.5,3.5A2,2 0 0,0 16.5,1.5A2,2 0 0,0 14.5,3.5A2,2 0 0,0 16.5,5.5M12.9,19.4L13.9,15L16,17V23H18V15.5L15.9,13.5L16.5,10.5C17.89,12.09 19.89,13 22,13V11C20.24,11.03 18.6,10.11 17.7,8.6L16.7,7C16.34,6.4 15.7,6 15,6C14.7,6 14.5,6.1 14.2,6.1L9,8.3V13H11V9.6L12.8,8.9L11.2,17L6.3,16L5.9,18L12.9,19.4M4,9A1,1 0 0,1 3,8A1,1 0 0,1 4,7H7V9H4M5,5A1,1 0 0,1 4,4A1,1 0 0,1 5,3H10V5H5M3,13A1,1 0 0,1 2,12A1,1 0 0,1 3,11H7V13H3Z"/></svg> Quick-Start</h5>
-                        </a>
-                        <p class="mb-3 font-sm text-gray-500 dark:text-gray-400">Brief overview of the main features and how to use the app.</p>
-                        <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
-                            Guide
-                            <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
-                        </a>
-                    </div>
-                    
-                    <div class="p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">                               
-                        <a href="#">
-                            <h5 class="mb-2 text-2xl font-light tracking-tight text-gray-900 dark:text-white flex flex-row gap-4"><svg class="w-8 h-8 text-gray-500 dark:text-gray-400" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M12,7.77L18.39,18H5.61L12,7.77M12,4L2,20H22"/></path></svg>Changelog</h5>
-                        </a>
-                        <p class="mb-3 font-sm text-gray-500 dark:text-gray-400">See what fixes and features were released in each version.</p>
-                        <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
-                            Changelog
-                            <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
-                        </a>
-                    </div>
+                    <!-- Main Icon  -->
+                    ${require('./modal_intro/changelog.html')}
 
-                    <div class="p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
-                            <h5 class="mb-2 text-2xl font-light tracking-tight text-gray-900 dark:text-white flex flex-row gap-4"><svg class="w-8 h-8 text-gray-500 dark:text-gray-400" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M18,9H16V7H18M18,13H16V11H18M18,17H16V15H18M8,9H6V7H8M8,13H6V11H8M8,17H6V15H8M18,3V5H16V3H8V5H6V3H4V21H6V19H8V21H16V19H18V21H20V3H18Z"/></svg>Tutorials</h5>
-                        </a>
-                        <p class="mb-3 font-sm text-gray-500 dark:text-gray-400">Videos on how to use each feature of the app.</p>
-                        <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
-                            Tutorials
-                            <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
-                        </a>
-                    </div>
+                    <!-- Authenitcation Code  -->
+                    ${require('./modal_intro/link_panel.html')}
 
-                    <div class="p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
-                            <h5 class="mb-2 text-2xl font-light tracking-tight text-gray-900 dark:text-white flex flex-row gap-4"><svg class="w-8 h-8 text-gray-500 dark:text-gray-400" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M14,17H7V15H14M17,13H7V11H17M17,9H7V7H17M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3Z"/></svg>Wiki</h5>
-                        </a>
-                        <p class="mb-3 font-sm text-gray-500 dark:text-gray-400">A helpful resource for usage of the application.</p>
-                        <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
-                            Documentation
-                            <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
-                        </a>
-                    </div>
                 </div>
+
             </div>
 
+        </div>
 
-            <!-- Modal Buttons Footer -->
-            <div class="flex items-center p-6 space-x-2 rounded-b border-t border-gray-200 dark:border-gray-600">
-                <button id="popup-modal-intro-close" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600">Close</button>
-            </div>
+        <!-- Modal Buttons Footer -->
+        <div class="flex items-center p-6 space-x-2 rounded-b-lg bg-orange-200 ">
+            <button id="popup-modal-intro-close" type="button" class="text-orange-100 bg-emerald-900 hover:bg-white hover:text-emerald-900 m-auto rounded-lg text-sm font-medium px-5 py-2.5 focus:z-10">Close</button>
         </div>
 
     </div>

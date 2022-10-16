@@ -164,8 +164,13 @@
     document.getElementById('version-intro').innerText = packageJsonVersion.productName + ' ' + packageJsonVersion.version
     document.title = packageJsonVersion.productName + ' ' + packageJsonVersion.version
 
-    document.getElementById('intro-description').innerHTML = packageJsonVersion.description
-
+    // ┌─────────────────────────────────────┐
+    // │             Set Changelog           │
+    // └─────────────────────────────────────┘
+    const fs = require('fs');
+    let changelog = fs.readFileSync('./CHANGELOG.md', 'utf8');
+    let splitlog = changelog.split('##',2)
+    document.getElementById('intro-description').innerText = splitlog[1]
 
 
     // ┌─────────────────────────────────────┐
