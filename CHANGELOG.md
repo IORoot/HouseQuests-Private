@@ -13,6 +13,8 @@ Release Management on github
 - Recoloured search sections
 - Added all Icons to local area layers
 - Started developing AdSense integration
+- ZooplaAll by default
+- Adverts on free version
 
 ## 0.1.15 (2022-09-29)
 

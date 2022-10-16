@@ -5,6 +5,7 @@
 // └─────────────────────────────────────┘
 import { request_markers } from '../requests/request_markers.js'
 import { alert_modal } from '../alerts/alert_modal.js'
+
 var url = require('url');
 
 export function listener_paste(){
@@ -19,6 +20,9 @@ export function listener_paste(){
             return
         }
         request_markers(pastedURL, 'zoopla')
+
+        request_markers(pastedURL, 'zoopla', 'zooplaAllMap')
+
         hide_spinner()
     });
 

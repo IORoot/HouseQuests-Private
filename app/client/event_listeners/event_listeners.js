@@ -18,7 +18,6 @@ import { listener_inspector_text } from "./listener_inspector_text.js";
 import { listener_clear_all_markers } from "./listener_clear_all_markers.js";
 import { listener_clear_highlightlist } from "./listener_clear_highlightlist.js";
 import { listener_change_property_colour } from "./listener_change_property_colour.js";
-import { listener_zoopla_get_all } from "./listener_zoopla_get_all.js";
 import { listener_export } from "./listener_export.js";
 import { listener_import } from "./listener_import.js";
 import { listener_searches_load } from "./listener_searches_load.js";
@@ -52,7 +51,6 @@ export function load_event_listeners(){
     listener_clear_all_markers()
     listener_clear_highlightlist()
     listener_change_property_colour()
-    listener_zoopla_get_all()
     listener_export()
     listener_import()
     listener_searches_save()

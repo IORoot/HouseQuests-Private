@@ -1,0 +1,17 @@
+<div class="grid grid-cols-2 gap-4 bg-orange-100 p-4 rounded-xl">
+    
+    <div class="col-span-2 flex flex-col gap-2">
+        <h5 class="inline-flex items-center text-sm font-semibold text-emerald-900 capitalize">Text Highlighter</h5>
+        <p class="text-xs text-gray-500">This feature will highlight any positive or negative words within the description of a property.</p>
+    </div>
+
+    <div class="relative">
+        <textarea id="inspector-positive" spellcheck="false" rows="3" class="block p-2.5 w-full text-sm text-emerald-700 bg-gray-50 rounded-lg border border-gray-300 focus:ring-emerald-500 focus:border-emerald-500 " placeholder="Words to highlight in description. (Comma Separated)"></textarea>
+        <label for="inspector-positive" class="absolute text-sm text-white rounded duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-emerald-700  px-2 peer-focus:px-2 peer-focus:text-white-500  peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">Text Searcher - Postives</label>
+    </div>
+
+    <div class="relative">
+        <textarea id="inspector-negative" spellcheck="false" rows="3" class="block p-2.5 w-full text-sm text-amber-700 bg-gray-50 rounded-lg border border-gray-300 focus:ring-amber-700 focus:border-amber-700 " placeholder="Words to highlight in description. (Comma Separated)"></textarea>
+        <label for="inspector-negative" class="absolute text-sm text-white rounded duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-amber-700    px-2 peer-focus:px-2 peer-focus:text-white-500  peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">Text Searcher - Negatives</label>
+    </div>
+</div>

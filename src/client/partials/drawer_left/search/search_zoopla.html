@@ -1,0 +1,27 @@
+<div class="flex flex-col gap-2 p-4 bg-orange-100 rounded-lg">
+
+    <div class="flex flex-row gap-4">
+        <div>
+            <h5 class="col-span-2 inline-flex items-center text-sm font-semibold text-purple-600 capitalize">Zoopla</h5>
+            <p class="col-span-2 text-xs text-gray-500 mb-4">Create a search on zoopla.co.uk, switch to map-view and paste the URL into the box below.</p>
+        </div>
+
+        <div class="ml-auto my-auto flex flex-row gap-8 h-6 mr-4">
+            <label for="zooplaInputToggle" class="inline-flex relative items-center cursor-pointer">
+                <input type="checkbox" value="" id="zooplaInputToggle" class="sr-only peer" checked>
+                <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-stone-300 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-stone-600"></div>
+            </label>
+    
+            <div id="zooplaInputCount" class="text-purple-500 text-sm my-auto"></div>
+        </div>
+    </div>
+
+    <div class="flex flex-row gap-4">
+        <input id="zooplaInput" rows="3" class="w-full rounded border-0 rounded bg-white text-emerald-900 focus:ring-emerald-500 focus:border-emerald-500" type="text" placeholder="paste map URL from zoopla"></input>
+
+        <button id="zoopla-goto-search" class="ml-auto block text-white bg-purple-700 hover:bg-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center" type="button">
+            <svg class="w-4 h-4 fill-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
+        </button>
+    </div>
+
+</div>

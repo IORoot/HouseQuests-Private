@@ -36,12 +36,8 @@ module.exports = function(app){
         totalCount = firstRoundResults.totalCount
         totalResults = firstRoundResults.markers
 
-        console.log('firstRoundResults')
-        console.log(firstRoundResults)
-
         // Get url parts
         const addressParts = url.parse(target, true);
-        console.log(addressParts.path)
 
         // ┌─────────────────────────────────────┐
         // │          REST OF THE RESULTS        │

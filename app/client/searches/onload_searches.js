@@ -25,4 +25,7 @@ export function onload_searches()
         request_markers(currentSearch, source)
     })
 
+    // Get ZooplaAll by default
+    request_markers(document.getElementById('zooplaInput').value, 'zoopla', 'zooplaAllMap')
+
 }
