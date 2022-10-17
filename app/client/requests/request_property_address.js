@@ -21,8 +21,8 @@ export async function request_property_address(longitude, latitude)
             console.log("ERROR:"+error);
         });
 
+    console.log(currentProperty)
     currentProperty.address = addressDetails.address
-
 
     // House Number
     if (addressDetails.address.hasOwnProperty('house_number')){

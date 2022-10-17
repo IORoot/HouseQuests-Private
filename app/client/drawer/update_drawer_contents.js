@@ -22,11 +22,11 @@ export function update_drawer_contents(propertyDetails, source)
     document.getElementById("drawer-id").dataset.id = property.id;
 
     // Set Longitude
-    document.getElementById("drawer-longitude").innerHTML = "LNG: "+property.longitude;
+    document.getElementById("drawer-longitude").innerHTML = "Longitude: "+property.longitude;
     document.getElementById("drawer-longitude").dataset.longitude = property.longitude;
 
     // Set Latitude
-    document.getElementById("drawer-latitude").innerHTML = "LAT: "+property.latitude;
+    document.getElementById("drawer-latitude").innerHTML = "Latitude: "+property.latitude;
     document.getElementById("drawer-latitude").dataset.latitude = property.latitude;
 
     // Set Title
