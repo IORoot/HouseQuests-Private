@@ -11,16 +11,29 @@ on:
 
 jobs:
 
+
+  # ┌────────────────────────────────────┐
+  # │                                    │
+  # │       Build MacOS / Windows        │
+  # │                                    │
+  # └────────────────────────────────────┘
   build:
     name: Build Applications
 
-    runs-on: ${{ matrix.os }}
-
+    # Use a matrix of multiple Operating Systems
     strategy:
       matrix:
         os: [macOS-latest, windows-latest]
 
+    # Use each OS
+    runs-on: ${{ matrix.os }}
+
     steps:
+
+
+      - name: Checkout code
+        uses: actions/checkout@v3
+
 
       - name: Use Node.js 18.x
         uses: actions/setup-node@v1
@@ -59,7 +72,11 @@ jobs:
           path: artifacts
 
 
-
+  # ┌────────────────────────────────────┐
+  # │                                    │
+  # │          Create a Release          │
+  # │                                    │
+  # └────────────────────────────────────┘
   release:
 
     name: Build Release
@@ -67,11 +84,9 @@ jobs:
     needs: build
     steps:
 
+
       - name: Checkout code
         uses: actions/checkout@v3
-        with:
-          repository: ioroot/APS
-          token: ${{ secrets.PAT }}
 
 
       - uses: actions/download-artifact@master
