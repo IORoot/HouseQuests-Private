@@ -1,4 +1,4 @@
-# Advanced Property Search v0.1.15.
+# HouseQuests
 
 <!-- vscode-markdown-toc -->
 * 1. [Changes](#Changes)
@@ -25,7 +25,7 @@ ccc8f4e8fb7e8c9d5b52673faca84322cfed8e5b76b4634d978edf06f8e13332
 
 ##  3. <a name='ReleaseManagement'></a>Release Management
 
-To create a new release of the APS electron app, you can run:
+To create a new release of the HouseQuests electron app, you can run:
 ```
 npm run release
 ```

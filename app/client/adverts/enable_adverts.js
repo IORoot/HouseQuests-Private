@@ -33,7 +33,7 @@ export async function popup_advert(){
     var advertModal = new Modal(targetEl, options);
 
     // set the content
-    targetBody.innerHTML = '<iframe src="https://aps-wiki.netlify.app/advert/" title="Advert"></iframe>'
+    targetBody.innerHTML = '<iframe src="https://housequests.com/advert/" title="Advert"></iframe>'
 
     // show the modal
     advertModal.show();
