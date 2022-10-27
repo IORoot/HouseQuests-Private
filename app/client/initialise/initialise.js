@@ -161,7 +161,7 @@
     // │         Set Version Numbers         │
     // └─────────────────────────────────────┘
     var packageJsonVersion = require('../package.json');
-    document.getElementById('version-intro').innerText = packageJsonVersion.productName + ' ' + packageJsonVersion.version
+    document.getElementById('version-intro').innerText = packageJsonVersion.productName + ' v' + packageJsonVersion.version
     document.title = packageJsonVersion.productName + ' ' + packageJsonVersion.version
 
     // ┌─────────────────────────────────────┐
