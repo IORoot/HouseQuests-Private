@@ -78,3 +78,12 @@ Different Tag types:
 [https://wiki.openstreetmap.org/wiki/Map_features](https://wiki.openstreetmap.org/wiki/Map_features)
 
 
+## Apple Quarantine
+
+Is Apple says the file is damaged and cannot be open it's because it has quarantined it. 
+
+Run the following command:
+
+```
+xattr -d com.apple.quarantine /Applications/HouseQuests.app
+```
