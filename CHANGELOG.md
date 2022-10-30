@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.17 (2022-10-30)
+
+- Fixed release management
+  
 ## 0.1.16 (2022-10-03)
 
 Release Management on github
