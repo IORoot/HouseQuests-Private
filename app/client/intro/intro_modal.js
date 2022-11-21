@@ -29,8 +29,6 @@ export function intro_modal()
         introModal.show();
     }
 
-    // console.log('authenticated: ' + authenticated)
-
     // Close the Modal button
     const popupModalIntroClose = document.getElementById('popup-modal-intro-close');
     popupModalIntroClose.addEventListener('click', async function(event) {
@@ -50,4 +48,24 @@ export function intro_modal()
     if ( ! authenticated ){
         document.getElementById('authentication-status').innerHTML = '<span class="text-red-500">Not Authenticated</span>';
     }
+
+    // Link Listeners
+    open_link_in_chrome('link-panel-quick-start-video')
+    open_link_in_chrome('link-panel-pricing')
+    open_link_in_chrome('link-panel-documentation')
+    open_link_in_chrome('link-panel-downloads')
+}
+
+
+
+function open_link_in_chrome(link_id)
+{
+    let link = document.getElementById(link_id);
+
+    link.addEventListener('click', async function(event) { 
+
+        event.preventDefault();
+        require("electron").shell.openExternal(link.href);
+
+    });
 }

@@ -45,6 +45,9 @@
     var hostname = 'http://localhost:3000'
     var auth_server = 'http://138.68.156.78'
 
+    // Stripe
+    var stripe_subscription_link = 'https://billing.stripe.com/p/login/test_7sI8xY0MGc8Q2Ji5kk'
+
     // New Map Instance
     var map;
 
