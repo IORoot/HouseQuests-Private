@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.1.18 (2022-11-21)
+
+- Stripe subscription handling
+- Wiki website
+- Website stripe emails to customer
+- Key generation on auth server
+- Authentication via database, not JSON
+- Authentication checks
+- User email and Auth code
+
 ## 0.1.17 (2022-10-30)
 
 - Fixed release management
