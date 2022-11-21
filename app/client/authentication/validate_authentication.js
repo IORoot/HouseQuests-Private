@@ -1,35 +1,40 @@
 
 export function validate_authentication(authenticationData) {
 
-        // If enabled is false.
-        if (!authenticationData.enabled){
-            return false
-        }
 
-        // If there is no valid-until date
-        if (!authenticationData['valid-until']){
-            return false
-        }
-        
-        // If there is no name is present
-        if (!authenticationData['name']){
-            return false
-        }
+    if (authenticationData.message){
+        console.log(authenticationData)
+        return false
+    }
 
-        // If valid-date has passed
-        let now = new Date();
-        now = now.getTime();
+    // If enabled is false.
+    if (!authenticationData.enabled){
+        return false
+    }
 
-        let validDate = new Date(authenticationData['valid-until']);
-        validDate = validDate.getTime()
+    // If there is no valid-until date
+    if (!authenticationData['valid-until']){
+        return false
+    }
+    
+    // If there is no name is present
+    if (!authenticationData['email']){
+        return false
+    }
 
-        if (validDate < now)
-        {
-            return false
-        }
+    // If valid-date has passed
+    let now = new Date();
+    now = now.getTime();
 
+    let validDate = new Date(authenticationData['valid-until']);
+    validDate = validDate.getTime()
 
-        // finally return true.
-        return true
+    if (validDate < now)
+    {
+        return false
+    }
+
+    // finally return true.
+    return true
 
 }

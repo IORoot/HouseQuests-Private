@@ -5,16 +5,24 @@ import { validate_authentication } from './validate_authentication.js'
 export async function check_authentication(authenticationCode) {
 
     const savedAuthenticationCode = window.localStorage.getItem('authenticationCode')
-    const authenticationField = document.getElementById('authentication-code');
-    const authenticationIntroField = document.getElementById('intro-authentication-code');
+    const authenticationCodeField = document.getElementById('authentication-code');
+    const authenticationIntroCodeField = document.getElementById('intro-authentication-code');
 
+    const savedAuthenticationEmail = window.localStorage.getItem('authenticationEmail')
+    const authenticationEmailField = document.getElementById('authentication-email');
+    const authenticationIntroEmailField = document.getElementById('intro-authentication-email');
+
+    if (!savedAuthenticationEmail){ return }
     if (!savedAuthenticationCode){ return }
 
-    authenticationField.value = savedAuthenticationCode
-    authenticationIntroField.value = savedAuthenticationCode
+    authenticationCodeField.value = savedAuthenticationCode
+    authenticationIntroCodeField.value = savedAuthenticationCode
 
-    let authenticationData = await request_authentication(savedAuthenticationCode)
-    
+    authenticationEmailField.value = savedAuthenticationEmail
+    authenticationIntroEmailField.value = savedAuthenticationEmail
+
+    let authenticationData = await request_authentication(savedAuthenticationCode, savedAuthenticationEmail)
+
     // If there is no response or false
     if (!authenticationData){
         return

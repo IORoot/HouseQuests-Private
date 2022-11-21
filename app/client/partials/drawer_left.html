@@ -437,10 +437,11 @@
 
     <div class="flex flex-col gap-2">
         <h5 class="inline-flex items-center text-sm font-semibold text-emerald-900 capitalize">Authentication Code</h5>
-        <p class="text-xs text-gray-500">Please enter your authentication code to access all features of the application.</p>
+        <p class="text-xs text-gray-500">Please enter your subscription email address and authentication code to access all features of the application.</p>
     </div>
 
     <div class="flex flex-row gap-2">
+        <input type="text" id="authentication-email" class="bg-white border border-emerald-300 text-emerald-900 text-sm rounded-lg focus:ring-emerald-500 focus:border-emerald-500 block w-full p-2.5 " placeholder="Subscription Email" required>
         <input type="text" id="authentication-code" class="bg-white border border-emerald-300 text-emerald-900 text-sm rounded-lg focus:ring-emerald-500 focus:border-emerald-500 block w-full p-2.5 " placeholder="64-Character Purchase Code" required>
         <button type="button" id="authentication-code-submit" class="text-white bg-emerald-900 hover:bg-orange-700 focus:ring-4 focus:ring-emerald-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 focus:outline-none ">Access</button>
     </div>

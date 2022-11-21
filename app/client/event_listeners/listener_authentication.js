@@ -12,7 +12,13 @@ export function listener_authentication(){
 
     submitButton.addEventListener('click', async function(event) { 
 
+        const authenticationEmail = document.getElementById('authentication-email').value;
         const authenticationCode = document.getElementById('authentication-code').value;
+
+        if (!authenticationEmail)
+        {
+            return
+        }
 
         if (!authenticationCode)
         {
@@ -20,13 +26,15 @@ export function listener_authentication(){
         }
 
         // Save code to localStorage
+        window.localStorage.setItem('authenticationEmail', authenticationEmail)
         window.localStorage.setItem('authenticationCode', authenticationCode)
         
         // Get authentication status
-        let authenticationStatus = await request_authentication(authenticationCode)
+        let authenticationStatus = await request_authentication(authenticationCode, authenticationEmail)
 
         // Authenticated! 
         if (authenticationStatus){
+            window.localStorage.setItem('authenticationEmail', authenticationEmail)
             window.localStorage.setItem('authenticationCode', authenticationCode)
             authenticated = authenticationStatus
         }

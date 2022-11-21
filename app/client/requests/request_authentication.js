@@ -1,9 +1,14 @@
 
-export async function request_authentication(authenticationCode) {
+export async function request_authentication(authenticationCode, authenticationEmail) {
 
     let path = auth_server+'/authenticate'
 
-    const serverResponse = await fetch(path, {method: 'POST', body: authenticationCode})
+    let authenticationRequest = JSON.stringify({
+        code: authenticationCode,
+        email: authenticationEmail,
+    })
+
+    const serverResponse = await fetch(path, {method: 'POST', body: authenticationRequest})
         .catch(function(error) {
             console.log("ERROR:"+error);
         });
