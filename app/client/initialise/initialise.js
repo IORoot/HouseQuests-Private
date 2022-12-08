@@ -46,7 +46,7 @@
     var auth_server = 'http://138.68.156.78'
 
     // Stripe
-    var stripe_subscription_link = 'https://billing.stripe.com/p/login/test_7sI8xY0MGc8Q2Ji5kk'
+    var stripe_subscription_link = 'https://billing.stripe.com/p/login/test_28o01s1QKgp6cjS145'
 
     // New Map Instance
     var map;
@@ -62,7 +62,7 @@
 
     // Advert Timer
     var advertRepeats = 360000
-    var advertButtonEnable = 5000
+    var advertButtonEnable = 10000
 
     // ┌─────────────────────────────────────┐
     // │                                     │

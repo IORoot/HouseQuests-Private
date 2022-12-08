@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.19 (2022-12-06)
+
+- Text Highlighter - fix null
+- OnTheMarket Search fix (leading ?)
+
 ## 0.1.18 (2022-11-21)
 
 - Stripe subscription handling
@@ -16,18 +21,18 @@
   
 ## 0.1.16 (2022-10-03)
 
-Release Management on github
+Release Management on GitHub
 
-- Automation of releases through github
+- Automation of releases through GitHub
 - Links to express server for releases
-- Github action to automate process
+- GitHub action to automate the process
 - HTML Partials that compile app.html
 - Removed accordion coming-soon items
 - Recoloured search sections
 - Added all Icons to local area layers
 - Started developing AdSense integration
 - ZooplaAll by default
-- Adverts on free version
+- Adverts on the free version
 
 ## 0.1.15 (2022-09-29)
 

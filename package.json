@@ -2,7 +2,7 @@
   "name": "ioroot-advanced-property-search",
   "productName": "HouseQuests",
   "description": "The automatic release management.<br/><br/><ul class=\"list-disc\"><li>HTML Partials.</li><li>New wiki website.</li></ul>",
-  "version": "0.1.17",
+  "version": "0.1.19",
   "private": true,
   "author": "Andy Pearson <andy@londonparkour.com>",
   "copyright": "© 2022, LondonParkour LTD.",

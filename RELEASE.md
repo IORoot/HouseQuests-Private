@@ -1,6 +1,9 @@
 # Current Release
 
-- Stripe subscription handling
-- Authentication via database, not JSON
-- Authentication checks
-- User email and code needed now
+- Better Advert Popup
+- Authentication handling with email
+- Text Highlighter - fix null and spaces
+- OnTheMarket Search fix (leading ?)
+- Crime icon changed to shield
+- Intro panel icon and header changed
+

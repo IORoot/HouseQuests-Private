@@ -12,13 +12,14 @@ export function check_words(sentance, positiveNegative, colour)
         // remove whitespace
         word = word.trim();
 
+        // remove null
+        if (!word){ return }
+
         var replacementString = '<span class="bg-'+colour+' text-white py-0.5 px-2 rounded">' + word + '</span>'
 
         var indexOfWord = sentance.indexOf(word)
 
-        // var replace = "regex\\d";
         var regex = new RegExp(word,"gi");
-        // "mystring1".replace(re, "newstring");
 
         if (indexOfWord !== -1) {
 

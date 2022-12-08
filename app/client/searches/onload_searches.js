@@ -12,6 +12,8 @@ export function onload_searches()
 
         let storageKey = source + 'Search';
 
+        if (!window.localStorage.getItem(storageKey)){ return }
+
         let searchArray = JSON.parse(window.localStorage.getItem(storageKey));
 
         if (!searchArray){ return }
