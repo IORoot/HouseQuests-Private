@@ -2,8 +2,14 @@
 
 ## 0.1.19 (2022-12-06)
 
-- Text Highlighter - fix null
+- Better Advert Popup
+- Authentication handling with email
+- Text Highlighter - fix null and spaces
 - OnTheMarket Search fix (leading ?)
+- The crime icon changed to shield
+- The Intro panel icon and header changed
+- Update to packages: electron, mocha
+
 
 ## 0.1.18 (2022-11-21)
 
@@ -37,20 +43,19 @@ Release Management on GitHub
 ## 0.1.15 (2022-09-29)
 
 Cleanup and inclusion of Lewis onto the team.
-
-- Small changes of HTML
+- Small changes in HTML
 - Cleanup of code.
 - Start of release management
 
 
 ## 0.1.14 (2022-09-26)
 
-- Intro Modal has package.json description.
+- Intro Modal has a package.json description.
 - loader spinner icon
 - DevTools removed
 - Improved OnTheMarket SearchURL Handling
 - Clear Search works on all layers
-- Add following local area searches
+- Add the following local area searches
   - Gyms
   - Post Office
   - Train Station
@@ -58,7 +63,7 @@ Cleanup and inclusion of Lewis onto the team.
   - Airport
   - Hospital
   - Doctor
-- Created a generic openpass searcher for local area
+- Created a generic OpenPass searcher for the local area
 
 
 ## 0.1.13 (2022-09-25)
