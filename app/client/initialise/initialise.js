@@ -48,6 +48,9 @@
     // Stripe
     var stripe_subscription_link = 'https://billing.stripe.com/p/login/test_28o01s1QKgp6cjS145'
 
+    // Mixpanel Analytics - HouseQuests Electron App
+    var mixpanel_token = 'f84177e6fd6610f6ac3826d1b5d138d6'
+
     // New Map Instance
     var map;
 

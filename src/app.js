@@ -15,6 +15,7 @@ import { intro_modal } from "../app/client/intro/intro_modal.js";
 import { disable_premium_features } from "../app/client/disable/disable_premium_features.js";
 import { enable_adverts } from "../app/client/adverts/enable_adverts.js";
 import { stripe_manage_subscription_link } from "../app/client/stripe/manage_subscription_link.js";
+import { mixpanel_analytics } from "../app/client/analytics/mixpanel_analytics.js";
 
 show_spinner()
 
@@ -22,6 +23,7 @@ await check_authentication()
 listener_authentication()
 listener_authentication_intro()
 intro_modal()
+mixpanel_analytics()
 
 // ┌─────────────────────────────────────┐
 // │                                     │
