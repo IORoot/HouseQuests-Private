@@ -18,7 +18,15 @@
                     <button data-modal-toggle="popup-modal" data-marker-colour="22c55e" type="button" class="modal-icon-colour-button text-white bg-green-500 hover:bg-green-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2"></button>
                     <button data-modal-toggle="popup-modal" data-marker-colour="3b82f6" type="button" class="modal-icon-colour-button text-white bg-blue-500 hover:bg-blue-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2"></button>
                 </div>
-                <button data-modal-toggle="popup-modal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 ">Cancel</button>
+                
+                <label for="hexcode" class="mb-6 text-sm font-medium text-gray-500">or</label>
+                <div class="relative mb-6">
+                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">#</div>
+                    <input type="hexcode" id="modal-icon-colour-hexcode" data-marker-colour="" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500" placeholder="6-CHAR HEXCODE">
+                    <button type="button" id="modal-icon-colour-set" class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2">Set</button>
+                </div>
+
+                <button data-modal-toggle="popup-modal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 ">Close</button>
             </div>
         </div>
     </div>

@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.20 (2022-12-11)
+
+-  Mixpanel Analytics
+
+
 ## 0.1.19 (2022-12-06)
 
 - Better Advert Popup
