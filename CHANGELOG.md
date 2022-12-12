@@ -1,9 +1,13 @@
 # Changelog
 
+## 0.1.21 (2022-12-11)
+
+- Fixed Changelog
+- New Release for tutorial videos
+
 ## 0.1.20 (2022-12-11)
 
--  Mixpanel Analytics
-
+- Mixpanel Analytics
 
 ## 0.1.19 (2022-12-06)
 
