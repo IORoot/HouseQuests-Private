@@ -8,7 +8,6 @@ import url from "url";
 import { app, Menu, ipcMain, shell } from "electron";
 import appMenuTemplate from "./menu/app_menu_template";
 import editMenuTemplate from "./menu/edit_menu_template";
-import devReloadMenuTemplate from "./menu/dev_reload_menu_template";
 import devMenuTemplate from "./menu/dev_menu_template";
 import createWindow from "./helpers/window";
 
@@ -29,9 +28,6 @@ const setApplicationMenu = () => {
   if (env.name !== "production") {
     menus.push(devMenuTemplate);
   }  
-  if (env.name == "production") {
-    menus.push(devReloadMenuTemplate);
-  }
   Menu.setApplicationMenu(Menu.buildFromTemplate(menus));
 };
 
