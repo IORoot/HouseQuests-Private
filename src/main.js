@@ -30,8 +30,7 @@ const setApplicationMenu = () => {
     menus.push(devMenuTemplate);
   }  
   if (env.name == "production") {
-    menus.push(devMenuTemplate);
-    // menus.push(devReloadMenuTemplate);
+    menus.push(devReloadMenuTemplate);
   }
   Menu.setApplicationMenu(Menu.buildFromTemplate(menus));
 };
@@ -57,8 +56,7 @@ app.on("ready", () => {
       nodeIntegration: true,
       contextIsolation: false,
       enableRemoteModule: true,
-      devTools: true,
-      // devTools: !app.isPackaged,
+      devTools: !app.isPackaged,
     }
   });
 

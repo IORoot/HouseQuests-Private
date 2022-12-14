@@ -2,8 +2,9 @@
 
 ## 0.1.21 (2022-12-11)
 
-- Fixed Changelog
+- Fixed Changelog for package.json list
 - New Release for tutorial videos
+- Spectron disabled for e2e testing
 
 ## 0.1.20 (2022-12-11)
 
