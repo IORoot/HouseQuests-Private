@@ -20,7 +20,8 @@
 ##  2. <a name='DemoCode'></a>Demo Code
 
 ```
-ccc8f4e8fb7e8c9d5b52673faca84322cfed8e5b76b4634d978edf06f8e13332
+andy@londonparkour.com
+1bd8ccec65e5e24b82374486ea1613b9899947cb4845c4a8a4b92909a3f12d0c
 ```
 
 ##  3. <a name='ReleaseManagement'></a>Release Management
@@ -30,6 +31,7 @@ To create a new release of the HouseQuests electron app, you can run:
 npm run release
 ```
 This will place all new distribution files into the `./dist` folder.
+
 
 
 ###  3.1. <a name='Publishreleaseongithub'></a>Publish release on github 
@@ -49,13 +51,13 @@ git tag -d <NAME>   				# Delete tag
 git push origin :refs/tags/v0.1.16	# Delete tag on github (delete local first)
 ```
 
-2. Push the tags to github
+2. Push the tags to GitHub
 
 ```bash
 git push --tags
 ```
 
-The automated github action will build the windows and mac distributable files and add it onto the 'releases' page.
+The automated GitHub action will build the windows and mac distributable files and add them to the 'releases' page.
 
 Note that a release will **NOT** run the tests before releasing.
 
@@ -69,9 +71,9 @@ Note that a release will **NOT** run the tests before releasing.
 
 [http://overpass-turbo.eu/](http://overpass-turbo.eu/)
 This is a very useful API for getting results and exporting as JSON. 
-It uses the [Overpass API](https://wiki.openstreetmap.org/wiki/Overpass_API) to get it's data.
+It uses the [Overpass API](https://wiki.openstreetmap.org/wiki/Overpass_API) to get its data.
 
-For example:
+For example
 [Cafes](http://overpass-turbo.eu/?q=LyoKVGhpcyBoYcSGYmVlbiBnxI1lcmF0ZWQgYnkgdGhlIG92xJJwxIlzLXR1cmJvIHdpemFyZC7EgsSdxJ9yaWdpbmFsIHNlxLBjaMSsxIk6CsOiwoDCnGNhZmXFiMKdCiovCltvdXQ6anNvbl1bdGltZcWWxZgyNV07Ci8vxI_ElMSdciByZXN1bHRzCigKICDFqyBxdcSSxJrEo3J0IGZvcjogxYjFisWMxY7CgMWQxbxub2RlWyJhxaJuaXR5Ij0ixYvFjSJdKHt7YsSqeH19KcWpxbx3YXnGmMaaxI3GncafxqHGo2XGpcanxqnGq8atxq_Fu8WxZWzElGnFnMa1xpvGuMagxqLGj8a9xqjGqm_GrMauxanHgsW-cMS3bsaGxbLFtMW2xbjFpMSYxpV5xak-xanHoXNrx4XFv3Q7&c=BJqcgTuV6O&R)
 
 Different Tag types:
@@ -80,7 +82,7 @@ Different Tag types:
 
 ## Apple Quarantine
 
-Is Apple says the file is damaged and cannot be open it's because it has quarantined it. 
+Apple says the file is damaged and cannot be open it's because it has been quarantined it. 
 
 Run the following command:
 

@@ -46,7 +46,8 @@
     var auth_server = 'http://138.68.156.78'
 
     // Stripe
-    var stripe_subscription_link = 'https://billing.stripe.com/p/login/test_28o01s1QKgp6cjS145'
+    // var stripe_subscription_link = 'https://billing.stripe.com/p/login/test_28o01s1QKgp6cjS145'
+    var stripe_subscription_link = 'https://billing.stripe.com/p/login/7sIdSx3m57cNf0Q5kk'
 
     // Mixpanel Analytics - HouseQuests Electron App
     var mixpanel_token = 'f84177e6fd6610f6ac3826d1b5d138d6'
@@ -166,17 +167,15 @@
     // ┌─────────────────────────────────────┐
     // │         Set Version Numbers         │
     // └─────────────────────────────────────┘
-    var packageJsonVersion = require('../package.json');
-    document.getElementById('version-intro').innerText = packageJsonVersion.productName + ' v' + packageJsonVersion.version
-    document.title = packageJsonVersion.productName + ' ' + packageJsonVersion.version
+    var packageJson = require('../package.json');
+    document.getElementById('version-intro').innerText = packageJson.productName + ' v' + packageJson.version
+    document.title = packageJson.productName + ' ' + packageJson.version
 
     // ┌─────────────────────────────────────┐
     // │             Set Changelog           │
     // └─────────────────────────────────────┘
-    const fs = require('fs');
-    let changelog = fs.readFileSync('./CHANGELOG.md', 'utf8');
-    let splitlog = changelog.split('##',2)
-    document.getElementById('intro-description').innerText = splitlog[1]
+    let changelog = packageJson.release_notes.join("\r\n");
+    document.getElementById('intro-description').innerText = changelog
 
 
     // ┌─────────────────────────────────────┐
