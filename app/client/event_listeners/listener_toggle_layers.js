@@ -242,4 +242,5 @@ export function listener_toggle_layers(){
         button_ring_toggle(this)
         toggle_layer('local-hospital')
     });
+
 }

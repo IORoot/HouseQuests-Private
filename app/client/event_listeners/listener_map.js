@@ -29,6 +29,7 @@ import {load_property_details} from '../requests/load_property_details.js'
 import {request_location_statistics} from '../requests/request_location_statistics.js'
 import {change_icon} from '../highlightlist/change_icon.js'
 import {reset_property_colour} from '../highlightlist/reset_property_colour.js'
+import {listener_external_links} from "../event_listeners/listener_external_links.js";
 
 export function listener_map(){
 
@@ -89,6 +90,8 @@ export function listener_map(){
             popupHTML += '</div>';
 
             popupContent.innerHTML = popupHTML;
+
+            listener_external_links()
         }
 
 
@@ -108,6 +111,8 @@ export function listener_map(){
             popupHTML += '</div>';
 
             popupContent.innerHTML = popupHTML;
+
+            listener_external_links()
         }
 
 
@@ -127,6 +132,8 @@ export function listener_map(){
             popupHTML += '</div>';
 
             popupContent.innerHTML = popupHTML;
+
+            listener_external_links()
         }
 
 
@@ -146,6 +153,8 @@ export function listener_map(){
             popupHTML += '</div>';
 
             popupContent.innerHTML = popupHTML;
+
+            listener_external_links()
         }
 
 
@@ -166,6 +175,8 @@ export function listener_map(){
             popupHTML += '</div>';
 
             popupContent.innerHTML = popupHTML;
+
+            listener_external_links()
         }
 
 
@@ -189,6 +200,8 @@ export function listener_map(){
             popupHTML += '</div>';
 
             popupContent.innerHTML = popupHTML;
+
+            listener_external_links()
         }
 
 
@@ -210,6 +223,8 @@ export function listener_map(){
             popupHTML += '</div>';
 
             popupContent.innerHTML = popupHTML;
+
+            listener_external_links()
 
         }
 
@@ -237,6 +252,8 @@ export function listener_map(){
 
             popupContent.innerHTML = popupHTML;
 
+            listener_external_links()
+
         }
 
 
@@ -257,6 +274,8 @@ export function listener_map(){
             popupHTML += '</div>';
 
             popupContent.innerHTML = popupHTML;
+
+            listener_external_links()
 
         }
 
@@ -286,6 +305,8 @@ export function listener_map(){
 
             popupContent.innerHTML = popupHTML;
 
+            listener_external_links()
+
         }
 
 
@@ -313,6 +334,8 @@ export function listener_map(){
 
             popupContent.innerHTML = popupHTML;
 
+            listener_external_links()
+
         }
 
 
@@ -337,6 +360,8 @@ export function listener_map(){
         popupHTML += '</div>';
 
             popupContent.innerHTML = popupHTML;
+
+            listener_external_links()
         }
 
 
@@ -362,6 +387,8 @@ export function listener_map(){
         popupHTML += '</div>';
 
             popupContent.innerHTML = popupHTML;
+
+            listener_external_links()
         }
 
 
@@ -379,6 +406,8 @@ export function listener_map(){
         popupHTML += '</div>';
 
             popupContent.innerHTML = popupHTML;
+
+            listener_external_links()
         }
 
 
@@ -399,6 +428,8 @@ export function listener_map(){
         popupHTML += '</div>';
 
             popupContent.innerHTML = popupHTML;
+
+            listener_external_links()
         }
 
 
@@ -424,6 +455,8 @@ export function listener_map(){
         popupHTML += '</div>';
 
             popupContent.innerHTML = popupHTML;
+
+            listener_external_links()
         }
 
 
@@ -447,6 +480,8 @@ export function listener_map(){
         popupHTML += '</div>';
 
             popupContent.innerHTML = popupHTML;
+
+            listener_external_links()
         }
 
 
@@ -466,6 +501,8 @@ export function listener_map(){
         popupHTML += '</div>';
 
             popupContent.innerHTML = popupHTML;
+
+            listener_external_links()
         }
 
         
@@ -487,6 +524,8 @@ export function listener_map(){
             popupHTML += '</div>';
 
             popupContent.innerHTML = popupHTML;
+
+            listener_external_links()
         }
 
 
@@ -524,6 +563,8 @@ export function listener_map(){
             popupHTML += '</div>';
 
             popupContent.innerHTML = popupHTML;
+
+            listener_external_links()
         }
 
 
@@ -563,6 +604,8 @@ export function listener_map(){
             popupHTML += '</div>';
 
             popupContent.innerHTML = popupHTML;
+
+            listener_external_links()
         }
         
 
@@ -601,6 +644,8 @@ export function listener_map(){
             popupHTML += '</div>';
 
             popupContent.innerHTML = popupHTML;
+
+            listener_external_links()
         }
         
 
@@ -640,8 +685,10 @@ export function listener_map(){
 
             popupContent.innerHTML = popupHTML;
 
+            listener_external_links()
+
         }
 
     });
-
+    
 }
