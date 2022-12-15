@@ -1,17 +1,13 @@
 # HouseQuests
 
-<!-- vscode-markdown-toc -->
+
+
 * 1. [Changes](#Changes)
 * 2. [Demo Code](#DemoCode)
 * 3. [Release Management](#ReleaseManagement)
 	* 3.1. [Publish release on github](#Publishreleaseongithub)
 * 4. [Overpass Turbo](#OverpassTurbo)
 
-<!-- vscode-markdown-toc-config
-	numbering=true
-	autoSave=true
-	/vscode-markdown-toc-config -->
-<!-- /vscode-markdown-toc -->
 
 ##  1. <a name='Changes'></a>Changes
 
@@ -88,4 +84,15 @@ Run the following command:
 
 ```
 xattr -d com.apple.quarantine /Applications/HouseQuests.app
+```
+
+## 5. Making Icons
+
+https://gist.github.com/jamieweavis/b4c394607641e1280d447deed5fc85fc
+
+## 6. Code-signing.
+
+Disable code-signing by setting environment variable before creating app.
+```
+export CSC_IDENTITY_AUTO_DISCOVERY=false
 ```

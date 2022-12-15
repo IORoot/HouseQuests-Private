@@ -1,12 +1,22 @@
 # Changelog
 
+## 0.1.23 (2022-12-15)
+
+- Added tutorial section to the wiki
+- Updated all external links to open in the browser
+- Changelog spell-check
+- Stripe-portal & video tutorials in the intro modal
+- Wider and multi-col intro modal
+- Switched code-signing OFF
+- Added Background to DMG Installer
+
 ## 0.1.22 (2022-12-14)
 
 - Fixed Changelog to package.json list
 - Wiki with tutorial videos
-- Refresh shortcut added to app menu
+- Refresh shortcut added to the app menu
 - Spectron E2E testing removed
-- Stripe made LIVE
+- Stripe put into live mode
 - HEX Code for marker colours
 
 ## 0.1.21 (2022-12-11)
@@ -86,14 +96,14 @@ Cleanup and inclusion of Lewis onto the team.
 
 
 ## 0.1.13 (2022-09-25)
-- Added ol-ext to control colours of map
-- Got monochrome, sepia, dark, invert working
+- Added ol-ext to control the colours of the map
+- Got monochrome, sepia, dark, inverted working
 - refresh page button
 - Authentication now has checks for
   - enabled / disabled state
   - name is set
-  - valid-until date has not passed.
-- Add buttons to goto the search page in chrome.
+- the valid-until date has not passed.
+- Add buttons to go to the search page in chrome.
 - Truncate buttons for exclude list.
 - Windows!
 
@@ -104,17 +114,17 @@ Cleanup and inclusion of Lewis onto the team.
 
 ## 0.1.11 (2022-09-20)
 
-- Added Authentication access to intro modal.
-- External links to chrome for website link and streetview.
+- Added Authentication access to the intro modal.
+- External links to chrome for website link and street view.
 - Checking on the pasted search URLs.
 - Fixed Zoopla Get All
-- Added Free / Premium settings with removal of features without being authenticated.
+- Added Free / Premium settings with the removal of features without being authenticated.
 - 
 
 ## 0.1.10 (2022-09-19)
 
 - Added Intro modal
-- Use the package.json for version number
+- Use the package.json for the version number
 - Neighbourhood Crime Ratings
 - Neighbourhood Renters vs Buyers
 - Toggle intro modal
@@ -125,7 +135,7 @@ Cleanup and inclusion of Lewis onto the team.
 ### Highlights
 
 - Simple responsiveness on the drawers and main page.
-- Add schools to local area
+- Add schools to the local area
 - Add Neighbourhood rating:
   - overall average property price
   - price change
@@ -144,7 +154,7 @@ Cleanup and inclusion of Lewis onto the team.
 
 ### Highlights
 
-Implemented a full Electron release for MacOS! A complete installable dmg file.
+Implemented a full Electron release for macOS! A complete installable dmg file.
 
 - E2E Test working on release management
 - dmg is installable and works with AUTH server.
@@ -155,7 +165,7 @@ Implemented a full Electron release for MacOS! A complete installable dmg file.
 
 ### Highlights
 
-Implementing the electron-builder package to properly setup app for updates and distribution.
+Implementing the electron-builder package to properly set up the app for updates and distribution.
 
 ## 0.1.5 (2022-09-12)
 
@@ -179,26 +189,23 @@ Implementing the electron-builder package to properly setup app for updates and 
 
 - Added UTF-8 meta tag to fix HTML "-" from breaking on electron
 - Fixed supermarket colours
-- Removed setting for 'User-Agent'
+- Removed the setting for 'User-Agent'
 
 ## 0.1.3 (2022-09-09)
 
 ### Highlights
 
 - Local layers have toggle abilities.
-- Modal for overwriting saves has now been setup to be a warning before the save. Refreshes page on overwrite.
-- 
-
-
+- The modal for overwriting saves has now been set up to be a warning before the save. Refreshes page on overwrite.
 
 ## 0.1.2 (2022-09-07)
 
 ### Highlights
 
 This update has interfaced with the OpenPass API and the wealth of data it can collect.
-- Openpass API - Convienience stores within 1km radius of property
-- Added the geolocation-utils library to get the boundingbox needed for the openpass API calls.
-- Moved details drawer over to the right drawer and put tabs on. Tabs are : property, details, Local Area
+- Open pass API - Convenience stores within a 1km radius of the property
+- Added the geolocation-utils library to get the bounding box needed for the open pass API calls.
+- Moved the details drawer over to the right drawer and put tabs on it. Tabs are: property, details, Local Area
 
 
 
@@ -207,7 +214,7 @@ This update has interfaced with the OpenPass API and the wealth of data it can c
 ### Highlights
 
 Focused on authentication mechanism.
-- The frontend has an 'authentication' input field and button. This sends the code to the backend
+- The front end has an 'authentication' input field and button. This sends the code to the backend
 - The backend will use SHA256 to hash the input key with a secret key and check if it's in the secretkeys.json file.
 - The `generate_keys.sh` script will generate a private key and a hashed key to use in the app.
 
@@ -216,8 +223,7 @@ Focused on authentication mechanism.
 ## 0.1.0 (2022-09-05)
 
 ### Highlights
-
-Start of rebuilding the settings drawer with a better UI. Adds a lot of saving-type functionality for transfer of settings and recalling of settings.
+Start rebuilding the settings drawer with a better UI. Adds a lot of saving-type functionality for transfer of settings and recalling of settings.
 Also allows for multiple search parameters - perhaps a save-game for North East London only, and then one for Ealing only, etc...
 
 - Start of Changelog
@@ -226,7 +232,7 @@ Also allows for multiple search parameters - perhaps a save-game for North East 
   -  Overwrite settings with current settings
   -  Remove saved settings
 -  Export all settings to file
--  Import all settings from file
+-  Import all settings from the file
 -  Tabs for settings drawer
 -  Layer buttons have toggled outlines to show if on or off
 -  Descriptions on settings
@@ -235,13 +241,13 @@ Also allows for multiple search parameters - perhaps a save-game for North East 
 
 ## 0.0.0
 
-This changelog was started well after the app was being built. Currently on version 24 and thats had significant development.
+This changelog was started well after the app was built. Currently on version 24 and that's had significant development.
 
 ### Highlights
-- Uses Openmap for free mapping.
+- Uses open-map for free mapping.
 - Retrieve results from Zoopla / Rightmove / Onthemarket to combine on one map.
-- Updates searches on reload.
-- See details of property.
+- Updates search on reload.
+- See details of the property.
 - Favourite, highlight and exclude a property from the map so it's either permanently on or off the map
 - Text highlight to search for specific words.
 - Extra Layers with clickable details
@@ -254,8 +260,8 @@ This changelog was started well after the app was being built. Currently on vers
   - Universities
   - Schools
   - Crime boroughs
-- Obtain Police info about crimes in 1mile radius
-- Property details from multiple sources
+- Obtain Police info about crimes in a 1mile radius
+- Property Details from multiple sources
   - Calculated address and postcode
   - Broadband
   - Tax

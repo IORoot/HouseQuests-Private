@@ -53,7 +53,9 @@ export function intro_modal()
     open_link_in_chrome('link-panel-quick-start-video')
     open_link_in_chrome('link-panel-pricing')
     open_link_in_chrome('link-panel-documentation')
+    open_link_in_chrome('link-panel-tutorials')
     open_link_in_chrome('link-panel-downloads')
+    open_link_in_chrome('link-panel-stripe-portal')
 }
 
 
