@@ -10,6 +10,7 @@
 - Switched code-signing OFF
 - Added Background to DMG Installer
 
+
 ## 0.1.22 (2022-12-14)
 
 - Fixed Changelog to package.json list

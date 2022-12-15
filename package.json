@@ -3,10 +3,12 @@
   "productName": "HouseQuests",
   "description": "The automatic release management.<br/><br/><ul class=\"list-disc\"><li>HTML Partials.</li><li>New wiki website.</li></ul>",
   "release_notes": [
-    "- Fixed release-notes",
-    "- LIVE on stripe",
-    "- Tutorial videos for wiki",
-    "- HEXCodes for Marker colours"
+    "- Updated all external links to open in the browser",
+    "- Changelog spell-check",
+    "- Stripe-portal & video tutorials in the intro modal",
+    "- Wider and multi-col intro modal",
+    "- Added Background to DMG Installer",
+    "- No more code-signing"
   ],
   "version": "0.1.23",
   "private": true,
