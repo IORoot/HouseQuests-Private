@@ -63,8 +63,8 @@
     "e2e": "echo 'spectron broken' #mocha temp/e2e.js --require source-map-support/register",
     "test": "npm run unit && echo 'spectron broken' #npm run e2e",
     "start": "npm run compile && node build/start.js --inspect=5858 --remote-debugging-port=9223",
-    "release": "CSC_IDENTITY_AUTO_DISCOVERY=false; npm run compile && npm run test && webpack --config=build/webpack.app.config.js --env=production && electron-builder",
-    "build": "CSC_IDENTITY_AUTO_DISCOVERY=false; npm run compile && webpack --config=build/webpack.app.config.js --env=production && electron-builder",
+    "release": "npm run compile && npm run test && webpack --config=build/webpack.app.config.js --env=production && electron-builder",
+    "build": "npm run compile && webpack --config=build/webpack.app.config.js --env=production && electron-builder",
     "compile": "html-includes --src src --dest app",
     "compile:min": "html-includes --src src --dest app --minify"
   },
