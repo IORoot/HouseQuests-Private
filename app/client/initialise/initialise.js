@@ -52,6 +52,9 @@
     // Mixpanel Analytics - HouseQuests Electron App
     var mixpanel_token = 'f84177e6fd6610f6ac3826d1b5d138d6'
 
+    // Where any Notifcations come from
+    var notification_url = 'https://raw.githubusercontent.com/IORoot/HouseQuests/main/notifications.html'
+
     // New Map Instance
     var map;
 

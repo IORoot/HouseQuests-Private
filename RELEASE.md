@@ -8,3 +8,4 @@
 - Switched code-signing OFF
 - Added Background to DMG Installer
 - New Icon
+- New notifications on the intro panel

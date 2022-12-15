@@ -8,7 +8,9 @@
     "- Stripe-portal & video tutorials in the intro modal",
     "- Wider and multi-col intro modal",
     "- Added Background to DMG Installer",
-    "- No more code-signing"
+    "- No more code-signing",
+    "- New Icon",
+    "- New notifications on the intro panel"
   ],
   "version": "0.1.23",
   "private": true,

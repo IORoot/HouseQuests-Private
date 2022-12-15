@@ -10,6 +10,7 @@
 - Switched code-signing OFF
 - Added Background to DMG Installer
 - New Icon
+- New notifications on the intro panel
 
 ## 0.1.22 (2022-12-14)
 
