@@ -51,7 +51,30 @@
       "differentialPackage": false
     },
     "dmg": {
-      "writeUpdateInfo": false
+      "writeUpdateInfo": false,
+      "sign": false,
+      "contents": [
+        {
+          "x": 130,
+          "y": 220
+        },
+        {
+          "x": 130,
+          "y": 510,
+          "type": "file",
+          "path": "run_after_install.sh"
+        },
+        {
+          "x": 410,
+          "y": 220,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ],
+      "window": {
+        "width": 540,
+        "height": 660
+      }
     },
     "publish": null
   },
