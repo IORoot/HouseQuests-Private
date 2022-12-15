@@ -9,7 +9,7 @@
 - Wider and multi-col intro modal
 - Switched code-signing OFF
 - Added Background to DMG Installer
-
+- New Icon
 
 ## 0.1.22 (2022-12-14)
 
