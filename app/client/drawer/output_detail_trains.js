@@ -56,7 +56,7 @@ export async function output_detail_trains(config)
         message += '</table>'
 
     if (serviceURL){
-        message += '<div class="py-4 px-6"><a class="underline hover:text-blue-500" href="' + serviceURL +'" target="_blank">'+serviceTitle+'</a></div>'
+        message += '<div class="py-4 px-6"><a class="external-link underline hover:text-blue-500" href="' + serviceURL +'" target="_blank">'+serviceTitle+'</a></div>'
     } 
 
     // set data-loaded attribute

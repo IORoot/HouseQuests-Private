@@ -31,6 +31,7 @@ import { listener_website_link } from "./listener_website_link.js";
 import { listener_refresh_page } from "./listener_refresh_page.js";
 import { listener_goto_search_url } from "./listener_goto_search_url.js";
 import { listener_blacklist_truncate } from "./listener_blacklist_truncate.js";
+import { listener_external_links } from "./listener_external_links.js";
 
 import { filter_monochrome } from "./listener_filter_monochrome.js";
 import { filter_invert } from "./listener_filter_invert.js";
@@ -64,6 +65,7 @@ export function load_event_listeners(){
     listener_refresh_page()
     listener_goto_search_url()
     listener_blacklist_truncate()
+    listener_external_links()
     
     filter_monochrome()
     filter_invert()

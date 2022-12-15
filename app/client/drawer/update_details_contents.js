@@ -9,6 +9,7 @@ import { request_property_address } from '../requests/request_property_address.j
 import { output_detail_string } from './output_detail_string.js'
 import { output_detail_trains } from './output_detail_trains.js'
 import { output_detail_schools } from './output_detail_schools.js'
+import { listener_external_links } from '../event_listeners/listener_external_links.js'
 
 /**
  * 
@@ -169,46 +170,7 @@ export function update_details_contents()
         'serviceURL':   currentProperty.link,
         'serviceTitle': currentProperty.source
     })
-    
-// auction:            boolen
-// category:           string "residential"
-// chain:              bool (ChainFree or not),
-// deposit:            string "",
-// featuresArray:      array of strings,
-// floorArea:          string,
-// furnishedState:     string,
-// groundRent:         string,
-// leaseExpiry:        string,
-// listingCondition:   string,
-// listingHistory:     object { "listingUpdateReason": "Added yesterday" }
-// mobileReception:    object {
-                        //     "o2": "enhanced",
-                        //     "three": "enhanced",
-                        //     "vodafone": "enhanced",
-                        //     "ee": "enhanced",
-                        //     "date": "March 7, 2022"
-                        // },
-// newHome:            bool (a new build or not),
-// numberBaths:        string or int or bool?,
-// numberBeds:         int,
 
-
-// pricePerSqFt:       "",
-// propertyType:       "",
-// published:          "",
-// retirementHome:     "",
-// roomsArray:         "",
-// section:            "",
-// serviceCharge:      "",
-// sharedOwnership:    "",
-// size:               "",
-// sizings:            "",
-// statisticsArray:    "",
-// status:             "",
-
-
-// branch:             string,
-// branchID:           int,
-// branchLogo:         string,
-// branchURL:          string,
+    // Attach listeners
+    listener_external_links()
 }

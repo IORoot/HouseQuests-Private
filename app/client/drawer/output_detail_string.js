@@ -32,18 +32,18 @@ export async function output_detail_string(config)
 
     if (type === "image"){
         if (attribute.endsWith('pdf')){
-            message += '<td class="py-4 px-6"><a class="underline" href="' + attribute +'" target="_blank">PDF</a></td>'
+            message += '<td class="py-4 px-6"><a class="underline external-link" href="' + attribute +'" target="_blank">PDF</a></td>'
         } else {
-            message += '<td class="py-4 px-6"><a href="' + attribute +'" target="_blank"><img class="w-20 h-20"src="' + attribute +'"></a></td>'
+            message += '<td class="py-4 px-6"><a class="external-link" href="' + attribute +'" target="_blank"><img class="w-20 h-20"src="' + attribute +'"></a></td>'
         }
     }
 
     if (type === "string"){
-        message += '<td class="py-4 px-6" data-'+config.target+'="'+attribute+'"><a class="hover:underline hover:text-blue-500" href="'+sourceURL+'" target="_blank">' + attribute +'</a></td>'
+        message += '<td class="py-4 px-6" data-'+config.target+'="'+attribute+'"><a class="external-link hover:underline hover:text-blue-500" href="'+sourceURL+'" target="_blank">' + attribute +'</a></td>'
     }
     
     if (serviceURL){
-        message += '<td class="py-4 px-6"><a class="underline hover:text-blue-500" href="' + serviceURL +'" target="_blank">'+serviceTitle+'</a></td>'
+        message += '<td class="py-4 px-6"><a class="external-link underline hover:text-blue-500" href="' + serviceURL +'" target="_blank">'+serviceTitle+'</a></td>'
     } else {
         message += '<td></td>'
     }

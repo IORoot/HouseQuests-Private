@@ -6,7 +6,7 @@
 
 import { output_detail_string } from '../drawer/output_detail_string.js'
 import { clear_detail_string } from '../drawer/clear_detail_string.js'
-
+import { listener_external_links } from "../event_listeners/listener_external_links.js";
 
 export async function request_property_address(longitude, latitude)
 {
@@ -21,7 +21,6 @@ export async function request_property_address(longitude, latitude)
             console.log("ERROR:"+error);
         });
 
-    console.log(currentProperty)
     currentProperty.address = addressDetails.address
 
     // House Number
@@ -143,7 +142,7 @@ export async function request_property_address(longitude, latitude)
     }
 
 
-
+    listener_external_links()
 
     return addressDetails.address
 }

@@ -230,9 +230,9 @@ export function listener_map(){
                 popupHTML += '<div class="text-sm">From: '+marker.from+'</div>'
                 popupHTML += '<div class="text-sm">To: '+marker.to+'</div>'
                 popupHTML += '<div class="text-sm">Operator: '+marker.operator+'</div>'
-                popupHTML += '<a class="text-sm text-blue-500 underline" href="https://tfl.gov.uk/maps_/bus-spider-maps?Query='+marker.ref+'" target="_blank">Spider Maps</a>'
-                popupHTML += '<a class="text-sm text-blue-500 underline" href="https://tfl.gov.uk/bus/route/'+marker.ref+'/?direction=inbound" target="_blank">Inbound Map towards '+marker.from+'</a>'
-                popupHTML += '<a class="text-sm text-blue-500 underline" href="https://tfl.gov.uk/bus/route/'+marker.ref+'/?direction=outbound" target="_blank">Outbound Map towards '+marker.to+'</a>'
+                popupHTML += '<a class="external-link text-sm text-blue-500 underline" href="https://tfl.gov.uk/maps_/bus-spider-maps?Query='+marker.ref+'" target="_blank">Spider Maps</a>'
+                popupHTML += '<a class="external-link text-sm text-blue-500 underline" href="https://tfl.gov.uk/bus/route/'+marker.ref+'/?direction=inbound" target="_blank">Inbound Map towards '+marker.from+'</a>'
+                popupHTML += '<a class="external-link text-sm text-blue-500 underline" href="https://tfl.gov.uk/bus/route/'+marker.ref+'/?direction=outbound" target="_blank">Outbound Map towards '+marker.to+'</a>'
             popupHTML += '</div>';
 
             popupContent.innerHTML = popupHTML;
@@ -253,7 +253,7 @@ export function listener_map(){
             popupHTML += '<div class="flex flex-col gap-2">';
                 popupHTML += '<div class="text-md text-lime-800">'+marker.name+'</div>'
                 popupHTML += '<div class="text-sm">Street: '+marker["addr:street"]+'</div>'
-                popupHTML += '<a class="text-sm text-blue-500 underline" href="'+marker.website+'" target="_blank">Website</a>'
+                popupHTML += '<a class="external-link text-sm text-blue-500 underline" href="'+marker.website+'" target="_blank">Website</a>'
             popupHTML += '</div>';
 
             popupContent.innerHTML = popupHTML;
@@ -275,8 +275,8 @@ export function listener_map(){
             popupHTML += '<div class="text-md text-sky-500">'+marker.name+'</div>'
             popupHTML += '<p class="w-full">'+marker.brand+'</p>'
             popupHTML += '<p class="w-full">'+marker.hours+'</p>'
-            popupHTML += '<a href="'+marker.contact+'" class="text-sm underline text-blue-500" target="_blank">'+marker.contact+'</a>'
-            popupHTML += '<a href="'+marker.website+'" class="text-sm underline text-blue-500" target="_blank">'+marker.website+'</a>'
+            popupHTML += '<a href="'+marker.contact+'" class="external-link text-sm underline text-blue-500" target="_blank">'+marker.contact+'</a>'
+            popupHTML += '<a href="'+marker.website+'" class="external-link text-sm underline text-blue-500" target="_blank">'+marker.website+'</a>'
             popupHTML += '<div class="text-xs bg-stone-100 p-2 rounded m-1 flex flex-col">'+marker.number
                 popupHTML += '<div>'+marker.street+ '</div>'
                 popupHTML += '<div>'+marker.city+ '</div>'
@@ -302,8 +302,8 @@ export function listener_map(){
             popupHTML += '<div class="text-md text-sky-500">'+marker.name+'</div>'
             popupHTML += '<p class="w-full">'+marker.brand+'</p>'
             popupHTML += '<p class="w-full">'+marker.hours+'</p>'
-            popupHTML += '<a href="'+marker.contact+'" class="text-sm underline text-blue-500" target="_blank">'+marker.contact+'</a>'
-            popupHTML += '<a href="'+marker.website+'" class="text-sm underline text-blue-500" target="_blank">'+marker.website+'</a>'
+            popupHTML += '<a href="'+marker.contact+'" class="external-link text-sm underline text-blue-500" target="_blank">'+marker.contact+'</a>'
+            popupHTML += '<a href="'+marker.website+'" class="external-link text-sm underline text-blue-500" target="_blank">'+marker.website+'</a>'
             popupHTML += '<div class="text-xs bg-stone-100 p-2 rounded m-1 flex flex-col">'+marker.number
                 popupHTML += '<div>'+marker.street+ '</div>'
                 popupHTML += '<div>'+marker.city+ '</div>'
@@ -328,7 +328,7 @@ export function listener_map(){
             popupHTML += '<div class="flex flex-col gap-2">';
             popupHTML += '<div class="text-xs text-gray-800">Gym</div>'
             popupHTML += '<div class="text-md text-gray-700">'+marker.name+'</div>'
-            popupHTML += '<a href="'+marker.contact+'" class="text-sm underline text-blue-500" target="_blank">'+marker.contact+'</a>'
+            popupHTML += '<a href="'+marker.contact+'" class="external-link text-sm underline text-blue-500" target="_blank">'+marker.contact+'</a>'
             popupHTML += '<div class="text-xs bg-stone-100 p-2 rounded m-1 flex flex-col">'+marker.number
                 popupHTML += '<div>'+marker.street+ '</div>'
                 popupHTML += '<div>'+marker.city+ '</div>'
@@ -353,7 +353,7 @@ export function listener_map(){
             popupHTML += '<div class="flex flex-col gap-2">';
             popupHTML += '<div class="text-xs text-red-400">Post Office</div>'
             popupHTML += '<div class="text-md text-gray-700">'+marker.name+'</div>'
-            popupHTML += '<a href="'+marker.contact+'" class="text-sm underline text-blue-500" target="_blank">'+marker.contact+'</a>'
+            popupHTML += '<a href="'+marker.contact+'" class="external-link text-sm underline text-blue-500" target="_blank">'+marker.contact+'</a>'
             popupHTML += '<div class="text-xs bg-stone-100 p-2 rounded m-1 flex flex-col">'+marker.number
                 popupHTML += '<div>'+marker.street+ '</div>'
                 popupHTML += '<div>'+marker.city+ '</div>'
@@ -395,7 +395,7 @@ export function listener_map(){
             popupHTML += '<div class="flex flex-col gap-2">';
             popupHTML += '<div class="text-xs text-sky-400">Airport</div>'
             popupHTML += '<div class="text-md text-gray-700">'+marker.name+'</div>'
-            popupHTML += '<a href="'+marker.website+'" class="text-xs underline text-blue-500" target="_blank">'+marker.website+'</a>'
+            popupHTML += '<a href="'+marker.website+'" class="external-link text-xs underline text-blue-500" target="_blank">'+marker.website+'</a>'
         popupHTML += '</div>';
 
             popupContent.innerHTML = popupHTML;
@@ -415,7 +415,7 @@ export function listener_map(){
             popupHTML += '<div class="text-xs text-rose-400">Doctor</div>'
             popupHTML += '<div class="text-md text-gray-700">'+marker.name+'</div>'
             popupHTML += '<div class="text-md text-gray-700">Hours: '+marker.hours+'</div>'
-            popupHTML += '<a href="'+marker.website+'" class="text-xs underline text-blue-500" target="_blank">'+marker.website+'</a>'
+            popupHTML += '<a href="'+marker.website+'" class="external-link text-xs underline text-blue-500" target="_blank">'+marker.website+'</a>'
             popupHTML += '<div class="text-xs bg-stone-100 p-2 rounded m-1 flex flex-col">'+marker.number
                 popupHTML += '<div>'+marker.street+ '</div>'
                 popupHTML += '<div>'+marker.city+ '</div>'
@@ -438,7 +438,7 @@ export function listener_map(){
             popupHTML += '<div class="flex flex-col gap-2">';
             popupHTML += '<div class="text-xs text-red-400">Hospital</div>'
             popupHTML += '<div class="text-md text-gray-700">'+marker.name+'</div>'
-            popupHTML += '<a href="'+marker.website+'" class="text-xs underline text-blue-500" target="_blank">'+marker.website+'</a>'
+            popupHTML += '<a href="'+marker.website+'" class="external-link text-xs underline text-blue-500" target="_blank">'+marker.website+'</a>'
             popupHTML += '<div class="text-xs bg-stone-100 p-2 rounded m-1 flex flex-col">'+marker.number
                 popupHTML += '<div>'+marker.street+ '</div>'
                 popupHTML += '<div>'+marker.city+ '</div>'
@@ -481,7 +481,7 @@ export function listener_map(){
             popupHTML += '<div class="flex flex-col gap-2">';
                 popupHTML += '<div class="text-md text-yellow-800">'+marker.name+'</div>'
                 popupHTML += '<img class="w-full h-30" src="'+marker.image+'">'
-                popupHTML += '<a href="https://'+marker.url+'" class="text-sm underline text-blue-500" target="_blank">'+marker.url+'</a>'
+                popupHTML += '<a href="https://'+marker.url+'" class="external-link text-sm underline text-blue-500" target="_blank">'+marker.url+'</a>'
                 popupHTML += '<div class="text-sm">'+marker.phone+'</div>'
                 popupHTML += '<div class="text-sm">'+marker.email+'</div>'
             popupHTML += '</div>';
@@ -519,7 +519,7 @@ export function listener_map(){
                     popupHTML += '<div>'+marker.Address5+ '</div>'
                     popupHTML += '<div>'+marker.Address6+ '</div>'
                 popupHTML += '</div>'
-                popupHTML += '<a href="'+marker.SchoolWebsite+'" class="text-xs underline text-blue-500" target="_blank">'+marker.SchoolWebsite+'</a>'
+                popupHTML += '<a href="'+marker.SchoolWebsite+'" class="external-link text-xs underline text-blue-500" target="_blank">'+marker.SchoolWebsite+'</a>'
                 popupHTML += '<div class="text-xs">Phone: '+marker.Phone+'</div>'
             popupHTML += '</div>';
 
@@ -558,7 +558,7 @@ export function listener_map(){
                     popupHTML += '<div>'+marker.Address5+ '</div>'
                     popupHTML += '<div>'+marker.Address6+ '</div>'
                 popupHTML += '</div>'
-                popupHTML += '<a href="'+marker.SchoolWebsite+'" class="text-xs underline text-blue-500" target="_blank">'+marker.SchoolWebsite+'</a>'
+                popupHTML += '<a href="'+marker.SchoolWebsite+'" class="external-link text-xs underline text-blue-500" target="_blank">'+marker.SchoolWebsite+'</a>'
                 popupHTML += '<div class="text-xs">Phone: '+marker.Phone+'</div>'
             popupHTML += '</div>';
 
@@ -596,7 +596,7 @@ export function listener_map(){
                     popupHTML += '<div>'+marker.Address5+ '</div>'
                     popupHTML += '<div>'+marker.Address6+ '</div>'
                 popupHTML += '</div>'
-                popupHTML += '<a href="'+marker.SchoolWebsite+'" class="text-xs underline text-blue-500" target="_blank">'+marker.SchoolWebsite+'</a>'
+                popupHTML += '<a href="'+marker.SchoolWebsite+'" class="external-link text-xs underline text-blue-500" target="_blank">'+marker.SchoolWebsite+'</a>'
                 popupHTML += '<div class="text-xs">Phone: '+marker.TelephoneNum+'</div>'
             popupHTML += '</div>';
 
