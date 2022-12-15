@@ -39,7 +39,7 @@ export function listener_export()
         let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
         let yyyy = today.getFullYear();
 
-        let exportFileDefaultName = 'aps_export_' + yyyy + '-' + mm + '-' + dd +'.json';
+        let exportFileDefaultName = 'HQ_export_' + yyyy + '-' + mm + '-' + dd +'.json';
 
         this.setAttribute('href', dataUri);
         this.setAttribute('download', exportFileDefaultName);
