@@ -3,6 +3,10 @@
   width: 100%;
 }
 
+.h155 { 
+  height: 620px
+}
+
 .ol-popup {
         position: absolute;
         background-color: white;
