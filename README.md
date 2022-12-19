@@ -92,7 +92,9 @@ https://gist.github.com/jamieweavis/b4c394607641e1280d447deed5fc85fc
 
 ## 6. Code-signing.
 
-Disable code-signing by setting environment variable before creating app.
+Disable code-signing by setting the environment variable before creating the app.
 ```
 export CSC_IDENTITY_AUTO_DISCOVERY=false
 ```
+
+https://disable-gatekeeper.github.io/

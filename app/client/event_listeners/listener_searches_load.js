@@ -6,7 +6,6 @@
 
 import { load_saved_search } from '../saved_searches/load_saved_search.js'
 import { remove_saved_search } from '../saved_searches/remove_saved_search.js'
-import { save_saved_search } from '../saved_searches/save_saved_search.js'
 
 export function listener_searches_load()
 {

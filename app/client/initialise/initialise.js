@@ -15,6 +15,9 @@
     var icon_zoopla = "https://svg-rewriter.sachinraja.workers.dev/?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fnpm%2F%40mdi%2Fsvg%406.7.96%2Fsvg%2Fhome-circle-outline.svg&fill=%234C1D95&opacity=0.8&width=20px&height=20px";
     var icon_zooplaAll = icon_zoopla;
     var icon_onthemarket = "https://svg-rewriter.sachinraja.workers.dev/?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fnpm%2F%40mdi%2Fsvg%406.7.96%2Fsvg%2Fhome-map-marker.svg&fill=%23E11D48&opacity=0.8&width=20px&height=20px";
+    
+    // this is just the icon, not the colour - see hex_highlighted below for fill colour.
+    var icon_highlighted = "https://svg-rewriter.sachinraja.workers.dev/?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fnpm%2F%40mdi%2Fsvg%406.7.96%2Fsvg%2Fhome-circle.svg&fill=%23"
 
     // Local Area Icons
     // mdi-Icon name, size (px), HEX fill colour (not rgba) , HEX stroke colour (not rgba), stroke-width
@@ -39,7 +42,7 @@
     var hex_rightmove   = '0284C7'
     var hex_zoopla      = '4C1D95'
     var hex_onthemarket = 'E11D48'
-    var hex_highlighted = 'FF0000'
+    var hex_highlighted = '3E2DFF'
 
     // Hostname of node app
     var hostname = 'http://localhost:3000'

@@ -30,7 +30,7 @@ export function change_icon(propertyID,hexColour){
 
                     var currentStyle = feature.getStyle();
 
-                    const newIcon = "https://svg-rewriter.sachinraja.workers.dev/?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fnpm%2F%40mdi%2Fsvg%406.7.96%2Fsvg%2Fhome-circle.svg&fill=%23"+hexColour+"&stroke=%23ffffff&stroke-width=0.5&width=20px&height=20px";
+                    const newIcon = icon_highlighted+hexColour+"&stroke=%23ffffff&stroke-width=0.5&width=20px&height=20px";
 
                     feature.setStyle(
                         new ol.style.Style({

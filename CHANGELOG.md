@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.24 (2022-12-19)
+
+- New selected marker colour
+- Zoopla now lets you use the listings page URL
+- URL Sanitisers
+
+
 ## 0.1.23 (2022-12-15)
 
 - Added tutorial section to the wiki

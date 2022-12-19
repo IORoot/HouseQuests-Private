@@ -53,8 +53,6 @@ module.exports = function(app){
             let searchQuery = requestURL.search.toString().replace(/^\?/, '')
             constructedURL += '&'+searchQuery
         }
-        
-        console.log(constructedURL)
 
         // At instance level ignore SSL cert issues.
         const agent = new https.Agent({  
