@@ -12,6 +12,7 @@ import { listener_authentication } from "../app/client/event_listeners/listener_
 import { listener_authentication_intro } from "../app/client/event_listeners/listener_authentication_intro.js";
 import { check_authentication } from "../app/client/authentication/check_authentication.js";
 import { intro_modal } from "../app/client/intro/intro_modal.js";
+import { intro_tutorial } from "../app/client/intro/intro_tutorial.js";
 import { disable_premium_features } from "../app/client/disable/disable_premium_features.js";
 import { enable_adverts } from "../app/client/adverts/enable_adverts.js";
 import { stripe_manage_subscription_link } from "../app/client/stripe/manage_subscription_link.js";
@@ -23,6 +24,7 @@ await check_authentication()
 listener_authentication()
 listener_authentication_intro()
 intro_modal()
+intro_tutorial()
 mixpanel_analytics()
 
 // ┌─────────────────────────────────────┐

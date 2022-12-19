@@ -10,6 +10,7 @@ import appMenuTemplate from "./menu/app_menu_template";
 import editMenuTemplate from "./menu/edit_menu_template";
 import devMenuTemplate from "./menu/dev_menu_template";
 import createWindow from "./helpers/window";
+const contextMenu = require('electron-context-menu');
 
 // Special module holding environment variables which you declared
 // in config/env_xxx.json file.
@@ -40,6 +41,11 @@ const initIpc = () => {
     shell.openExternal(href);
   });
 };
+
+contextMenu({
+	showSaveImageAs: true,
+  showInspectElement: false
+});
 
 app.on("ready", () => {
   setApplicationMenu();

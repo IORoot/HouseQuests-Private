@@ -5,7 +5,7 @@ export function check_onthemarket_input(pastedURL){
 
     const address = url.parse(pastedURL, true);
 
-    console.log(address)
+    // console.log(address)
 
     if ( ! address.hostname.includes("onthemarket.com") )
     {

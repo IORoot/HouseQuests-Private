@@ -26,6 +26,7 @@ import { listener_change_property_colour } from "./listener_change_property_colo
 import { listener_ratings_crimes } from "./listener_ratings_crimes.js";
 import { listener_ratings_renters } from "./listener_ratings_renters.js";
 import { listener_toggle_intro_modal } from "./listener_toggle_intro_modal.js";
+import { listener_toggle_tutorial_modal } from "./listener_toggle_tutorial_modal.js";
 import { listener_streetview } from "./listener_streetview.js";
 import { listener_website_link } from "./listener_website_link.js";
 import { listener_refresh_page } from "./listener_refresh_page.js";
@@ -59,6 +60,7 @@ export function load_event_listeners_free() {
     listener_ratings_crimes()
     listener_ratings_renters()
     listener_toggle_intro_modal()
+    listener_toggle_tutorial_modal()
     listener_streetview()
     listener_website_link()
     listener_refresh_page()

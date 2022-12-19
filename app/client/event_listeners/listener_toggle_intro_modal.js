@@ -10,8 +10,6 @@ export function listener_toggle_intro_modal(){
 
     toggleIntroModalSwitch.addEventListener('click', async function(event) {
 
-        console.log(this.checked)
-
         if ( this.checked ){
             window.localStorage.setItem('introModalToggle', 'true');
         } else {
