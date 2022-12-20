@@ -1,11 +1,9 @@
 # Current Release
 
-- Added tutorial section to the wiki
-- Updated all external links to open in the browser
-- Changelog spell-check
-- Stripe-portal & video tutorials in the intro modal
-- Wider and multi-col intro modal
-- Switched code-signing OFF
-- Added Background to DMG Installer
-- New Icon
-- New notifications on the intro panel
+- New selected marker colour
+- Zoopla now lets you use the listings page URL
+- URL Sanitisers
+- Added Context Menus (Copy/Cut/Paste) for mouse
+- New Tutorial Modal on first open.
+- Add new preferences to toggle tutorial.
+- Wiki on the tutorial toggle.
