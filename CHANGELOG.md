@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.25 (2022-12-21)
+
+- replaced spectron with playwright
+- 
+
 ## 0.1.24 (2022-12-19)
 
 - New selected marker colour
