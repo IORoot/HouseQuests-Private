@@ -23,6 +23,9 @@ export function listener_export()
             'inspector_positive',
             'highlightList',
             'savedSearches',
+            'custom_palette',
+            'introTutorialToggle',
+            'introModalToggle',
         ];
 
         localStorageKeys.forEach(function(storageKey, index){

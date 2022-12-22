@@ -27,6 +27,9 @@ export async function listener_import()
             update_localStorage('inspector_positive', importedJSON.inspector_positive);
             update_localStorage('highlightList', importedJSON.highlightList);
             update_localStorage('savedSearches', importedJSON.savedSearches);
+            update_localStorage('custom_palette', importedJSON.custom_palette);
+            update_localStorage('introTutorialToggle', importedJSON.custom_palette);
+            update_localStorage('introModalToggle', importedJSON.custom_palette);
 
             location.reload();
 
