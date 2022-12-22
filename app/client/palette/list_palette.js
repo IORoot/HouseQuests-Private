@@ -20,9 +20,9 @@ export function list_palette(){
         // Loop through colours
         reversed.forEach(function(hexcode, index) {
 
-            paletteItems += '<div class="font-medium rounded-lg text-xs text-white flex flex-row flex-grow gap-1 h-6 px-5 py-1 text-center" style="background-color: #'+hexcode+'">'
+            paletteItems += '<div class="font-medium font-thin rounded-lg text-xs text-white flex flex-row flex-grow gap-1 h-6 px-2 py-1 text-center" style="background-color: #'+hexcode+'">'
 
-                paletteItems +=  '<a href="#" data-marker-colour="'+hexcode+'" class="modal-icon-colour-button hover:underline w-full mix-blend-difference" >'
+                paletteItems +=  '<a href="#" data-marker-colour="'+hexcode+'" class="modal-icon-colour-button hover:underline w-full" >'
                     paletteItems +=  hexcode
                 paletteItems +=  '</a>'
                 

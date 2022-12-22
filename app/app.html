@@ -480,6 +480,12 @@
             <svg class="w-6 h-6 m-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23,12L19,8V11H10V13H19V16M1,18V6C1,4.89 1.9,4 3,4H15A2,2 0 0,1 17,6V9H15V6H3V18H15V15H17V18A2,2 0 0,1 15,20H3A2,2 0 0,1 1,18Z"/></svg>
             <span class="m-auto">Export All Settings</span>
         </a>
+
+        <button id="import-colour-palette" type="button" data-modal-toggle="popup-modal-import-palette" class="flex flex-col gap-2 w-full fill-white text-white bg-emerald-700 hover:bg-orange-300 hover:text-orange-700 hover:fill-orange-700 rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2" >
+            <svg class="w-6 h-6 m-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.5,12A1.5,1.5 0 0,1 16,10.5A1.5,1.5 0 0,1 17.5,9A1.5,1.5 0 0,1 19,10.5A1.5,1.5 0 0,1 17.5,12M14.5,8A1.5,1.5 0 0,1 13,6.5A1.5,1.5 0 0,1 14.5,5A1.5,1.5 0 0,1 16,6.5A1.5,1.5 0 0,1 14.5,8M9.5,8A1.5,1.5 0 0,1 8,6.5A1.5,1.5 0 0,1 9.5,5A1.5,1.5 0 0,1 11,6.5A1.5,1.5 0 0,1 9.5,8M6.5,12A1.5,1.5 0 0,1 5,10.5A1.5,1.5 0 0,1 6.5,9A1.5,1.5 0 0,1 8,10.5A1.5,1.5 0 0,1 6.5,12M12,3A9,9 0 0,0 3,12A9,9 0 0,0 12,21A1.5,1.5 0 0,0 13.5,19.5C13.5,19.11 13.35,18.76 13.11,18.5C12.88,18.23 12.73,17.88 12.73,17.5A1.5,1.5 0 0,1 14.23,16H16A5,5 0 0,0 21,11C21,6.58 16.97,3 12,3Z"/></svg>
+            <span class="m-auto">Import Colour Palette</span>
+        </button>
+
     </div>
 
 </div>
@@ -979,17 +985,23 @@
                     <button data-modal-toggle="popup-modal" data-marker-colour="3b82f6" type="button" class="modal-icon-colour-button text-white bg-blue-500 hover:bg-blue-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2"></button>
                 </div>
                 
-                <label for="hexcode" class="text-sm font-medium text-gray-500">or</label>
-                <div class="relative my-6">
-                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">#</div>
-                    <input type="hexcode" id="modal-icon-colour-hexcode" data-marker-colour="" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500" placeholder="6-CHAR HEXCODE">
-                    <button type="button" id="modal-icon-colour-set" class="text-white absolute right-16 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2">Set</button>
-                    <button type="button" id="modal-icon-colour-add" class="text-white absolute right-2.5 bottom-2.5 bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-4 py-2 fill-white">
-                        <svg class="w-5 h-5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M13,7H11V11H7V13H11V17H13V13H17V11H13V7Z"/></svg>
-                    </button>
-                </div>
+                <div id="custom-palette" class="grid grid-cols-10 max-h-96 gap-1 mb-5 bg-gray-100 rounded p-2 overflow-y-scroll">Custom Colour Palette</div>
 
-                <div id="custom-palette" class="grid grid-cols-8 gap-1 mb-5 border-t bg-gray-100 rounded p-6 "></div>
+
+                <div class="relative my-6 grid grid-cols-2 gap-4">
+
+                    <div class="relative">
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">#</div>
+                        <input type="hexcode" id="modal-icon-colour-hexcode" data-marker-colour="" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500" placeholder="HEXCODE">
+                        <button type="button" id="modal-icon-colour-set" class="text-white absolute right-16 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2">Set</button>
+                        <button type="button" id="modal-icon-colour-add" class="text-white absolute right-2.5 bottom-2.5 bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-4 py-2 fill-white">
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M13,7H11V11H7V13H11V17H13V13H17V11H13V7Z"/></svg>
+                        </button>
+                    </div>
+
+                    <button type="button" id="modal-icon-clear-palette" class="text-white ml-auto w-40 bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-2">Clear Palette</button>
+
+                </div>
 
                 <button data-modal-toggle="popup-modal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 ">Close</button>
             </div>
@@ -1040,6 +1052,29 @@
                 <h3 class="mb-5 text-lg font-normal text-gray-500">Import saved data.<br/> (This will overwrite all current settings)</h3>
                 <input class="block w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 cursor-pointer focus:outline-none " id="import_file_input" type="file" accept=".json">
                 <button data-modal-toggle="popup-modal-import" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 ">No, cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <!--         
+        ┌─────────────────────────────────────┐
+        │                Popup                │
+        │        Import Colour Palette        │
+        └─────────────────────────────────────┘
+        -->
+        <div id="popup-modal-import-palette" tabindex="-1" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 md:inset-0 h-modal md:h-full">
+    <div class="relative p-4 w-full max-w-md h-full md:h-auto">
+        <div class="relative bg-white rounded-lg shadow">
+            <button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center " data-modal-toggle="popup-modal-import-palette">
+                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                <span class="sr-only">Close modal</span>
+            </button>
+            <div class="p-6 text-center flex flex-col gap-4">
+                <h3 class="mb-5 text-lg font-normal text-gray-500">Import Custom Colour Palette.<br/> (JSON file)</h3>
+                <input class="block w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 cursor-pointer focus:outline-none " id="import_colour_palette" type="file" accept=".json">
+                <button data-modal-toggle="popup-modal-import-palette" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 ">No, cancel</button>
             </div>
         </div>
     </div>

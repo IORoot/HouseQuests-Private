@@ -20,6 +20,7 @@ import { listener_clear_highlightlist } from "./listener_clear_highlightlist.js"
 import { listener_change_property_colour } from "./listener_change_property_colour.js";
 import { listener_export } from "./listener_export.js";
 import { listener_import } from "./listener_import.js";
+import { listener_import_colour_palette } from "./listener_import_colour_palette.js";
 import { listener_searches_load } from "./listener_searches_load.js";
 import { listener_searches_save } from "./listener_searches_save.js";
 import { listener_searches_overwrite } from "./listener_searches_overwrite.js";
@@ -35,6 +36,7 @@ import { listener_blacklist_truncate } from "./listener_blacklist_truncate.js";
 import { listener_external_links } from "./listener_external_links.js";
 import { listener_palette_add } from "./listener_palette_add.js";
 import { listener_palette_item_remove } from "./listener_palette_item_remove.js";
+import { listener_clear_palette } from "./listener_clear_palette.js";
 
 import { filter_monochrome } from "./listener_filter_monochrome.js";
 import { filter_invert } from "./listener_filter_invert.js";
@@ -57,6 +59,7 @@ export function load_event_listeners(){
     listener_change_property_colour()
     listener_export()
     listener_import()
+    listener_import_colour_palette()
     listener_searches_save()
     listener_searches_load()
     listener_searches_overwrite()
@@ -72,6 +75,7 @@ export function load_event_listeners(){
     listener_external_links()
     listener_palette_add()
     listener_palette_item_remove()
+    listener_clear_palette()
     
     filter_monochrome()
     filter_invert()
