@@ -19,6 +19,7 @@ import { listener_clear_all_markers } from "./listener_clear_all_markers.js";
 import { listener_clear_highlightlist } from "./listener_clear_highlightlist.js";
 import { listener_change_property_colour } from "./listener_change_property_colour.js";
 import { listener_export } from "./listener_export.js";
+import { listener_export_palette } from "./listener_export_palette.js";
 import { listener_import } from "./listener_import.js";
 import { listener_import_colour_palette } from "./listener_import_colour_palette.js";
 import { listener_searches_load } from "./listener_searches_load.js";
@@ -58,6 +59,7 @@ export function load_event_listeners(){
     listener_clear_highlightlist()
     listener_change_property_colour()
     listener_export()
+    listener_export_palette()
     listener_import()
     listener_import_colour_palette()
     listener_searches_save()

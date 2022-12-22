@@ -20,9 +20,11 @@ export function list_palette(){
         // Loop through colours
         reversed.forEach(function(hexcode, index) {
 
+            let textColour = pickTextColorBasedOnBgColorSimple(hexcode, 'text-white', 'text-black')
+
             paletteItems += '<div class="font-medium font-thin rounded-lg text-xs text-white flex flex-row flex-grow gap-1 h-6 px-2 py-1 text-center" style="background-color: #'+hexcode+'">'
 
-                paletteItems +=  '<a href="#" data-marker-colour="'+hexcode+'" class="modal-icon-colour-button hover:underline w-full" >'
+                paletteItems +=  '<a href="#" data-marker-colour="'+hexcode+'" class="modal-icon-colour-button hover:underline w-full '+textColour+'" >'
                     paletteItems +=  hexcode
                 paletteItems +=  '</a>'
                 
@@ -44,4 +46,13 @@ export function list_palette(){
     // add all the remove-button event listeners
     listener_palette_item_remove()
 
+}
+
+function pickTextColorBasedOnBgColorSimple(bgColor, lightColor, darkColor) {
+    var color = (bgColor.charAt(0) === '#') ? bgColor.substring(1, 7) : bgColor;
+    var r = parseInt(color.substring(0, 2), 16); // hexToR
+    var g = parseInt(color.substring(2, 4), 16); // hexToG
+    var b = parseInt(color.substring(4, 6), 16); // hexToB
+    return (((r * 0.299) + (g * 0.587) + (b * 0.114)) > 186) ?
+    darkColor : lightColor;
 }
