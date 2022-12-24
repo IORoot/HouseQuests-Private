@@ -3,13 +3,8 @@
   "productName": "HouseQuests",
   "description": "The automatic release management.<br/><br/><ul class=\"list-disc\"><li>HTML Partials.</li><li>New wiki website.</li></ul>",
   "release_notes": [
-    "- New selected marker colour",
-    "- Zoopla now lets you use the listings page URL",
-    "- URL Sanitisers",
-    "- Added Context Menus (Copy/Cut/Paste) for mouse",
-    "- New Tutorial Modal on first open",
-    "- Add new preferences to toggle tutorial",
-    "- Wiki page on the tutorial toggle"
+    "- replaced Spectron with playwright",
+    "- Changed release build on MacOS 10.15"
   ],
   "version": "0.1.25",
   "private": true,

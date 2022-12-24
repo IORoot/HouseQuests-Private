@@ -1,5 +1,4 @@
 # Current Release
 
-- Custom Colour Palette 
-- import/export file contains the custom colour palette
-- 
+- replaced Spectron with playwright
+- Changed release build on MacOS 10.15

@@ -2,8 +2,8 @@
 
 ## 0.1.25 (2022-12-21)
 
-- replaced spectron with playwright
-- 
+- replaced Spectron with playwright
+- Changed release build on MacOS 10.15
 
 ## 0.1.24 (2022-12-19)
 
