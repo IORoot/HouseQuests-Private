@@ -415,13 +415,13 @@
     <label for="introModalToggle" class="inline-flex relative items-center cursor-pointer">
         <input type="checkbox" value="" id="introModalToggle" class="sr-only peer">
         <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer  peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
-        <span class="ml-3 text-sm font-medium text-gray-700">Disable intro panel from displaying on application open or refresh.</span>
+        <span class="ml-3 text-sm font-medium text-gray-700">Disable intro modal.</span>
     </label>
 
     <label for="introTutorialModalToggle" class="inline-flex relative items-center cursor-pointer">
         <input type="checkbox" value="" id="introTutorialModalToggle" class="sr-only peer">
         <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer  peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
-        <span class="ml-3 text-sm font-medium text-gray-700">Disable first-time tutorial panel from displaying on application open or refresh.</span>
+        <span class="ml-3 text-sm font-medium text-gray-700">Disable first-time tutorial modal.</span>
     </label>
 </div>
 
@@ -1280,7 +1280,7 @@
         └─────────────────────────────────────┘
         -->
         <div id="popup-modal-tutorial" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full">
-    <div class="relative p-4 w-full max-w-8xl h-full md:h-auto shadow">
+    <div class="relative p-4 w-full max-w-8xl shadow">
 
         <!-- Modal content -->
         <div class="relative bg-orange-100 rounded-t-xl">
@@ -1288,8 +1288,8 @@
             <!-- Modal header -->
             <div class="flex justify-between items-start p-5 rounded-t border-b-4 border-orange-300 bg-stone-900">
                 <h3 class="flex flex-row gap-4">
-                    <img class="w-16 h-16 mx-auto" src="./client/images/icon.png" >
-                    <div class="text-xl font-semibold text-orange-100 lg:text-2xl w-full m-auto">Welcome to the Quick Tutorial!</div>
+                    <img class="w-8 h-8 mx-auto" src="./client/images/icon.png" >
+                    <div class="text-lg text-orange-100 w-full m-auto">Welcome to the Quick Tutorial!</div>
                 </h3>
                 <button type="button" id="popup-modal-tutorial-x" class="text-orange-300 bg-transparent hover:bg-orange-700 hover:text-white rounded-lg text-sm p-1.5 ml-auto inline-flex items-center">
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>  
@@ -1302,26 +1302,28 @@
                 <!-- Carousel  -->
                 <div id="default-carousel" class="relative" data-carousel="static">
     <!-- Carousel wrapper -->
-    <div class="relative overflow-hidden rounded-lg h155">
+    <div class="relative overflow-hidden rounded-lg h-96">
         <!-- Item 1 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <p class="text-xl font-semibold text-white sm:text-lg dark:text-gray-800 text-center">Step 1. In your browser do a search on Zoopla.co.uk and copy the result page URL.</p>
-            <img src="./client/images/step1.gif" class="absolute block h-auto w-full max-w-3xl -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <p class="text-xl font-semibold text-white sm:text-lg dark:text-gray-800 text-center mb-4">Step 1. In your browser do a search on Zoopla.co.uk and copy the result page URL.</p>
+            <div class="h-full">
+                <img src="./client/images/step1.gif" class="block m-auto h-full object-contain" alt="...">
+            </div>
         </div>
         <!-- Item 2 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <p class="text-xl font-semibold text-white sm:text-lg dark:text-gray-800 text-center">Step 2. In HouseQuests open the left side-drawer and paste the URL into the Zoopla textbox.</p>
-            <img src="./client/images/step2.gif" class="absolute block h-auto w-full max-w-3xl -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <p class="text-xl font-semibold text-white sm:text-lg dark:text-gray-800 text-center mb-4">Step 2. In HouseQuests open the left side-drawer and paste the URL into the Zoopla textbox.</p>
+            <img src="./client/images/step2.gif" class="block m-auto h-full object-contain" alt="...">
         </div>
         <!-- Item 3 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <p class="text-xl font-semibold text-white sm:text-lg dark:text-gray-800 text-center">Step 3. Navigate around the map and click on a marker to open up its details.</p>
-            <img src="./client/images/step3.gif" class="absolute block h-auto w-full max-w-3xl -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <p class="text-xl font-semibold text-white sm:text-lg dark:text-gray-800 text-center mb-4">Step 3. Navigate around the map and click on a marker to open up its details.</p>
+            <img src="./client/images/step3.gif" class="block m-auto h-full object-contain" alt="...">
         </div>
         <!-- Item 4 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <p class="text-xl font-semibold text-white sm:text-lg dark:text-gray-800 text-center">Step 4. Visit Housequests.com for more quick and easy tutorials</p>
-            <img src="./client/images/step4.gif" class="absolute block h-auto w-full max-w-3xl -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <p class="text-xl font-semibold text-white sm:text-lg dark:text-gray-800 text-center mb-4">Step 4. Visit Housequests.com for more quick and easy tutorials</p>
+            <img src="./client/images/step4.gif" class="block m-auto h-full object-contain" alt="...">
         </div>
     </div>
     <!-- Slider indicators -->
