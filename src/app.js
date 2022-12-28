@@ -9,7 +9,6 @@ import { list_saved_searches } from '../app/client/saved_searches/list_saved_sea
 import { load_event_listeners } from '../app/client/event_listeners/event_listeners.js'
 import { load_event_listeners_free } from '../app/client/event_listeners/event_listeners_free.js'
 import { listener_authentication } from "../app/client/event_listeners/listener_authentication.js";
-import { listener_authentication_intro } from "../app/client/event_listeners/listener_authentication_intro.js";
 import { check_authentication } from "../app/client/authentication/check_authentication.js";
 import { intro_modal } from "../app/client/intro/intro_modal.js";
 import { intro_tutorial } from "../app/client/intro/intro_tutorial.js";
@@ -22,7 +21,6 @@ show_spinner()
 
 await check_authentication()
 listener_authentication()
-listener_authentication_intro()
 intro_modal()
 intro_tutorial()
 mixpanel_analytics()
