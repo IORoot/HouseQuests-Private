@@ -7,8 +7,15 @@ import {listener_palette_item_remove} from '../event_listeners/listener_palette_
 
 export function list_palette(){
 
-    // get blacklist array
-    let palette = JSON.parse(window.localStorage.getItem('custom_palette'));
+    let palette;
+
+    let custom_palette = window.localStorage.getItem('custom_palette')
+
+    if (custom_palette === null){
+        palette = []
+    }else {
+        palette = JSON.parse(custom_palette)
+    }
 
     let paletteItems = '';
     

@@ -530,9 +530,14 @@
             <span class="m-auto">Reset Favourites</span>
         </button>
     
-        <button id="clear-all-markers" type="button" class="w-1/2 md:w-1/4 lg:1/6 fill-white text-white bg-orange-900 hover:bg-orange-300 hover:text-orange-700 hover:fill-orange-700 rounded-lg text-sm p-3 text-center mb-2 flex flex-col gap-1">
+        <button id="clear-all-markers" type="button" class="md:w-1/4 lg:1/6 fill-white text-white bg-orange-900 hover:bg-orange-300 hover:text-orange-700 hover:fill-orange-700 rounded-lg text-sm p-3 text-center mb-2 flex flex-col gap-1">
             <svg class="w-6 h-6 m-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9,2C5.14,2 2,5.14 2,9C2,14.25 9,22 9,22C9,22 16,14.25 16,9A7,7 0 0,0 9,2M9,6.5A2.5,2.5 0 0,1 11.5,9A2.5,2.5 0 0,1 9,11.5A2.5,2.5 0 0,1 6.5,9A2.5,2.5 0 0,1 9,6.5M16.58,14.16L15.17,15.58L17.58,18L15.17,20.41L16.58,21.82L19,19.41L21.41,21.82L22.83,20.41L20.41,18L22.83,15.58L21.41,14.16L19,16.58"/></svg>
             <span class="m-auto">Clear Searches</span>
+        </button>
+
+        <button id="modal-icon-clear-palette" type="button" class="md:w-1/4 lg:1/6 fill-white text-white bg-orange-900 hover:bg-orange-300 hover:text-orange-700 hover:fill-orange-700 rounded-lg text-sm p-3 text-center mb-2 flex flex-col gap-1">
+            <svg class="w-6 h-6 m-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.5,12A1.5,1.5 0 0,1 16,10.5A1.5,1.5 0 0,1 17.5,9A1.5,1.5 0 0,1 19,10.5A1.5,1.5 0 0,1 17.5,12M14.5,8A1.5,1.5 0 0,1 13,6.5A1.5,1.5 0 0,1 14.5,5A1.5,1.5 0 0,1 16,6.5A1.5,1.5 0 0,1 14.5,8M9.5,8A1.5,1.5 0 0,1 8,6.5A1.5,1.5 0 0,1 9.5,5A1.5,1.5 0 0,1 11,6.5A1.5,1.5 0 0,1 9.5,8M6.5,12A1.5,1.5 0 0,1 5,10.5A1.5,1.5 0 0,1 6.5,9A1.5,1.5 0 0,1 8,10.5A1.5,1.5 0 0,1 6.5,12M12,3A9,9 0 0,0 3,12A9,9 0 0,0 12,21A1.5,1.5 0 0,0 13.5,19.5C13.5,19.11 13.35,18.76 13.11,18.5C12.88,18.23 12.73,17.88 12.73,17.5A1.5,1.5 0 0,1 14.23,16H16A5,5 0 0,0 21,11C21,6.58 16.97,3 12,3Z"/></svg>
+            <span class="m-auto">Clear Palette</span>
         </button>
     </div>
     
@@ -990,7 +995,7 @@
                     <button data-modal-toggle="popup-modal" data-marker-colour="3b82f6" type="button" class="modal-icon-colour-button text-white bg-blue-500 hover:bg-blue-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2"></button>
                 </div>
                 
-                <div id="custom-palette" class="grid grid-cols-10 max-h-96 gap-1 mb-5 bg-gray-100 rounded p-2 overflow-y-scroll">Custom Colour Palette</div>
+                <div id="custom-palette" class="grid grid-cols-10 max-h-96 gap-1 mb-5 bg-gray-100 rounded p-2 overflow-y-scroll"><span class="col-span-10 text-center text-gray-300">Custom Colour Palette</span></div>
 
 
                 <div class="relative my-6 grid grid-cols-2 gap-4">
@@ -998,17 +1003,23 @@
                     <div class="relative">
                         <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">#</div>
                         <input type="hexcode" id="modal-icon-colour-hexcode" data-marker-colour="" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500" placeholder="HEXCODE">
-                        <button type="button" id="modal-icon-colour-set" class="text-white absolute right-16 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2">Set</button>
-                        <button type="button" id="modal-icon-colour-add" class="text-white absolute right-2.5 bottom-2.5 bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-4 py-2 fill-white">
+                    </div>
+
+                    <div class="flex flex-row gap-4">
+                        <button type="button" id="modal-icon-colour-set" class="ml-auto text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 fill-white">
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,3L2,12H5V20H19V12H22L12,3M12,7.7C14.1,7.7 15.8,9.4 15.8,11.5C15.8,14.5 12,18 12,18C12,18 8.2,14.5 8.2,11.5C8.2,9.4 9.9,7.7 12,7.7M12,10A1.5,1.5 0 0,0 10.5,11.5A1.5,1.5 0 0,0 12,13A1.5,1.5 0 0,0 13.5,11.5A1.5,1.5 0 0,0 12,10Z"/></svg>
+                            <span>Set Marker</span>
+                        </button>
+                        
+                        <button type="button" id="modal-icon-colour-add" class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-4 py-2 fill-white">
                             <svg class="w-5 h-5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M13,7H11V11H7V13H11V17H13V13H17V11H13V7Z"/></svg>
+                            <span>Add to Palette</span>
                         </button>
                     </div>
 
-                    <button type="button" id="modal-icon-clear-palette" class="text-white ml-auto w-40 bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-2">Clear Palette</button>
-
                 </div>
 
-                <button data-modal-toggle="popup-modal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 ">Close</button>
+                <button id="popup-modal-colour-close-button" data-modal-toggle="popup-modal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 ">Close</button>
             </div>
         </div>
     </div>
@@ -1313,17 +1324,23 @@
         <!-- Item 2 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <p class="text-xl font-semibold text-white sm:text-lg dark:text-gray-800 text-center mb-4">Step 2. In HouseQuests open the left side-drawer and paste the URL into the Zoopla textbox.</p>
-            <img src="./client/images/step2.gif" class="block m-auto h-full object-contain" alt="...">
+            <div class="h-full">
+                <img src="./client/images/step2.gif" class="block m-auto h-full object-contain" alt="...">
+            </div>
         </div>
         <!-- Item 3 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <p class="text-xl font-semibold text-white sm:text-lg dark:text-gray-800 text-center mb-4">Step 3. Navigate around the map and click on a marker to open up its details.</p>
-            <img src="./client/images/step3.gif" class="block m-auto h-full object-contain" alt="...">
+            <div class="h-full">
+                <img src="./client/images/step3.gif" class="block m-auto h-full object-contain" alt="...">
+            </div>
         </div>
         <!-- Item 4 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <p class="text-xl font-semibold text-white sm:text-lg dark:text-gray-800 text-center mb-4">Step 4. Visit Housequests.com for more quick and easy tutorials</p>
-            <img src="./client/images/step4.gif" class="block m-auto h-full object-contain" alt="...">
+            <div class="h-full">
+                <img src="./client/images/step4.gif" class="block m-auto h-full object-contain" alt="...">
+            </div>
         </div>
     </div>
     <!-- Slider indicators -->
@@ -1368,24 +1385,110 @@
         └─────────────────────────────────────┘
         -->
         <div id="popup-modal-advert" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full">
-    <div class="relative p-4 w-full max-w-7xl h-full md:h-auto">
+    <div class="relative p-4 w-full max-w-9xl h-full md:h-auto">
 
         <!-- Modal content -->
         <div class="relative bg-white rounded-lg shadow ">
             
             <!-- Modal header -->
-            <div class="flex justify-between items-start p-5 rounded-t border-b ">
+            <div class="flex justify-between items-start p-5 rounded-t bg-emerald-900">
                 <button type="button" id="popup-modal-advert-x" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center " disabled>
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>  
                 </button>
             </div>
 
             <!-- Modal body -->
-            <div id="popup-modal-advert-body" class="flex flex-col h-96"></div>
+            <div id="popup-modal-advert-body" class="flex flex-col">
+                <section class="bg-emerald-900 py-4">
+                    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-4 lg:px-6">
+                        <div class="space-y-4 lg:grid lg:grid-cols-2 sm:gap-4 xl:gap-4 lg:space-y-0" >
+                            <div class="flex flex-col p-4 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow w-full xl:p-4" >
+                                <h2 class="mb-4 text-5xl tracking-tight font-extrabold text-emerald-900" >
+                                    Pricing
+                                </h2>
+                                <h3 class="mb-4 text-2xl font-semibold">Subscription</h3>
+                                <p class="font-light text-gray-500 sm:text-lg">
+                                    Fully-featured application.<br />No adverts or pop-up.
+                                </p>
+                                <div class="flex justify-center items-baseline my-8">
+                                    <span class="mr-2 text-5xl font-extrabold">£4</span
+                                    ><span class="text-gray-500">/month</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow w-full xl:p-8" >
+                                <div class="my-auto">
+                                    <ul role="list" class="mb-8 space-y-4 text-left">
+                                        <li class="flex items-center space-x-3">
+                                            <svg
+                                                class="flex-shrink-0 w-5 h-5 text-green-500"
+                                                fill="currentColor"
+                                                viewBox="0 0 20 20"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                    clip-rule="evenodd"
+                                                ></path></svg
+                                            ><span>Fully Featured</span>
+                                        </li>
+                                        <li class="flex items-center space-x-3">
+                                            <svg
+                                                class="flex-shrink-0 w-5 h-5 text-green-500"
+                                                fill="currentColor"
+                                                viewBox="0 0 20 20"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                    clip-rule="evenodd"
+                                                ></path></svg
+                                            ><span>No adverts or nag-screens</span>
+                                        </li>
+                                        <li class="flex items-center space-x-3">
+                                            <svg
+                                                class="flex-shrink-0 w-5 h-5 text-green-500"
+                                                fill="currentColor"
+                                                viewBox="0 0 20 20"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                    clip-rule="evenodd"
+                                                ></path></svg
+                                            ><span>Multiple Saves. Import / Export</span>
+                                        </li>
+                                        <li class="flex items-center space-x-3">
+                                            <svg
+                                                class="flex-shrink-0 w-5 h-5 text-green-500"
+                                                fill="currentColor"
+                                                viewBox="0 0 20 20"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                    clip-rule="evenodd"
+                                                ></path></svg
+                                            ><span>Access latest version</span>
+                                        </li>
+                                    </ul>
+                                    <a id="advert-external-link" href="https://housequests.com" target="_blank" class="border-none text-white bg-emerald-600 font-medium rounded-lg text-sm px-5 py-2.5 text-center hover:bg-orange-700" >
+                                        Visit HouseQuests.com to subscribe
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+            </div>
 
             <!-- Modal Buttons Footer -->
-            <div class="flex items-center p-6 space-x-2 rounded-b border-t border-gray-200">
-                <button disabled id="popup-modal-advert-close" type="button" class="m-auto cursor-not-allowed text-white bg-blue-400 dark:bg-blue-500 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 t" >
+            <div class="flex items-center p-6 space-x-2 rounded-b bg-emerald-900">
+                <button disabled id="popup-modal-advert-close" type="button" class="m-auto cursor-not-allowed text-white bg-green-400 dark:bg-green-500 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 t" >
                     <svg aria-hidden="true" role="status" class="inline mr-3 w-4 h-4 text-white animate-spin" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="#E5E7EB"/>
                         <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentColor"/>

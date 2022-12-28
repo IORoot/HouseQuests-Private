@@ -19,7 +19,7 @@
                     <button data-modal-toggle="popup-modal" data-marker-colour="3b82f6" type="button" class="modal-icon-colour-button text-white bg-blue-500 hover:bg-blue-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2"></button>
                 </div>
                 
-                <div id="custom-palette" class="grid grid-cols-10 max-h-96 gap-1 mb-5 bg-gray-100 rounded p-2 overflow-y-scroll">Custom Colour Palette</div>
+                <div id="custom-palette" class="grid grid-cols-10 max-h-96 gap-1 mb-5 bg-gray-100 rounded p-2 overflow-y-scroll"><span class="col-span-10 text-center text-gray-300">Custom Colour Palette</span></div>
 
 
                 <div class="relative my-6 grid grid-cols-2 gap-4">
@@ -27,17 +27,23 @@
                     <div class="relative">
                         <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">#</div>
                         <input type="hexcode" id="modal-icon-colour-hexcode" data-marker-colour="" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500" placeholder="HEXCODE">
-                        <button type="button" id="modal-icon-colour-set" class="text-white absolute right-16 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2">Set</button>
-                        <button type="button" id="modal-icon-colour-add" class="text-white absolute right-2.5 bottom-2.5 bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-4 py-2 fill-white">
+                    </div>
+
+                    <div class="flex flex-row gap-4">
+                        <button type="button" id="modal-icon-colour-set" class="ml-auto text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 fill-white">
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,3L2,12H5V20H19V12H22L12,3M12,7.7C14.1,7.7 15.8,9.4 15.8,11.5C15.8,14.5 12,18 12,18C12,18 8.2,14.5 8.2,11.5C8.2,9.4 9.9,7.7 12,7.7M12,10A1.5,1.5 0 0,0 10.5,11.5A1.5,1.5 0 0,0 12,13A1.5,1.5 0 0,0 13.5,11.5A1.5,1.5 0 0,0 12,10Z"/></svg>
+                            <span>Set Marker</span>
+                        </button>
+                        
+                        <button type="button" id="modal-icon-colour-add" class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-4 py-2 fill-white">
                             <svg class="w-5 h-5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M13,7H11V11H7V13H11V17H13V13H17V11H13V7Z"/></svg>
+                            <span>Add to Palette</span>
                         </button>
                     </div>
 
-                    <button type="button" id="modal-icon-clear-palette" class="text-white ml-auto w-40 bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-2">Clear Palette</button>
-
                 </div>
 
-                <button data-modal-toggle="popup-modal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 ">Close</button>
+                <button id="popup-modal-colour-close-button" data-modal-toggle="popup-modal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 ">Close</button>
             </div>
         </div>
     </div>

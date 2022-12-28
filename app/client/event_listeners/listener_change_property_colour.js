@@ -71,6 +71,14 @@ export function listener_change_property_colour()
 
             }
         })
+
+        // close modal
+        let target = document.getElementById('popup-modal-colour-close-button');
+
+        var event = new CustomEvent("click");
+
+        // Dispatch/Trigger/Fire the event
+        target.dispatchEvent(event);
     };
 
     // ╭──────────────────────────────────────────────────────────────────────────────╮
@@ -111,5 +119,6 @@ export function listener_change_property_colour()
     var modal_colour_hexcode = document.getElementById("modal-icon-colour-hexcode");
     var modal_colour_set_button = document.getElementById("modal-icon-colour-set");
     modal_colour_set_button.addEventListener('click', changeIconHexcode, false);
+
 
 }

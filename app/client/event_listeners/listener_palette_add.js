@@ -17,13 +17,19 @@ export function listener_palette_add()
     {
 
         let hexcode = modal_colour_hexcode.value
-        let palette = []
+        let palette
 
         if (!isHexColor(hexcode)){ return }
 
         // get existing palette
-        palette = JSON.parse(window.localStorage.getItem('custom_palette'))
+        let custom_palette = window.localStorage.getItem('custom_palette')
 
+        if (custom_palette === null){
+            palette = []
+        }else {
+            palette = JSON.parse(custom_palette)
+        }
+        
         // if there isn't a palette, create one.
         if (!palette){ palette = [] }
         
