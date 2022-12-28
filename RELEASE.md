@@ -6,3 +6,5 @@
 - Colour Palette clear button in danger zone.
 - Colour Palette buttons relabeled
 - Advert no longer an iframe
+- Current marker different icon
+- Trail of clicked-on markers

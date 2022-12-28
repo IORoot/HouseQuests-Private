@@ -8,6 +8,8 @@
 - Colour Palette clear button in danger zone.
 - Colour Palette buttons relabeled
 - Advert no longer an iframe
+- Current marker different icon
+- Trail of clicked-on markers
 
 ## 0.1.24 (2022-12-19)
 

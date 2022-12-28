@@ -17,7 +17,7 @@
     var icon_onthemarket = "https://svg-rewriter.sachinraja.workers.dev/?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fnpm%2F%40mdi%2Fsvg%406.7.96%2Fsvg%2Fhome-map-marker.svg&fill=%23E11D48&opacity=1&width=20px&height=20px";
     
     // this is just the icon, not the colour - see hex_highlighted below for fill colour.
-    var icon_highlighted = "https://svg-rewriter.sachinraja.workers.dev/?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fnpm%2F%40mdi%2Fsvg%406.7.96%2Fsvg%2Fhome-circle.svg&fill=%23"
+    var icon_highlighted = "https://svg-rewriter.sachinraja.workers.dev/?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fnpm%2F%40mdi%2Fsvg%406.7.96%2Fsvg%2Fmap-marker.svg&fill=%23"
 
     // Local Area Icons
     // mdi-Icon name, size (px), HEX fill colour (not rgba) , HEX stroke colour (not rgba), stroke-width

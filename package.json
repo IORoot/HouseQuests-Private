@@ -4,7 +4,13 @@
   "description": "The automatic release management.<br/><br/><ul class=\"list-disc\"><li>HTML Partials.</li><li>New wiki website.</li></ul>",
   "release_notes": [
     "- replaced Spectron with playwright",
-    "- Changed release build on MacOS 10.15"
+    "- Changed release build on MacOS 10.15",
+    "- Fixed Colour Palette to close modal",
+    "- Colour Palette clear button in danger zone.",
+    "- Colour Palette buttons relabeled",
+    "- Advert no longer an iframe",
+    "- Current marker different icon",
+    "- Trail of clicked-on markers"
   ],
   "version": "0.1.25",
   "private": true,
