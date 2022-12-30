@@ -10,6 +10,7 @@
 - Advert no longer an iframe
 - Current marker different icon
 - Trail of clicked-on markers
+- Removed auth from intro panel
 
 ## 0.1.24 (2022-12-19)
 

@@ -8,3 +8,4 @@
 - Advert no longer an iframe
 - Current marker different icon
 - Trail of clicked-on markers
+- Removed auth from intro panel

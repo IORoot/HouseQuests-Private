@@ -1,121 +1,128 @@
 {
-  "name": "ioroot-advanced-property-search",
-  "productName": "HouseQuests",
-  "description": "The automatic release management.<br/><br/><ul class=\"list-disc\"><li>HTML Partials.</li><li>New wiki website.</li></ul>",
-  "release_notes": [
-    "- replaced Spectron with playwright",
-    "- Changed release build on MacOS 10.15",
-    "- Fixed Colour Palette to close modal",
-    "- Colour Palette clear button in danger zone.",
-    "- Colour Palette buttons relabeled",
-    "- Advert no longer an iframe",
-    "- Current marker different icon",
-    "- Trail of clicked-on markers"
-  ],
-  "version": "0.1.25",
-  "private": true,
-  "author": "Andy Pearson <andy@londonparkour.com>",
-  "copyright": "© 2022, LondonParkour LTD.",
-  "homepage": "http://housequests.com",
-  "repository": "github:IORoot/HouseQuests",
-  "main": "app/main.js",
-  "build": {
-    "appId": "com.electron.ioroot.housequests",
-    "files": [
-      "app/**/*",
-      "node_modules/**/*",
-      "package.json"
+    "name": "ioroot-advanced-property-search",
+    "productName": "HouseQuests",
+    "description": "The automatic release management.<br/><br/><ul class=\"list-disc\"><li>HTML Partials.</li><li>New wiki website.</li></ul>",
+    "release_notes": [
+        "- replaced Spectron with playwright",
+        "- Changed release build on MacOS 10.15",
+        "- Fixed Colour Palette to close modal",
+        "- Colour Palette clear button in danger zone.",
+        "- Colour Palette buttons relabeled",
+        "- Advert no longer an iframe",
+        "- Current marker different icon",
+        "- Trail of clicked-on markers",
+        "- Removed auth from intro panel"
     ],
-    "directories": {
-      "buildResources": "resources"
-    },
-    "mac": {
-      "target": [
-        {
-          "target": "dmg",
-          "arch": [
-            "x64",
-            "arm64"
-          ]
-        }
-      ]
-    },
-    "win": {
-      "target": [
-        {
-          "target": "nsis"
-        }
-      ]
-    },
-    "nsis": {
-      "differentialPackage": false
-    },
-    "dmg": {
-      "writeUpdateInfo": false,
-      "sign": false,
-      "contents": [
-        {
-          "x": 130,
-          "y": 220
+    "version": "0.1.25",
+    "private": true,
+    "author": "Andy Pearson <andy@londonparkour.com>",
+    "copyright": "© 2022, LondonParkour LTD.",
+    "homepage": "http://housequests.com",
+    "repository": "github:IORoot/HouseQuests",
+    "main": "app/main.js",
+    "build": {
+        "appId": "com.electron.ioroot.housequests",
+        "files": [
+            "app/**/*",
+            "node_modules/**/*",
+            "package.json"
+        ],
+        "directories": {
+            "buildResources": "resources"
         },
-        {
-          "x": 130,
-          "y": 510,
-          "type": "file",
-          "path": "run_after_install.sh"
+        "mac": {
+            "target": [
+                {
+                    "target": "dmg",
+                    "arch": [
+                        "x64",
+                        "arm64"
+                    ]
+                }
+            ]
         },
-        {
-          "x": 410,
-          "y": 220,
-          "type": "link",
-          "path": "/Applications"
-        }
-      ],
-      "window": {
-        "width": 540,
-        "height": 660
-      }
+        "win": {
+            "target": [
+                {
+                    "target": "nsis"
+                }
+            ]
+        },
+        "nsis": {
+            "differentialPackage": false
+        },
+        "dmg": {
+            "writeUpdateInfo": false,
+            "sign": false,
+            "contents": [
+                {
+                    "x": 130,
+                    "y": 220
+                },
+                {
+                    "x": 130,
+                    "y": 510,
+                    "type": "file",
+                    "path": "run_after_install.sh"
+                },
+                {
+                    "x": 410,
+                    "y": 220,
+                    "type": "link",
+                    "path": "/Applications"
+                }
+            ],
+            "window": {
+                "width": 540,
+                "height": 660
+            }
+        },
+        "publish": null
     },
-    "publish": null
-  },
-  "scripts": {
-    "postinstall": "electron-builder install-app-deps",
-    "start": "npm run compile && node build/start.js --inspect=5858 --remote-debugging-port=9223",
-    "release": "npm run compile && webpack --config=build/webpack.app.config.js --env=production && electron-builder",
-    "build": "npm run compile && webpack --config=build/webpack.app.config.js --env=production && electron-builder",
-    "compile": "html-includes --src src --dest app",
-    "compile:min": "html-includes --src src --dest app --minify",
-    "test": "npx playwright test tests"
-  },
-  "dependencies": {
-    "axios": "^0.27.2",
-    "cheerio": "^1.0.0-rc.12",
-    "cors": "^2.8.5",
-    "dotenv": "^16.0.2",
-    "electron-context-menu": "^3.6.1",
-    "express": "^4.18.1",
-    "fs-jetpack": "^4.1.0",
-    "mixpanel-browser": "^2.45.0",
-    "node-json-transform": "^1.1.2",
-    "webpack-node-externals": "^3.0.0",
-    "yargs": "^17.5.1"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "@playwright/test": "^1.29.0",
-    "babel-loader": "^8.2.2",
-    "css-loader": "^5.2.0",
-    "electron": "^21.3.3",
-    "electron-builder": "^23.3.3",
-    "electron-log": "^4.4.8",
-    "html-includes": "^4.4.1",
-    "mocha": "^10.1.0",
-    "playwright": "^1.29.0",
-    "source-map-support": "^0.5.6",
-    "style-loader": "^2.0.0",
-    "webpack": "^5.30.0",
-    "webpack-cli": "^4.6.0",
-    "webpack-merge": "^5.7.3"
-  }
+    "scripts": {
+        "postinstall": "electron-builder install-app-deps",
+        "start": "npm run compile && node build/start.js",
+        "release": "npm run compile && webpack --config=build/webpack.app.config.js --env=production && electron-builder",
+        "build": "npm run compile && webpack --config=build/webpack.app.config.js --env=production && electron-builder",
+        "compile": "html-includes --src src --dest app",
+        "compile:min": "html-includes --src src --dest app --minify",
+        "test": "npx playwright test",
+        "wdio": "wdio run wdio.conf.js"
+    },
+    "dependencies": {
+        "axios": "^0.27.2",
+        "cheerio": "^1.0.0-rc.12",
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.2",
+        "electron-context-menu": "^3.6.1",
+        "express": "^4.18.1",
+        "fs-jetpack": "^4.1.0",
+        "mixpanel-browser": "^2.45.0",
+        "node-json-transform": "^1.1.2",
+        "webpack-node-externals": "^3.0.0",
+        "yargs": "^17.5.1"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.5.5",
+        "@babel/preset-env": "^7.5.5",
+        "@wdio/cli": "^8.0.15",
+        "@wdio/local-runner": "^8.0.15",
+        "@wdio/mocha-framework": "^8.0.14",
+        "@wdio/spec-reporter": "^8.0.14",
+        "babel-loader": "^8.2.2",
+        "chai": "^4.3.7",
+        "chromedriver": "^108.0.0",
+        "css-loader": "^5.2.0",
+        "electron": "^22.0.0",
+        "electron-builder": "^23.3.3",
+        "electron-log": "^4.4.8",
+        "html-includes": "^4.4.1",
+        "mocha": "^10.1.0",
+        "source-map-support": "^0.5.6",
+        "style-loader": "^2.0.0",
+        "wdio-chromedriver-service": "^8.0.1",
+        "webpack": "^5.30.0",
+        "webpack-cli": "^4.6.0",
+        "webpack-merge": "^5.7.3"
+    }
 }
