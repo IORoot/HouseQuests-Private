@@ -74,6 +74,9 @@
     var advertRepeats = 360000
     var advertButtonEnable = 10000
 
+    const isTest = process.env.HQ_TEST === 'test';
+    if (isTest){  advertButtonEnable = 0 }
+
     // ┌─────────────────────────────────────┐
     // │                                     │
     // │       Initialise the Drawer         │

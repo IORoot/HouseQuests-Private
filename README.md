@@ -98,3 +98,10 @@ export CSC_IDENTITY_AUTO_DISCOVERY=false
 ```
 
 https://disable-gatekeeper.github.io/
+
+## 7. Testing
+
+The WebdriveIO / Mocha tests NEED the `/dist` release to run against.
+Make sure you have done an `npm run release` to build the release before testing.
+
+Also, set the environment variable 'HQ_TEST=test' to disable the 10-second advert
