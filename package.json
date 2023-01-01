@@ -86,8 +86,8 @@
         "build": "npm run compile && webpack --config=build/webpack.app.config.js --env=production && electron-builder",
         "compile": "html-includes --src src --dest app",
         "compile:min": "html-includes --src src --dest app --minify",
-        "test": "npx playwright test",
-        "wdio": "wdio run wdio.conf.js"
+        "test": "npm run compile && wdio run wdio.conf.js",
+        "wdio": "wdio run ./wdio.conf.js"
     },
     "dependencies": {
         "axios": "^0.27.2",
@@ -110,17 +110,17 @@
         "@wdio/mocha-framework": "^8.0.14",
         "@wdio/spec-reporter": "^8.0.14",
         "babel-loader": "^8.2.2",
-        "chai": "^4.3.7",
         "chromedriver": "^108.0.0",
         "css-loader": "^5.2.0",
         "electron": "^22.0.0",
         "electron-builder": "^23.3.3",
+        "electron-chromedriver": "^22.0.0",
         "electron-log": "^4.4.8",
         "html-includes": "^4.4.1",
-        "mocha": "^10.1.0",
         "source-map-support": "^0.5.6",
         "style-loader": "^2.0.0",
         "wdio-chromedriver-service": "^8.0.1",
+        "wdio-electron-service": "^3.5.0",
         "webpack": "^5.30.0",
         "webpack-cli": "^4.6.0",
         "webpack-merge": "^5.7.3"

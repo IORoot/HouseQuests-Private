@@ -1,11 +1,36 @@
+const { join } = require('path');
+const fs = require('fs');
+
+const packageJson = JSON.parse(fs.readFileSync('./package.json'));
+const {
+    build: { productName },
+} = packageJson;
+
+
 exports.config = {
+    outputDir: 'all-logs',
+    services: [
+        [
+            'electron',
+            {
+                appPath: join(__dirname, 'dist'),
+                appName: productName,
+                appArgs: ['.'],
+                chromedriver: {
+                    port: 9519,
+                    logFileName: 'wdio-chromedriver.log',
+                },
+            },
+        ],
+    ],
+
     //
     // ====================
     // Runner Configuration
     // ====================
     // WebdriverIO supports running e2e tests as well as unit and component tests.
     runner: 'local',
-    
+
     //
     // ==================
     // Specify Test Files
@@ -52,7 +77,7 @@ exports.config = {
     // https://saucelabs.com/platform/platform-configurator
     //
     capabilities: [{
-    
+
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
         // grid with only 5 firefox instances available you can make sure that not more than
         // 5 instances get started at a time.
@@ -66,7 +91,7 @@ exports.config = {
         // excludeDriverLogs: ['bugreport', 'server'],
         'goog:chromeOptions': {
             binary: './node_modules/electron/dist/Electron.app/Contents/MacOS/Electron', // Path to your Electron binary.
-            args: [ 'app=.' ] // Optional, perhaps 'app=' + /path/to/your/app/
+            args: ['app=.'] // Optional, perhaps 'app=' + /path/to/your/app/
         }
     }],
     //
@@ -103,21 +128,21 @@ exports.config = {
     baseUrl: 'http://localhost',
     //
     // Default timeout for all waitFor* commands.
-    waitforTimeout: 10000,
+    waitforTimeout: 5000,
     //
     // Default timeout in milliseconds for request
     // if browser driver or grid doesn't send response
-    connectionRetryTimeout: 120000,
+    connectionRetryTimeout: 10000,
     //
     // Default request retries count
-    connectionRetryCount: 3,
+    connectionRetryCount: 1,
     //
     // Test runner services
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
     services: ['chromedriver'],
-    
+
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
     // see also: https://webdriver.io/docs/frameworks
@@ -141,13 +166,13 @@ exports.config = {
     reporters: ['spec'],
 
 
-    
+
     //
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        timeout: 60000
+        timeout: 5000
     },
     //
     // =====

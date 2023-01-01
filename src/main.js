@@ -12,13 +12,6 @@ import devMenuTemplate from "./menu/dev_menu_template";
 import createWindow from "./helpers/window";
 const contextMenu = require('electron-context-menu');
 
-if (isTest) {
-  import('wdio-electron-service/preload');
-}
-if (isTest) {
-  import('wdio-electron-service/main');
-}
-
 // Special module holding environment variables which you declared
 // in config/env_xxx.json file.
 import env from "env";
