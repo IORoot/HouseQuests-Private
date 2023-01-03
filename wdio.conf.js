@@ -6,7 +6,6 @@ const {
     build: { productName },
 } = packageJson;
 
-
 exports.config = {
     outputDir: 'all-logs',
     services: [
@@ -23,7 +22,7 @@ exports.config = {
         ],
     ],
     runner: 'local',
-    specs: [ './tests/**/*.js' ],
+    specs: [ './tests/**/*.mjs' ],
     exclude: [ ],
     maxInstances: 1,
     capabilities: [{
