@@ -1,9 +1,8 @@
-
 import { Key } from 'webdriverio'
 
 describe('Test Loading Source Data', () => {
     it('should load data from zoopla, rightmove, onthemarket and display markers', async () => {
-        
+
         // Close the advert
         let advert_close_button_id = "#popup-modal-advert-close"
         await browser.$(advert_close_button_id).click()
@@ -24,13 +23,28 @@ describe('Test Loading Source Data', () => {
         // SE London, 325k to 350k, has garden, freehold
         let zoopla_search_url = "https://www.zoopla.co.uk/for-sale/map/property/london/south-east/?q=South+East+London&search_source=refine&price_max=325000&price_min=300000&feature=has_garden&is_auction=false&is_retirement_home=false&is_shared_ownership=false&new_homes=exclude&keywords=freehold"
         let zoopla_input_textbox= "#zooplaInput"
+
+        // Needed to load the drawer with animation
+        await browser.pause(100)
+
         // set value
         await browser.$(zoopla_input_textbox).setValue(zoopla_search_url)
+
         // select all copy
         await browser.keys([Key.Command, 'a', 'c'])
+
         // paste
         await browser.keys([Key.Command, 'v'])
 
+        // close drawer
+        let zoopla_settings_close_button = "#settings-button-close"
+        await browser.$(zoopla_settings_close_button).click()
+
+        // select canvas
+        let map_canvas = "#map > canvas"
+        await browser.$(map_canvas).click()
+        
+        console.log(map_canvas)
 
         await browser.pause(3000)
     })

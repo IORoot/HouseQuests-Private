@@ -105,3 +105,18 @@ The WebdriveIO / Mocha tests NEED the `/dist` release to run against.
 Make sure you have done an `npm run release` to build the release before testing.
 
 Also, set the environment variable 'HQ_TEST=test' to disable the 10-second advert
+
+
+## 8. Tailwind
+
+To create a new`./app/views/style.css` file, you'll need to run TailWind.
+
+```
+npx tailwindcss -i ./src/views/style.css -o ./app/views/style.css --watch
+```
+
+To build it for production:
+
+```
+npx tailwindcss -i ./src/views/style.css -o ./app/views/style.css --minify
+```

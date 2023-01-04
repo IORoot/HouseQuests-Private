@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.26 (2023-01-04)
+
+- Advert doesn't appear on the first load
+
+
 ## 0.1.25 (2022-12-21)
 
 - replaced Spectron with playwright
@@ -11,6 +16,7 @@
 - Current marker different icon
 - Trail of clicked-on markers
 - Removed auth from intro panel
+- e2e tests now working
 
 ## 0.1.24 (2022-12-19)
 

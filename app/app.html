@@ -4,9 +4,11 @@
     <head>
         <title>HouseQuests</title>
         
+        <!-- <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" /> -->
+        <link rel="stylesheet" href="../node_modules/flowbite/dist/flowbite.min.css" />
         <link rel="stylesheet" href="./lib/v6.15.1-dist/ol.css" type="text/css">
         <link rel="stylesheet" type="text/css" href="./views/style.css" />
-        <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+        
 
         <script src="./lib/v6.15.1-dist/ol.js"></script>
         <script src="./lib/ol-ext/ol-ext.min.js"></script>
@@ -44,9 +46,9 @@
         │             Drawer Left             │
         └─────────────────────────────────────┘
         -->
-        <div id="settings" class="overflow-y-auto fixed z-40 p-4 w-1/2 h-screen bg-amber-50 " tabindex="-1" aria-labelledby="settings">
+        <div id="settings" class="overflow-y-auto fixed z-40 p-4 w-1/2 h-screen bg-amber-50 -translate-x-full" tabindex="-1" aria-labelledby="settings" aria-hidden="true">
 
-    <button type="button" data-drawer-dismiss="settings" aria-controls="settings" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center " >
+    <button id="settings-button-close" type="button" data-drawer-dismiss="settings" aria-controls="settings" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center isHidden" >
         <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
         <span class="sr-only">Close menu</span>
     </button>
@@ -310,6 +312,13 @@
                 <span class="m-auto">Crime Boroughs</span>
             </button>
 
+            <button id="toggle-boroughs" data-loaded="" type="button" class="flex flex-col w-full text-white ring-amber-600    fill-white text-white bg-emerald-900 hover:bg-orange-300 hover:text-orange-700 hover:fill-orange-700    font-regular rounded-lg text-sm p-5 text-center  flex flex-col gap-2">
+                <svg class="w-6 h-6 m-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 2H4C2.9 2 2 2.9 2 4V20C2 21.11 2.9 22 4 22H20C21.11 22 22 21.11 22 20V4C22 2.9 21.11 2 20 2M4 6L6 4H10.9L4 10.9V6M4 13.7L13.7 4H18.6L4 18.6V13.7M20 18L18 20H13.1L20 13.1V18M20 10.3L10.3 20H5.4L20 5.4V10.3Z"/>
+                </svg>
+                <span class="m-auto">Boroughs</span>
+            </button>
+
         </div>
     </div>
 </div>
@@ -556,7 +565,7 @@
         └─────────────────────────────────────┘
         -->
         <div data-drawer-target="drawer" data-drawer-placement="right" class="invisible hidden">Used to init drawer</div>
-<div id="drawer" class="overflow-y-auto fixed z-40 p-4 w-1/2 h-screen bg-amber-50 " tabindex="-1" aria-labelledby="drawer-label">
+<div id="drawer" class="overflow-y-auto fixed z-40 p-4 w-1/2 h-screen bg-amber-50 translate-x-full" tabindex="-1" aria-labelledby="drawer-label" >
     
     <button type="button" data-drawer-dismiss="drawer" aria-controls="drawer" aria-controls="drawer-navigation" class="absolute top-2.5 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 inline-flex items-center  z-10" >
         <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
@@ -1523,15 +1532,14 @@
         │            UI Components            │
         └─────────────────────────────────────┘    
         -->
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+        <script src="../node_modules/flowbite/dist/flowbite.js"></script>
 
         <!-- 
         ┌─────────────────────────────────────┐
         │              Main App               │
         └─────────────────────────────────────┘  
         -->
-        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
         <script src="./client/initialise/initialise.js"></script>
         <script src="app.js" type="module" ></script>
         <script src="./client/measurement_tool/measurement_tool.js" type="module"></script>

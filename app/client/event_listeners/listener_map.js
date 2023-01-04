@@ -689,6 +689,25 @@ export function listener_map(){
 
         }
 
+
+        /**
+         * Click on a Borough
+         */
+        if (marker.borough)
+        {
+            overlay.setPosition(event.coordinate);
+
+            var popupHTML = '';
+            popupHTML += '<div class="flex flex-col gap-1">';
+                popupHTML += '<div class="text-lg text-emerald-700">'+marker[ 'Constituency' ]+' (2018)</div>'
+            popupHTML += '</div>';
+
+            popupContent.innerHTML = popupHTML;
+
+            listener_external_links()
+
+        }
+
     });
     
 }

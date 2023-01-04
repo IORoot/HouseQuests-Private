@@ -11,6 +11,7 @@ import { load_layer_train_stations } from "../map_layers/load_layer_train_statio
 import { load_layer_national_rail } from "../map_layers/load_layer_national_rail.js";
 import { load_layer_national_rail_stations } from "../map_layers/load_layer_national_rail_stations.js";
 import { load_layer_crime_boroughs } from "../map_layers/load_layer_crime_boroughs.js";
+import { load_layer_boroughs } from "../map_layers/load_layer_boroughs.js";
 import { load_layer_bus_routes } from "../map_layers/load_layer_bus_routes.js";
 import { load_layer_schools_academies } from "../map_layers/load_layer_schools_academies.js";
 import { load_layer_schools_childcenters } from "../map_layers/load_layer_schools_childcenters.js";
@@ -111,6 +112,18 @@ export function listener_toggle_layers(){
         button_ring_toggle(this)
         toggle_layer('crime-boroughs')
     });
+
+
+    const toggleBoroughs = document.getElementById('toggle-boroughs');
+    toggleBoroughs.addEventListener('click', async function(event) {
+        if (!this.dataset.loaded){
+            load_layer_boroughs()
+            this.dataset.loaded = "loaded"
+        }
+        button_ring_toggle(this)
+        toggle_layer('boroughs')
+    });
+
 
     const toggleSupermarkets = document.getElementById('toggle-supermarkets');
     toggleSupermarkets.addEventListener('click', async function(event) {

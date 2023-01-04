@@ -5,7 +5,8 @@
 // │                                     │
 // └─────────────────────────────────────┘
 export function enable_adverts(){
-    popup_advert()
+    // popup_advert()
+    setTimeout(popup_advert, advertRepeats);
 }
 
 
@@ -43,14 +44,13 @@ export async function popup_advert(){
 
     // Only run after the timeout
     setTimeout(function(){
-        // Close the Modal button
+        // Enable the 'close' functionality
         popupModalAdvertClose.classList.remove("cursor-not-allowed");
         popupModalAdvertClose.removeAttribute("disabled");
         popupModalAdvertClose.innerHTML = 'Close'
         popupModalAdvertClose.addEventListener('click', async function(event) {
             advertModal.hide();
         });
-
         popupModalAdvertX.removeAttribute("disabled");
         popupModalAdvertX.addEventListener('click', async function(event) {
             advertModal.hide();
