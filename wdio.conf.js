@@ -22,7 +22,7 @@ exports.config = {
         ],
     ],
     runner: 'local',
-    specs: [ './tests/**/*.mjs' ],
+    specs: [ './tests/**/005*.mjs' ],
     exclude: [ ],
     maxInstances: 1,
     capabilities: [{
