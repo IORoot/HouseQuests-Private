@@ -3,6 +3,9 @@
 ## 0.1.26 (2023-01-04)
 
 - Advert doesn't appear on the first load
+- Search buttons instead of just paste
+- e2e tests working on canvas
+- highlight current saved settings
 
 
 ## 0.1.25 (2022-12-21)
