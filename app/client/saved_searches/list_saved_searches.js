@@ -8,6 +8,8 @@ export function list_saved_searches(){
 
     var savedSearches = JSON.parse(window.localStorage.getItem('savedSearches'));
 
+    var currentSearch = window.localStorage.getItem('currentSavedSearch');
+
     var savedItemsList = '';
     
     if (savedSearches){
@@ -16,11 +18,19 @@ export function list_saved_searches(){
 
             let saveTitle = key;
 
+            let buttonStyle = 'bg-emerald-900 text-white'
+            let buttonText  = 'Load :'
+
+            if (saveTitle == currentSearch){
+                buttonStyle = 'bg-yellow-300 text-black'
+                buttonText  = 'Current :'
+            }
+
             savedItemsList += '<div class="flex flex-row gap-2 h-12">'
 
-                savedItemsList += '<button data-saved-search-title="'+saveTitle+'" type="button" class="load-saved-search whitespace-nowrap flex flex-row gap-2 w-full   text-white  bg-emerald-900 hover:bg-orange-300    font-medium rounded-lg text-sm px-5 py-2.5 mb-2" title="Load Saved Search: '+saveTitle+'">'
+                savedItemsList += '<button data-saved-search-title="'+saveTitle+'" type="button" class="load-saved-search whitespace-nowrap flex flex-row gap-2 w-full '+buttonStyle+' hover:bg-orange-300    font-medium rounded-lg text-sm px-5 py-2.5 mb-2" title="Load Saved Search: '+saveTitle+'">'
                     savedItemsList += '<svg class="pointer-events-none w-4 h-4 fill-white my-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15 13L11 9V12H2V14H11V17M22 12H20V21H4V16H6V19H18V11L12 5L7 10H4L12 2L22 12Z"/></svg>'
-                    savedItemsList += '<span class="pointer-events-none w-full my-auto text-left hidden sm:inline-block"><span class="hidden lg:inline-block">Load :</span> '+saveTitle+'</span>'
+                    savedItemsList += '<span class="pointer-events-none w-full my-auto text-left hidden sm:inline-block"><span class="hidden lg:inline-block">'+buttonText+'</span> '+saveTitle+'</span>'
                 savedItemsList += '</button>'
 
 

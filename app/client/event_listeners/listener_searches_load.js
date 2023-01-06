@@ -5,6 +5,7 @@
 // └─────────────────────────────────────┘
 
 import { load_saved_search } from '../saved_searches/load_saved_search.js'
+import { set_current_search } from '../saved_searches/set_current_search.js'
 import { remove_saved_search } from '../saved_searches/remove_saved_search.js'
 
 export function listener_searches_load()
@@ -20,6 +21,7 @@ export function listener_searches_load()
             if (event.target !== this) return;
 
             load_saved_search(this.dataset.savedSearchTitle)
+            set_current_search(this.dataset.savedSearchTitle)
 
         });
 
