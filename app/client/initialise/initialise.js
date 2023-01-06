@@ -74,6 +74,11 @@
     var advertRepeats = 360000
     var advertButtonEnable = 10000
 
+    // Used for testing
+    // contains the last marker to be loaded
+    // and it's X/Y pixel on the canvas.
+    var lastMarkerLoadedXYPixel = 'NothingLoaded';
+
     const isTest = process.env.HQ_TEST === 'test';
     if (isTest){  advertButtonEnable = 0 }
 
