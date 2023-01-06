@@ -2010,6 +2010,16 @@ input:checked + .toggle-bg {
   background-color: rgb(255 255 255 / 0.5);
 }
 
+.bg-cyan-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 116 144 / var(--tw-bg-opacity));
+}
+
+.bg-rose-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(190 18 60 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
@@ -2036,6 +2046,10 @@ input:checked + .toggle-bg {
 
 .fill-blue-500 {
   fill: #3F83F8;
+}
+
+.fill-gray-600 {
+  fill: #4B5563;
 }
 
 .object-contain {

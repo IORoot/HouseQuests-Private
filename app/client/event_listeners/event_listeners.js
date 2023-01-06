@@ -6,6 +6,7 @@
  * └─────────────────────────────────────┘
  */
 import { listener_paste } from "./listener_paste.js";
+import { listener_search } from "./listener_search.js";
 import { listener_map } from "./listener_map.js";
 import { listener_exclude_button } from "./listener_exclude_button.js";
 import { listener_toggle_layers } from "./listener_toggle_layers.js";
@@ -47,6 +48,7 @@ import { filter_sepia } from "./listener_filter_sepia.js";
 
 export function load_event_listeners(){
     listener_paste()
+    listener_search()
     listener_map()
     listener_exclude_button()
     listener_toggle_layers()
