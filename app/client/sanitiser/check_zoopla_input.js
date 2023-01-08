@@ -13,7 +13,7 @@ export function check_zoopla_input(pastedURL){
     // ╭──────────────────────────────────────────────────────────╮
     // │ TEST - IS THERE ANY INPUT?                               │
     // ╰──────────────────────────────────────────────────────────╯
-    if (!pastedURL){ return }
+    // if (!pastedURL){ return }
 
     const address = url.parse(pastedURL, true);
 
