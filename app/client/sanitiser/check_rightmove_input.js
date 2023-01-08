@@ -3,6 +3,11 @@ var url = require('url');
 
 export function check_rightmove_input(pastedURL){
 
+    // ╭──────────────────────────────────────────────────────────╮
+    // │ TEST - IS THERE ANY INPUT?                               │
+    // ╰──────────────────────────────────────────────────────────╯
+    if (!pastedURL){ return }
+
     const address = url.parse(pastedURL, true);
 
     // console.log(address)

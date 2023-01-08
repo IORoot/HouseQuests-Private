@@ -18,5 +18,6 @@ export default {
         BrowserWindow.getFocusedWindow().webContents.reloadIgnoringCache();
       }
     }
+
   ]
 };
