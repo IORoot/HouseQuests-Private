@@ -6,7 +6,7 @@ export function check_onthemarket_input(pastedURL){
     // ╭──────────────────────────────────────────────────────────╮
     // │ TEST - IS THERE ANY INPUT?                               │
     // ╰──────────────────────────────────────────────────────────╯
-    // if (!pastedURL){ return }
+    if (!pastedURL){ return false }
 
     const address = url.parse(pastedURL, true);
 
