@@ -79,8 +79,8 @@
     // and it's X/Y pixel on the canvas.
     var lastMarkerLoadedXYPixel = 'NothingLoaded';
 
-    const isTest = process.env.HQ_TEST === 'test';
-    if (isTest){  advertButtonEnable = 0 }
+    // HAVE YOU BEEN BANNED?
+    var banned = false;
 
     // ┌─────────────────────────────────────┐
     // │                                     │

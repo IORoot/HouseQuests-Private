@@ -20,6 +20,13 @@ import { mixpanel_analytics } from "../app/client/analytics/mixpanel_analytics.j
 show_spinner()
 
 await check_authentication()
+
+if (banned){
+    // send the 'close-me' command to main.js
+    const {ipcRenderer} = require('electron');
+    ipcRenderer.send('close-me')
+}
+
 listener_authentication()
 intro_modal()
 intro_tutorial()

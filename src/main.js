@@ -78,3 +78,8 @@ app.on("ready", () => {
 app.on("window-all-closed", () => {
   app.quit();
 });
+
+// used if IP address is banned.
+ipcMain.on('close-me', (evt, arg) => {
+  app.quit()
+})
