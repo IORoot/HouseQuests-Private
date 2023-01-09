@@ -3,12 +3,10 @@
     "productName": "HouseQuests",
     "description": "The automatic release management.<br/><br/><ul class=\"list-disc\"><li>HTML Partials.</li><li>New wiki website.</li></ul>",
     "release_notes": [
-        "- Advert doesn't appear on first load",
-        "- Search buttons instead of just paste",
-        "- e2e tests working on canvas",
-        "- highlight current saved settings"
+        "- Ability to ban users by IP address.",
+        "- Removed HQ_TEST"
     ],
-    "version": "0.1.26",
+    "version": "0.1.27",
     "private": true,
     "author": "Andy Pearson <andy@londonparkour.com>",
     "copyright": "© 2022, LondonParkour LTD.",

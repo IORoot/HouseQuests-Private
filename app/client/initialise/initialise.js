@@ -48,6 +48,15 @@
     var hostname = 'http://localhost:3000'
     var auth_server = 'http://138.68.156.78'
 
+    // Unique User ID
+    var uuid
+
+    // User MAC address
+    var mac
+    
+    // User Hostname
+    var machine_hostname
+    
     // Stripe
     // var stripe_subscription_link = 'https://billing.stripe.com/p/login/test_28o01s1QKgp6cjS145'
     var stripe_subscription_link = 'https://billing.stripe.com/p/login/7sIdSx3m57cNf0Q5kk'

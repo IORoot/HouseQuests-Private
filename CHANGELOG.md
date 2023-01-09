@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.27 (2023-01-09)
+
+- Ability to ban users by IP address.
+- Removed HQ_TEST
+- Create UUID and check
+- Check MAC
+- Check Version
+
 ## 0.1.26 (2023-01-04)
 
 - Advert doesn't appear on the first load

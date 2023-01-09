@@ -10,6 +10,9 @@ import { load_event_listeners } from '../app/client/event_listeners/event_listen
 import { load_event_listeners_free } from '../app/client/event_listeners/event_listeners_free.js'
 import { listener_authentication } from "../app/client/event_listeners/listener_authentication.js";
 import { check_authentication } from "../app/client/authentication/check_authentication.js";
+import { generate_uuid } from "../app/client/authentication/generate_uuid.js";
+import { check_mac } from "../app/client/authentication/check_mac.js";
+import { check_hostname } from "../app/client/authentication/check_hostname.js";
 import { intro_modal } from "../app/client/intro/intro_modal.js";
 import { intro_tutorial } from "../app/client/intro/intro_tutorial.js";
 import { disable_premium_features } from "../app/client/disable/disable_premium_features.js";
@@ -18,6 +21,9 @@ import { stripe_manage_subscription_link } from "../app/client/stripe/manage_sub
 import { mixpanel_analytics } from "../app/client/analytics/mixpanel_analytics.js";
 
 show_spinner()
+generate_uuid()
+check_mac()
+check_hostname()
 
 await check_authentication()
 

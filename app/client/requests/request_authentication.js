@@ -6,6 +6,10 @@ export async function request_authentication(authenticationCode, authenticationE
     let authenticationRequest = JSON.stringify({
         code: authenticationCode,
         email: authenticationEmail,
+        uuid: uuid,
+        mac: mac,
+        version: packageJson.version,
+        hostname: machine_hostname
     })
 
     const serverResponse = await fetch(path, {method: 'POST', body: authenticationRequest})
