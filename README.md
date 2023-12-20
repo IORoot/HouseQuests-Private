@@ -86,6 +86,36 @@ Run the following command:
 xattr -d com.apple.quarantine /Applications/HouseQuests.app
 ```
 
+## 5. Folders
+
+```bash
+#main application
+/app
+	/client 		# main electron app
+	/lib			# bundled libraries and files
+	/maps			# bundled maps
+	/services		# node server backend
+
+# webpack-build config files
+/build
+
+# npm environment config
+/config
+
+# production-ready distribution files
+/dist
+
+# icons and install images
+/resources
+
+# HTML and electron files. Builds into /app folder.
+/src
+
+# Mocha Tests
+/tests
+
+```
+
 ## 5. Making Icons
 
 https://gist.github.com/jamieweavis/b4c394607641e1280d447deed5fc85fc

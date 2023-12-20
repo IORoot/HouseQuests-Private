@@ -80,8 +80,8 @@
     var totalMarkerCount = 0;
 
     // Advert Timer
-    var advertRepeats = 360000
-    var advertButtonEnable = 10000
+    var advertRepeats = 360000      // 6mins
+    var advertButtonEnable = 30000  // 30sec
 
     // Used for testing
     // contains the last marker to be loaded

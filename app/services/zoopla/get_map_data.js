@@ -5,6 +5,8 @@ module.exports = function(app){
     const cheerio = require('cheerio');
     var { transform } = require("node-json-transform");
 
+
+
     // ┌─────────────────────────────────────┐
     // │             ZOOPLA MAP              │
     // └─────────────────────────────────────┘
@@ -17,9 +19,19 @@ module.exports = function(app){
             rejectUnauthorized: false
         });
 
+        // async function logJSONData() {
+        //     console.log('running')
+        //     const response = await fetch();
+        //     console.log('failed')
+        //     const jsonData = await response.json();
+        //     console.log(jsonData);
+        // }
+
+        // logJSONData()
+
         axios({
             method: 'get',
-            url: target,
+            url: 'target',
             // headers:{ 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36' },
             httpsAgent: agent
         })

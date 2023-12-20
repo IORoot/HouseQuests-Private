@@ -28,20 +28,20 @@ export function list_blacklist(){
             let markerID = marker[0];
             let markerSource = marker[1];
 
-            var colour = 'slate-200'
+            var colour = 'bg-slate-200'
             if (markerSource == 'rightmove'){
-                colour = 'cyan'
+                colour = 'bg-cyan-500'
             }
         
             if (markerSource == 'zoopla'){
-                colour = 'purple'
+                colour = 'bg-purple-500'
             }
 
             if (markerSource == 'onthemarket'){
-                colour = 'rose'
+                colour = 'bg-rose-500'
             }
 
-            blacklistItems += '<div class="bg-'+colour+'-500 text-white rounded text-xs shadow flex flex-row flex-grow gap-1 h-6 p-1 text-center">'
+            blacklistItems += '<div class="'+colour+' text-white rounded text-xs shadow flex flex-row flex-grow gap-1 h-6 p-1 text-center">'
 
                 blacklistItems +=  '<a href="#" data-blacklist-source="'+markerSource+'" data-blacklist-id="'+markerID+'" class="blacklistid-link hover:underline w-full" >'
                     blacklistItems +=  markerID
