@@ -25,11 +25,11 @@ generate_uuid()
 check_mac()
 check_hostname()
 
-await check_authentication()
+//await check_authentication()
 
-if (banned){
+if (banned) {
     // send the 'close-me' command to main.js
-    const {ipcRenderer} = require('electron');
+    const { ipcRenderer } = require('electron');
     ipcRenderer.send('close-me')
 }
 
@@ -43,23 +43,21 @@ mixpanel_analytics()
 // │             Run Functions           │
 // │                                     │
 // └─────────────────────────────────────┘
-if (authenticated)
-{
-    onload_searches()
-    load_inspector('positive')
-    load_inspector('negative')
-    list_blacklist()
-    list_saved_searches()
-    load_event_listeners()
-    stripe_manage_subscription_link()
-}
+// if (authenticated) {
+onload_searches()
+load_inspector('positive')
+load_inspector('negative')
+list_blacklist()
+list_saved_searches()
+load_event_listeners()
+stripe_manage_subscription_link()
+// }
 
-if (!authenticated)
-{
-    onload_searches()
-    load_event_listeners_free()
-    disable_premium_features()
-    enable_adverts()
-}
+// if (!authenticated) {
+//     onload_searches()
+//     load_event_listeners_free()
+//     disable_premium_features()
+//     enable_adverts()
+// }
 
 hide_spinner()

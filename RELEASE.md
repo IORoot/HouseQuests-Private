@@ -1,3 +1,3 @@
 # Current Release
 
-- Security functions
+-   Removed Authentication Server. App now completely free.
