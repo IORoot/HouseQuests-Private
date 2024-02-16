@@ -30,12 +30,12 @@ export function change_icon(propertyID,hexColour){
 
                     var currentStyle = feature.getStyle();
 
-                    const newIcon = icon_highlighted+hexColour+"&stroke=%23ffffff&stroke-width=0.5&width=20px&height=20px";
+                    const newIcon = icon_highlighted+hexColour+"&stroke=%23ffffff&stroke-width=0.5&width="+icon_width+"px&height="+icon_height+"px";
 
                     feature.setStyle(
                         new ol.style.Style({
                             image: new ol.style.Icon({
-                                imgSize: [20, 20],
+                                imgSize: [icon_width, icon_height],
                                 src: newIcon,
                             }),
                         })

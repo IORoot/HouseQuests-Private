@@ -48,7 +48,7 @@ export function update_OL_markers(markerdata, icon, source){
             feature.setStyle(
                 new ol.style.Style({
                     image: new ol.style.Icon({
-                        imgSize: [20, 20],
+                        imgSize: [icon_width, icon_height],
                         src: currentIcon,
                     }),
                 })

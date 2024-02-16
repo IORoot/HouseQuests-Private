@@ -29,7 +29,7 @@ export function list_palette(){
 
             let textColour = pickTextColorBasedOnBgColorSimple(hexcode, 'text-white', 'text-black')
 
-            paletteItems += '<div class="font-medium font-thin rounded-lg text-xs text-white flex flex-row flex-grow gap-1 h-6 px-2 py-1 text-center" style="background-color: #'+hexcode+'">'
+            paletteItems += '<div class="font-thin rounded-lg text-xs text-white flex flex-row flex-grow gap-1 h-6 px-2 py-1 text-center" style="background-color: #'+hexcode+'">'
 
                 paletteItems +=  '<a href="#" data-marker-colour="'+hexcode+'" class="modal-icon-colour-button hover:underline w-full '+textColour+'" >'
                     paletteItems +=  hexcode

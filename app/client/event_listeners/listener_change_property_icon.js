@@ -6,28 +6,27 @@
 
 import { add_to_highlight_list } from '../highlightlist/add_to_highlight_list.js'
 
-export function listener_change_property_colour()
+export function listener_change_property_icon()
 {
 
     // ╭──────────────────────────────────────────────────────────────────────────────╮
     // │                                                                              │
-    // │                     MAIN MARKER COLOUR CHANGING FUNCTION                     │
+    // │                     MAIN MARKER ICON CHANGING FUNCTION                       │
     // │                                                                              │
     // ╰──────────────────────────────────────────────────────────────────────────────╯
-    var changeIconColour = function() {
-
+    var changeIconSVG = function() {
 
         // attribute doesn't exist and isn't set.
-        if (!this.hasAttribute("data-marker-colour")) { return }
+        if (!this.hasAttribute("data-marker-svg")) { return }
 
-        // get 'this' buttons colour
-        var colour = this.getAttribute("data-marker-colour");
+        // get 'this' buttons svg
+        var svg = this.getAttribute("data-marker-svg");
 
-        // If no colour is set, return.
-        if (!colour){ return }
+        // If no svg is set, return.
+        if (!svg){ return }
 
         // define new Icon with custom colour
-        const newIcon = "https://svg-rewriter.sachinraja.workers.dev/?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fnpm%2F%40mdi%2Fsvg%406.7.96%2Fsvg%2Fhome-circle.svg&fill=%23"+colour+"&width="+icon_width+"px&height="+icon_height+"px";
+        const newIcon = "https://svg-rewriter.sachinraja.workers.dev/?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fnpm%2F%40mdi%2Fsvg%406.7.96%2Fsvg%2F"+svg+".svg&fill=%23FF0000&width="+icon_width+"px&height="+icon_height+"px";
 
         // define new style with new icon
         const newStyle = new ol.style.Style({
@@ -65,7 +64,7 @@ export function listener_change_property_colour()
                     // match against current property
                     if (featureID == propertyID){
                         feature.setStyle(newStyle);
-                        add_to_highlight_list(propertyID, colour, null)
+                        add_to_highlight_list(propertyID, null,svg)
                     }
                 })
 
@@ -83,24 +82,12 @@ export function listener_change_property_colour()
 
     // ╭──────────────────────────────────────────────────────────────────────────────╮
     // │                                                                              │
-    // │                             TEST IF REAL HEXCODE                             │
-    // │                                                                              │
-    // ╰──────────────────────────────────────────────────────────────────────────────╯
-    function isHexColor (hex) {
-        return typeof hex === 'string'
-            && hex.length === 6
-            && !isNaN(Number('0x' + hex))
-    }
-
-    // ╭──────────────────────────────────────────────────────────────────────────────╮
-    // │                                                                              │
     // │                    SET ICON COLOUR AND RUN MAIN FUNCTION                     │
     // │                                                                              │
     // ╰──────────────────────────────────────────────────────────────────────────────╯
-    var changeIconHexcode = function() {
-        this.setAttribute("data-marker-colour", modal_colour_hexcode.value);
-        if (!isHexColor(modal_colour_hexcode.value)){ return }
-        changeIconColour.call(this) // use the 'call' function to set the 'this' object.
+    var changeIconSvg = function() {
+        this.setAttribute("data-marker-svg", modal_icon_svg.value);
+        changeIconSVG.call(this) // use the 'call' function to set the 'this' object.
     }
 
 
@@ -109,16 +96,10 @@ export function listener_change_property_colour()
     // │                             ADD EVENT LISTENERS                              │
     // │                                                                              │
     // ╰──────────────────────────────────────────────────────────────────────────────╯
-    var modal_colour_buttons = document.getElementsByClassName("modal-icon-colour-button");
-    // Loop through all buttons and give them an event listener.
-    for (var i = 0; i < modal_colour_buttons.length; i++) {
-        modal_colour_buttons[i].addEventListener('click', changeIconColour, false);
-    }
-
-    // Put eventListener onto the HEXCODE Set button.
-    var modal_colour_hexcode = document.getElementById("modal-icon-colour-hexcode");
-    var modal_colour_set_button = document.getElementById("modal-icon-colour-set");
-    modal_colour_set_button.addEventListener('click', changeIconHexcode, false);
+    // Put eventListener onto the ICON Set button.
+    var modal_icon_svg = document.getElementById("modal-icon-custom");
+    var modal_icon_set_button = document.getElementById("modal-icon-custom-set");
+    modal_icon_set_button.addEventListener('click', changeIconSvg, false);
 
 
 }

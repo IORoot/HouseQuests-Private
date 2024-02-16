@@ -150,3 +150,31 @@ To build it for production:
 ```
 npx tailwindcss -i ./src/views/style.css -o ./app/views/style.css --minify
 ```
+
+
+## 9. VSCode debugging
+
+.vscode/launch.json in vscode:
+
+```
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "cwd": "${workspaceFolder}/HouseQuests-Private",
+            "runtimeExecutable": "${workspaceFolder}/HouseQuests-Private/node_modules/.bin/electron",
+            "windows": {
+                "runtimeExecutable": "${workspaceFolder}/HouseQuests-Private/node_modules/.bin/electron.cmd"
+            },
+            "args" : ["."],
+            "outputCapture": "std"
+        }
+    ]
+}
+```
