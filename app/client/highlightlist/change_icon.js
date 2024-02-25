@@ -5,7 +5,7 @@
 // └─────────────────────────────────────┘
 
 export function change_icon(propertyID,hexColour){
-
+    
     // Get all layers
     let layersCollection = map.getLayers();
 
@@ -28,7 +28,20 @@ export function change_icon(propertyID,hexColour){
 
                 if (featureID == propertyID){
 
-                    var currentStyle = feature.getStyle();
+                    // If no hexcolour provided, use existing one.
+                    if (hexColour === "") { 
+                        // get the current icon Src
+                        let oldSrc = feature.getStyle().getImage().getSrc();
+                        let regex = /fill=([^&]+)/;
+                        let match = oldSrc.match(regex);
+                        if (match) { 
+                            let matched = match[1];
+                            let decodedMatched = matched.substring(3);
+                            hexColour = decodedMatched;
+                        }
+                    }
+
+                    if (hexColour == ""){ hexColour = "FF0000"; }
 
                     const newIcon = icon_highlighted+hexColour+"&stroke=%23ffffff&stroke-width=0.5&width="+icon_width+"px&height="+icon_height+"px";
 

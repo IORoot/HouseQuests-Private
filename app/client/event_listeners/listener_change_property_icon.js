@@ -25,18 +25,6 @@ export function listener_change_property_icon()
         // If no svg is set, return.
         if (!svg){ return }
 
-        // define new Icon with custom colour
-        const newIcon = "https://svg-rewriter.sachinraja.workers.dev/?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fnpm%2F%40mdi%2Fsvg%406.7.96%2Fsvg%2F"+svg+".svg&fill=%23FF0000&width="+icon_width+"px&height="+icon_height+"px";
-
-        // define new style with new icon
-        const newStyle = new ol.style.Style({
-            image: new ol.style.Icon({
-                imgSize: [icon_width, icon_height],
-                src: newIcon,
-            }),
-        })
-
-
         // get the current property ID.
         const propertyID = document.getElementById('drawer-id').dataset.id;
 
@@ -63,7 +51,33 @@ export function listener_change_property_icon()
 
                     // match against current property
                     if (featureID == propertyID){
+
+                        // get the current icon Src
+                        let oldSrc = feature.getStyle().getImage().getSrc();
+
+                        // get the fill colour from the URL
+                        let oldurl = new URL(oldSrc);
+                        let oldsearchParams = oldurl.searchParams;
+                        let oldfillValue = oldsearchParams.get('fill').replace('#', '');
+
+                        // set default if empty
+                        if (oldfillValue === "") { oldfillValue = "FF0000";}
+                        
+                        // define new Icon with custom colour
+                        const newIcon = "https://svg-rewriter.sachinraja.workers.dev/?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fnpm%2F%40mdi%2Fsvg%406.7.96%2Fsvg%2F"+svg+".svg&fill=%23"+oldfillValue+"&width="+icon_width+"px&height="+icon_height+"px";
+
+                        // define new style with new icon
+                        const newStyle = new ol.style.Style({
+                            image: new ol.style.Icon({
+                                imgSize: [icon_width, icon_height],
+                                src: newIcon,
+                            }),
+                        })
+
+                        // set the style
                         feature.setStyle(newStyle);
+
+                        // add to the highlight list
                         add_to_highlight_list(propertyID, null,svg)
                     }
                 })
@@ -85,7 +99,7 @@ export function listener_change_property_icon()
     // │                    SET ICON COLOUR AND RUN MAIN FUNCTION                     │
     // │                                                                              │
     // ╰──────────────────────────────────────────────────────────────────────────────╯
-    var changeIconSvg = function() {
+    var changeIcon = function() {
         this.setAttribute("data-marker-svg", modal_icon_svg.value);
         changeIconSVG.call(this) // use the 'call' function to set the 'this' object.
     }
@@ -99,7 +113,8 @@ export function listener_change_property_icon()
     // Put eventListener onto the ICON Set button.
     var modal_icon_svg = document.getElementById("modal-icon-custom");
     var modal_icon_set_button = document.getElementById("modal-icon-custom-set");
-    modal_icon_set_button.addEventListener('click', changeIconSvg, false);
+
+    modal_icon_set_button.addEventListener('click', changeIcon, false);
 
 
 }

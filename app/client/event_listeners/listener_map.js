@@ -57,7 +57,7 @@ export function listener_map(){
             reset_property_colour(marker.ID)
 
             // Highlight new property
-            change_icon(marker.ID, hex_highlighted)
+            change_icon(marker.ID, "")
 
             // update the right drawer contents with results.
             var propertyDetails = await load_property_details(marker)
