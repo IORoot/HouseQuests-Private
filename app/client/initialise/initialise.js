@@ -50,7 +50,6 @@ var hex_highlighted = '3E2DFF'
 
 // Hostname of node app
 var hostname = 'http://localhost:3000'
-var auth_server = 'http://138.68.156.78'
 
 // Unique User ID
 var uuid
@@ -60,10 +59,6 @@ var mac
 
 // User Hostname
 var machine_hostname
-
-// Stripe
-// var stripe_subscription_link = 'https://billing.stripe.com/p/login/test_28o01s1QKgp6cjS145'
-var stripe_subscription_link = 'https://billing.stripe.com/p/login/7sIdSx3m57cNf0Q5kk'
 
 // Mixpanel Analytics - HouseQuests Electron App
 var mixpanel_token = 'f84177e6fd6610f6ac3826d1b5d138d6'

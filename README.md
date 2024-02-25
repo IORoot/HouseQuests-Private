@@ -6,11 +6,19 @@ UK housing websites into a single map. See housequests.com for details.
 This was a private repo that I had built in an authentication server, but have since
 decided to make it public with the hope of interest from other people.
 
+## Starting project
+
+```bash
+npm run start
+```
+
 ##  Release Management
 
 To create a new release of the HouseQuests electron app, you can run:
-```
+```bash
 npm run release
+# or
+npm run build
 ```
 This will place all new distribution files into the `./dist` folder.
 

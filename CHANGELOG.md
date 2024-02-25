@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.2.3
+
+- Stripped out all authentication code
+- stripped out all stripe code
+
+
+## 0.2.1
+
+- Added basic Icon changing ability
+
+## 0.2 
+
+- Removed authentication to make public
+- Fix for Zoopla
+
 ## 0.1.27 (2023-01-09)
 
 - Ability to ban users by IP address.

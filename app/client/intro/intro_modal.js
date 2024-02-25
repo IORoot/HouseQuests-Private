@@ -56,7 +56,6 @@ export function intro_modal()
     open_link_in_chrome('link-panel-documentation')
     open_link_in_chrome('link-panel-tutorials')
     open_link_in_chrome('link-panel-downloads')
-    open_link_in_chrome('link-panel-stripe-portal')
 
     // Load the notifications
     request_notifications()
