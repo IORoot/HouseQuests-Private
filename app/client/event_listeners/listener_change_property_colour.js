@@ -16,7 +16,6 @@ export function listener_change_property_colour()
     // ╰──────────────────────────────────────────────────────────────────────────────╯
     var changeIconColour = function() {
 
-
         // attribute doesn't exist and isn't set.
         if (!this.hasAttribute("data-marker-colour")) { return }
 

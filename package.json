@@ -1,11 +1,11 @@
 {
 	"name": "ioroot-advanced-property-search",
 	"productName": "HouseQuests",
-	"description": "The automatic release management.<br/><br/><ul class=\"list-disc\"><li>HTML Partials.</li><li>New wiki website.</li></ul>",
+	"description": "Custom Icons update",
 	"release_notes": [
-		"- Fully Authenticated."
+		"- Custom Icons update."
 	],
-	"version": "0.2.2",
+	"version": "0.2.3",
 	"private": true,
 	"author": "Andy Pearson <andy@londonparkour.com>",
 	"copyright": "© 2022, LondonParkour LTD.",
