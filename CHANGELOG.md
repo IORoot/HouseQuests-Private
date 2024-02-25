@@ -2,6 +2,7 @@
 
 ## 0.2.3
 
+- When changing icons, colour stays same.
 - Stripped out all authentication code
 - stripped out all stripe code
 
