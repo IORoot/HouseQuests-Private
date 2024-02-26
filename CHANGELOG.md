@@ -2,10 +2,10 @@
 
 ## 0.2.3
 
+- Various example icon buttons.
 - When changing icons, colour stays same.
 - Stripped out all authentication code
 - stripped out all stripe code
-
 
 ## 0.2.1
 

@@ -1,3 +1,4 @@
 # Current Release
 
--   Added Custom Icons update
+-   Custom Icons + Buttons.
+-   Removed Authentication & Stripe.

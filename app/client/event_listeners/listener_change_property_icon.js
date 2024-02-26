@@ -104,12 +104,23 @@ export function listener_change_property_icon()
         changeIconSVG.call(this) // use the 'call' function to set the 'this' object.
     }
 
+    // data-marker-svg ALREADY SET.
+    var changeIconButton = function() {
+        changeIconSVG.call(this) // use the 'call' function to set the 'this' object.
+    }
+
 
     // ╭──────────────────────────────────────────────────────────────────────────────╮
     // │                                                                              │
     // │                             ADD EVENT LISTENERS                              │
     // │                                                                              │
     // ╰──────────────────────────────────────────────────────────────────────────────╯
+    var modal_icon_buttons = document.getElementsByClassName("modal-icon-button");
+    // Loop through all buttons and give them an event listener.
+    for (var i = 0; i < modal_icon_buttons.length; i++) {
+        modal_icon_buttons[i].addEventListener('click', changeIconButton, false);
+    }
+
     // Put eventListener onto the ICON Set button.
     var modal_icon_svg = document.getElementById("modal-icon-custom");
     var modal_icon_set_button = document.getElementById("modal-icon-custom-set");

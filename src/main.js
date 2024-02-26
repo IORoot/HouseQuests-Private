@@ -25,10 +25,10 @@ if (env.name !== "production") {
 }
 
 const setApplicationMenu = () => {
-  const menus = [appMenuTemplate, editMenuTemplate];
-  if (env.name !== "production") {
-    menus.push(devMenuTemplate);
-  }  
+  const menus = [appMenuTemplate, editMenuTemplate, devMenuTemplate];
+  // if (env.name !== "production") {
+    // menus.push(devMenuTemplate);
+  // }  
   Menu.setApplicationMenu(Menu.buildFromTemplate(menus));
 };
 
@@ -58,7 +58,8 @@ app.on("ready", () => {
       nodeIntegration: true,
       contextIsolation: false,
       enableRemoteModule: true,
-      devTools: !app.isPackaged,
+      // devTools: !app.isPackaged,
+      devTools: true,
     }
   });
 

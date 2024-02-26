@@ -25,18 +25,6 @@ export function listener_change_property_colour()
         // If no colour is set, return.
         if (!colour){ return }
 
-        // define new Icon with custom colour
-        const newIcon = "https://svg-rewriter.sachinraja.workers.dev/?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fnpm%2F%40mdi%2Fsvg%406.7.96%2Fsvg%2Fhome-circle.svg&fill=%23"+colour+"&width="+icon_width+"px&height="+icon_height+"px";
-
-        // define new style with new icon
-        const newStyle = new ol.style.Style({
-            image: new ol.style.Icon({
-                imgSize: [icon_width, icon_height],
-                src: newIcon,
-            }),
-        })
-
-
         // get the current property ID.
         const propertyID = document.getElementById('drawer-id').dataset.id;
 
@@ -63,8 +51,34 @@ export function listener_change_property_colour()
 
                     // match against current property
                     if (featureID == propertyID){
+
+                        // get the current icon Src
+                        let oldSrc = feature.getStyle().getImage().getSrc();
+
+                        let regex = /svg%2F([^&]+)/;
+                        let match = oldSrc.match(regex);
+                        if (match == null){
+                            match = [];
+                            match[1] = "pin"; 
+                        }
+                        let matchedIcon = match[1];
+                        matchedIcon = matchedIcon.replace(/\.svg$/, "");
+
+
+                        // define new Icon with custom colour
+                        const newIcon = "https://svg-rewriter.sachinraja.workers.dev/?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fnpm%2F%40mdi%2Fsvg%406.7.96%2Fsvg%2F"+matchedIcon+".svg&fill=%23"+colour+"&width="+icon_width+"px&height="+icon_height+"px";
+
+                        // define new style with new icon
+                        const newStyle = new ol.style.Style({
+                            image: new ol.style.Icon({
+                                imgSize: [icon_width, icon_height],
+                                src: newIcon,
+                            }),
+                        })
+
                         feature.setStyle(newStyle);
-                        add_to_highlight_list(propertyID, colour, null)
+
+                        add_to_highlight_list(propertyID, colour, matchedIcon)
                     }
                 })
 
