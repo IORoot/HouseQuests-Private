@@ -22,6 +22,7 @@ npm run build
 ```
 This will place all new distribution files into the `./dist` folder.
 
+Secret scanning enabled on repo.
 
 
 ###  Publish release on github 
