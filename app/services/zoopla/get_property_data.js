@@ -21,6 +21,7 @@ module.exports = function(app){
         axios({
             method: 'get',
             url: target,
+            timeout: 1000,
             // headers:{ 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36' },
             httpsAgent: agent
         })
@@ -144,6 +145,8 @@ module.exports = function(app){
         .catch(function (error) {
             // handle error
             console.log(error);
+            console.log('Error status:', error.response.status);
+            console.log('Error data:', error.response.data);
             return;
         })
 

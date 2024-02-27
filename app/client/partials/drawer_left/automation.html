@@ -1,0 +1,33 @@
+<div class="hidden" id="automationTabContent" role="tabpanel" aria-labelledby="automation-tab">
+    <div class="flex flex-col gap-4">
+
+        <div class="flex flex-col gap-2 mt-4">
+            <h5 class="inline-flex items-center text-sm font-semibold text-emerald-900 capitalize">Automation</h5>
+            <p class="text-xs text-gray-500 mb-4">Careful! This polls every result. May be rate-limited.</p>
+        </div>
+
+        <!-- Freehold / Leasehold  -->
+        <div class="flex flex-col gap-4 mb-4 bg-orange-100 p-4 rounded-xl">
+
+    <div class="flex flex-col gap-2">
+        <h5 class="inline-flex items-center text-sm font-semibold text-emerald-900 capitalize">Freehold / Leasehold</h5>
+        <p class="text-xs text-gray-500">Warning! These buttons will load every currently listed property and check their tenancy. This may lead to lots of requests to the property sites and you may be rate-limited or banned.</p>
+    </div>
+
+    <div class="flex flex-row gap-2 flex-wrap">
+
+        <button id="reset-icon-colours" type="button" data-modal-toggle="popup-modal-customColoursClear" class="fill-white text-white bg-orange-900 hover:bg-orange-300 hover:text-orange-700 hover:fill-orange-700 rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 flex flex-col gap-1" >
+            <svg class="w-6 h-6 m-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13,14H11V10H13M13,18H11V16H13M1,21H23L12,2L1,21Z"/></svg>
+            <span class="m-auto">Reset Favourites</span>
+        </button>
+    
+        <button id="clear-all-markers" type="button" class="md:w-1/4 lg:1/6 fill-white text-white bg-orange-900 hover:bg-orange-300 hover:text-orange-700 hover:fill-orange-700 rounded-lg text-sm p-3 text-center mb-2 flex flex-col gap-1">
+            <svg class="w-6 h-6 m-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9,2C5.14,2 2,5.14 2,9C2,14.25 9,22 9,22C9,22 16,14.25 16,9A7,7 0 0,0 9,2M9,6.5A2.5,2.5 0 0,1 11.5,9A2.5,2.5 0 0,1 9,11.5A2.5,2.5 0 0,1 6.5,9A2.5,2.5 0 0,1 9,6.5M16.58,14.16L15.17,15.58L17.58,18L15.17,20.41L16.58,21.82L19,19.41L21.41,21.82L22.83,20.41L20.41,18L22.83,15.58L21.41,14.16L19,16.58"/></svg>
+            <span class="m-auto">Clear Searches</span>
+        </button>
+
+    </div>
+    
+</div>
+    </div>
+</div>

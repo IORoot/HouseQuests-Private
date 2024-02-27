@@ -40,6 +40,8 @@ import { listener_external_links } from "./listener_external_links.js";
 import { listener_palette_add } from "./listener_palette_add.js";
 import { listener_palette_item_remove } from "./listener_palette_item_remove.js";
 import { listener_clear_palette } from "./listener_clear_palette.js";
+import { listener_filter_leaseholds } from "./listener_filter_leaseholds.js";
+import { listener_filter_share_of_freehold } from "./listener_filter_share_of_freehold.js";
 
 import { filter_monochrome } from "./listener_filter_monochrome.js";
 import { filter_invert } from "./listener_filter_invert.js";
@@ -82,6 +84,8 @@ export function load_event_listeners(){
     listener_palette_add()
     listener_palette_item_remove()
     listener_clear_palette()
+    listener_filter_leaseholds()
+    listener_filter_share_of_freehold()
     
     filter_monochrome()
     filter_invert()

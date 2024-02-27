@@ -1,0 +1,27 @@
+<div class="flex flex-col gap-4 mb-4 bg-orange-100 p-4 rounded-xl">
+
+    <div class="flex flex-col gap-2">
+        <h5 class="inline-flex items-center text-sm font-semibold text-emerald-900 capitalize">Freehold / Leasehold</h5>
+        <p class="text-xs text-gray-500">Warning! These buttons will load every currently listed property and check their tenancy. This may lead to lots of requests to the property sites and you may be rate-limited or banned.</p>
+    </div>
+
+    <div class="flex flex-row gap-2 flex-wrap">
+
+        <button id="filter-all-freehold" type="button" class="fill-white text-white bg-orange-900 hover:bg-orange-300 hover:text-orange-700 hover:fill-orange-700 rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 flex flex-col gap-1" >
+            <svg class="w-6 h-6 m-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21,11C21,16.55 17.16,21.74 12,23C6.84,21.74 3,16.55 3,11V5L12,1L21,5V11M12,21C15.75,20 19,15.54 19,11.22V6.3L12,3.18L5,6.3V11.22C5,15.54 8.25,20 12,21M11,14H13V17H16V12H18L12,7L6,12H8V17H11V14"/></svg>
+            <span class="m-auto">Remove Freeholds</span>
+        </button>
+    
+        <button id="filter-all-leasehold" type="button" class="md:w-1/4 lg:1/6 fill-white text-white bg-orange-900 hover:bg-orange-300 hover:text-orange-700 hover:fill-orange-700 rounded-lg text-sm p-3 text-center mb-2 flex flex-col gap-1">
+            <svg class="w-6 h-6 m-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M11,13H13V16H16V11H18L12,6L6,11H8V16H11V13M12,1L21,5V11C21,16.55 17.16,21.74 12,23C6.84,21.74 3,16.55 3,11V5L12,1Z"/></svg>
+            <span class="m-auto">Remove Leaseholds</span>
+        </button>
+
+        <button id="filter-all-share" type="button" class="md:w-1/4 lg:1/6 fill-white text-white bg-orange-900 hover:bg-orange-300 hover:text-orange-700 hover:fill-orange-700 rounded-lg text-sm p-3 text-center mb-2 flex flex-col gap-1">
+            <svg class="w-6 h-6 m-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M11,13H13V16H16V11H18L12,6L6,11H8V16H11V13M12,1L21,5V11C21,16.55 17.16,21.74 12,23C6.84,21.74 3,16.55 3,11V5L12,1Z"/></svg>
+            <span class="m-auto">Remove Share of Freehold</span>
+        </button>
+
+    </div>
+    
+</div>
