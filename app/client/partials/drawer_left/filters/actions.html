@@ -1,0 +1,27 @@
+<div class="grid grid-cols-3 gap-4 mb-4 bg-orange-100 p-4 rounded-xl">
+
+    <div class="flex flex-col col-span-3 gap-2">
+        <h5 class="inline-flex items-center text-sm font-semibold text-emerald-900 capitalize">Actions</h5>
+        <p class="text-xs text-gray-500">What to do with any successful matches to the above parameters. Note that this process runs in the background and takes time to iterate through all properties. It's now safe to close this left draw window.</p>
+    </div>
+
+    <div class="flex flex-col gap-2 flex-wrap">
+        <h5 class="inline-flex items-center text-sm font-semibold text-emerald-900 capitalize">Change Icon Hex Colour</h5>
+        <input id="filter-action-icon-colour" type="text" spellcheck="false" rows="3" class="block p-2.5 w-full text-sm text-amber-700 bg-gray-50 rounded-lg border border-gray-300 focus:ring-amber-700 focus:border-amber-700 " placeholder="Hex Colour"></textarea>
+    </div>
+    
+    <div class="flex flex-col gap-2 flex-wrap">
+        <h5 class="inline-flex items-center text-sm font-semibold text-emerald-900 capitalize">Change Icon SVG ID Name</h5>
+        <input id="filter-action-icon-svg-id" type="text" spellcheck="false" rows="3" class="block p-2.5 w-full text-sm text-amber-700 bg-gray-50 rounded-lg border border-gray-300 focus:ring-amber-700 focus:border-amber-700 " placeholder="Icon SVG ID name"></textarea>
+    </div>
+
+    <button id="filter-action-highlight" data-loaded="" type="button" class="w-full text-white ring-amber-600 fill-white bg-emerald-900 hover:bg-orange-300 hover:text-orange-700 hover:fill-orange-700 font-regular rounded-lg text-sm p-5 text-center  flex flex-col gap-2">
+        <svg class="w-6 h-6 m-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21,11C21,16.55 17.16,21.74 12,23C6.84,21.74 3,16.55 3,11V5L12,1L21,5V11M12,21C15.75,20 19,15.54 19,11.22V6.3L12,3.18L5,6.3V11.22C5,15.54 8.25,20 12,21M11,14H13V17H16V12H18L12,7L6,12H8V17H11V14"/></svg>
+        <span class="m-auto">Highlight Property</span>
+    </button>
+
+    <button id="filter-action-exclude" type="button" class="col-span-3 fill-white text-white bg-orange-900 hover:bg-orange-300 hover:text-orange-700 hover:fill-orange-700 rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 flex flex-col gap-1" >
+        <svg class="w-6 h-6 m-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21,11C21,16.55 17.16,21.74 12,23C6.84,21.74 3,16.55 3,11V5L12,1L21,5V11M12,21C15.75,20 19,15.54 19,11.22V6.3L12,3.18L5,6.3V11.22C5,15.54 8.25,20 12,21M11,14H13V17H16V12H18L12,7L6,12H8V17H11V14"/></svg>
+        <span class="m-auto">Exclude Property</span>
+    </button>
+</div>

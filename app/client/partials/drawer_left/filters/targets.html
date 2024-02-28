@@ -1,0 +1,36 @@
+<div class="flex flex-col gap-4 mb-4 bg-orange-100 p-4 rounded-xl">
+
+    <div class="flex flex-col gap-2 col-span-2">
+        <h5 class="inline-flex items-center text-sm font-semibold text-emerald-900 capitalize">Targets</h5>
+        <p class="text-xs text-gray-500">Warning! These filters will load every currently listed property. This may lead to lots of requests to the property sites and you may be rate-limited or banned.</p>
+    </div>
+
+    <div class="grid grid-cols-3 gap-4 flex-wrap relative">
+
+        <div class="m-auto flex flex-row gap-8 h-6">
+            <label for="zoopla-filter-target" class="inline-flex relative items-center cursor-pointer gap-4">
+                <input type="checkbox" value="" id="zoopla-filter-target" class="sr-only peer">
+                <div class="w-11 h-6 bg-red-700 rounded-full peer peer-focus:ring-4 peer-focus:ring-stone-300 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-emerald-600"></div>
+                <p class="text-xs text-gray-500 my-auto">Filter Zoopla.</p>
+            </label>
+        </div>
+
+        <div class="m-auto flex flex-row gap-8 h-6">
+            <label for="rightmove-filter-target" class="inline-flex relative items-center cursor-pointer gap-4">
+                <input type="checkbox" value="" id="rightmove-filter-target" class="sr-only peer" checked>
+                <div class="w-11 h-6 bg-red-700 rounded-full peer peer-focus:ring-4 peer-focus:ring-stone-300 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-emerald-600"></div>
+                <p class="text-xs text-gray-500 my-auto">Filter RightMove.</p>
+            </label>
+        </div>
+        
+        <div class="m-auto flex flex-row gap-8 h-6">
+            <label for="onthemarket-filter-target" class="inline-flex relative items-center cursor-pointer gap-4">
+                <input type="checkbox" value="" id="onthemarket-filter-target" class="sr-only peer" checked>
+                <div class="w-11 h-6 bg-red-700 rounded-full peer peer-focus:ring-4 peer-focus:ring-stone-300 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-emerald-600"></div>
+                <p class="text-xs text-gray-500 my-auto">Filter OnTheMarket.</p>
+            </label>
+        </div>
+
+    </div>
+
+</div>
