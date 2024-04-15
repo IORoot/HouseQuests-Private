@@ -6,6 +6,11 @@ on:
             - "v*" # Push events to matching v*, i.e. v1.0, v20.15.10
 
     workflow_dispatch:
+        inputs:
+            release_version:
+              description: 'Pleave give the semver release version, like v1.0.0'
+              required: true
+      
 
 jobs:
     # ┌─────────────────────────────────────┐
@@ -150,8 +155,8 @@ jobs:
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               with:
-                  tag_name: ${{ github.ref }}
-                  release_name: Release ${{ github.ref }}
+                  tag_name: ${{ github.event.inputs.release_version }}
+                  release_name: Release ${{ github.event.inputs.release_version }}
                   body_path: RELEASE.md
                   draft: false
                   prerelease: false
