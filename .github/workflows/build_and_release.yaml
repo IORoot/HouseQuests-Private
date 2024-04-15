@@ -30,9 +30,7 @@ jobs:
             #
             - name: Checkout code
               uses: actions/checkout@v3
-              with:
-                  repository: ioroot/HouseQuests-Private
-                  token: ${{ secrets.PAT }}
+
 
             # Install Node v18
             #
@@ -109,9 +107,6 @@ jobs:
             # used for the Release BODY
             - name: Checkout code
               uses: actions/checkout@v3
-              with:
-                  repository: ioroot/HouseQuests-Private
-                  token: ${{ secrets.PAT }}
 
             # Download the artifact from the previous jobs
             #
