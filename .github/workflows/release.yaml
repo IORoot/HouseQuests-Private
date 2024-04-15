@@ -1,4 +1,4 @@
-name: Create Manual Release
+name: Create Manual Tag
 
 on:
   # push:
