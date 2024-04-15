@@ -1,0 +1,173 @@
+name: Build Release
+
+on:
+    push:
+        tags:
+            - "v*" # Push events to matching v*, i.e. v1.0, v20.15.10
+
+    workflow_dispatch:
+
+jobs:
+    # ┌─────────────────────────────────────┐
+    # │                                     │
+    # │        BUILD THE APPLICATION        │
+    # │                                     │
+    # └─────────────────────────────────────┘
+    build:
+        name: Build Applications
+
+        runs-on: ${{ matrix.os }}
+
+        strategy:
+            matrix:
+                os: [macos-latest, windows-latest]
+
+        env:
+            CSC_IDENTITY_AUTO_DISCOVERY: false
+
+        steps:
+            # Checkout private code from private repo
+            #
+            - name: Checkout code
+              uses: actions/checkout@v3
+              with:
+                  repository: ioroot/HouseQuests-Private
+                  token: ${{ secrets.PAT }}
+
+            # Install Node v18
+            #
+            - name: Use Node.js 18.x
+              uses: actions/setup-node@v3
+              with:
+                  node-version: 18.x
+
+            # Install package.json
+            #
+            - name: npm install
+              run: |
+                  npm install
+
+            # Build the app
+            #
+            - name: Publish
+              env:
+                  CSC_IDENTITY_AUTO_DISCOVERY: false
+              run: |
+                  npm run build
+
+            # Housekeeping - Mac
+            # Remove everything except any executables
+            # Rename the 'dist' folder to 'artifacts'
+            #
+            - name: Cleanup artifacts
+              if: matrix.os != 'windows-latest'
+              run: |
+                  npx rimraf "dist/!(*.exe|*.deb|*.AppImage|*.dmg)"
+                  mv dist artifacts
+
+            # Housekeeping - Windows
+            # Move the .exe file into the artifacts folder
+            #
+            - name: Cleanup artifacts Win
+              if: matrix.os == 'windows-latest'
+              run: |
+                  mkdir artifacts
+                  mv dist/*.exe artifacts
+
+            # - name: Cleanup artifacts
+            #   if: matrix.os != 'windows-latest'
+            #   run: |
+            #       mkdir artifacts
+            #       echo "macos test" > artifacts/macos-file.log
+
+            # - name: Cleanup artifacts Win
+            #   if: matrix.os == 'windows-latest'
+            #   run: |
+            #       mkdir artifacts
+            #       echo "windows test" > artifacts/windows-file.log
+
+            # Upload the artifacts folder
+            # Ready for the 'release' job
+            #
+            - name: Upload artifacts
+              uses: actions/upload-artifact@v4.0.0
+              with:
+                  name: ${{ matrix.os }}
+                  path: artifacts
+
+    # ┌─────────────────────────────────────┐
+    # │                                     │
+    # │          CREATE A RELEASE           │
+    # │                                     │
+    # └─────────────────────────────────────┘
+    release:
+        name: Build Release
+        runs-on: ubuntu-latest
+        needs: build
+        steps:
+            # Checkout the PRIVATE Repository
+            # used for the Release BODY
+            - name: Checkout code
+              uses: actions/checkout@v3
+              with:
+                  repository: ioroot/HouseQuests-Private
+                  token: ${{ secrets.PAT }}
+
+            # Download the artifact from the previous jobs
+            #
+            - uses: actions/download-artifact@v4.1.0
+              with:
+                  name: macos-latest
+                  path: macos-latest
+
+            # Download the artifact from the previous jobs
+            #
+            - uses: actions/download-artifact@v4.1.0
+              with:
+                  name: windows-latest
+                  path: windows-latest
+
+            # # DEBUG
+            # # SSH ----------------------
+            # - name: Setup upterm session
+            #   uses: lhotari/action-upterm@v1
+            # # SSH ----------------------
+
+            # Create an artifacts folder
+            # move application files into it.
+            #
+            - name: Artifacts
+              run: |
+                  sudo apt install rename
+                  mkdir artifacts
+
+                  mv macos-latest/* artifacts/
+
+                  mv windows-latest/* artifacts/
+                  ls -laR artifacts/
+
+            # Create a new release
+            # Use the RELEASE.md text for the body text.
+            #
+            - name: Create Release
+              id: create_release
+              uses: actions/create-release@v1
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              with:
+                  tag_name: ${{ github.ref }}
+                  release_name: Release ${{ github.ref }}
+                  body_path: RELEASE.md
+                  draft: false
+                  prerelease: false
+
+            - name: Upload artifact and release
+              uses: nanoufo/action-upload-artifacts-and-release-assets@main
+              with:
+                  path: |
+                      artifacts/*
+                  upload-release-files: true
+                  if-no-files-found: error
+                  release-upload-url: ${{ steps.create_release.outputs.upload_url }}
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
