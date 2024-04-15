@@ -12,7 +12,7 @@ export function reset_property_colour(nextPropertyID)
 
     let customHex = check_highlight_list_hex(currentProperty.id)
 
-    if (customHex){ hex = customHex}
+    if (customHex){ hex = customHex }
 
     change_icon(currentProperty.id, hex)
 

@@ -40,8 +40,6 @@ import { listener_external_links } from "./listener_external_links.js";
 import { listener_palette_add } from "./listener_palette_add.js";
 import { listener_palette_item_remove } from "./listener_palette_item_remove.js";
 import { listener_clear_palette } from "./listener_clear_palette.js";
-import { listener_filter_leaseholds } from "./listener_filter_leaseholds.js";
-import { listener_filter_share_of_freehold } from "./listener_filter_share_of_freehold.js";
 import { listener_filter_exclude_property } from "./listener_filter_exclude_property.js";
 import { listener_filter_highlight_property } from "./listener_filter_highlight_property.js";
 
@@ -86,8 +84,6 @@ export function load_event_listeners(){
     listener_palette_add()
     listener_palette_item_remove()
     listener_clear_palette()
-    listener_filter_leaseholds()
-    listener_filter_share_of_freehold()
     listener_filter_exclude_property()
     listener_filter_highlight_property()
     

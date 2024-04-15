@@ -4,7 +4,7 @@
 // │                                     │
 // └─────────────────────────────────────┘
 
-export function change_icon(propertyID,hexColour){
+export function change_icon(propertyID,hexColour,strokeColour = ""){
     
     // Get all layers
     let layersCollection = map.getLayers();
@@ -43,7 +43,7 @@ export function change_icon(propertyID,hexColour){
 
                     if (hexColour == ""){ hexColour = "FF0000"; }
 
-                    const newIcon = icon_highlighted+hexColour+"&stroke=%23ffffff&stroke-width=0.5&width="+icon_width+"px&height="+icon_height+"px";
+                    const newIcon = icon_highlighted+hexColour+"&stroke=%23000000&stroke-width=1&width="+icon_width+"px&height="+icon_height+"px";
 
                     feature.setStyle(
                         new ol.style.Style({

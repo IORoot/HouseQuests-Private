@@ -5,7 +5,7 @@
 
 import path from "path";
 import url from "url";
-import { app, Menu, ipcMain, shell, BrowserWindow } from "electron";
+import { app, Menu, ipcMain, shell, session, BrowserWindow } from "electron";
 import appMenuTemplate from "./menu/app_menu_template";
 import editMenuTemplate from "./menu/edit_menu_template";
 import devMenuTemplate from "./menu/dev_menu_template";
@@ -71,6 +71,11 @@ app.on("ready", () => {
     })
   );
 
+  session.defaultSession.webRequest.onBeforeSendHeaders((details, callback) => {
+    details.requestHeaders['User-Agent'] = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36';
+    // details.requestHeaders['User-Agent'] = 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Mobile Safari/537.36';
+    callback({ cancel: false, requestHeaders: details.requestHeaders });
+  });
   // if (env.name === "development") {
   //   mainWindow.openDevTools();
   // }

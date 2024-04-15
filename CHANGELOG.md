@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.3.0
+
+- Finally using puppeteer for zoopla scraping.
+- Zoopla map pins and zoopla house details using puppeteer.
+
+## 0.2.4
+
+- Filtering! Loop through every property.
+- Exclude or highlight regex-filtered items
+- Filter on tenure, title, description
+- Highlight by changing icon colour or SVG
+
 ## 0.2.3
 
 - Various example icon buttons.
