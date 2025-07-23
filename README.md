@@ -1,3 +1,5 @@
+![header](https://raw.githubusercontent.com/IORoot/spinnaker/refs/heads/master/header.jpg)
+
 # HouseQuests
 
 This is an electron app that boasts the ability to combine results from multiple
